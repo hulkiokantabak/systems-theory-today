@@ -32,21 +32,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
+  <!-- Day/night theme, applied before first paint (no flash). External for the strict CSP. -->
+  <script src="{{ '/assets/theme.js' | url }}"></script>
 </head>
 <body{% if fullwidth %} class="fullwidth"{% endif %}>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-head">
     <div class="head-inner wrap">
+      <button type="button" class="theme-toggle" aria-label="Toggle day/night theme">☀</button>
       <a class="brand" href="{{ '/' | url }}">{{ site.title }}</a>
       <p class="brand-sub">{{ site.tagline }}</p>
       <nav class="topnav" aria-label="Primary">
         <a href="{{ '/' | url }}">Home</a>
+        <a href="{{ '/summary/' | url }}">Summary</a>
         <a href="{{ '/about/' | url }}">About</a>
         <a href="{{ '/history/' | url }}">History</a>
         <a href="{{ '/outputs/candidate_theories/' | url }}">The theories</a>
-        <a href="{{ '/diagrams/' | url }}">Figures</a>
+        <a href="{{ '/diagrams/' | url }}">Facts &amp; figures</a>
         <a href="{{ '/logs/open_questions/' | url }}">Frontier</a>
+        <a href="{{ '/colophon/' | url }}">Colophon</a>
       </nav>
     </div>
   </header>
@@ -59,9 +64,10 @@
           <p class="nav-label">This site</p>
           <ul>
             <li><a href="{{ '/' | url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+            <li><a href="{{ '/summary/' | url }}"{% if page.url == '/summary/' %} aria-current="page"{% endif %}>Summary</a></li>
             <li><a href="{{ '/about/' | url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
             <li><a href="{{ '/history/' | url }}"{% if page.url == '/history/' %} aria-current="page"{% endif %}>The history</a></li>
-            <li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>The figures</a></li>
+            <li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>Facts &amp; figures</a></li>
             <li><a href="{{ '/colophon/' | url }}"{% if page.url == '/colophon/' %} aria-current="page"{% endif %}>Colophon</a></li>
           </ul>
         </div>
@@ -80,6 +86,10 @@
 
     <main id="main" class="content{% if wide %} wide{% endif %}">
       {% if page.url != '/' %}<p class="crumb"><a href="{{ '/' | url }}">Home</a> <span>›</span> {{ title }}</p>{% endif %}
+      {% if page.url != '/' and not notools %}<div class="pagetools" aria-label="Page tools">
+        <button type="button" class="pt-btn pt-pdf">↓ Save as PDF</button>
+        <button type="button" class="pt-btn pt-share">↗ Share</button>
+      </div>{% endif %}
       <article class="prose">
         {{ content | safe }}
       </article>
@@ -93,12 +103,16 @@
       <p class="dim">{{ site.repoNote }}</p>
       <p class="dim">{{ site.status }} · source of truth: the repository · figures render from Mermaid + one hand-authored SVG</p>
       <p class="dim">Analytics: privacy-respecting <a href="https://www.goatcounter.com/">GoatCounter</a> — cookieless, no cookies, no personal data (details in the <a href="{{ '/colophon/' | url }}">colophon</a>).</p>
+      <p class="dim">The author's collected work — books, photographs, essays, and his other experiments — lives at <a href="{{ site.authorUrl }}">hulkiokantabak.com</a>.</p>
     </div>
   </footer>
 
   <!-- Client-side Mermaid render for any ```mermaid blocks in the docs (e.g. DIAGRAMS).
        External (not inline) so the CSP needs no script 'unsafe-inline'. -->
   <script src="{{ '/assets/mermaid-init.js' | url }}" defer></script>
+
+  <!-- Per-page Save-as-PDF (print) + Share (Web Share API / copy). External for the strict CSP. -->
+  <script src="{{ '/assets/pagetools.js' | url }}" defer></script>
 
   <!-- Privacy-respecting, cookieless page-view analytics — the author's shared GoatCounter
        dashboard, the same endpoint used across the companion sites. SRI-pinned. -->

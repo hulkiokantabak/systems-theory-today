@@ -1,11 +1,81 @@
 ---
-title: The figures
+title: Facts & Figures
 permalink: /diagrams/
 wide: true
 fullwidth: true
 ---
-<h1>The logic, drawn</h1>
-<p class="lede">If a coupling can't be drawn, we probably don't understand it yet. Nine figures — eight authored in Mermaid, one a hand-authored SVG — each restating part of the argument in a second notation, and each a claim that can be wrong. Download any of them as SVG (vector) or PNG.</p>
+<h1>Facts &amp; Figures</h1>
+<p class="ff-dek">What this project has actually produced — and, more honestly, what it has <em>not</em> yet. n&nbsp;=&nbsp;4 sessions. Counts are self-reported by the same system that benefits from looking productive; “falsifiable” means a claim was stated so it <em>could</em> be tested, not that anything has been tested. Nothing here is empirically confirmed yet.</p>
+
+<h2 class="ff-reg">The Facts — counts measured</h2>
+
+<div class="statstrip">
+  <div class="statcard hero"><span class="stat-n">3<span class="stat-d">/13</span></span><span class="stat-l">pressure-tests carry a <b>falsifiable</b> claim</span></div>
+  <div class="statcard hero"><span class="stat-n">0</span><span class="stat-l">of those <b>tested</b> against data yet</span></div>
+  <div class="statcard hero"><span class="stat-n">0</span><span class="stat-l">external forks · contributors · citations — the commons has not formed</span></div>
+  <div class="statcard grey"><span class="stat-l"><b>Effort so far:</b> 4 author prompts → ~47k words → 34 files → 3 falsifiable claims. <em>Volume is not rigor.</em></span></div>
+</div>
+
+<figure class="ff-fig">
+  <figcaption class="ff-cap"><b>From 13 tests to what is actually tested.</b> Source: <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. “Falsifiable” = a claim stated so it could be tested — not that it has been. 0 of the 3 are confirmed; the data work is future (Q-001).</figcaption>
+  <div class="ff-svg">{{ charts.funnel | safe }}</div>
+</figure>
+
+<figure class="ff-fig">
+  <figcaption class="ff-cap"><b>Pressure-test coverage — the thirteen, by layer.</b> Verbatim from <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. Status is shown by word&nbsp;+&nbsp;glyph, not colour alone. “~11” keeps its tilde; D1 is Theory&nbsp;A’s flagship — design-drafted but untested.</figcaption>
+  <div class="cov-wrap">
+  <table class="cov">
+    <thead><tr><th>ID</th><th>Test</th><th>First-pass</th><th>Home theory</th><th>Falsifiable claim yet?</th></tr></thead>
+    <tbody>
+    {% for layer in ['Master','Drivers','Dynamics','Symptoms'] %}
+      <tr class="cov-band"><th colspan="5">{{ layer }}</th></tr>
+      {% for c in facts.coverage %}{% if c.layer == layer %}
+      <tr>
+        <td class="cov-id">{{ c.id }}</td>
+        <td>{{ c.name }}{% if c.contested %} <span class="cov-open">· base or summit open (Q-002)</span>{% endif %}</td>
+        <td>{{ c.firstPass }}</td>
+        <td class="cov-home">{{ c.home }}</td>
+        <td>{% if c.falsifiable == 'yes' %}<span class="cov-f cov-yes">■ Yes</span>{% elif c.falsifiable == 'partial' %}<span class="cov-f cov-partial">◨ Partial</span>{% elif c.falsifiable == 'drafted' %}<span class="cov-f cov-drafted">◫ Drafted · untested</span>{% else %}<span class="cov-f cov-no">□ Not yet</span>{% endif %}</td>
+      </tr>
+      {% endif %}{% endfor %}
+    {% endfor %}
+      <tr class="cov-foot"><td colspan="5"><b>13 defined</b> · ~11 first-pass · <b class="cov-hero">3 falsifiable</b> · <b>0 tested</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+</figure>
+
+<figure class="ff-fig">
+  <figcaption class="ff-cap"><b>Three theories — the vote spread, not the score.</b> Source: <a href="{{ '/outputs/candidate_theories/' | url }}">CANDIDATE_THEORIES</a>, Round-7 ratings. The median alone is a lie of omission; the <em>width</em> is the designed disagreement. Self-assessment by reconstructed personas — not external validation.</figcaption>
+  <div class="ff-svg">{{ charts.dumbbell | safe }}</div>
+</figure>
+
+<figure class="ff-fig">
+  <figcaption class="ff-cap"><b>Four sessions — the trajectory, four points not a curve.</b> Source: <a href="{{ '/docs/metrics/' | url }}">METRICS §2</a> snapshots. n&nbsp;=&nbsp;4, plotted as four labelled points. Dissents-preserved is flat since S2; words grew ~2.5× while falsifiable claims moved only 1→3.</figcaption>
+  <div class="sparks">
+  {% for s in charts.sparklines %}
+    <div class="spark-card"><p class="spark-t">{{ s.title }}</p>{{ s.svg | safe }}<p class="spark-r">{{ s.start }} → {{ s.end }}{% if s.note %} · <span class="spark-note">{{ s.note }}</span>{% endif %}</p></div>
+  {% endfor %}
+  </div>
+</figure>
+
+<figure class="ff-fig">
+  <figcaption class="ff-cap"><b>The learning loop — caught, distilled, promoted.</b> Source: <a href="{{ '/logs/catches/' | url }}">CATCHES</a>, <a href="{{ '/logs/learnings/' | url }}">LEARNINGS</a>, METRICS §2. The pipeline, not the raw count, is the real metric — and a caught error is not a prevented one.</figcaption>
+  <div class="ledger">
+    <div class="ledger-stage"><span class="ledger-n">12</span><span class="ledger-l">catches logged</span><span class="ledger-sub">3 of the first 6 were the chair catching its own bias; C-010/C-011 author-caught; C-012 the loop catching itself</span></div>
+    <span class="ledger-arrow" aria-hidden="true">→</span>
+    <div class="ledger-stage"><span class="ledger-n">9</span><span class="ledger-l">learnings distilled</span><span class="ledger-sub">a learning that never changes a rule is just an observation</span></div>
+    <span class="ledger-arrow" aria-hidden="true">→</span>
+    <div class="ledger-stage"><span class="ledger-n">2<span class="ledger-of">/23</span></span><span class="ledger-l">rules changed this session</span><span class="ledger-sub cyan">catch latency: L-001 sat 3 sessions (S1→S4) before becoming Rule 22</span></div>
+  </div>
+</figure>
+
+<p class="ff-prov">Denominators, not achievements: 4 sessions · 10 core + 20 advisory panelists · 5 fault-line axes · 23 ground rules · ~7 searches / ~46 results. Ratification is <b>internal</b> — the author’s own, and reconstructed-persona ratings; external validation is exactly zero. Any number can be checked against <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>, the <a href="{{ '/logs/open_questions/' | url }}">open questions</a>, and the Round-7 votes in <a href="{{ '/outputs/candidate_theories/' | url }}">the theories</a>.</p>
+
+<hr class="ff-divider">
+
+<h2 class="ff-reg">The Figures — arguments drawn</h2>
+<p class="ff-note">Above: counts <em>measured</em>. Below: arguments <em>drawn</em> — a different kind of mark. Nine conceptual figures (eight in Mermaid, one a hand-authored SVG), each restating part of the argument in a second notation, and each a claim that can be wrong. Download any as SVG (vector) or PNG.</p>
 
 <div class="figures">
 {% for f in figures %}
