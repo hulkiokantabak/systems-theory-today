@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Systems Theory for Today — the map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#0c0d18;
+    --field-2:#141631;
+    --ink:#e9e7f2;
+    --ink-soft:#a3a1c0;
+    --ink-faint:#6f6d90;
+    --amber:#f0b24a;      /* the "+" pole — warm */
+    --amber-glow:rgba(240,178,74,.55);
+    --cyan:#49c7d8;       /* the "-" pole — cool */
+    --cyan-glow:rgba(73,199,216,.55);
+    --slate:#7d80ab;      /* neutral / abstains / orthogonal */
+    --hair:rgba(255,255,255,.10);
+    --hair-2:rgba(255,255,255,.06);
+    --serif:"Newsreader",Georgia,"Times New Roman",serif;
+    --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:
+      radial-gradient(1200px 700px at 50% -8%, var(--field-2) 0%, var(--field) 62%) fixed,
+      var(--field);
+    color:var(--ink);font-family:var(--sans);
+    font-size:17px;line-height:1.65;letter-spacing:.005em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,44px)}
+  .eyebrow{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--ink-faint);margin:0 0 18px
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0}
+  a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(240,178,74,.35)}
+  a:hover{border-bottom-color:var(--amber)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
+
+  /* ── MASTHEAD ─────────────────────────────── */
+  .masthead{padding:clamp(56px,10vh,120px) 0 8px}
+  .masthead h1{font-size:clamp(34px,6.4vw,68px);letter-spacing:-.015em}
+  .masthead .lede{
+    font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.6vw,26px);
+    color:var(--ink-soft);max-width:30ch;margin:22px 0 0;line-height:1.4
+  }
+  .rule{height:1px;background:var(--hair);border:0;margin:clamp(40px,7vh,80px) 0}
+
+  /* ── THE QUESTION ─────────────────────────── */
+  .question{padding:8px 0 4px}
+  .question p{
+    font-family:var(--serif);font-size:clamp(21px,3vw,32px);line-height:1.42;
+    max-width:24ch;margin:0;font-weight:400
+  }
+  .question .after{
+    font-family:var(--sans);font-size:16.5px;color:var(--ink-soft);
+    max-width:56ch;margin:26px 0 0;line-height:1.6
+  }
+  .question .after strong{color:var(--ink);font-weight:600}
+
+  /* ── SIGNATURE: THE PANEL GRAPH ───────────── */
+  .signature{padding:clamp(30px,6vh,64px) 0 0}
+  .sig-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px 26px;margin-bottom:8px}
+  .signature h2{font-size:clamp(24px,3.6vw,38px);letter-spacing:-.01em}
+  .sig-sub{font-family:var(--sans);color:var(--ink-soft);font-size:15.5px;max-width:60ch;margin:14px 0 26px}
+
+  .axisbar{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 4px}
+  .axisbtn{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;
+    color:var(--ink-soft);background:rgba(255,255,255,.03);
+    border:1px solid var(--hair);padding:9px 14px;border-radius:999px;
+    cursor:pointer;transition:border-color .2s,color .2s,background .2s
+  }
+  .axisbtn:hover{color:var(--ink);border-color:rgba(255,255,255,.24)}
+  .axisbtn[aria-pressed="true"]{
+    color:var(--field);background:var(--ink);border-color:var(--ink);font-weight:500
+  }
+  .poles{display:flex;justify-content:space-between;gap:16px;margin:20px 2px 4px;min-height:20px}
+  .pole{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+  .pole .dot{width:9px;height:9px;border-radius:50%}
+  .pole.neg{color:var(--cyan)} .pole.neg .dot{background:var(--cyan);box-shadow:0 0 10px var(--cyan-glow)}
+  .pole.pos{color:var(--amber)} .pole.pos .dot{background:var(--amber);box-shadow:0 0 10px var(--amber-glow)}
+  .pole.hidden{visibility:hidden}
+
+  .stage{position:relative;margin-top:6px;border:1px solid var(--hair-2);border-radius:14px;
+    background:linear-gradient(180deg, rgba(255,255,255,.015), rgba(0,0,0,.12));overflow:hidden}
+  svg#graph{display:block;width:100%;height:auto}
+  .node-label{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;fill:var(--ink-soft);
+    paint-order:stroke;stroke:var(--field);stroke-width:3px;pointer-events:none}
+  .node-hit{cursor:pointer}
+  .node-dot{transition:fill .55s ease}
+  .caption{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.03em;
+    margin:14px 2px 0;line-height:1.6}
+
+  /* info readout (also the accessible fallback for the graph) */
+  .readout{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .camp{border:1px solid var(--hair-2);border-radius:12px;padding:16px 18px;background:rgba(255,255,255,.015)}
+  .camp h4{margin:0 0 10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+  .camp.neg h4{color:var(--cyan)} .camp.pos h4{color:var(--amber)}
+  .camp ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:7px}
+  .camp li{font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+    border:1px solid var(--hair);border-radius:999px;padding:4px 10px;cursor:pointer;transition:.15s}
+  .camp li:hover,.camp li[data-active="true"]{color:var(--ink);border-color:rgba(255,255,255,.3)}
+  .selected-lens{margin-top:16px;min-height:44px;font-family:var(--serif);font-size:17px;
+    color:var(--ink);line-height:1.5;font-style:italic}
+  .selected-lens .who{font-style:normal;font-family:var(--mono);font-size:12px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:5px}
+
+  /* ── LANDSCAPE / TIMELINE ─────────────────── */
+  .era{display:grid;grid-template-columns:132px 1fr;gap:22px;padding:22px 0;border-top:1px solid var(--hair-2)}
+  .era:first-of-type{border-top:0}
+  .era .yr{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--amber);padding-top:5px}
+  .era h3{font-size:21px;margin-bottom:7px;letter-spacing:-.005em}
+  .era p{margin:0;color:var(--ink-soft);font-size:15.5px;max-width:64ch}
+  .era p em{color:var(--ink);font-style:italic}
+
+  /* ── THREE SEEDS ──────────────────────────── */
+  .seeds{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+  .seed{border:1px solid var(--hair);border-radius:14px;padding:22px 20px 20px;
+    background:rgba(255,255,255,.018);position:relative;display:flex;flex-direction:column}
+  .seed .tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+  .seed h3{font-size:23px;margin:10px 0 4px;letter-spacing:-.01em}
+  .seed .role{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--amber);margin-bottom:12px}
+  .seed p{margin:0 0 12px;font-size:15px;color:var(--ink-soft);line-height:1.6}
+  .seed .flaw{font-size:13.5px;color:var(--ink-faint);border-top:1px solid var(--hair-2);padding-top:12px;margin-top:auto}
+  .seed .flaw b{color:var(--ink-soft);font-weight:600}
+  .seed .strength{font-family:var(--mono);font-size:12px;color:var(--ink-soft);margin-top:12px}
+  .seed .bar{height:4px;border-radius:2px;background:rgba(255,255,255,.08);margin-top:6px;overflow:hidden}
+  .seed .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--amber))}
+
+  /* ── CLOSE ────────────────────────────────── */
+  .wager{max-width:60ch;margin:0 auto;text-align:center;padding:8px 0}
+  .wager p{font-family:var(--serif);font-size:clamp(19px,2.6vw,25px);font-style:italic;
+    line-height:1.5;color:var(--ink);margin:0}
+  .dissent{margin-top:44px}
+  .dissent h3{font-family:var(--mono);font-weight:400;font-size:12.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-faint);margin-bottom:16px}
+  .dissent ol{margin:0;padding:0;list-style:none;counter-reset:d;display:grid;gap:11px}
+  .dissent li{padding-left:38px;position:relative;color:var(--ink-soft);font-size:15px;line-height:1.55}
+  .dissent li::before{counter-increment:d;content:counter(d,decimal-leading-zero);
+    position:absolute;left:0;top:1px;font-family:var(--mono);font-size:12px;color:var(--amber)}
+  .dissent li b{color:var(--ink);font-family:var(--serif);font-weight:500;font-style:italic}
+
+  footer{border-top:1px solid var(--hair);margin-top:clamp(48px,9vh,96px);padding:34px 0 60px}
+  footer p{font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.03em;line-height:1.8;margin:0}
+
+  @media (max-width:760px){
+    .readout{grid-template-columns:1fr}
+    .seeds{grid-template-columns:1fr}
+    .era{grid-template-columns:1fr;gap:6px}
+    .era .yr{padding-top:0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .node-dot{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead wrap">
+  <p class="eyebrow">A living, forkable project · v0.1</p>
+  <h1>A Systems Theory<br>for Today</h1>
+  <p class="lede">The old total systems were written by one mind, in one book. This one is built by a panel that disagrees on purpose — and by you.</p>
+</header>
+
+<hr class="rule">
+
+<section class="question wrap">
+  <p class="eyebrow">The question</p>
+  <p>Since Heidegger, no single thinker has tried to explain the whole. Was that a failure of nerve — or of method?</p>
+  <p class="after">For most of history we had total systems: theological cosmologies, then the great rational systems. A century ago the ambition fractured. The wager here is that a systems theory adequate to the 2020s can no longer be built by the <strong>old method</strong> — one mind, one book — but might be built by a <strong>new one</strong>: living, distributed, plural, computational, and continuously argued. We test it by trying to do it, using seven present-day symptoms as the pressure: <strong>fertility, dopamine, propaganda, why-now, climate, coordination, and populism.</strong></p>
+</section>
+
+<section class="signature wrap" aria-labelledby="sig-h">
+  <div class="sig-head">
+    <p class="eyebrow" style="margin:0">The instrument</p>
+  </div>
+  <h2 id="sig-h">The panel is built to disagree</h2>
+  <p class="sig-sub">Ten thinkers, reconstructed as intellectual positions. A panel that shared a standpoint could not test the thing that matters — so this one is composed around fault lines. Pick an axis and watch the room split. The colour is the position.</p>
+
+  <div class="axisbar" role="group" aria-label="Choose a fault line to split the panel">
+    <button class="axisbtn" data-axis="0" aria-pressed="false">Is a total system possible?</button>
+    <button class="axisbtn" data-axis="1" aria-pressed="false">Where does order come from?</button>
+    <button class="axisbtn" data-axis="2" aria-pressed="false">Is history cycles or novelty?</button>
+    <button class="axisbtn" data-axis="3" aria-pressed="false">Matter or meaning?</button>
+    <button class="axisbtn" data-axis="4" aria-pressed="false">Is "today" rupture or acceleration?</button>
+  </div>
+
+  <div class="poles" id="poles">
+    <div class="pole neg hidden"><span class="dot"></span><span id="poleNeg">—</span></div>
+    <div class="pole pos hidden"><span id="polePos">—</span><span class="dot"></span></div>
+  </div>
+
+  <div class="stage">
+    <svg id="graph" viewBox="0 0 1000 600" role="img" aria-label="A network of ten thinkers that separates into two camps when a fault line is chosen. The full split is also listed in text below."></svg>
+  </div>
+  <p class="caption" id="caption">The panel as one body. Choose a fault line above to see where it divides — positions are an interpretation of each thinker's published stance, offered to be argued with.</p>
+
+  <div class="readout">
+    <div class="camp neg">
+      <h4 id="campNegH">The panel, undivided</h4>
+      <ul id="campNeg"></ul>
+    </div>
+    <div class="camp pos">
+      <h4 id="campPosH">&nbsp;</h4>
+      <ul id="campPos"></ul>
+    </div>
+  </div>
+  <p class="selected-lens" id="lens"><span class="who">Tap any thinker</span>to read the lens they bring to the panel.</p>
+</section>
+
+<hr class="rule">
+
+<section class="landscape wrap">
+  <p class="eyebrow">The landscape</p>
+  <h2 style="font-size:clamp(24px,3.6vw,38px);margin-bottom:8px;letter-spacing:-.01em">How the whole came apart — and where the ambition went</h2>
+  <p class="sig-sub">The grand system did not simply vanish. It was dismantled, and then it migrated.</p>
+
+  <div class="era">
+    <div class="yr">–350 → 1600s</div>
+    <div><h3>The first total systems</h3><p>Theological cosmologies, then the encyclopedic systematizers — <em>Aristotle</em> mapping all of knowledge bottom-up from observation, later fused with revelation into a single ordered whole.</p></div>
+  </div>
+  <div class="era">
+    <div class="yr">1781 → 1831</div>
+    <div><h3>The peak: Kant to Hegel</h3><p>The last grand rational systems, built in earnest. <em>Kant</em> makes the order partly a contribution of the knowing mind; <em>Hegel</em> attempts the whole of history and spirit as one unfolding system. After Hegel (d. 1831), no one builds at that scale and is believed.</p></div>
+  </div>
+  <div class="era">
+    <div class="yr">1831 → 1979</div>
+    <div><h3>The five hammers</h3><p>The totality is taken apart: <em>Nietzsche</em> dissolves its value-ground; <em>Gödel</em> (1931) proves no formal system can be both complete and consistent; knowledge <em>specializes</em> past any one mind; <em>Heidegger</em> reframes the systematizing drive as the symptom; <em>Lyotard</em> (1979) names the mood — incredulity toward metanarratives.</p></div>
+  </div>
+  <div class="era">
+    <div class="yr">1928 → now</div>
+    <div><h3>The migration</h3><p>The ambition moves rather than dies — into <em>systems science</em> (Bertalanffy, Wiener, Prigogine, Meadows), into <em>social-systems theory</em> (Luhmann — the direct counter-example to "no one tried"), and into contemporary syntheses: Big History, metamodernism, and <em>cliodynamics</em> (Turchin), the living proof that data-driven, computational social theory is possible at all.</p></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="seedsec wrap">
+  <p class="eyebrow">What the panel seeded</p>
+  <h2 style="font-size:clamp(24px,3.6vw,38px);margin-bottom:8px;letter-spacing:-.01em">Three theories, shipped with their flaws named</h2>
+  <p class="sig-sub">Not a consensus — three rival starting points. A is the condition, B is a mechanism inside it, C is the response. Together, they are an instance of the third one.</p>
+
+  <div class="seeds">
+    <div class="seed">
+      <span class="tag">Theory A</span>
+      <h3>The Adaptation Gap</h3>
+      <div class="role">The condition · diagnosis</div>
+      <p>The systems we build now outrun the capacity of the humans and institutions inside them. God-like tools, medieval institutions, paleolithic instincts — and the gap between them is widening. Most symptoms are downstream.</p>
+      <div class="strength">Strength as a theory · 7/10<div class="bar"><i style="width:70%"></i></div></div>
+      <div class="flaw"><b>Named weakness —</b> hard to falsify. "Change is fast" can explain anything until the gap is made measurable. That's the top next task.</div>
+    </div>
+    <div class="seed">
+      <span class="tag">Theory B</span>
+      <h3>The Optimization Ecology</h3>
+      <div class="role">The mechanism · critique</div>
+      <p>Markets, media, and machines have become self-reproducing optimizers that capture our drives — attention, dopamine, outrage — as fuel, and increasingly run without human ends. Selection did the designing; there is no cabal.</p>
+      <div class="strength">Strength as a theory · 7/10<div class="bar"><i style="width:70%"></i></div></div>
+      <div class="flaw"><b>Named weakness —</b> conspiracy-shape. It reads like a villain story and must hold the line: <i>selected</i> to capture, not <i>designed</i> to.</div>
+    </div>
+    <div class="seed">
+      <span class="tag">Theory C</span>
+      <h3>Distributed Coherence</h3>
+      <div class="role">The response · reflexive</div>
+      <p>Since no one mind holds the whole, a livable systems theory must be held as a plural, living, computational commons — not a monograph. This project is the prototype. The medium is the thesis.</p>
+      <div class="strength">Strength as a theory · 6/10<div class="bar"><i style="width:60%"></i></div></div>
+      <div class="flaw"><b>Named weakness —</b> a method is not a meaning. It may route around the meaning-wound that Nietzsche insists is the ground of it all.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="close wrap">
+  <div class="wager">
+    <p>The old total system is not coming back. What may be possible is this — a structured, honest, plural, self-correcting commons of sense-making, which understands the whole not by fusing it in one mind, but by holding it, argued, among many.</p>
+  </div>
+
+  <div class="dissent">
+    <h3>Six objections kept alive, on purpose</h3>
+    <ol>
+      <li><b>Heidegger</b> — filling the gap with a better system only deepens the enframing.</li>
+      <li><b>Nietzsche</b> — every structural map routes around the meaning-wound, which is the ground the rest stands on.</li>
+      <li><b>Turchin &amp; Marx</b> — a single master-problem trades testability for a satisfying story.</li>
+      <li><b>Kant</b> — all of it is a system of appearances; never mistake the map for the territory.</li>
+      <li><b>Luhmann</b> — the honest form is a theory of differentiation, not a unified doctrine; and beware a project optimizing for its own survival.</li>
+      <li><b>Le Guin</b> — if it becomes a machine for mastering rather than a tool for living, it has joined the disease it set out to diagnose.</li>
+    </ol>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>
+    A Systems Theory for Today · v0.1 (Session 1)<br>
+    Hulki Okan Tabak — with Claude · Docs CC BY-SA 4.0 · Code MIT<br>
+    Panelists are reconstructions of published positions, not the persons. This map is a companion to the repository — fork it, break it, better it.
+  </p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var SVGNS="http://www.w3.org/2000/svg";
+  var W=1000,H=600;
+
+  // Each thinker: axes are the stance on the 5 fault lines.
+  // -1 = cool pole (left/cyan), +1 = warm pole (right/amber), 0 = neutral/orthogonal/abstains.
+  var NODES=[
+    {n:"ARISTOTLE", lens:"The order is out there to be observed; the whole can be mapped, bottom-up, from particulars.", ax:[+1,-1, 0,-1, 0]},
+    {n:"KANT",      lens:"The order is partly imposed by the knower — and reason cannot know the thing-in-itself. The panel's conscience about limits.", ax:[+1,-1,+1,+1, 0]},
+    {n:"HEIDEGGER", lens:"The systematizing impulse is the symptom, not the cure. The project's permanent internal adversary.", ax:[-1,+1,-1,+1,+1]},
+    {n:"NIETZSCHE", lens:"The loss of a shared 'why' is the ground beneath every other problem. No diagram fills the meaning-vacuum.", ax:[-1,+1,-1,+1,+1]},
+    {n:"IBN KHALDUN",lens:"Group cohesion (asabiyya) builds power, breeds luxury, decays, and falls — in cycles. The first social science.", ax:[+1,-1,-1, 0,+1]},
+    {n:"BRAUDEL",   lens:"Look past events to the deep, slow structures — the longue durée that actually moves history.", ax:[+1,+1,-1,-1,+1]},
+    {n:"MEADOWS",   lens:"Stocks, flows, feedback, delay, leverage — and overshoot: a system driven past a limit it cannot feel in time.", ax:[+1,-1,-1,-1,-1]},
+    {n:"TURCHIN",   lens:"History as a natural science: measurable structural drivers, testable predictions. Keeps the panel honest about falsifiability.", ax:[+1,-1,-1,-1,+1]},
+    {n:"LUHMANN",   lens:"Society split into self-referential subsystems that cannot directly steer one another. The counter-example to 'no one tried'.", ax:[+1,-1,+1,-1,-1]},
+    {n:"LE GUIN",   lens:"To understand a system you must grasp what it is like to live in it — and whether it is worth living in. Beware the will to master.", ax:[-1,+1,+1,+1, 0]}
+  ];
+
+  var AXES=[
+    {neg:"The impulse is the disease", pos:"A total system is possible",
+     capNeg:"reject the whole enterprise", capPos:"build it, bounded"},
+    {neg:"Control & feedback",         pos:"Spontaneous emergence",
+     capNeg:"order is steered",         capPos:"order arises on its own"},
+    {neg:"Cycles & decline",           pos:"Open novelty",
+     capNeg:"history turns and falls",  capPos:"history opens & climbs"},
+    {neg:"Matter & structure",         pos:"Meaning & value",
+     capNeg:"the base is material",     capPos:"the driver is meaning"},
+    {neg:"A rupture",                  pos:"An acceleration",
+     capNeg:"something new under the sun",capPos:"an old trend running on"}
+  ];
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var svg=document.getElementById("graph");
+  var linkG=document.createElementNS(SVGNS,"g"); svg.appendChild(linkG);
+  var nodeG=document.createElementNS(SVGNS,"g"); svg.appendChild(nodeG);
+
+  // stable pseudo-random per index (deterministic layout)
+  function rand(i,s){var x=Math.sin((i+1)*12.9898+s*78.233)*43758.5453;return x-Math.floor(x);}
+
+  var N=NODES.length;
+  NODES.forEach(function(d,i){
+    // neutral base: organic ellipse
+    var a=(i/N)*Math.PI*2 - Math.PI/2;
+    var rx=305+rand(i,1)*30, ry=210+rand(i,2)*26;
+    d.baseX=W/2+Math.cos(a)*rx;
+    d.baseY=H/2+Math.sin(a)*ry;
+    d.tx=d.baseX; d.ty=d.baseY;      // target
+    d.x=d.baseX;  d.y=d.baseY;       // current
+    d.ph=rand(i,3)*Math.PI*2;        // drift phase
+    d.sp=0.5+rand(i,4)*0.6;          // drift speed
+    d.side=0;
+
+    var g=document.createElementNS(SVGNS,"g");
+    var hit=document.createElementNS(SVGNS,"circle");
+    hit.setAttribute("r",22);hit.setAttribute("fill","transparent");
+    hit.setAttribute("class","node-hit");
+    var dot=document.createElementNS(SVGNS,"circle");
+    dot.setAttribute("r",7);dot.setAttribute("class","node-dot");
+    dot.setAttribute("fill","var(--slate)");
+    var glow=document.createElementNS(SVGNS,"circle");
+    glow.setAttribute("r",7);glow.setAttribute("class","node-dot");
+    glow.setAttribute("fill","none");
+    var lbl=document.createElementNS(SVGNS,"text");
+    lbl.setAttribute("class","node-label");
+    lbl.setAttribute("x",13);lbl.setAttribute("y",4);
+    lbl.textContent=d.n;
+    // flip label to the left for right-side nodes to reduce edge clipping
+    if(d.baseX>W/2){ lbl.setAttribute("x",-13); lbl.setAttribute("text-anchor","end"); }
+    g.appendChild(glow);g.appendChild(dot);g.appendChild(hit);g.appendChild(lbl);
+    nodeG.appendChild(g);
+    d.g=g; d.dot=dot; d.glow=glow; d.lbl=lbl;
+
+    function pick(){ selectNode(i); }
+    hit.addEventListener("click",pick);
+    hit.addEventListener("mouseenter",function(){ if(activeNode===-1) showLens(i,true); });
+    hit.addEventListener("mouseleave",function(){ if(activeNode===-1) showLens(-1,true); });
+  });
+
+  var current=-1;        // selected axis
+  var activeNode=-1;     // pinned node
+
+  function colorFor(side){ return side>0?"var(--amber)":side<0?"var(--cyan)":"var(--slate)"; }
+
+  function setTargets(){
+    NODES.forEach(function(d,i){
+      if(current===-1){ d.tx=d.baseX; d.ty=d.baseY; d.side=0; return; }
+      var s=d.ax[current]; d.side=s;
+      var col= s<0 ? (0.10+rand(i,5)*0.20) : s>0 ? (0.70+rand(i,6)*0.20) : (0.42+rand(i,7)*0.16);
+      d.tx=col*W;
+      d.ty=(0.14+rand(i,8)*0.72)*H;
+    });
+    if(reduce){ NODES.forEach(function(d){d.x=d.tx;d.y=d.ty;}); draw(); }
+  }
+
+  function draw(){
+    // links
+    while(linkG.firstChild) linkG.removeChild(linkG.firstChild);
+    if(current===-1){
+      // closed ring — the panel as one body
+      for(var i=0;i<N;i++){ link(NODES[i],NODES[(i+1)%N], "rgba(255,255,255,.09)", 1); }
+    }else{
+      // intra-camp links only; the gap between camps is the point
+      var camps={"-1":[],"1":[],"0":[]};
+      NODES.forEach(function(d){camps[String(d.side)].push(d);});
+      [["-1","rgba(73,199,216,.26)"],["1","rgba(240,178,74,.26)"]].forEach(function(c){
+        var arr=camps[c[0]];
+        for(var a=0;a<arr.length;a++)for(var b=a+1;b<arr.length;b++) link(arr[a],arr[b],c[1],1);
+      });
+      // faint fault line down the middle
+      var fl=document.createElementNS(SVGNS,"line");
+      fl.setAttribute("x1",W/2);fl.setAttribute("y1",28);fl.setAttribute("x2",W/2);fl.setAttribute("y2",H-28);
+      fl.setAttribute("stroke","rgba(255,255,255,.10)");fl.setAttribute("stroke-dasharray","2 9");
+      fl.setAttribute("stroke-width",1);linkG.appendChild(fl);
+    }
+    // nodes
+    NODES.forEach(function(d){
+      d.g.setAttribute("transform","translate("+d.x.toFixed(1)+","+d.y.toFixed(1)+")");
+      var col=colorFor(d.side);
+      d.dot.setAttribute("fill",col);
+      var isActive = (activeNode===NODES.indexOf(d));
+      d.glow.setAttribute("r", isActive?12:7);
+      d.glow.setAttribute("fill", isActive? (d.side>0?"var(--amber-glow)":d.side<0?"var(--cyan-glow)":"rgba(125,128,171,.5)") : "none");
+      d.lbl.setAttribute("fill", isActive?"var(--ink)":"var(--ink-soft)");
+    });
+  }
+  function link(a,b,stroke,w){
+    var l=document.createElementNS(SVGNS,"line");
+    l.setAttribute("x1",a.x.toFixed(1));l.setAttribute("y1",a.y.toFixed(1));
+    l.setAttribute("x2",b.x.toFixed(1));l.setAttribute("y2",b.y.toFixed(1));
+    l.setAttribute("stroke",stroke);l.setAttribute("stroke-width",w);linkG.appendChild(l);
+  }
+
+  var t=0;
+  function tick(){
+    t+=0.016;
+    NODES.forEach(function(d){
+      var dx=d.tx-d.x, dy=d.ty-d.y;
+      d.x+=dx*0.06; d.y+=dy*0.06;
+      // gentle ambient drift
+      d.x+=Math.sin(t*d.sp+d.ph)*0.25;
+      d.y+=Math.cos(t*d.sp*0.9+d.ph)*0.25;
+    });
+    draw();
+    requestAnimationFrame(tick);
+  }
+
+  // ── selection + readout ─────────────────────
+  var btns=[].slice.call(document.querySelectorAll(".axisbtn"));
+  var poles=document.getElementById("poles");
+  var pPos=document.getElementById("polePos"), pNeg=document.getElementById("poleNeg");
+  var poleNegEl=poles.querySelector(".pole.neg"), polePosEl=poles.querySelector(".pole.pos");
+  var caption=document.getElementById("caption");
+  var campNeg=document.getElementById("campNeg"), campPos=document.getElementById("campPos");
+  var campNegH=document.getElementById("campNegH"), campPosH=document.getElementById("campPosH");
+
+  function selectAxis(ax){
+    current = (current===ax? -1 : ax);
+    activeNode=-1;
+    btns.forEach(function(b){ b.setAttribute("aria-pressed", String(+b.dataset.axis===current)); });
+    if(current===-1){
+      poleNegEl.classList.add("hidden"); polePosEl.classList.add("hidden");
+      caption.textContent="The panel as one body. Choose a fault line above to see where it divides — positions are an interpretation of each thinker's published stance, offered to be argued with.";
+      campNegH.textContent="The panel, undivided"; campPosH.innerHTML="&nbsp;";
+      renderCamp(campNeg, NODES.map(function(d,i){return i;}), null);
+      campPos.innerHTML="";
+      showLens(-1,false);
+    }else{
+      var A=AXES[current];
+      pNeg.textContent=A.neg; pPos.textContent=A.pos;
+      poleNegEl.classList.remove("hidden"); polePosEl.classList.remove("hidden");
+      var neg=[],pos=[],mid=[];
+      NODES.forEach(function(d,i){ (d.ax[current]<0?neg:d.ax[current]>0?pos:mid).push(i); });
+      caption.textContent="“"+btnLabel(current)+"”  —  "+neg.length+" hold that "+A.capNeg+"; "+pos.length+" that "+A.capPos+(mid.length?"; "+mid.length+" stand aside.":".");
+      campNegH.textContent=A.neg+"  ·  "+neg.length;
+      campPosH.textContent=A.pos+"  ·  "+pos.length;
+      renderCamp(campNeg, neg.concat(mid), "neg");
+      renderCamp(campPos, pos, "pos");
+    }
+    setTargets();
+    if(reduce) draw();
+  }
+  function btnLabel(ax){ return btns[ax].textContent; }
+
+  function renderCamp(ul, idxs, side){
+    ul.innerHTML="";
+    idxs.forEach(function(i){
+      var li=document.createElement("li");
+      li.textContent=NODES[i].n;
+      if(current!==-1){
+        var s=NODES[i].ax[current];
+        li.style.color = s<0?"var(--cyan)":s>0?"var(--amber)":"var(--ink-faint)";
+        li.style.borderColor = s<0?"rgba(73,199,216,.4)":s>0?"rgba(240,178,74,.4)":"var(--hair)";
+      }
+      li.addEventListener("click",function(){ selectNode(i); });
+      li.addEventListener("mouseenter",function(){ if(activeNode===-1) showLens(i,true); });
+      li.addEventListener("mouseleave",function(){ if(activeNode===-1) showLens(-1,true); });
+      li.dataset.idx=i;
+      ul.appendChild(li);
+    });
+  }
+
+  var lensEl=document.getElementById("lens");
+  function showLens(i, transient){
+    if(i<0){
+      if(activeNode===-1)
+        lensEl.innerHTML='<span class="who">Tap any thinker</span>to read the lens they bring to the panel.';
+      return;
+    }
+    var d=NODES[i];
+    lensEl.innerHTML='<span class="who">'+d.n+'</span>“'+d.lens+'”';
+  }
+  function selectNode(i){
+    activeNode = (activeNode===i? -1 : i);
+    // reflect active state in chips
+    [campNeg,campPos].forEach(function(ul){
+      [].slice.call(ul.children).forEach(function(li){
+        li.dataset.active = String(+li.dataset.idx===activeNode);
+      });
+    });
+    showLens(activeNode<0? -1 : i, false);
+    if(reduce) draw();
+  }
+
+  btns.forEach(function(b){ b.addEventListener("click",function(){ selectAxis(+b.dataset.axis); }); });
+
+  // init
+  selectAxis(-1); selectAxis(-1); // ensure neutral render of camp list
+  if(reduce){ draw(); } else { requestAnimationFrame(tick); }
+})();
+</script>
+</body>
+</html>

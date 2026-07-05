@@ -1,0 +1,31 @@
+# --- Build output (the site is built by CI from source; never commit the render) ---
+_site/
+
+# --- Node / Eleventy ---
+node_modules/
+.cache/
+npm-debug.log*
+
+# --- Python (study scaffolds; gated — no data committed) ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Study data & outputs (GATED: no analysis is run in this session; keep data out of git) ---
+studies/**/data/raw/*
+studies/**/data/interim/*
+studies/**/data/processed/*
+studies/**/outputs/*
+!studies/**/data/raw/.gitkeep
+!studies/**/data/interim/.gitkeep
+!studies/**/data/processed/.gitkeep
+!studies/**/outputs/.gitkeep
+
+# --- OS / editor / tooling cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+.claude/

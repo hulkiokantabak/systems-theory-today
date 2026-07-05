@@ -1,0 +1,7 @@
+# Study A — dependencies for the FUTURE heavy-Code session (NOT installed this session).
+# Pinned when the gate opens and the pre-registration is frozen.
+pandas
+numpy
+scipy
+statsmodels
+linearmodels   # panel / fixed-effects estimation

@@ -1,0 +1,57 @@
+# Build the public reading site with Eleventy and deploy it to GitHub Pages.
+#
+# This is the DEPLOY half of the two-surfaces plan (docs/THE_LIVING_DOCUMENT.md §7):
+# the repository stays private, but this workflow publishes the *reading* surface.
+# It is dormant until the repo is pushed to GitHub and Pages is enabled
+# (Settings → Pages → Source: GitHub Actions). Nothing here runs locally.
+#
+# PATH_PREFIX: leave as "/" for a user/org root or a custom domain. If the site is
+# served from https://<user>.github.io/<repo>/, set PATH_PREFIX to "/<repo>/" and
+# add the eleventy HTML-base plugin (see site/README.md).
+
+name: Build & deploy reading site (Pages)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel an in-progress run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Run standing checks (references, counts, diagrams)
+        run: npm run check
+      - name: Build with Eleventy
+        run: npm run build
+        env:
+          PATH_PREFIX: ${{ vars.PATH_PREFIX || '/' }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,6 @@
+# Study B — dependencies for the FUTURE heavy-Code session (NOT installed this session).
+# Pinned versions are chosen when the gate opens and the pre-registration is frozen.
+pandas
+numpy
+scipy
+statsmodels
