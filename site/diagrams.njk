@@ -1,19 +1,40 @@
 ---
-title: The logic, drawn
+title: The figures
 permalink: /diagrams/
 wide: true
+fullwidth: true
 ---
 <h1>The logic, drawn</h1>
-<p class="lede">If a coupling can't be drawn, we probably don't understand it yet. Nine figures — eight authored in Mermaid, one a hand-authored SVG — each restating part of the argument in a second notation, and each a claim that can be wrong.</p>
+<p class="lede">If a coupling can't be drawn, we probably don't understand it yet. Nine figures — eight authored in Mermaid, one a hand-authored SVG — each restating part of the argument in a second notation, and each a claim that can be wrong. Download any of them as SVG (vector) or PNG.</p>
 
-<div class="embed">
-  <iframe src="{{ '/viz/diagrams.html' | url }}" title="Nine figures — the project's logic, drawn" loading="lazy"></iframe>
+<div class="figures">
+{% for f in figures %}
+  <figure class="fig" id="fig-{{ f.n }}">
+    <div class="fig-head">
+      <span class="fig-num">Fig. {{ f.n }}</span>
+      <h2>{{ f.title }}</h2>
+    </div>
+    <p class="fig-assert">{{ f.asserts | safe }}</p>
+    <div class="fig-canvas">
+      {% if f.svg %}
+      <div class="fig-art" data-fig="{{ f.n }}" data-kind="svg">{{ f.svg | safe }}</div>
+      {% else %}
+      <div class="fig-art" data-fig="{{ f.n }}" data-kind="mermaid"><div class="fig-loading">rendering figure {{ f.n }}…</div><pre class="fig-src" hidden>{{ f.code }}</pre></div>
+      {% endif %}
+    </div>
+    <div class="fig-tools">
+      <button type="button" class="fig-btn" data-dl="svg" data-fig="{{ f.n }}">↓ SVG</button>
+      <button type="button" class="fig-btn" data-dl="png" data-fig="{{ f.n }}">↓ PNG</button>
+    </div>
+  </figure>
+{% endfor %}
 </div>
 
-<p>
-  Open the figures <a href="{{ '/viz/diagrams.html' | url }}">full-screen</a>, or the companion
+<p class="fig-foot">
+  Source of truth: <a href="{{ '/docs/diagrams/' | url }}">docs/DIAGRAMS.md</a> (also renders on GitHub).
+  Open the <a href="{{ '/viz/diagrams.html' | url }}">standalone figures</a> or the
   <a href="{{ '/viz/systems-theory-map.html' | url }}">landscape &amp; panel map</a>.
-  The source of truth is <a href="{{ '/docs/diagrams/' | url }}">docs/DIAGRAMS.md</a>, which also renders these
-  diagrams inline below the Mermaid source. Contested claims point to the
-  <a href="{{ '/logs/open_questions/' | url }}">open questions</a>.
+  Contested claims point to the <a href="{{ '/logs/open_questions/' | url }}">open questions</a>.
 </p>
+
+<script src="{{ '/assets/diagrams.js' | url }}" defer></script>

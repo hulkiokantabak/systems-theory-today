@@ -114,10 +114,39 @@ a:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:
 .figure{background:linear-gradient(180deg,rgba(255,255,255,.022),rgba(255,255,255,0));border:1px solid var(--hair);border-radius:14px;padding:clamp(12px,3vw,26px);overflow-x:auto;margin:1.4em 0}
 .figure svg{max-width:100%;height:auto;display:block;margin:0 auto}
 
-/* figures (embedded) page */
-.lede{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:clamp(17px,2.4vw,21px);line-height:1.45;max-width:46ch;margin:.2em 0 1.4em}
-.embed{margin:1.2em 0}
-.embed iframe{width:100%;height:82vh;min-height:520px;border:1px solid var(--hair);border-radius:14px;background:var(--field)}
+/* figures page */
+.lede{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:clamp(17px,2.4vw,21px);line-height:1.45;max-width:54ch;margin:.2em 0 1.8em}
+.figures{display:flex;flex-direction:column;gap:clamp(20px,3vw,34px);margin:0 0 8px}
+.fig{margin:0;border:1px solid var(--hair);border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));overflow:hidden}
+.fig-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:clamp(16px,2.5vw,24px) clamp(16px,3vw,28px) 0}
+.fig-num{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:var(--amber);flex:0 0 auto}
+.fig-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(18px,2.6vw,24px);letter-spacing:-.01em;margin:0;border:0;padding:0;flex:1 1 240px}
+.fig-assert{font-family:var(--sans);font-size:14.5px;color:var(--ink-soft);line-height:1.55;max-width:74ch;margin:8px 0 4px;padding:0 clamp(16px,3vw,28px)}
+.fig-assert b{color:var(--ink);font-weight:600}
+.fig-assert .contest{color:var(--cyan)}
+.fig-assert code{font-family:var(--mono);font-size:.85em;background:var(--hair-2);border-radius:4px;padding:.05em .35em;color:var(--ink-soft)}
+.fig-canvas{margin:14px clamp(12px,2.5vw,20px) 0;padding:clamp(14px,3vw,30px);background:var(--field);border:1px solid var(--hair-2);border-radius:12px;overflow:auto;max-height:80vh}
+.fig-canvas::-webkit-scrollbar{height:10px;width:10px}
+.fig-canvas::-webkit-scrollbar-thumb{background:var(--hair);border-radius:6px}
+.fig-canvas::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.2)}
+.fig-art{min-height:60px}
+.fig-art svg{max-width:none;height:auto;display:block;margin:0 auto}
+/* figures gallery: drop the sidebar and go wide so diagrams read at full size */
+body.fullwidth .wrap{max-width:1400px}
+body.fullwidth .layout{grid-template-columns:1fr}
+body.fullwidth .sidebar{display:none}
+.fig-loading{font-family:var(--mono);font-size:13px;color:var(--ink-faint);padding:24px 4px;text-align:center}
+.fig-err{font-family:var(--sans);font-size:14px;color:var(--ink-soft);padding:14px 4px;margin:0}
+.fig-tools{display:flex;gap:8px;justify-content:flex-end;padding:12px clamp(16px,3vw,28px) clamp(14px,2.5vw,20px)}
+.fig-btn{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-soft);background:var(--panel);border:1px solid var(--hair);border-radius:7px;padding:6px 12px;cursor:pointer;transition:color .12s,border-color .12s,background .12s}
+.fig-btn:hover{color:var(--amber);border-color:rgba(240,178,74,.4);background:rgba(240,178,74,.07)}
+.fig-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.fig-foot{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);line-height:1.8;margin:22px 0 0;max-width:80ch}
+.fig-foot a{color:var(--ink-soft);border-bottom-color:var(--hair)}
+.fig-foot a:hover{color:var(--amber)}
+/* colophon reference lines */
+.prose p.ref{font-family:var(--mono);font-size:13px;color:var(--ink-soft);line-height:1.7;margin:1.2em 0 0}
+.prose p.ref a{color:var(--amber)}
 
 /* footer */
 .site-foot{border-top:1px solid var(--hair);margin-top:40px;padding:clamp(28px,5vw,52px) 0 clamp(40px,7vw,72px)}

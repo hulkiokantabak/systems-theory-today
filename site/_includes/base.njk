@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
 </head>
-<body>
+<body{% if fullwidth %} class="fullwidth"{% endif %}>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-head">
@@ -42,10 +42,11 @@
       <p class="brand-sub">{{ site.tagline }}</p>
       <nav class="topnav" aria-label="Primary">
         <a href="{{ '/' | url }}">Home</a>
-        <a href="{{ '/diagrams/' | url }}">Figures</a>
-        <a href="{{ '/logs/open_questions/' | url }}">The frontier</a>
+        <a href="{{ '/about/' | url }}">About</a>
+        <a href="{{ '/history/' | url }}">History</a>
         <a href="{{ '/outputs/candidate_theories/' | url }}">The theories</a>
-        <a href="{{ '/docs/the_living_document/' | url }}">Living document</a>
+        <a href="{{ '/diagrams/' | url }}">Figures</a>
+        <a href="{{ '/logs/open_questions/' | url }}">Frontier</a>
       </nav>
     </div>
   </header>
@@ -54,6 +55,16 @@
     <details class="sidebar" aria-label="Contents">
       <summary>Contents</summary>
       <div class="nav-inner">
+        <div class="nav-group">
+          <p class="nav-label">This site</p>
+          <ul>
+            <li><a href="{{ '/' | url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+            <li><a href="{{ '/about/' | url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
+            <li><a href="{{ '/history/' | url }}"{% if page.url == '/history/' %} aria-current="page"{% endif %}>The history</a></li>
+            <li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>The figures</a></li>
+            <li><a href="{{ '/colophon/' | url }}"{% if page.url == '/colophon/' %} aria-current="page"{% endif %}>Colophon</a></li>
+          </ul>
+        </div>
         {% for grp in nav %}
         <div class="nav-group">
           <p class="nav-label">{{ grp.group }}</p>
@@ -64,10 +75,6 @@
           </ul>
         </div>
         {% endfor %}
-        <div class="nav-group">
-          <p class="nav-label">Figures</p>
-          <ul><li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>The logic, drawn</a></li></ul>
-        </div>
       </div>
     </details>
 
@@ -81,10 +88,11 @@
 
   <footer class="site-foot">
     <div class="wrap">
-      <p>{{ site.author }} · {{ site.license }}</p>
+      <p><a href="{{ site.authorUrl }}">{{ site.author }}</a> · {{ site.license }}</p>
+      <p class="dim"><a href="{{ '/about/' | url }}">About</a> · <a href="{{ '/history/' | url }}">The history</a> · <a href="{{ '/diagrams/' | url }}">The figures</a> · <a href="{{ '/colophon/' | url }}">Colophon</a> · <a href="{{ site.authorUrl }}">hulkiokantabak.com</a></p>
       <p class="dim">{{ site.repoNote }}</p>
       <p class="dim">{{ site.status }} · source of truth: the repository · figures render from Mermaid + one hand-authored SVG</p>
-      <p class="dim">Analytics: privacy-respecting <a href="https://www.goatcounter.com/">GoatCounter</a> — cookieless page-view counting, no IP logging, no personal data.</p>
+      <p class="dim">Analytics: privacy-respecting <a href="https://www.goatcounter.com/">GoatCounter</a> — cookieless, no cookies, no personal data (details in the <a href="{{ '/colophon/' | url }}">colophon</a>).</p>
     </div>
   </footer>
 
