@@ -6,6 +6,8 @@ Founder / author: **Hulki Okan Tabak — with Claude**
 Status: **v0.4 — Foundation (S1); field surveyed, pressure-tests expanded, shuttle designed (S2); Phase 1 — living-document concept + Theory A operationalized (S3); Theories B & C operationalized, pivot to Code prepared (S4)**
 License: docs under **CC BY-SA 4.0**, any code under **MIT** (see `LICENSE.md`)
 
+**Read it online → [hulkiokantabak.github.io/systems-theory-today](https://hulkiokantabak.github.io/systems-theory-today/)** · the public reading surface. *(Publishes when the repo is pushed and GitHub Pages is enabled; the contribution repository stays private until the skeleton is stable — `docs/THE_LIVING_DOCUMENT.md` §7.)*
+
 ---
 
 ## The question
@@ -74,6 +76,7 @@ The *form* of this project is an argument for its *content*. If no single mind c
 
 - **Two surfaces** (`docs/THE_LIVING_DOCUMENT.md` §7). The **repository is private** (the contribution surface — forking opens once the skeleton is stable). The **website is public** (the reading surface). This directory tree is the source of both.
 - **The reading site** is an Eleventy build over the repo's own Markdown (`site/README.md`): `npm install` then `npm run build` (or `npm run serve`). It renders every doc, embeds the nine figures (`viz/diagrams.html`), and deploys to GitHub Pages via `.github/workflows/pages.yml` when pushed. The repository *is* the site's source.
+- **Analytics & install.** The public site carries privacy-respecting, cookieless **GoatCounter** page-view counting (the author's shared `hulkiokantabak.goatcounter.com` dashboard — no cookies, no IP logging, no personal data), and an **Apple / Android home-screen icon** + web-app manifest (`site/assets/`) so it installs cleanly to a phone home screen.
 - **The standing checks** (`scripts/README.md`) run before every commit — `npm run check` (or `node scripts/run-checks.mjs`): reference-integrity, count-reconciliation against `docs/METRICS.md`, a Mermaid-parse + diagrams-render check, and a structural-change → ripple helper. They have zero dependencies.
 - **The shuttle** is versioned under `logs/handoffs/`: the work-order (`WORK_ORDER_S4.md`), the append-only cooperation log (`COOPERATION_LOG.md`), the session digest, and **R3** (`R3_GIST.md`) — the standing one-paragraph compression of the whole, loaded by every Chat session.
 - **The studies** (`studies/`) are **gated scaffolds** — pre-registrations + data/analysis skeletons for the three pre-registered studies (B, then A, then C). **They do not run**; running any of them crosses into heavy Code and needs a fresh, author-ratified work-order.

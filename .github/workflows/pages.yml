@@ -41,7 +41,10 @@ jobs:
       - name: Build with Eleventy
         run: npm run build
         env:
-          PATH_PREFIX: ${{ vars.PATH_PREFIX || '/' }}
+          # GitHub Pages project site is served under /<repo>/. Override with a
+          # repo/Actions variable PATH_PREFIX if the repo slug differs or a custom
+          # domain is used (then set it to "/").
+          PATH_PREFIX: ${{ vars.PATH_PREFIX || '/systems-theory-today/' }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

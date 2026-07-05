@@ -8,6 +8,12 @@
 import markdownIt from 'markdown-it';
 import { BY_REL, BY_BASE } from './site/lib/docmap.mjs';
 
+// GitHub Pages project sites are served under /<repo>/. Templates use the `| url`
+// filter; this same prefix is applied to the cross-reference links the transform
+// generates (a transform runs after the built-in URL handling, so it self-prefixes).
+const PATH_PREFIX = process.env.PATH_PREFIX || '/';
+const PREFIX = PATH_PREFIX === '/' ? '' : '/' + PATH_PREFIX.replace(/^\/+|\/+$/g, '');
+
 const isExternal = (t) => /^(https?:|mailto:|tel:|data:|#|\/\/)/i.test(t);
 
 function rewriteHref(href) {
@@ -25,9 +31,10 @@ function xrefLookup(token) {
 }
 
 export default function (eleventyConfig) {
-  // Verbatim copies: the interactive figures and the stylesheet.
+  // Verbatim copies: the interactive figures, the stylesheet + icons, the PWA manifest.
   eleventyConfig.addPassthroughCopy('viz');
   eleventyConfig.addPassthroughCopy({ 'site/assets': 'assets' });
+  eleventyConfig.addPassthroughCopy({ 'site/manifest.webmanifest': 'manifest.webmanifest' });
 
   // Only Markdown and Nunjucks are templates; everything else is left alone.
   eleventyConfig.setTemplateFormats(['md', 'njk']);
@@ -45,11 +52,11 @@ export default function (eleventyConfig) {
     let html = content;
     html = html.replace(/<a\b([^>]*?)\shref="([^"]+)"([^>]*)>/g, (m, pre, href, post) => {
       const r = rewriteHref(href);
-      return r ? `<a${pre} href="${r}"${post}>` : m;
+      return r ? `<a${pre} href="${PREFIX}${r}"${post}>` : m;
     });
     html = html.replace(/<code>([^<\s]+)<\/code>/g, (m, inner) => {
       const url = xrefLookup(inner.trim());
-      return url ? `<a class="xref" href="${url}">${m}</a>` : m;
+      return url ? `<a class="xref" href="${PREFIX}${url}">${m}</a>` : m;
     });
     return html;
   });

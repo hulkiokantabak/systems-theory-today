@@ -29,7 +29,7 @@ const ALLOW = new Set([
 ]);
 const isGlobOrTemplate = (t) => /[*{}]/.test(t) || t.includes('path/to/');
 const isExternal = (t) =>
-  /^(https?:|mailto:|tel:|data:|#|\/\/)/i.test(t) || t.startsWith('{{');
+  /^(https?:|mailto:|tel:|data:|#|\/\/)/i.test(t) || t.startsWith('{{') || t.startsWith('~');
 
 // Set of every content-file basename (for bare-basename resolution).
 const BASENAMES = new Set(docFiles().map((f) => basename(f)));

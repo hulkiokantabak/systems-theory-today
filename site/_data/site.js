@@ -3,6 +3,10 @@
 export default {
   title: 'A Systems Theory for Today',
   tagline: 'A living, forkable attempt to build a systems theory adequate to the present — by designed disagreement.',
+  // Deployed origin (GitHub Pages). The project subpath is applied by pathPrefix,
+  // so canonical/og URLs = origin + (page.url | url).
+  origin: 'https://hulkiokantabak.github.io',
+  url: 'https://hulkiokantabak.github.io/systems-theory-today/',
   author: 'Hulki Okan Tabak — with Claude',
   license: 'Docs CC BY-SA 4.0 · Code MIT',
   status: 'v0.4 · public reading surface · Session 4',

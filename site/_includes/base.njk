@@ -2,28 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Self-contained except three allowlisted origins: Google Fonts (CSS+woff2), the Mermaid
+       CDN (diagram render), and the author's shared GoatCounter (cookieless page-view counting).
+       Strict allowlist; no inline scripts. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; img-src 'self' data: https://hulkiokantabak.goatcounter.com; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; connect-src https://hulkiokantabak.goatcounter.com; frame-src 'self'; worker-src 'self' blob:; manifest-src 'self'">
   <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ title }} · {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.tagline }}">
   <meta name="author" content="{{ site.author }}">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0c0d18">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icon-32.png' | url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icon-180.png' | url }}">
+  <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}">
+  <meta name="apple-mobile-web-app-title" content="Systems Theory">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="canonical" href="{{ site.origin }}{{ page.url | url }}">
+  <meta property="og:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:description" content="{{ site.tagline }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.origin }}{{ page.url | url }}">
+  <meta property="og:image" content="{{ site.origin }}{{ '/assets/og.png' | url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-head">
     <div class="head-inner wrap">
-      <a class="brand" href="/">{{ site.title }}</a>
+      <a class="brand" href="{{ '/' | url }}">{{ site.title }}</a>
       <p class="brand-sub">{{ site.tagline }}</p>
       <nav class="topnav" aria-label="Primary">
-        <a href="/">Home</a>
-        <a href="/diagrams/">Figures</a>
-        <a href="/logs/open_questions/">The frontier</a>
-        <a href="/outputs/candidate_theories/">The theories</a>
-        <a href="/docs/the_living_document/">Living document</a>
+        <a href="{{ '/' | url }}">Home</a>
+        <a href="{{ '/diagrams/' | url }}">Figures</a>
+        <a href="{{ '/logs/open_questions/' | url }}">The frontier</a>
+        <a href="{{ '/outputs/candidate_theories/' | url }}">The theories</a>
+        <a href="{{ '/docs/the_living_document/' | url }}">Living document</a>
       </nav>
     </div>
   </header>
@@ -37,20 +59,20 @@
           <p class="nav-label">{{ grp.group }}</p>
           <ul>
             {% for it in grp.items %}
-            <li><a href="{{ it.url }}"{% if it.url == page.url %} aria-current="page"{% endif %}>{{ it.title }}</a></li>
+            <li><a href="{{ it.url | url }}"{% if it.url == page.url %} aria-current="page"{% endif %}>{{ it.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
         {% endfor %}
         <div class="nav-group">
           <p class="nav-label">Figures</p>
-          <ul><li><a href="/diagrams/"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>The logic, drawn</a></li></ul>
+          <ul><li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>The logic, drawn</a></li></ul>
         </div>
       </div>
     </details>
 
     <main id="main" class="content{% if wide %} wide{% endif %}">
-      {% if page.url != '/' %}<p class="crumb"><a href="/">Home</a> <span>›</span> {{ title }}</p>{% endif %}
+      {% if page.url != '/' %}<p class="crumb"><a href="{{ '/' | url }}">Home</a> <span>›</span> {{ title }}</p>{% endif %}
       <article class="prose">
         {{ content | safe }}
       </article>
@@ -62,53 +84,19 @@
       <p>{{ site.author }} · {{ site.license }}</p>
       <p class="dim">{{ site.repoNote }}</p>
       <p class="dim">{{ site.status }} · source of truth: the repository · figures render from Mermaid + one hand-authored SVG</p>
+      <p class="dim">Analytics: privacy-respecting <a href="https://www.goatcounter.com/">GoatCounter</a> — cookieless page-view counting, no IP logging, no personal data.</p>
     </div>
   </footer>
 
   <!-- Client-side Mermaid render for any ```mermaid blocks in the docs (e.g. DIAGRAMS).
-       Loaded only when such a block exists; degrades to visible source if the CDN is blocked.
-       Theme mirrors viz/diagrams.html so the two surfaces match. -->
-  <script>
-  (function () {
-    var blocks = Array.prototype.slice.call(document.querySelectorAll('pre > code.language-mermaid'));
-    if (!blocks.length) return;
-    var s = document.createElement('script');
-    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js';
-    s.onload = function () {
-      mermaid.initialize({
-        startOnLoad: false, securityLevel: 'loose', theme: 'base',
-        flowchart: { curve: 'basis', htmlLabels: true, useMaxWidth: true, padding: 14 },
-        fontFamily: '"IBM Plex Mono", monospace',
-        themeVariables: {
-          background: '#0c0d18', primaryColor: '#171a33', primaryTextColor: '#e9e7f2',
-          primaryBorderColor: '#5b5e86', lineColor: '#8a88ab', secondaryColor: '#141631',
-          tertiaryColor: '#101226', clusterBkg: '#10121f', clusterBorder: '#2f3252',
-          titleColor: '#e9e7f2', edgeLabelBackground: '#0c0d18',
-          fontFamily: '"IBM Plex Mono", monospace', fontSize: '14px', nodeTextColor: '#e9e7f2',
-          quadrant1Fill: '#141733', quadrant2Fill: '#121529', quadrant3Fill: '#101226',
-          quadrant4Fill: '#12142c', quadrant1TextFill: '#a3a1c0', quadrant2TextFill: '#a3a1c0',
-          quadrant3TextFill: '#a3a1c0', quadrant4TextFill: '#a3a1c0',
-          quadrantPointFill: '#f0b24a', quadrantPointTextFill: '#e9e7f2',
-          quadrantXAxisTextFill: '#a3a1c0', quadrantYAxisTextFill: '#a3a1c0',
-          quadrantTitleFill: '#e9e7f2', quadrantInternalBorderStrokeFill: '#2f3252',
-          quadrantExternalBorderStrokeFill: '#5b5e86'
-        }
-      });
-      (async function () {
-        for (var i = 0; i < blocks.length; i++) {
-          var code = blocks[i], pre = code.parentElement;
-          try {
-            var res = await mermaid.render('mmd-site-' + i, code.textContent);
-            var fig = document.createElement('div');
-            fig.className = 'figure';
-            fig.innerHTML = res.svg;
-            pre.replaceWith(fig);
-          } catch (e) { console.error('mermaid render failed', e); }
-        }
-      })();
-    };
-    document.head.appendChild(s);
-  })();
-  </script>
+       External (not inline) so the CSP needs no script 'unsafe-inline'. -->
+  <script src="{{ '/assets/mermaid-init.js' | url }}" defer></script>
+
+  <!-- Privacy-respecting, cookieless page-view analytics — the author's shared GoatCounter
+       dashboard, the same endpoint used across the companion sites. SRI-pinned. -->
+  <script data-goatcounter="https://hulkiokantabak.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.v5.js"
+          integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"
+          crossorigin="anonymous"></script>
 </body>
 </html>
