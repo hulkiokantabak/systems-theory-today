@@ -81,6 +81,14 @@ const ROWS = [
 ];
 
 function main() {
+  // Machine-readable mode for the dashboard generator (single source of truth).
+  if (process.argv.includes('--json')) {
+    const rows = ROWS.map(([label, got, exp]) => ({ label, got, exp, ok: exp != null && got === exp }));
+    const figOk = vizFigures === reality.diagrams;
+    const ok = rows.every((r) => r.ok) && figOk;
+    process.stdout.write(JSON.stringify({ ok, reality, expected, vizFigures, rows }));
+    return ok ? 0 : 1;
+  }
   console.log(c.bold('\nCount-reconciliation against docs/METRICS.md'));
   let failed = 0;
   const pad = (s, n) => String(s).padEnd(n);

@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-07-05T19:21:20.987Z",
+  "project": "A Systems Theory for Today",
+  "git": {
+    "branch": "main",
+    "commit": "87804b4",
+    "tag": "session-4b",
+    "lastDate": "2026-07-05",
+    "hasRemote": false
+  },
+  "validation": {
+    "references": true,
+    "counts": true,
+    "diagrams": true,
+    "overall": true
+  },
+  "counts": {
+    "contentFiles": 34,
+    "catches": 12,
+    "learnings": 9,
+    "openQuestions": 12,
+    "disagreements": 6,
+    "diagrams": 9,
+    "pressureTests": 13,
+    "groundRules": 23
+  },
+  "categories": {
+    "(root)": 5,
+    "docs": 12,
+    "logs": 4,
+    "logs/handoffs": 2,
+    "outputs": 6,
+    "panel": 3,
+    "viz": 2
+  },
+  "codeLayerExcluded": [
+    "logs/handoffs/DIGEST_S4.md",
+    "logs/handoffs/DIGEST_S4b.md",
+    "logs/handoffs/R3_GIST.md"
+  ],
+  "gates": {
+    "lightCode": "stood up",
+    "heavyCode": "gated (needs a tested Theory-A claim + a fresh ratified work-order)"
+  }
+}

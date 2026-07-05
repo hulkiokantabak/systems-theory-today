@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Control Room &middot; A Systems Theory for Today</title>
+<!-- GENERATED FILE — do not hand-edit. Source: scripts/build-dashboard.mjs · npm run dashboard -->
+<style>
+:root{
+  --field:#0c0d18; --field-2:#141631; --panel:#111327; --ink:#e9e7f2; --ink-soft:#a3a1c0;
+  --ink-faint:#6f6d90; --amber:#f0b24a; --cyan:#49c7d8; --ok:#5fd08a; --fail:#f0685a;
+  --hair:rgba(255,255,255,.10); --hair-2:rgba(255,255,255,.055);
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --mono:ui-monospace,"Cascadia Mono","Consolas","SF Mono",Menlo,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 720px at 50% -10%, var(--field-2) 0%, var(--field) 60%) fixed,var(--field);
+  color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(240,178,74,.32)}
+a:hover{border-bottom-color:var(--amber)}
+header.top{border-bottom:1px solid var(--hair);padding:clamp(26px,5vw,44px) 0 22px;margin-bottom:8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 12px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(26px,4.5vw,40px);letter-spacing:-.015em;margin:0}
+.meta{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);margin:14px 0 0;line-height:1.9}
+.meta b{color:var(--ink-soft);font-weight:500}
+.statusbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:18px 0 0}
+.badge{font-family:var(--mono);font-size:12px;padding:3px 10px;border-radius:20px;border:1px solid var(--hair);white-space:nowrap}
+.badge.ok{color:var(--ok);border-color:rgba(95,208,138,.4);background:rgba(95,208,138,.08)}
+.badge.fail{color:var(--fail);border-color:rgba(240,104,90,.45);background:rgba(240,104,90,.10)}
+.badge.big{font-size:13px;padding:5px 14px}
+section{padding:26px 0;border-top:1px solid var(--hair-2)}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(18px,3vw,23px);margin:0 0 4px}
+.sub{color:var(--ink-faint);font-size:13px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.022),rgba(255,255,255,0));border:1px solid var(--hair);border-radius:12px;padding:16px 18px}
+.card h3{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--amber);margin:0 0 6px;text-transform:none}
+.card p{margin:0;color:var(--ink-soft);font-size:13.5px}
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:4px;margin-left:6px}
+.tag.gen{color:var(--cyan);border:1px solid rgba(73,199,216,.35)}
+.tag.hand{color:var(--amber);border:1px solid rgba(240,178,74,.35)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);border-bottom:1px solid var(--hair);padding:7px 12px}
+td{border-bottom:1px solid var(--hair-2);padding:7px 12px;color:var(--ink-soft);vertical-align:top}
+td.num{font-family:var(--mono);color:var(--ink);text-align:right;width:64px}
+code,pre{font-family:var(--mono)}
+pre.cmd{background:var(--panel);border:1px solid var(--hair);border-radius:8px;padding:9px 12px;margin:0;overflow-x:auto;color:var(--ink);font-size:13px}
+.cmdrow{display:grid;grid-template-columns:1fr;gap:3px;margin:0 0 10px}
+.cmdrow small{color:var(--ink-faint);font-size:12px}
+ul.rules{margin:0;padding:0;list-style:none}
+ul.rules li{padding:9px 0 9px 22px;border-bottom:1px solid var(--hair-2);position:relative;color:var(--ink-soft);font-size:13.5px}
+ul.rules li:before{content:"\00A7";position:absolute;left:0;color:var(--ink-faint);font-family:var(--serif)}
+.moves .card p{color:var(--ink-soft)}
+footer{padding:30px 0 60px;color:var(--ink-faint);font-family:var(--mono);font-size:12px;line-height:1.9;border-top:1px solid var(--hair)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">Repository control room</p>
+  <h1>A Systems Theory for Today</h1>
+  <p class="meta">
+    branch <b>main</b> &middot; commit <b>87804b4</b> &middot; tag <b>session-4b</b> &middot; last commit <b>2026-07-05</b> &middot; remote <b>none (private/local)</b><br>
+    generated <b>2026-07-05T19:21:20.987Z</b> from live repo measurement &middot; <code>npm run dashboard</code> to refresh
+  </p>
+  <div class="statusbar">
+    <span class="badge big ok">&#10003; all standing checks pass</span>
+    <span class="badge ok">&#10003; pass</span> references
+    <span class="badge ok">&#10003; pass</span> counts
+    <span class="badge ok">&#10003; pass</span> diagrams
+  </div>
+</header>
+
+<section>
+  <h2>Validation status</h2>
+  <p class="sub">The live result of the standing checks (this page ran them). Every number links to its evidence file — the file on disk is the truth.</p>
+  <table>
+    <thead><tr><th>Measured</th><th>Count</th><th>Evidence</th></tr></thead>
+    <tbody>
+      <tr><td>Content files (baseline = METRICS)</td><td class="num">34</td><td><a href="../docs/METRICS.md">docs/METRICS.md</a></td></tr>
+      <tr><td>Catches (C-0NN)</td><td class="num">12</td><td><a href="../logs/CATCHES.md">logs/CATCHES.md</a></td></tr>
+      <tr><td>Learnings (L-0NN)</td><td class="num">9</td><td><a href="../logs/LEARNINGS.md">logs/LEARNINGS.md</a></td></tr>
+      <tr><td>Open questions (Q-0NN)</td><td class="num">12</td><td><a href="../logs/OPEN_QUESTIONS.md">logs/OPEN_QUESTIONS.md</a></td></tr>
+      <tr><td>Live disagreements (D-0NN)</td><td class="num">6</td><td><a href="../logs/OPEN_QUESTIONS.md">logs/OPEN_QUESTIONS.md</a></td></tr>
+      <tr><td>Diagrams (Mermaid + SVG)</td><td class="num">9</td><td><a href="../docs/DIAGRAMS.md">docs/DIAGRAMS.md</a></td></tr>
+      <tr><td>Pressure-tests</td><td class="num">13</td><td><a href="../docs/GOALS.md">docs/GOALS.md</a></td></tr>
+      <tr><td>Ground rules</td><td class="num">23</td><td><a href="../docs/GROUND_RULES.md">docs/GROUND_RULES.md</a></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Canonical sources</h2>
+  <p class="sub">Where the truth lives. Changes here follow the layer discipline (ARCHITECTURE &sect;3-4).</p>
+  <div class="grid two">
+    <div class="card"><h3><a href="../docs/">docs/</a> <span class="tag hand">12 files</span></h3><p>Reference layer — history, landscape, goals, method, metrics, glossary, the diagrams source, the shuttle, the living-document. Author ratifies changes.</p></div>
+    <div class="card"><h3><a href="../panel/">panel/</a> <span class="tag hand">3 files</span></h3><p>Deliberation — the roster and the enacted sessions. Append-only in spirit; overturned claims are marked, not erased.</p></div>
+    <div class="card"><h3><a href="../outputs/">outputs/</a> <span class="tag hand">6 files</span></h3><p>Output — the seeded candidate theories and each theory operationalized (A/B/C), plans, evaluation. Revisions bump a version.</p></div>
+    <div class="card"><h3><a href="../logs/">logs/</a> <span class="tag hand">4 files</span></h3><p>Learning loop — Catches -> Learnings -> rule changes; Open-Questions (the frontier); Reflections.</p></div>
+    <div class="card"><h3><a href="../logs/handoffs/">logs/handoffs/</a> <span class="tag hand">2 files</span></h3><p>The Chat/Code shuttle — work-orders, the append-only cooperation log, the digests, and R3 (the gist).</p></div>
+    <div class="card"><h3><a href="../viz/">viz/</a> <span class="tag hand">hand-authored</span></h3><p>HAND-AUTHORED interactive figures (edit directly). One SVG (figure 05) + Mermaid renders of DIAGRAMS.md.</p></div>
+    <div class="card"><h3><a href="../README.md">(root docs)</a> <span class="tag hand">5 files</span></h3><p>README, ARCHITECTURE, SKILL, CONTRIBUTING, LICENSE — the front door + structural reference.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Generated outputs</h2>
+  <p class="sub">Do not edit these directly (unless tagged hand-authored). Edit the source and regenerate.</p>
+  <div class="grid two">
+    <div class="card"><h3>_site/ <span class="tag gen">generated</span></h3><p>The public reading site, built by Eleventy. <strong>Do not edit</strong> — edit the docs or <code>site/</code>. Git-ignored; built by CI.</p></div>
+    <div class="card"><h3>dashboard/index.html <span class="tag gen">generated</span></h3><p>This cockpit. <strong>Do not hand-edit</strong> — edit <code>scripts/build-dashboard.mjs</code> and run <code>npm run dashboard</code>.</p></div>
+    <div class="card"><h3>logs/handoffs/R3_GIST.md <span class="tag hand">maintained</span></h3><p>Code-maintained gist of the whole — regenerated each digest.</p></div>
+    <div class="card"><h3>node_modules/ <span class="tag gen">generated</span></h3><p>Dependencies. Git-ignored.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Key commands</h2>
+  <p class="sub">Zero-dependency Node checks; Eleventy for the site. Run <code>npm run check</code> before every commit.</p>
+  <div class="cmdrow"><pre class="cmd">npm run build</pre><small>Render the reading site to _site/</small></div>
+  <div class="cmdrow"><pre class="cmd">npm run serve</pre><small>Local dev server with live reload</small></div>
+  <div class="cmdrow"><pre class="cmd">npm run check</pre><small>Standing checks: references + counts + diagrams (run before every commit)</small></div>
+  <div class="cmdrow"><pre class="cmd">npm run dashboard</pre><small>Regenerate this cockpit from live repo state</small></div>
+  <div class="cmdrow"><pre class="cmd">node scripts/ripple.mjs --entity pressure-tests</pre><small>Structural-change -> ripple helper (who references X; missing dependents)</small></div>
+  <div class="cmdrow"><pre class="cmd">node scripts/ripple.mjs --list</pre><small>List the named canonical entities the ripple helper knows</small></div>
+</section>
+
+<section>
+  <h2>Guardrails</h2>
+  <p class="sub">Project-specific disciplines. Break one and the project stops being what it claims to be.</p>
+  <ul class="rules">
+    <li>Nothing genuinely argued is silently erased. Overturned claims are marked overturned; minority reports survive; the logs are append-only (ARCHITECTURE &sect;8).</li>
+    <li>The chair (Claude) does not vote. The author (Hulki Okan Tabak) ratifies. Code executes only ratified work-orders.</li>
+    <li>Two surfaces: the repository is PRIVATE (contribution surface, until the skeleton is stable); the website is PUBLIC (reading surface). Do not make the repo public without ratification (THE_LIVING_DOCUMENT &sect;7).</li>
+    <li>Propagation is Code&#39;s job: a canonical structural change must ripple to every dependent document in the same commit (C-010 / L-006). Use scripts/ripple.mjs, and fail loudly on a dangling reference.</li>
+    <li>The content baseline is 34 files and reconciles with docs/METRICS.md. Code-layer files (digests, R3, this dashboard) are excluded from that count.</li>
+    <li>The three studies are GATED: prepared, not run. Running any of them crosses Gate 2 (heavy Code) and requires a fresh ratified work-order.</li>
+    <li>Do not edit generated output (_site/, dashboard/index.html). viz/*.html ARE hand-authored — edit them directly.</li>
+    <li>Every doc carries a versioned header (Version &middot; Status &middot; Last updated: Session N). Append to the cooperation log on every Chat&harr;Code exchange.</li>
+  </ul>
+</section>
+
+<section class="moves">
+  <h2>Next moves</h2>
+  <p class="sub">The cockpit hands you a move, not just numbers.</p>
+  <div class="grid two">
+    <div class="card"><h3>Deploy the reading site</h3><p>Push the private repo to GitHub as <code>systems-theory-today</code>, enable Pages (Source: GitHub Actions). CI builds with PATH_PREFIX=/systems-theory-today/ and deploys to <a href="https://hulkiokantabak.github.io/systems-theory-today/">hulkiokantabak.github.io/systems-theory-today</a>. Repo stays private.</p></div>
+    <div class="card"><h3>Work the frontier</h3><p>Start at <a href="../logs/OPEN_QUESTIONS.md">OPEN_QUESTIONS.md</a> — Q-001 (operationalize the gap into a tested claim) is the flagship; Q-012 (C&#39;s entangled baseline) is next.</p></div>
+    <div class="card"><h3>Toward Heavy Code (gated)</h3><p>Finalize <a href="../studies/study-B-optimization/PRE_REGISTRATION.md">Study B&amp;#39;s pre-registration</a> (cheapest) and emit a fresh ratified work-order. Running a study is Gate 2.</p></div>
+    <div class="card"><h3>Regenerate this cockpit</h3><p>After any change to the repo&#39;s shape, run <code>npm run dashboard</code> and commit; the counts/status above will refresh.</p></div>
+  </div>
+</section>
+
+<footer>
+  Generated by <code>scripts/build-dashboard.mjs</code> from live repo measurement &middot; self-contained, no external resources &middot; counts link to their evidence files.<br>
+  Not published on the public reading site (a maintainer surface, like logs/handoffs/). What is not tracked here (site traffic, GitHub stars) is not available offline / while the repo is private.<br>
+  A Systems Theory for Today &middot; Hulki Okan Tabak &mdash; with Claude &middot; docs CC BY-SA 4.0 / code MIT.
+</footer>
+</div>
+</body>
+</html>

@@ -12,7 +12,11 @@ npm run check                      # same, via package.json
 
 node scripts/check-references.mjs  # every internal reference resolves
 node scripts/check-counts.mjs      # counts reconcile with docs/METRICS.md
+node scripts/check-counts.mjs --json  # machine-readable counts (used by the dashboard)
 node scripts/check-diagrams.mjs    # diagrams parse; figure 05 is SVG; counts agree
+
+node scripts/build-dashboard.mjs   # regenerate the cockpit: dashboard/index.html + status.json
+npm run dashboard                  # same, via package.json
 
 node scripts/ripple.mjs --list                 # named canonical entities
 node scripts/ripple.mjs --entity pressure-tests# who references it + missing dependents
@@ -36,6 +40,11 @@ node scripts/ripple.mjs "designed disagreement"# any phrase
 - **ripple** — given a changed thing, lists every document that references it (so the ripple is
   applied in the *same* commit) and fails loudly if a declared propagation target has no
   reference at all ("Chat decides *what* changes; Code guarantees it *propagates*").
+- **build-dashboard** — regenerates the repository **cockpit** (`dashboard/index.html` +
+  `status.json`) from live measurement: it runs the three checks, reads the counts (via
+  `check-counts --json`), and bakes canonical sources / generated outputs / commands / guardrails,
+  each linked to its evidence. Self-contained, no external resources; a maintainer surface,
+  excluded from the site and the content baseline. Regenerate at handoff.
 
 ## Design notes
 
