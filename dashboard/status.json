@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-06T11:14:50.368Z",
+  "generatedAt": "2026-07-06T11:17:57.315Z",
   "project": "A Systems Theory for Today",
   "git": {
     "branch": "main",
-    "commit": "d94b75d",
+    "commit": "292b876",
     "tag": "session-4c",
     "lastDate": "2026-07-06",
     "hasRemote": true
   },
   "validation": {
-    "references": false,
+    "references": true,
     "counts": true,
     "diagrams": true,
-    "overall": false
+    "overall": true
   },
   "counts": {
     "contentFiles": 34,
