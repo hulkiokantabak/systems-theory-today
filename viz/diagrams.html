@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSP mirrored from the site's base.njk (S4c hardening), tailored to this standalone page:
+     inline <style>/<script>, Google Fonts, and Mermaid from cdnjs. No GoatCounter here (the
+     Eleventy pages carry the beacon; this page is not counted, to avoid double-counting). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; worker-src 'self' blob:">
 <title>A Systems Theory for Today — the logic, drawn</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

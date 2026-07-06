@@ -24,6 +24,7 @@ export const CODE_LAYER_DIRS = new Set([
 export const CODE_LAYER_FILES = new Set([
   'logs/handoffs/DIGEST_S4.md',
   'logs/handoffs/DIGEST_S4b.md',
+  'logs/handoffs/DIGEST_S4c.md',
   'logs/handoffs/R3_GIST.md',
 ]);
 

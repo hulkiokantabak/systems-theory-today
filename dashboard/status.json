@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-07-05T21:31:04.510Z",
+  "generatedAt": "2026-07-06T11:14:50.368Z",
   "project": "A Systems Theory for Today",
   "git": {
     "branch": "main",
-    "commit": "62936cd",
-    "tag": "session-4b",
+    "commit": "d94b75d",
+    "tag": "session-4c",
     "lastDate": "2026-07-06",
     "hasRemote": true
   },
   "validation": {
-    "references": true,
+    "references": false,
     "counts": true,
     "diagrams": true,
-    "overall": true
+    "overall": false
   },
   "counts": {
     "contentFiles": 34,
-    "catches": 12,
+    "catches": 13,
     "learnings": 9,
     "openQuestions": 12,
     "disagreements": 6,
@@ -36,6 +36,7 @@
   "codeLayerExcluded": [
     "logs/handoffs/DIGEST_S4.md",
     "logs/handoffs/DIGEST_S4b.md",
+    "logs/handoffs/DIGEST_S4c.md",
     "logs/handoffs/R3_GIST.md"
   ],
   "gates": {

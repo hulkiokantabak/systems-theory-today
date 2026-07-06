@@ -1,6 +1,6 @@
 # METRICS
 
-Version: 0.4 · Status: Living · Last updated: Session 4
+Version: 0.4 · Status: Living · Last updated: Session 4c (Code-layer metrics hygiene)
 
 *Everything we count, from prompts to outputs. Updated at the end of every session. Metrics are a mirror, not a target — we track them to see the project honestly, not to game them.*
 
@@ -12,6 +12,8 @@ Version: 0.4 · Status: Living · Last updated: Session 4
 | 2 | Session 2 | Expand: survey the contemporary field; re-debate & restructure the pressure-tests; log all disagreements; draw the project's logic; design the Chat/Code shuttle; propagate 7→13 through all docs | 6 new files; Landscape survey; Session-2 pressure-test deliberation (7→13, layered); Open-Questions & Disagreements log; 8 Mermaid diagrams; path-to-Code decision tree; Chat/Code workflow; full propagation pass |
 | 3 | Session 3 | Phase 1 begins: resolve the shuttle's open questions (multi-register memory, timing, two surfaces); crystallize the living-document concept; operationalize Theory A (Q-001) with a signed causal loop | 2 new files; THE_LIVING_DOCUMENT; THEORY_A_OPERATIONALIZED (rate-indices + falsification + pre-registered study); DIAGRAMS §9 (Theory-A causal loop); Q-010 resolved (multi-register); L-008 |
 | 4 | Session 4 | Ratify A + living-doc; operationalize & ratify Theories B and C; promote L-001→Rule 22 (with L-009→Rule 23); reflect; build the cooperation log; prepare the hand-off to Code | 5 new files; THEORY_B / THEORY_C_OPERATIONALIZED; first work-order + COOPERATION_LOG (`logs/handoffs/`); REFLECTIONS; Q-012; C-012/L-009; Rules 22–23; hand-off zip + Code prompt (downloads) |
+| 4b | Session 4b | Code layer (author-direct): stand up the two surfaces in public — GoatCounter analytics + PWA home-screen icon + README convention + a globalized skill; a control-room dashboard; repo pushed **private**, site went **LIVE** on Pages; added Colophon/About/History/Summary pages, a day/night theme, Save-as-PDF/Share, and the Facts & Figures rebuild | site + skill infrastructure (Code layer); **no canonical content added** (34 unchanged) |
+| 4c | Session 4c | Code layer: metrics hygiene (log **C-013**; refresh this file); mirror the site CSP into the two `viz/*.html` pages; finalize Study B's pre-registration + emit a heavy-Code work-order (**prepared, gated — not run**) | C-013; this METRICS refresh; viz-page CSP; Study-B finalization-candidate + heavy-Code work-order |
 
 ## 2. Cumulative counters — per-session snapshots
 
@@ -100,6 +102,24 @@ Version: 0.4 · Status: Living · Last updated: Session 4
 | Catches / Learnings | 12 / 9 | +1 / +1 | + C-012 (loop latency: L-001 sat queued 3 sessions) → L-009 |
 | Diagrams | 9 | 0 | |
 | Approx. words of content (cumulative) | ~47,000 | +~5,000 | All documents (+ reflection, cooperation log) |
+
+### Snapshot — Session 4b–c (Code layer, current)
+
+*A Code-layer maintenance snapshot. The canonical content baseline is **unchanged (34)**; the site, scripts, studies, dashboard, digests, and R3 are Code-layer infrastructure, excluded from the baseline and tracked separately (see `scripts/lib/repo.mjs`). The only canonical-count change is **catches 12 → 13** — C-013, the stale-count near-miss from the S4 work-order header, logged in the S4c metrics-hygiene pass. This block restates the reconciliation-relevant counts at their current values so the standing check reads the latest snapshot.*
+
+| Metric | Value | Δ vs S4 | Notes |
+|---|---|---|---|
+| Files created | 34 | 0 | Canonical baseline unchanged; Code-layer infra tracked separately (below) |
+| Catches / Learnings | 13 / 9 | +1 / 0 | + C-013 (stale-count near-miss from the S4 work-order header, logged in the metrics-hygiene pass) |
+| Open questions | 12 | 0 | |
+| Live disagreements logged | 6 | 0 | |
+| Diagrams | 9 | 0 | |
+| Pressure-tests defined | 13 | 0 | |
+| Ground rules | 23 | 0 | |
+| Log documents (logs/, excl. handoffs/) | 4 | +1 vs S2 | Catches, Learnings, Open-Questions, **Reflections** — corrects the F-2 stale sub-count (last stated 3 at S2) |
+| Handoffs (logs/handoffs/) — canonical | 2 | 0 | `WORK_ORDER_S4`, `COOPERATION_LOG` (the two digests + R3 are Code-layer, excluded) |
+
+**Session 4 — Code layer (added outside the canonical baseline).** So METRICS reflects the whole repo, not just the canonical content, the Code sessions added: the Eleventy **reading site** (`site/`), the four standing-check **scripts** + ripple helper (`scripts/`), the three **gated study scaffolds** (`studies/`), the generated **control-room dashboard** (`dashboard/`), the CI **workflow** (`.github/`), and the shuttle artifacts **R3** + the session **digests** (`logs/handoffs/`, Code-layer). GoatCounter analytics, a PWA home-screen icon + manifest, and a day/night theme were added to the public site. None of these count in the 34-file canonical baseline.
 
 ## 3. What we track and why
 

@@ -1,6 +1,6 @@
 # STUDIES — pre-registered empirical scaffolds (GATED)
 
-Version: 0.1 · Status: **Scaffold only — GATED (do not run)** · Last updated: Session 4
+Version: 0.1 · Status: **Scaffold only — GATED (do not run)** · Last updated: Session 4c
 
 > ## ⛔ GATE
 > These are **skeletons**, prepared under `WORK_ORDER_S4` task 6. **No analysis is run in this session, and no data is ingested.** Running any study crosses **Gate 2 (heavy Code)** in the path-to-Code decision tree (`docs/DIAGRAMS.md` §7) and requires a **fresh, author-ratified work-order** plus a **finalized pre-registration**. The scripts here refuse to run until that gate is passed (they print the gate notice and exit).
@@ -27,7 +27,7 @@ The build order is **B → A → C**, deliberately cheapest-first:
 
 ## Status of each pre-registration
 
-All three pre-registrations are **DRAFT — not finalized, not ratified.** Finalizing and ratifying a pre-registration is a Chat/author act; running it is a subsequent heavy-Code work-order. See each study's `PRE_REGISTRATION.md` / `PROTOCOL.md`.
+Study **B**'s pre-registration is now a **FINALIZATION CANDIDATE** (Code-proposed specifics for author/Chat to ratify or amend; not yet finalized/ratified), and its first **heavy-Code work-order** is prepared and gated (`study-B-optimization/WORK_ORDER_HEAVY_B.md`, author-ratified: **NO**). Studies **A** and **C** remain **DRAFT — not finalized, not ratified.** Finalizing and ratifying a pre-registration is a Chat/author act; running it is a subsequent heavy-Code work-order. See each study's `PRE_REGISTRATION.md` / `PROTOCOL.md`.
 
 ---
 

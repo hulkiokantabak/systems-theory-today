@@ -1,7 +1,7 @@
 // facts.js — the project's own content-level facts, from the repo's real records
 // (docs/METRICS.md, GOALS.md, outputs/CANDIDATE_THEORIES.md, panel/PANEL_ROSTER.md).
 // Every number here traces to a source file; the Facts & Figures page links each to it.
-// Version: 1.0 · Last updated: Session 4b
+// Version: 1.0 · Last updated: Session 4c
 export default {
   // headline stat-cards
   cards: [
@@ -49,7 +49,7 @@ export default {
 
   // the learning loop counters (logs/)
   loop: [
-    { n: 12, label: 'catches logged', src: 'logs/CATCHES.md' },
+    { n: 13, label: 'catches logged', src: 'logs/CATCHES.md' },
     { n: 9, label: 'learnings distilled', src: 'logs/LEARNINGS.md' },
     { n: 12, label: 'open questions', src: 'logs/OPEN_QUESTIONS.md' },
     { n: 23, label: 'ground rules', src: 'docs/GROUND_RULES.md' },

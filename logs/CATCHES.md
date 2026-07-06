@@ -1,6 +1,6 @@
 # CATCHES
 
-Version: 0.4 · Status: Living · Last updated: Session 4
+Version: 0.4 · Status: Living · Last updated: Session 4c
 
 *Every error caught, near-miss, and correction — logged as it happens. A catch is not a failure; an **uncaught** error is. This log is the raw feed; the distilled patterns move to `LEARNINGS.md`, and when a learning changes a rule it is noted in `GROUND_RULES.md` and `METRICS.md`.*
 
@@ -107,7 +107,8 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Session 1:** 6 catches. Standing/unresolved: C-001 (roster diversity), C-002 (Heidegger governor), C-006 (chair's resolution bias).
 - **Session 2:** 5 catches (C-007–C-011). **C-007 is the first catch made *by* a prior learning** (L-001) — the loop closing. **C-010 and C-011 were caught by the author**, a reminder that the human ratifier is part of the error-catching apparatus, not outside it.
 - **Session 4:** 1 catch (C-012, below) — the loop caught a flaw in *itself*.
-- **Cumulative: 12 catches.** Active standing guards carried forward: C-001, C-002, C-006, C-009, the propagation discipline (C-010 → L-006), the render-validation discipline (C-011 → L-007), and now the promotion-latency discipline (C-012 → L-009).
+- **Session 4c (Code layer):** 1 catch (C-013, below) — the stale-count near-miss from the Session-4 work-order header, formally logged during the metrics-hygiene pass; the count-reconciliation check is its standing guard.
+- **Cumulative: 13 catches.** Active standing guards carried forward: C-001, C-002, C-006, C-009, the propagation discipline (C-010 → L-006), the render-validation discipline (C-011 → L-007), the promotion-latency discipline (C-012 → L-009), and the count-reconciliation guard (C-013 → `scripts/check-counts.mjs`).
 
 ### C-012 — A ratified learning sat un-promoted for three sessions (loop latency)
 - **Where:** L-001 (draft-dissent-first; label agreement-strength) was distilled in Session 1 and flagged "queued for promotion into the Ground Rules." It stayed queued through Sessions 2 and 3, and was only folded into `GROUND_RULES.md` (as Rule 22) in Session 4.
@@ -115,3 +116,12 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Caught by:** the Session-4 reflection (the self-audit surfaced it) — and, upstream, the author, who kept the promotion on the task list until it happened.
 - **Corrected:** L-001 promoted to Rule 22 this session; the general lesson distilled as **L-009** (promote promptly) and itself promoted to Rule 23 — so the fix is structural, not one-off.
 - **Class:** `process`. **Consequence:** L-009; Rules 22–23.
+
+## Session 4c (Code layer)
+
+### C-013 — Stale counts in the Session-4 work-order header (a near-miss the count-check now guards)
+- **Where:** `logs/handoffs/WORK_ORDER_S4.md`, "Repo state at handoff" — it read **32 files; C-011, L-008**, while `docs/METRICS.md` (S4), the cooperation log (entry-5 detail), and on-disk reality all agreed on **34 files; C-012, L-009, Q-012, D-006**.
+- **What went wrong:** a hand-off artifact carried stale counts from an earlier draft. Had Code trusted the header instead of measuring the repo, the wrong numbers could have propagated — the same deferred/mis-propagation class as C-010, surfacing this time inside the shuttle's own coordination layer.
+- **Caught by:** Code's **count-reconciliation check** (`scripts/check-counts.mjs`) during the Session-4 build — surfaced as `logs/handoffs/DIGEST_S4.md` finding **F-1**, recommended for logging as C-013, and formally logged now (Session 4c) in the metrics-hygiene pass. (The gap between finding and logging is itself a small instance of the C-012 promotion-latency pattern.)
+- **Corrected:** the check reconciles every tracked count against `METRICS.md` on every run, so a stale header can no longer pass silently; `METRICS.md` was refreshed with a Code-layer snapshot (the Session 4b–c block). The ratified work-order was **left unedited** (append-only intent — Code does not rewrite ratified hand-offs); the corrected figures already live in the cooperation log and METRICS.
+- **Class:** `process` / `near-miss`. **Consequence:** no new rule — the count-reconciliation check *is* the structural guard.

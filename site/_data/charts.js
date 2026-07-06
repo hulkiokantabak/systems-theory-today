@@ -2,7 +2,7 @@
 // build time from site/_data/facts.js. Per the data-viz panel (Tufte/Bertin/Cairo/
 // Meadows/Skeptic): lead with the gap, never a bare median, show the zeros, no false
 // precision, color never the only channel. SVGs use CSS classes (c-ink, c-amber, …) so
-// they adapt to the day/night theme. Version: 1.0 · Session 4b
+// they adapt to the day/night theme. Version: 1.0 · Session 4c
 import facts from './facts.js';
 
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
@@ -67,7 +67,7 @@ function sparklines() {
     { title: 'Files', vals: T.files },
     { title: 'Words (k)', vals: T.words, approx: true },
     { title: 'Dissents preserved', vals: T.dissents, note: 'flat since S2' },
-    { title: 'Catches', vals: T.catches },
+    { title: 'Catches', vals: T.catches, note: '13th (C-013) logged post-S4' },
     { title: 'Falsifiable claims', vals: [1, 3, 3, 3], note: 'hand-judged' },
   ];
   return series.map((se) => {
