@@ -1,6 +1,16 @@
-# Study B — dependencies for the FUTURE heavy-Code session (NOT installed this session).
-# Pinned versions are chosen when the gate opens and the pre-registration is frozen.
-pandas
-numpy
-scipy
-statsmodels
+# Study B — dependencies
+#
+# ZERO EXTERNAL DEPENDENCIES — Python 3 standard library ONLY.
+#
+# This is deliberate. The pre-registered pipeline is frozen and hashed before any
+# outcome is examined; pinning it to the standard library means the frozen code runs
+# in ANY environment without a network connection or a pip install. z-scoring, means,
+# correlation, OLS / segmented-regression (interrupted time series), and the matrix
+# algebra are all implemented by hand in src/indices.py and src/analyze.py using only
+# the stdlib (math, json, hashlib, dataclasses, pathlib, datetime).
+#
+# Nothing to install. Do NOT add pandas / numpy / scipy / statsmodels: they are not
+# available here (no network) and are not needed. Adding them would break the
+# "runs anywhere, frozen" guarantee.
+#
+# Verified interpreter: Python 3.12 (works on 3.10+).

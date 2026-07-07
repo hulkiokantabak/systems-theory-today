@@ -41,7 +41,7 @@ systems-theory-today/
 │   └── THE_LIVING_DOCUMENT.md    # What makes this live vs static — metabolism, test, failure modes
 │
 ├── panel/                        # The deliberating body
-│   ├── PANEL_ROSTER.md           # Core 10 + advisory 20 + extended bench
+│   ├── PANEL_ROSTER.md           # Core 10 + advisory 22 + extended bench
 │   ├── SEVEN_ROUND_DISCUSSION.md # Founding seven-round deliberation
 │   └── SESSION_2_PRESSURE_TESTS.md  # S2: re-debate & expand the pressure-tests (7→13, layered)
 │

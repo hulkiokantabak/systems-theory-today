@@ -36,7 +36,7 @@ And underneath all of them: what explains the apparent *loss of shared ideology,
 
 ## What this is (and is not)
 
-- It **is** a research program run as *designed disagreement*: a standing panel of ten thinkers, backed by a twenty-person advisory bench, argue, rate, vote things down, and dissent — and a chair (Claude) synthesizes without voting, while the author ratifies.
+- It **is** a research program run as *designed disagreement*: a standing panel of ten thinkers, backed by a twenty-two-person advisory bench, argue, rate, vote things down, and dissent — and a chair (Claude) synthesizes without voting, while the author ratifies.
 - It **is** a living document. After publication it is meant to be forked, cloned, contradicted, and extended. The website is a front door, not a fence.
 - It **is not** a claim to have found the answer. Our own candidate theories (see `outputs/CANDIDATE_THEORIES.md`) are seeds, explicitly provisional, offered for others to break.
 - It **is not** neutral-to-the-point-of-emptiness. Panelists take sides. The project has opinions. It also has a discipline for catching and correcting its own mistakes (`logs/`).
@@ -49,7 +49,7 @@ And underneath all of them: what explains the apparent *loss of shared ideology,
 | 2 | `docs/HISTORY_OF_SYSTEMS_THEORIES.md` | The intellectual spine: every previous total system, who built it, when, and how it fell |
 | 3 | `docs/LANDSCAPE_OF_CONTEMPORARY_SYSTEMS_THEORIES.md` | What's out there **now** — cliodynamics, complexity science, Luhmann, polycrisis/metacrisis, Big History, metamodernism, integral theory — what each reaches, can't, and the gap we aim at |
 | 4 | `docs/GOALS.md` | What we are trying to do — and the expanded, layered pressure-tests |
-| 5 | `panel/PANEL_ROSTER.md` | The ten-person core panel + twenty advisors, and the fights they will have |
+| 5 | `panel/PANEL_ROSTER.md` | The ten-person core panel + twenty-two advisors, and the fights they will have |
 | 6 | `panel/SEVEN_ROUND_DISCUSSION.md` | The panel's founding seven-round deliberation, enacted |
 | 7 | `panel/SESSION_2_PRESSURE_TESTS.md` | The panel re-debating and expanding the pressure-tests (7→13, layered), with dissent |
 | 8 | `outputs/INITIAL_EVALUATION.md` | The panel's preliminary hypotheses |

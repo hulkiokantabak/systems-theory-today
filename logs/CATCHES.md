@@ -1,6 +1,6 @@
 # CATCHES
 
-Version: 0.4 · Status: Living · Last updated: Session 4c
+Version: 0.4 · Status: Living · Last updated: Session 4e
 
 *Every error caught, near-miss, and correction — logged as it happens. A catch is not a failure; an **uncaught** error is. This log is the raw feed; the distilled patterns move to `LEARNINGS.md`, and when a learning changes a rule it is noted in `GROUND_RULES.md` and `METRICS.md`.*
 
@@ -108,7 +108,8 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Session 2:** 5 catches (C-007–C-011). **C-007 is the first catch made *by* a prior learning** (L-001) — the loop closing. **C-010 and C-011 were caught by the author**, a reminder that the human ratifier is part of the error-catching apparatus, not outside it.
 - **Session 4:** 1 catch (C-012, below) — the loop caught a flaw in *itself*.
 - **Session 4c (Code layer):** 1 catch (C-013, below) — the stale-count near-miss from the Session-4 work-order header, formally logged during the metrics-hygiene pass; the count-reconciliation check is its standing guard.
-- **Cumulative: 13 catches.** Active standing guards carried forward: C-001, C-002, C-006, C-009, the propagation discipline (C-010 → L-006), the render-validation discipline (C-011 → L-007), the promotion-latency discipline (C-012 → L-009), and the count-reconciliation guard (C-013 → `scripts/check-counts.mjs`).
+- **Session 4d–4e (Chat + Code):** 4 catches — C-014 (the panel's missing measurement seat), C-015 (Study C's self-administration confound), C-016 (HC2/HC3 partial circularity), and C-017 (Study B is un-runnable in a data-less environment).
+- **Cumulative: 17 catches.** Active standing guards carried forward: C-001, C-002, C-006, C-009, the propagation discipline (C-010 → L-006), the render-validation discipline (C-011 → L-007), the promotion-latency discipline (C-012 → L-009), the count-reconciliation guard (C-013 → `scripts/check-counts.mjs`), the measurement-seat requirement (C-014 → L-011), and the cross-model / data-feasibility requirements for studies (C-015/C-017 → L-010/L-012).
 
 ### C-012 — A ratified learning sat un-promoted for three sessions (loop latency)
 - **Where:** L-001 (draft-dissent-first; label agreement-strength) was distilled in Session 1 and flagged "queued for promotion into the Ground Rules." It stayed queued through Sessions 2 and 3, and was only folded into `GROUND_RULES.md` (as Rule 22) in Session 4.
@@ -125,3 +126,30 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Caught by:** Code's **count-reconciliation check** (`scripts/check-counts.mjs`) during the Session-4 build — surfaced as `logs/handoffs/DIGEST_S4.md` finding **F-1**, recommended for logging as C-013, and formally logged now (Session 4c) in the metrics-hygiene pass. (The gap between finding and logging is itself a small instance of the C-012 promotion-latency pattern.)
 - **Corrected:** the check reconciles every tracked count against `METRICS.md` on every run, so a stale header can no longer pass silently; `METRICS.md` was refreshed with a Code-layer snapshot (the Session 4b–c block). The ratified work-order was **left unedited** (append-only intent — Code does not rewrite ratified hand-offs); the corrected figures already live in the cooperation log and METRICS.
 - **Class:** `process` / `near-miss`. **Consequence:** no new rule — the count-reconciliation check *is* the structural guard.
+
+## Session 4d–4e (Chat + Code)
+
+### C-014 — The panel lacked a measurement / causal-inference seat
+- **Where:** the empirical turn (studies A/B/C). The panel was composed for *philosophical* deliberation; when the Study-B pre-registration needed construct-validity and causal-identification judgment, a voice (Campbell) had to be summoned ad hoc.
+- **Caught by:** the Study-B deliberation (Session 4d), logged in that pre-registration §10.
+- **Corrected:** the roster amendment adding **Campbell + Pearl** (ratified S4e; `panel/PANEL_ROSTER_AMENDMENT-measurement.md`). → distilled as **L-011**.
+- **Class:** `process`.
+
+### C-015 — Study C's ablation is self-administered (dominant confound)
+- **Where:** the Study-C pilot run (Session 4e). One model generated *and* coded both arms while knowing the hypothesis.
+- **What went wrong:** effort-matching and coding-neutrality are unverifiable from inside; the run is **directional-only**, never inferential. This sharpens **Q-012** from "the baseline is entangled" to "**the ablation is self-administered**."
+- **Caught by:** the pilot run itself (running the study tested the study's design).
+- **Corrected (recommended):** a **different model** (or human coders), blind to arm and hypothesis, for an arm and/or the coding. → distilled as **L-010**; captured in `skills/study-discipline/SKILL.md` §5.
+- **Class:** `substantive` (methodology).
+
+### C-016 — HC2/HC3 in Study C are partly definitional
+- **Where:** the Study-C pre-registration / pilot. The single-voice (OFF) arm *by construction* cannot produce "structural" catches or "preserved" dissent, so "ON higher on HC2/HC3" is partly a consequence of the arm definitions, not an empirical discovery.
+- **Corrected (recommended pre-reg revision, applied S4e):** **demote HC2/HC3 to mechanism-description; make HC1 (length-controlled) the primary, non-circular test.** (See `studies/study-C-ablation/outputs/PILOT_RESULT.md` §8.)
+- **Class:** `substantive` (design). Captured in `skills/study-discipline/SKILL.md` §5 ("partially-circular hypotheses").
+
+### C-017 — Study B cannot be empirically run in a data-less Code environment (Code-found, S4e)
+- **Where:** the Study-B heavy-Code run (Session 4e). Gate 2 was legitimately open (ratified pre-registration + ratified work-order), so Code attempted the run.
+- **What went wrong:** Study B's instrument is **external real-world data** (DSA Art. 27/38 disclosures, SEC filings, peer-reviewed problematic-use/diffusion/well-being studies, survey series). The available Code environment has **no network, no datasets, and no data-science stack**, and the author confirmed **real data will not be supplied**. A model can only "produce" O/P values by recalling them from training — unpinned, unverifiable, non-blind — which is **fabrication**, and precisely the **Campbell's-Law corruption B's own pre-registration §8 names as its chief risk**. So B's empirical run is *not executable* here, and must not be faked.
+- **Caught by:** Code, on assessing the run against the environment; surfaced to the author, who confirmed the data constraint.
+- **Corrected:** Code built and **froze the pre-registered analysis pipeline** (the honest, data-independent deliverable — zero-dependency, self-tested on clearly-labeled synthetic fixtures, hashed) and recorded the honest terminal state in `studies/study-B-optimization/RUN_STATUS.md` — **no empirical result produced, no data fabricated.** B stays *instrument-built, world-untested*. Parallels the Study-C pilot's C-run-3 (the "no-Code study" can need Code; the "no-data study" can't run without data). → distilled as **L-012**.
+- **Class:** `process` / methodology.

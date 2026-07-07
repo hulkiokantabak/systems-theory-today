@@ -9,7 +9,7 @@ export default {
     { n: '~47k', label: 'words of content', src: 'docs/METRICS.md' },
     { n: '13', label: 'pressure-tests, in 4 layers', src: 'docs/GOALS.md' },
     { n: '3', label: 'candidate theories — all operationalized', src: 'outputs/CANDIDATE_THEORIES.md' },
-    { n: '10 + 20', label: 'core panel + advisory bench', src: 'panel/PANEL_ROSTER.md' },
+    { n: '10 + 22', label: 'core panel + advisory bench', src: 'panel/PANEL_ROSTER.md' },
     { n: '6', label: 'standing disagreements preserved', src: 'logs/OPEN_QUESTIONS.md' },
   ],
 

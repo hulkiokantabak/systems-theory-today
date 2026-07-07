@@ -1,6 +1,6 @@
 # LEARNINGS
 
-Version: 0.4 · Status: Living · Last updated: Session 4
+Version: 0.4 · Status: Living · Last updated: Session 4e
 
 *Distilled, durable lessons — the signal extracted from the raw feed in `CATCHES.md`. A catch becomes a learning when it names a pattern likely to recur. A learning earns its keep only when it **changes something**: a rule, a procedure, the roster, or the method. Each entry below names the change it caused.*
 
@@ -77,6 +77,28 @@ Each entry: **ID** · the lesson (one line) · the evidence (which catches/round
 - **Evidence:** C-012 — L-001 was distilled in Session 1 and only promoted (to Rule 22) in Session 4, three sessions late.
 - **Change it caused:** promoted to **Rule 23** ("promote learnings promptly"); and a standing practice — every session that ratifies a rule-implying learning folds it into `GROUND_RULES.md` the same session. The reflexive self-audit (this reflection) is the backstop that catches any promotion that slips.
 - **Status:** active; a rule about how the rules get updated.
+
+---
+
+## Session 4d–4e
+
+### L-010 — A reflexive/ablation study cannot be self-administered by one model
+- **Lesson:** to test whether a reasoning *structure* improves a model's own output, the compared arms and/or the coding must come from a **different model or human coders, blind to arm and hypothesis.** A single model generating and grading both arms is confounded beyond repair for inference — it can calibrate, not confirm. Also: elevate the **non-circular** hypothesis (does structure *add*, not *relabel*?) and control for length.
+- **Evidence:** C-015 (the Study-C pilot).
+- **Change it caused:** the new `skills/study-discipline/SKILL.md` §5; a standing requirement of cross-model/human validation for reflexive studies; the Study-C pre-reg revision (HC1 primary, length-controlled, cross-model arm), applied S4e.
+- **Status:** active.
+
+### L-011 — Institute the measurement seat before empirical work
+- **Lesson:** a roster built for philosophical deliberation lacks the competence to *test* claims (construct validity, causal identification). Add and **summon** a measurement/causal-inference seat (Campbell + Pearl) whenever a study or a causal claim is on the table.
+- **Evidence:** C-014 (the roster gap, exposed by the empirical turn).
+- **Change it caused:** the roster amendment (ratified S4e; `panel/PANEL_ROSTER_AMENDMENT-measurement.md`); `skills/study-discipline/SKILL.md` §7.
+- **Status:** active.
+
+### L-012 — Match a study's data needs to the executor's real access before scheduling its run
+- **Lesson:** an empirical study is only runnable where its **data is reachable**. Ratifying a run (opening Gate 2) does not create data; a run scheduled into an environment without network/datasets/deps cannot produce a result — and the one thing it must never do is **fabricate one from model memory**. Confirm the executor can actually obtain the pre-registered sources *before* scheduling the run; otherwise the honest deliverable is the **frozen pre-registered pipeline**, and the result waits for a data-capable context.
+- **Evidence:** C-017 (Study B un-runnable without external data); echoes the Study-C pilot's C-run-3 (scale/orchestration mismatch).
+- **Change it caused:** a pre-run **data-feasibility check** folded into the study discipline; `studies/study-B-optimization/RUN_STATUS.md` as the honest terminal artifact when data is unavailable; Study B's pipeline frozen pending data.
+- **Status:** active.
 
 ---
 

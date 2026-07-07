@@ -21,6 +21,8 @@ studies/**/outputs/*
 !studies/**/data/interim/.gitkeep
 !studies/**/data/processed/.gitkeep
 !studies/**/outputs/.gitkeep
+# Result WRITE-UPS (markdown) ARE tracked — they are the record, not data; figures/tables/CSV stay ignored.
+!studies/**/outputs/*.md
 
 # --- OS / editor / tooling cruft ---
 .DS_Store

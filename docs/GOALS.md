@@ -32,7 +32,7 @@ A candidate theory earns credibility to the degree it illuminates these, without
 
 *Tracked as effects/amplifiers, not top-level tests (revisit): migration, financialization (folded into D3), pandemics/biosecurity, geopolitical/war risk, energy transition (folded into D4/Y4).*
 
-The layering is itself contested — Marx rejects the driver/symptom cut, Nietzsche puts M at the summit not the base, Le Guin notes the ordering encodes a worldview (all preserved in `SESSION_2_PRESSURE_TESTS.md` and `logs/OPEN_QUESTIONS.md`). The visual form is the concept map in `docs/DIAGRAMS.md` §4.
+The layering is itself contested — Marx rejects the driver/symptom cut, Nietzsche puts M at the summit not the base, Le Guin notes the ordering encodes a worldview (all preserved in `SESSION_2_PRESSURE_TESTS.md` and `logs/OPEN_QUESTIONS.md`). The visual form is the concept map in `docs/DIAGRAMS.md` §4. The **signed causal hypothesis** over these thirteen — the arrows drawn with direction, sign, and (where known) delay, deliberately falsifiable and still contested — is `docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md` (ratified as the working hypothesis, Session 4e).
 
 ## Secondary goals
 

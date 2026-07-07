@@ -1,8 +1,8 @@
 # THE PANEL
 
-Version: 0.1 · Status: Draft (author to ratify) · Last updated: Session 1
+Version: 0.2 · Status: Living (amended Session 4e) · Last updated: Session 4e
 
-*Ten core members, twenty advisors on call, an extensible bench. Composed for **productive disagreement** — each entry names not just what the member brings but the **fights** they pick. Panelists are reconstructions of real thinkers' published positions, framed as intellectual positions, not the actual persons (Ground Rule 16).*
+*Ten core members, twenty-two advisors on call, an extensible bench. Composed for **productive disagreement** — each entry names not just what the member brings but the **fights** they pick. Panelists are reconstructions of real thinkers' published positions, framed as intellectual positions, not the actual persons (Ground Rule 16).*
 
 A note on the living: some members are living as of writing (Turchin, West, Christian, Zuboff, Lembke, Han, Karatani, Görtz & Friis); most are historical. This is a simulation of *positions*, so historicity is not a constraint — but where a living figure's current view matters, we source it rather than invent it.
 
@@ -70,7 +70,7 @@ A note on the living: some members are living as of writing (Turchin, West, Chri
 
 ---
 
-## THE ADVISORY TWENTY (on call)
+## THE ADVISORY TWENTY-TWO (on call)
 
 Summoned for the rounds where their expertise bites; summoning is explicit and recorded.
 
@@ -103,6 +103,10 @@ Summoned for the rounds where their expertise bites; summoning is explicit and r
 18. **Byung-Chul Han** (b. 1959) — the burnout society; psychopolitics; the achievement-subject who exploits itself; the crisis of the negative. *Summon for:* dopamine (2), meaning-collapse, and the interior texture of "today."
 19. **Anna Lembke** (b. 1967) — the neuroscience and psychiatry of the dopamine economy; addiction as the model pathology of abundance. *Summon for:* dopamine (2) — the hard-science mechanism.
 20. **Hanzi Freinacht** (pen name of Daniel Görtz & Emil Friis, both b. c. 1980s) — developmental metamodernism; the attempt to *reconstruct* a grand narrative as an avowedly-provisional "proto-synthesis." *Summon for:* the reflexive question — how to build a grand theory *after* postmodernism without repeating its errors; Candidate Theory C's nearest cousin.
+
+**Measurement & causal inference** *(added Session 4e — the measurement seat; full rationale and fight-map in `panel/PANEL_ROSTER_AMENDMENT-measurement.md`)*
+21. **Donald T. Campbell** (1916–1996) — the conscience of measurement and quasi-experiment: **quasi-experimental design** (interrupted time series, regression discontinuity, the named catalogue of *threats to validity*), **construct validity**, and **Campbell's Law** (a quantitative social indicator used for decision-making gets corrupted — Theory B's mechanism stated as a law of measurement). *Summon for:* any study's construct validity (do O, P, G, "a catch" measure the thing or a convenient shadow?) and quasi-experimental design; picks fights with Pearl (name the threats to validity before writing the do-operator) and Turchin (validity comes before retrodiction — are "the gap" and "elite overproduction" *measured* or *reified*?).
+22. **Judea Pearl** (b. 1936) — the formalizer of causation: the ladder of causation (association → intervention → counterfactual), **directed acyclic graphs**, the **do-calculus**, confounder/collider logic — *what causal claim is identifiable from what data.* *Summon for:* the pressure-test causal hypothesis (which *is* a DAG) and any causal claim's identification strategy; picks fights with Campbell (a formal DAG names exactly which confounds matter — no ad-hoc catalogue) and correlational social science ("no causes in, no causes out"). Campbell and Pearl are seated **to disagree productively** — the pragmatist of imperfect data against the formalist of causal structure — which is the designed-disagreement pattern applied to measurement itself.
 
 ---
 
@@ -148,3 +152,4 @@ These five axes are the engine. Any pressure-test, dropped into this panel, ligh
 
 ### Change log
 - **v0.1 (Session 1):** Roster composed. Core fixed at 10 (4 philosophers: Aristotle, Kant, Heidegger, Nietzsche; 2 historians: Ibn Khaldun, Braudel; 2 scientists: Meadows, Turchin; 2 wildcards: Luhmann as social-systems theorist, Le Guin as writer). Greek seat resolved to Aristotle (empirical/taxonomic pole) with Plato's Cave retained as a recurring motif for the post-truth question. Advisory fixed at 20; extended bench opened. Standing catches C-001 (roster diversity) and C-002 (Heidegger's standing objection) logged.
+- **v0.2 (Session 4e):** Advisory expanded 20 → 22 with a **measurement / causal-inference seat** — Donald Campbell (construct validity, quasi-experiment, Campbell's Law) and Judea Pearl (DAGs, do-calculus, identification), chosen to disagree productively. **Ratified by the author (S4e)**; prompted by C-014 (the empirical turn into studies A/B/C exposed the missing competence) → L-011. Rationale + fight-map: `panel/PANEL_ROSTER_AMENDMENT-measurement.md`.

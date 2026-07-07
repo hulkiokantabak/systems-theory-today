@@ -1,11 +1,11 @@
 ---
 name: systems-theory-panel
-version: v0.3
+version: v0.4
 description: >
   Standing panel of real thinkers, run as designed disagreement, on questions of TOTAL explanatory
   scope — building toward a living, forkable systems theory for the present (the "A Systems Theory for
   Today" project). Ten core members (Aristotle, Kant, Heidegger, Nietzsche, Ibn Khaldun, Braudel,
-  Meadows, Turchin, Luhmann, Le Guin), twenty on-call advisors, an extensible bench. The chair (Claude)
+  Meadows, Turchin, Luhmann, Le Guin), twenty-two on-call advisors, an extensible bench. The chair (Claude)
   runs rounds, keeps the record, and DOES NOT vote; the author (Hulki Okan Tabak) ratifies; dissent is
   never erased. Use when the question is whole-system / civilizational / "why is all of this happening
   now" in character — the pressure-tests (a thirteen-test, four-layer set: the founding seven —
@@ -25,7 +25,7 @@ This skill encodes the operating pattern proven in the founding session (`panel/
 
 ## The two-body pattern
 
-- **The Panel** — the *deliberative* body: real thinkers reconstructed as intellectual **positions** (not the actual persons), who argue, rate, and dissent. Ten core; twenty advisors on call; an extensible bench.
+- **The Panel** — the *deliberative* body: real thinkers reconstructed as intellectual **positions** (not the actual persons), who argue, rate, and dissent. Ten core; twenty-two advisors on call; an extensible bench.
 - **The Chair (Claude)** — the *synthesizing* body: restates the question, poses each round, keeps the record, integrates the argument into outputs. **The chair does not vote and does not impose a conclusion.**
 - **The Author (Hulki Okan Tabak)** — ratifies, amends, or rejects. Nothing is load-bearing until ratified.
 
@@ -44,7 +44,7 @@ Composed so almost every question splits the room productively. Full detail in `
 - **Luhmann** — social-systems theory; autopoiesis; functional differentiation; the direct counter-example to "no one tried since Heidegger."
 - **Le Guin** — the writer; ecological and Taoist critique of the control-impulse; at the heart of the commons idea *and* its sharpest warning against mastery.
 
-**Advisory 20** (on call): Hegel, Marx, Morin, Whitehead, Arendt, Han, McLuhan, Wiener, Bateson, Bertalanffy, Prigogine, West, Ostrom, Toynbee, Latour, Christian, Karatani, Zuboff, Lembke, Freinacht (Görtz & Friis). **Extended bench** (single-point summons): Baudrillard, Habermas, Morton, Lovelock/Margulis, Maturana/Varela, Fuller, Spinoza, Raworth, Taleb, DeLanda, Wilber, Harari, Beer, Spengler, Josephson Storm, Nishida, Fromm.
+**Advisory 22** (on call): Hegel, Marx, Morin, Whitehead, Arendt, Han, McLuhan, Wiener, Bateson, Bertalanffy, Prigogine, West, Ostrom, Toynbee, Latour, Christian, Karatani, Zuboff, Lembke, Freinacht (Görtz & Friis), **Campbell** (construct validity, quasi-experiment, Campbell's Law), **Pearl** (DAGs, do-calculus, causal identification) — the measurement seat added S4e. **Extended bench** (single-point summons): Baudrillard, Habermas, Morton, Lovelock/Margulis, Maturana/Varela, Fuller, Spinoza, Raworth, Taleb, DeLanda, Wilber, Harari, Beer, Spengler, Josephson Storm, Nishida, Fromm.
 
 ## The five fault-line axes (the engine)
 
@@ -107,4 +107,4 @@ Once the project has a repository, it runs across two tools — **Chat is the mi
 
 ## Companion skills
 
-Borrow the designed-disagreement DNA from the author's other panels (deep-thinkers for broad pressure-testing; game/product panels for incentive-and-feedback structures; the literary/editorial skills for prose quality). Use project-continuity, project-self-audit, and bundle-consistency for the operational spine. This skill is for **total-scope systems questions**; hand off to the narrower panels when a question is really in their domain.
+Borrow the designed-disagreement DNA from the author's other panels (deep-thinkers for broad pressure-testing; game/product panels for incentive-and-feedback structures; the literary/editorial skills for prose quality). Use project-continuity, project-self-audit, and bundle-consistency for the operational spine. For designing, finalizing, running, and honestly reporting **falsifiable studies** (pre-registration, non-circularity, bind-or-drop, falsifiers-as-results, the self-administration confound, Campbell's Law), use the companion **`study-discipline`** skill (`skills/study-discipline/SKILL.md` — proposed Session 4e, pending author ratification). This skill is for **total-scope systems questions**; hand off to the narrower panels when a question is really in their domain.

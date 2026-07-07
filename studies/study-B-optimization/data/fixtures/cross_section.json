@@ -1,0 +1,19 @@
+{
+  "__SYNTHETIC_BANNER__": "SYNTHETIC — pipeline self-test ONLY — NOT real data — NOT a study result",
+  "purpose": "Exercises indices.py (normalize -> snapshot -> equal-weight composite) and H1 wiring. Values are TOY 2-point ordinal series (0/1) chosen so z-score-of-last is exactly +1 (increasing), 0 (flat), or -1 (decreasing). Unit names are placeholders. NONE of this is platform data or a study result.",
+  "units": ["UNIT_ALPHA", "UNIT_BETA", "UNIT_GAMMA"],
+  "series": {
+    "objective_function": {"UNIT_ALPHA": [0, 1], "UNIT_BETA": [0, 1], "UNIT_GAMMA": [0, 1]},
+    "personalization_depth": {"UNIT_ALPHA": [0, 1], "UNIT_BETA": [0, 1], "UNIT_GAMMA": [1, 0]},
+    "autonomy_from_user_control": {"UNIT_ALPHA": [0, 1], "UNIT_BETA": [1, 1], "UNIT_GAMMA": [1, 0]},
+    "problematic_use": {"UNIT_ALPHA": [0, 1], "UNIT_BETA": [0, 1], "UNIT_GAMMA": [0, 1]},
+    "misinfo_diffusion": {"UNIT_ALPHA": [0, 1], "UNIT_BETA": [1, 1], "UNIT_GAMMA": [1, 0]},
+    "affective_polarization": {"UNIT_ALPHA": [0, 1], "UNIT_BETA": [0, 1], "UNIT_GAMMA": [0, 1]},
+    "wellbeing": {"UNIT_ALPHA": [1, 0], "UNIT_BETA": [1, 0], "UNIT_GAMMA": [1, 0]}
+  },
+  "expected_composites_hand_computed": {
+    "O": {"UNIT_ALPHA": 1.0, "UNIT_BETA": 0.6666666667, "UNIT_GAMMA": -0.3333333333},
+    "P_retained_only": {"UNIT_ALPHA": 1.0, "UNIT_BETA": 0.5, "UNIT_GAMMA": 0.0},
+    "note": "demoted proxies (affective_polarization, wellbeing) are present in the fixture but MUST be excluded from the generic P composite (per PRE_REG §2)."
+  }
+}

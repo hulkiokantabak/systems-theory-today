@@ -1,0 +1,52 @@
+{
+  "__SYNTHETIC_BANNER__": "SYNTHETIC — pipeline self-test ONLY — NOT real data — NOT a study result",
+  "purpose": "Exercises H2: the P-frequency gate (ITS vs degraded before/after), the segmented-regression math, and the falsifier verdicts including a first-class NULL. P-series values are TOY numbers built to recover known regression coefficients; they are NOT real problematic-use measurements and NOT a study result.",
+  "events": [
+    {
+      "event": {
+        "key": "EVT_HIGHFREQ_DEOPT_SCHEMATIC",
+        "platform": "UNIT_ALPHA",
+        "date": "SYNTHETIC-MONTH-0",
+        "direction_label": "de-optimization toward a human end (schematic) — B predicts P falls",
+        "predicted_p_direction": -1
+      },
+      "series": {
+        "proxy": "problematic_use", "cadence": "monthly",
+        "points": [[-6, 102], [-5, 104], [-4, 106], [-3, 108], [-2, 110], [-1, 112],
+                   [0, 101], [1, 100], [2, 99], [3, 98], [4, 97], [5, 96]]
+      },
+      "expected": {"route": "ITS", "level_change_coef": -10.0, "baseline_slope": 2.0,
+                   "slope_change_coef": -3.0, "verdict": "SUPPORTS-B"}
+    },
+    {
+      "event": {
+        "key": "EVT_HIGHFREQ_NULL_SCHEMATIC",
+        "platform": "UNIT_BETA",
+        "date": "SYNTHETIC-MONTH-0",
+        "direction_label": "de-optimization with NO effect (schematic) — demonstrates a reportable NULL",
+        "predicted_p_direction": -1
+      },
+      "series": {
+        "proxy": "problematic_use", "cadence": "monthly",
+        "points": [[-6, 50], [-5, 50], [-4, 50], [-3, 50], [-2, 50], [-1, 50],
+                   [0, 50], [1, 50], [2, 50], [3, 50], [4, 50], [5, 50]]
+      },
+      "expected": {"route": "ITS", "level_change_coef": 0.0, "verdict": "NULL"}
+    },
+    {
+      "event": {
+        "key": "EVT_LOWFREQ_SURVEY_SCHEMATIC",
+        "platform": "UNIT_GAMMA",
+        "date": "SYNTHETIC-YEAR-0",
+        "direction_label": "de-optimization observed only via low-frequency survey (schematic)",
+        "predicted_p_direction": -1
+      },
+      "series": {
+        "proxy": "affective_polarization", "cadence": "annual",
+        "points": [[-12, 40], [-1, 42], [1, 38], [12, 36]]
+      },
+      "expected": {"route": "BEFORE_AFTER", "diff": -4.0, "verdict": "AMBIGUOUS",
+                   "note": "annual cadence -> degrade to labeled low-power before/after; direction only."}
+    }
+  ]
+}

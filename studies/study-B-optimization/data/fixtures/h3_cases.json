@@ -1,0 +1,44 @@
+{
+  "__SYNTHETIC_BANNER__": "SYNTHETIC — pipeline self-test ONLY — NOT real data — NOT a study result",
+  "purpose": "Exercises H3 divergence-case logic (§4.3): follows-pressure / follows-intent / ambiguous, the aligned-not-a-test exclusion, and the guard that the pool MUST admit a B-FALSIFYING candidate. These are SCHEMATIC codings, NOT real case codings and NOT a study result.",
+  "cases": [
+    {
+      "key": "CASE_PRESSURE_WINS_SCHEMATIC",
+      "intent_direction": "human", "pressure_direction": "capture",
+      "coding": "divergent", "outcome_direction": "capture",
+      "is_b_falsifying_candidate": false,
+      "note": "benign/human-centred intent + capture-ward pressure; outcome follows pressure (consistent with B)."
+    },
+    {
+      "key": "CASE_ALIGNED_SCHEMATIC",
+      "intent_direction": "capture", "pressure_direction": "capture",
+      "coding": "aligned", "outcome_direction": "capture",
+      "is_b_falsifying_candidate": false,
+      "note": "intent and pressure aligned -> cannot discriminate; excluded from the test."
+    },
+    {
+      "key": "CASE_INTENT_WINS_SCHEMATIC",
+      "intent_direction": "human", "pressure_direction": "capture",
+      "coding": "divergent", "outcome_direction": "human",
+      "is_b_falsifying_candidate": true,
+      "note": "B-FALSIFYING candidate admitted by the same rule: a documented de-optimization that stuck; outcome follows intent (candidate falsifier #3)."
+    },
+    {
+      "key": "CASE_AMBIGUOUS_SCHEMATIC",
+      "intent_direction": "human", "pressure_direction": "capture",
+      "coding": "divergent", "outcome_direction": "ambiguous",
+      "is_b_falsifying_candidate": false,
+      "note": "divergent case but the independent outcome measure is ambiguous."
+    }
+  ],
+  "expected": {
+    "per_case": {
+      "CASE_PRESSURE_WINS_SCHEMATIC": "follows-pressure",
+      "CASE_ALIGNED_SCHEMATIC": "aligned-not-a-test",
+      "CASE_INTENT_WINS_SCHEMATIC": "follows-intent",
+      "CASE_AMBIGUOUS_SCHEMATIC": "AMBIGUOUS"
+    },
+    "overall_verdict": "AMBIGUOUS",
+    "counts": {"follows_pressure": 1, "follows_intent": 1, "ambiguous": 1, "discriminating": 3}
+  }
+}

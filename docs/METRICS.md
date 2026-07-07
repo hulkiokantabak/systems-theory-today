@@ -1,6 +1,6 @@
 # METRICS
 
-Version: 0.4 · Status: Living · Last updated: Session 4c (Code-layer metrics hygiene)
+Version: 0.4 · Status: Living · Last updated: Session 4e
 
 *Everything we count, from prompts to outputs. Updated at the end of every session. Metrics are a mirror, not a target — we track them to see the project honestly, not to game them.*
 
@@ -14,6 +14,8 @@ Version: 0.4 · Status: Living · Last updated: Session 4c (Code-layer metrics h
 | 4 | Session 4 | Ratify A + living-doc; operationalize & ratify Theories B and C; promote L-001→Rule 22 (with L-009→Rule 23); reflect; build the cooperation log; prepare the hand-off to Code | 5 new files; THEORY_B / THEORY_C_OPERATIONALIZED; first work-order + COOPERATION_LOG (`logs/handoffs/`); REFLECTIONS; Q-012; C-012/L-009; Rules 22–23; hand-off zip + Code prompt (downloads) |
 | 4b | Session 4b | Code layer (author-direct): stand up the two surfaces in public — GoatCounter analytics + PWA home-screen icon + README convention + a globalized skill; a control-room dashboard; repo pushed **private**, site went **LIVE** on Pages; added Colophon/About/History/Summary pages, a day/night theme, Save-as-PDF/Share, and the Facts & Figures rebuild | site + skill infrastructure (Code layer); **no canonical content added** (34 unchanged) |
 | 4c | Session 4c | Code layer: metrics hygiene (log **C-013**; refresh this file); mirror the site CSP into the two `viz/*.html` pages; finalize Study B's pre-registration + emit a heavy-Code work-order (**prepared, gated — not run**) | C-013; this METRICS refresh; viz-page CSP; Study-B finalization-candidate + heavy-Code work-order |
+| 4d | Session 4d | Chat: convened the panel on Study B's four decisions; **finalized + ratified** Study B's pre-registration (v0.3) + heavy-Code work-order — reweighted (H2/H3 the inferential core; O-easy/P-hard; bind/drop/demote proxies), five dissents preserved | Study B pre-reg + work-order **ratified**; recommended roster-gap catch (→ C-014) |
+| 4e | Session 4e | Chat: wrote the project report; **finalized + ratified** Study C's pre-registration; drew the **ratified pressure-test causal hypothesis**; ratified the **roster amendment** (Campbell + Pearl); **ran the first study** (Study-C ablation pilot, N=6, directional). Code: applied the whole S4d–4e change set; **built + froze Study B's pipeline** (no data → no empirical result; honest completion) | C pre-reg / hypothesis / roster amendment **ratified**; Study-C pilot result; C-014…C-017; L-010…L-012; advisors 20→22; +3 canonical docs |
 
 ## 2. Cumulative counters — per-session snapshots
 
@@ -120,6 +122,24 @@ Version: 0.4 · Status: Living · Last updated: Session 4c (Code-layer metrics h
 | Handoffs (logs/handoffs/) — canonical | 2 | 0 | `WORK_ORDER_S4`, `COOPERATION_LOG` (the two digests + R3 are Code-layer, excluded) |
 
 **Session 4 — Code layer (added outside the canonical baseline).** So METRICS reflects the whole repo, not just the canonical content, the Code sessions added: the Eleventy **reading site** (`site/`), the four standing-check **scripts** + ripple helper (`scripts/`), the three **gated study scaffolds** (`studies/`), the generated **control-room dashboard** (`dashboard/`), the CI **workflow** (`.github/`), and the shuttle artifacts **R3** + the session **digests** (`logs/handoffs/`, Code-layer). GoatCounter analytics, a PWA home-screen icon + manifest, and a day/night theme were added to the public site. None of these count in the 34-file canonical baseline.
+
+### Snapshot — Session 4d–4e (current)
+
+*The empirical turn. Chat finalized + ratified Studies B and C, drew the ratified (still contested) pressure-test causal hypothesis, amended the roster with a measurement seat (Campbell + Pearl), and **ran the first study** — the Study-C ablation pilot (directional-only; a self-administration confound). Code applied the change set and **built + froze Study B's pre-registered pipeline** — but Study B's empirical run is **not executable** (no external data, which will not come — C-017), so **B has no result** and none was fabricated. Catches 13→17, learnings 9→12, advisors 20→22, +3 canonical docs. This block restates the reconciliation-relevant counts at current values.*
+
+| Metric | Value | Δ vs S4c | Notes |
+|---|---|---|---|
+| Files created | 37 | +3 | + `docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md`, `docs/REPORT.md`, `panel/PANEL_ROSTER_AMENDMENT-measurement.md` (`studies/` + `skills/` are Code-layer, excluded) |
+| Catches / Learnings | 17 / 12 | +4 / +3 | + C-014 (measurement seat), C-015 (self-administration), C-016 (HC2/HC3 circularity), C-017 (B un-runnable, no data); + L-010, L-011, L-012 |
+| Open questions | 12 | 0 | Q-012 **sharpened** (self-administration), not resolved; no new/closed Q |
+| Live disagreements logged | 6 | 0 | D-001…D-006 remain open by design |
+| Diagrams | 9 | 0 | (`docs/DIAGRAMS.md` blocks; the new signed causal-hypothesis diagram lives in its own doc) |
+| Pressure-tests defined | 13 | 0 | now with a ratified **signed causal hypothesis** over them |
+| Ground rules | 23 | 0 | |
+| Advisory panelists | 22 | +2 | + Campbell + Pearl (the measurement / causal-inference seat), ratified S4e |
+| Theories tested (of 3) | 0 | 0 | A/B operationalized, not run; **C has a first *pilot*** (directional-only); B's pipeline built + frozen, **no data → no result** |
+
+**Studies status (S4e).** **Study C:** first **pilot** result (`studies/study-C-ablation/outputs/PILOT_RESULT.md`) — a directional ON advantage dominated by a self-administration confound; pre-registration revised (HC1 primary/length-controlled; cross-model requirement). **Study B:** Gate 2 ratified/open; Code built + froze the zero-dependency, self-tested, pre-registered pipeline, but the empirical run is **not executable without external data** (C-017 / L-012) — **no result produced, no data fabricated** (`studies/study-B-optimization/RUN_STATUS.md`). **Study A:** unchanged (gated). Also new: the proposed `skills/study-discipline/SKILL.md` skill (Code-layer; pending author ratification).
 
 ## 3. What we track and why
 

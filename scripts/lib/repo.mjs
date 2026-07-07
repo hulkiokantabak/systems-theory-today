@@ -15,7 +15,7 @@ export const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', 
 // (Kept out of the content walk and the reference sweep.)
 export const CODE_LAYER_DIRS = new Set([
   '.git', 'node_modules', '_site', '.cache',
-  'scripts', 'site', 'studies', '.github', 'dashboard',
+  'scripts', 'site', 'studies', '.github', 'dashboard', 'skills',
 ]);
 
 // Code-layer artifacts that live *inside* a canonical directory (added by Code
@@ -25,6 +25,7 @@ export const CODE_LAYER_FILES = new Set([
   'logs/handoffs/DIGEST_S4.md',
   'logs/handoffs/DIGEST_S4b.md',
   'logs/handoffs/DIGEST_S4c.md',
+  'logs/handoffs/DIGEST_S4e.md',
   'logs/handoffs/R3_GIST.md',
 ]);
 

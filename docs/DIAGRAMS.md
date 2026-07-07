@@ -92,6 +92,8 @@ flowchart LR
 
 *The Session-2 restructuring: thirteen tests in four coupled layers, with directed arrows for how drivers produce dynamics produce symptoms — and dashed arrows for the feedback that runs back up. This is the visual we said would out-do "polycrisis": the couplings are **named and directed**, not a blob. It is also a **contested hypothesis**, not a filing system (C-007).*
 
+*The **signed** version of this graph — every load-bearing edge given a direction, a sign, and (where known) a delay, with the R1/R2/B1 loops and the open base-or-summit question drawn — is `docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md` (ratified working hypothesis, Session 4e). That is what turns "everything is connected" into checkable directed claims.*
+
 ```mermaid
 flowchart TB
     M["M · Coherence vacuum<br/>loss of shared meaning<br/>(base or summit — left open, Q-002)"]
