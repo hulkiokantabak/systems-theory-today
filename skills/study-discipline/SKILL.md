@@ -1,7 +1,7 @@
 ---
 name: study-discipline
-version: v0.1
-status: PROPOSED (Chat) — pending author ratification; companion to systems-theory-panel
+version: v1.0
+status: RATIFIED (author, Session 4f) — live; companion to systems-theory-panel
 description: >
   How the "A Systems Theory for Today" project runs FALSIFIABLE STUDIES — the discipline for taking a
   theory's claim from operationalized-on-paper to actually tested. Distinct from systems-theory-panel
@@ -67,4 +67,4 @@ Report the pre-registered falsifiers as results; attach the **preserved dissent*
 
 ---
 
-*Proposed skill, pending ratification. Companion to `systems-theory-panel`. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
+*Ratified skill (author, S4f); live. Companion to `systems-theory-panel`. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*

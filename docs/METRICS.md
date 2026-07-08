@@ -1,6 +1,6 @@
 # METRICS
 
-Version: 0.4 · Status: Living · Last updated: Session 4e
+Version: 0.4 · Status: Living · Last updated: Session 4f
 
 *Everything we count, from prompts to outputs. Updated at the end of every session. Metrics are a mirror, not a target — we track them to see the project honestly, not to game them.*
 
@@ -16,6 +16,7 @@ Version: 0.4 · Status: Living · Last updated: Session 4e
 | 4c | Session 4c | Code layer: metrics hygiene (log **C-013**; refresh this file); mirror the site CSP into the two `viz/*.html` pages; finalize Study B's pre-registration + emit a heavy-Code work-order (**prepared, gated — not run**) | C-013; this METRICS refresh; viz-page CSP; Study-B finalization-candidate + heavy-Code work-order |
 | 4d | Session 4d | Chat: convened the panel on Study B's four decisions; **finalized + ratified** Study B's pre-registration (v0.3) + heavy-Code work-order — reweighted (H2/H3 the inferential core; O-easy/P-hard; bind/drop/demote proxies), five dissents preserved | Study B pre-reg + work-order **ratified**; recommended roster-gap catch (→ C-014) |
 | 4e | Session 4e | Chat: wrote the project report; **finalized + ratified** Study C's pre-registration; drew the **ratified pressure-test causal hypothesis**; ratified the **roster amendment** (Campbell + Pearl); **ran the first study** (Study-C ablation pilot, N=6, directional). Code: applied the whole S4d–4e change set; **built + froze Study B's pipeline** (no data → no empirical result; honest completion) | C pre-reg / hypothesis / roster amendment **ratified**; Study-C pilot result; C-014…C-017; L-010…L-012; advisors 20→22; +3 canonical docs |
+| 4f | Session 4f | Code (author-direct): **study-discipline skill → RATIFIED / live** (installed to the global skills library); **Study B redesigned** — a tractable **documented-case H3 sub-test** (`studies/study-B-optimization/APPROACH_B2_DOCUMENTED_CASES.md`; Facebook MSI 2018 + YouTube 2019, sourced) whose coding is handed to **project-blind external LLMs** (cross-model guard, L-010); a cross-check **package** (prompt + zip) written to the author's Downloads | study-discipline **live**; Study-B `APPROACH_B2` + external cross-check kit; **no canonical-count change** (37) |
 
 ## 2. Cumulative counters — per-session snapshots
 
@@ -139,7 +140,7 @@ Version: 0.4 · Status: Living · Last updated: Session 4e
 | Advisory panelists | 22 | +2 | + Campbell + Pearl (the measurement / causal-inference seat), ratified S4e |
 | Theories tested (of 3) | 0 | 0 | A/B operationalized, not run; **C has a first *pilot*** (directional-only); B's pipeline built + frozen, **no data → no result** |
 
-**Studies status (S4e).** **Study C:** first **pilot** result (`studies/study-C-ablation/outputs/PILOT_RESULT.md`) — a directional ON advantage dominated by a self-administration confound; pre-registration revised (HC1 primary/length-controlled; cross-model requirement). **Study B:** Gate 2 ratified/open; Code built + froze the zero-dependency, self-tested, pre-registered pipeline, but the empirical run is **not executable without external data** (C-017 / L-012) — **no result produced, no data fabricated** (`studies/study-B-optimization/RUN_STATUS.md`). **Study A:** unchanged (gated). Also new: the proposed `skills/study-discipline/SKILL.md` skill (Code-layer; pending author ratification).
+**Studies status (S4e–4f).** **Study C:** first **pilot** result (`studies/study-C-ablation/outputs/PILOT_RESULT.md`) — a directional ON advantage dominated by a self-administration confound; pre-registration revised (HC1 primary/length-controlled; cross-model requirement). **Study B:** Gate 2 ratified/open; Code built + froze the zero-dependency, self-tested, pre-registered pipeline, but the empirical run is **not executable without external data** (C-017 / L-012) — **no result produced, no data fabricated** (`studies/study-B-optimization/RUN_STATUS.md`). **Study A:** unchanged (gated). Also new: the `skills/study-discipline/SKILL.md` skill (Code-layer; **ratified** S4f, live; installed to the global skills library).
 
 ## 3. What we track and why
 

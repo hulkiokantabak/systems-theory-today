@@ -2,6 +2,7 @@
 
 Status: **GATE 2 OPEN (ratified) · PIPELINE BUILT + SELF-TESTED + FROZEN · NO EMPIRICAL RESULT (no external data; none will come) · NOTHING FABRICATED.**
 Pre-registration: `PRE_REGISTRATION.md` v0.3 (author-ratified S4d) · Work-order: `WORK_ORDER_HEAVY_B.md` (author-ratified S4d) · Freeze: `FROZEN_HASHES.md`
+Tractable H3 sub-test (documented cases + project-blind external cross-check, author-directed S4f): `APPROACH_B2_DOCUMENTED_CASES.md` — the O→P *quantitative* run below stays blocked, but B's **selection-not-design** integrity test is being run against the public record.
 
 ---
 
