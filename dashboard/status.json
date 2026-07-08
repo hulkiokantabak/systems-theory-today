@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-07T23:43:34.442Z",
+  "generatedAt": "2026-07-08T15:38:59.833Z",
   "project": "A Systems Theory for Today",
   "git": {
     "branch": "main",
-    "commit": "94163c9",
-    "tag": "session-4e",
+    "commit": "bc619d5",
+    "tag": "session-4f",
     "lastDate": "2026-07-08",
     "hasRemote": true
   },
@@ -38,6 +38,7 @@
     "logs/handoffs/DIGEST_S4b.md",
     "logs/handoffs/DIGEST_S4c.md",
     "logs/handoffs/DIGEST_S4e.md",
+    "logs/handoffs/DIGEST_S4f.md",
     "logs/handoffs/R3_GIST.md"
   ],
   "gates": {
