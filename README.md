@@ -68,7 +68,7 @@ Supporting: `docs/GROUND_RULES.md`, `docs/METHOD.md`, `docs/METRICS.md`, `docs/S
 
 ## The reflexive wager
 
-The *form* of this project is an argument for its *content*. If no single mind can hold the whole, then the way to think the whole is a **commons of sense-making** — many perspectives, in structured disagreement, integrated and continuously revised. This repository is a small prototype of exactly the method our third candidate theory proposes. The medium is the thesis.
+The *form* of this project is an argument for its *content*. If no single mind can hold the whole, then the way to think the whole is a **commons of sense-making** — many perspectives, in structured disagreement, integrated and continuously revised. This repository is a small prototype of exactly the method our third candidate theory proposes. The medium is the thesis. **But the wager is, so far, *asserted — not demonstrated*.** The "many perspectives" are, for now, **one model in many roles** (a single reasoner prompted into a panel), so the *plurality* is downgraded to **one standpoint** until a genuinely foreign, project-blind grader — or an opened repository — earns the word back; the medium can only *become* the thesis when a real outside vantage sits down (`logs/OPEN_QUESTIONS.md` Q-016; `logs/REFLECTIONS.md`, Session 4f).
 
 ## Building & running this repository (the Code layer)
 
