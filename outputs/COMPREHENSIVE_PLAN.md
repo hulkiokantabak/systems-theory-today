@@ -1,6 +1,6 @@
 # COMPREHENSIVE PLAN
 
-Version: 0.3 · Status: Draft (author to ratify) · Last updated: Session 3
+Version: 0.4 · Status: Draft (author to ratify) · Last updated: Session 4f (updated Plan appended from the S4f planning panel — see the final section)
 
 *The second deliverable from the founding session. Where `INITIAL_EVALUATION.md` says what the panel currently thinks, this says **what we build next and in what order** — the path from three prose theories to explicit models, runnable simulations, a public forkable commons, and a website. Edited and sequenced by the chair; the author ratifies scope and priority. Phases mirror the path-to-code in `ARCHITECTURE.md`.*
 
@@ -94,3 +94,38 @@ Version: 0.3 · Status: Draft (author to ratify) · Last updated: Session 3
 - **S5** The commons demonstrably out-catches a lone author — the reflexive proof of Theory C. *(Measured continuously from Session 1.)*
 
 *The plan is deliberately more modest than the ambition. The ambition is a systems theory for today; the plan is a sequence of small, honest, checkable steps toward it, each of which is itself worth having even if the whole is never finished — which, if Theory C is right, it never will be, because "finished" is the wrong word for a commons.*
+
+---
+
+## Updated Plan — the next phase (Session 4f, from a 5-round planning panel)
+
+*Synthesized by the chair (not a vote) from a 5-round designed-disagreement planning panel (Turchin, Ostrom, Meadows, Nietzsche, Heidegger, Le Guin, Campbell), informed by the S4f reflection (`logs/REFLECTIONS.md`). **Code-synthesized and PENDING author ratification** — especially the eight forks below. It supersedes nothing above; it sequences the next phase.*
+
+**The phase in one sentence:** spend this phase proving the machine can **drain** and can be **emptied** — deliberately choosing rigor over reach, paying in another parochial, private cycle with the meaning-question (D-003) left open. *"An empty result is the first real one this project has produced."*
+
+### The spine (to ratify)
+`costless subtractions now → lock the CONSTRUCT → run the PLACEBO → install the DRAIN → seat the foreign GRADER → widen Study-B → Q-001 / open the repo` — with Heidegger & Nietzsche's **inversion preserved** (open the repo FIRST — the only foreignness you cannot seat; holding is the ossification the reflection flagged).
+
+### Prioritized moves (each carries its gate)
+1. **Costless subtractions now** — un-count the "4/4" to its true n=1 (keep only the Facebook/YouTube split); strike the ledger-sum and "32 voices" from any claim of *health* or *independence*; downgrade "plurality" to one standpoint until a foreign grader earns the word back. *Gate: author ratifies the strike list.* (Partly done in S4f: the cross-check headline is re-framed to the split and a METRICS honesty-note is in place; the governor-strike + Theory-C retirement below are **not** done.)
+2. **Lock the held-out CONSTRUCT** for "threatens the metric" (with a numeric kill-threshold) *before* any new number or Study-B widening — a classifier reads the outcome and names it the cause, so the measure must be derived from a held-out construct. Ship it bundled with a quiet/non-Western strain case + the opposite-pointing near-control. *Gate: author settles construct-vs-classifier (Q-014).*
+3. **Run the PLACEBO** — a substantively empty session through identical machinery, blind-scored against a *real* session (one that risked a value) on catch-count + convergence. The cheapest falsifier, and the only test that can **end** the project. *Gate: author cuts Fork 1 + names the control session (Q-016-adjacent).*
+4. **Install the SUBTRACTION operator (the drain)** — a decisions-changed log + a pre-written single result that retires Theory C; strike one never-bit governor as its first bite (which must **shield** the machine, never prune a dissenter or D-003). *Gate: author ratifies the trigger (Fork 2) + names the first governor struck (Q-017).*
+5. **Seat the foreign GRADER** — able to *cost the author a claim*, or it is merely a fourth LLM. *Gate: author ratifies its nature + placement (Fork 3).*
+6. **Widen Study-B** — the opposite-pointing near-control first (selection vs revenue diverge), then WeChat + a quiet care-system case (Q-015). *Gate: construct lock ratified; author sets the widen/grade order (Fork 4).*
+7. **Q-001 + the REPO** — held on a clock, as a bounded nested folder now, opening by default if the window is missed. *Gate: all upstream + Fork 5 (open-first vs held).*
+
+### What to STOP / RETIRE (the metabolism's first outflow — the reflection's zero-retraction fix, C-022)
+The **"4/4"** as evidence (→ n=1; keep the split) · the **ledger-as-scoreboard** (keep the log as memory; strike the sum from any *health* claim; track *decisions-changed* instead) · **"plurality / 32 voices"** as an independence claim (→ n=1 until a foreign grader) · **one never-bit governor**, struck on the record (first strike shields the machine) · **Theory C** — candidate for retirement (gated; Nietzsche: the only subtraction with a value inside it; Ostrom refuses before the grader tests it) · and pre-empt the **retraction-count** becoming the next vanity number.
+
+### The hard tradeoffs (where it lands, and the cost)
+**Rigor vs reach/meaning** → pay it; name the wound (one author/one model, construct validity ~0), don't design around it. **Placebo blinding vs foreignness** → blind it, but the control must have *risked a value*. **Adding machine vs Heidegger** → the drain must be a *decided* graduated sanction, not a self-triggering counter; his refusal recorded unanswered (he *is* D-003). **Opening the repo vs stability** → held on the clock as a bounded nested fork; "open first" stands as a live inversion. **Relieving vs wounding cuts** → only retiring Theory C costs a value; pre-write its death-condition now.
+
+### Decisions for the author (the eight forks — the plan does NOT resolve these)
+1. **Pre-registration:** held-out CONSTRUCT (majority) vs the CLASSIFIER (Turchin). 2. **Fork 1 — drain placement:** placebo gates the drain (Campbell) vs drain-first as the placebo's reading instrument (Meadows). 3. **Fork 2 — drain trigger:** graduated ladder (Ostrom) / strike-bound-to-a-null (Turchin) / decided-by-hand (Heidegger, Le Guin, Nietzsche, Meadows) — near-consensus *against* a bare idle-clock. 4. **First governor struck:** any never-bit one, but it must shield the machine, not prune D-003 / a dissenter. 5. **Fork 3 — grader:** foreign-veto-bearing vs held-out-internal; upstream (appropriator-first, Ostrom) vs downstream. 6. **Fork 4 — Theory C + order:** retire C now / on-a-null / after-grader; widen-then-grade (Le Guin) vs grade-then-widen. 7. **Fork 5 — Q-001 + repo:** now vs later; open-first (Heidegger/Nietzsche) vs held-on-clock. 8. **Placebo control:** any real session vs only one that *risked a value* (Nietzsche).
+
+### Success vs falsification
+**Success:** the phase produces ≥3 *discriminating* numbers (not confirmations) — the placebo reads a real empty-vs-live gap; the near-control separates selection from revenue; the foreign grader names ≥1 outcome the plurality changed — AND the synthesis visibly *moves* when a truly other standpoint sits down. A clean **null** (placebo passes) is also success in the weak sense — the first real result — and *ends* the project honestly. **Falsified** (any one of five, none yet run): the placebo passes → the ledger is theatre; a lone adversary catches everything the panel caught; the foreign grader names nothing the plurality changed; the synthesis fails to move for a genuinely foreign standpoint (C-006 confirmed); or the coherence-vacuum reduces without remainder to Turchin's wealth pump (D-004 answered against us). *Register nothing you cannot later fail.*
+
+### Preserved dissent (the planning panel, unresolved)
+**Heidegger** (construct-validity is the disease in a lab coat; every monitor / decided-drain is enframing; he *is* D-003). **Nietzsche** (learn the construct by wounding; the placebo's control must risk a value; retire C by hand *now*; open the repo first). **Ostrom** (seat a human/institutional appropriator *first*; don't retire C before the grader tests it). **Meadows** (install the drain first, as the placebo's instrument). **Campbell** (protect the split; construct not classifier; gate the drain behind the placebo; name the wound). **Turchin** (placebo in parallel + blinded; strike bound to a null not a clock; near-control first; keep Q-001). **Le Guin** (widen *before* grading; a grader over four loud American cases isn't foreign). Standing governors D-001 / D-004 / D-005 / D-006 remain open; **C-006 applies to this synthesis itself** — the chair did not vote and did not collapse the five forks.

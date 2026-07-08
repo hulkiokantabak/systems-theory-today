@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-08T15:38:59.833Z",
+  "generatedAt": "2026-07-08T17:18:01.862Z",
   "project": "A Systems Theory for Today",
   "git": {
     "branch": "main",
-    "commit": "bc619d5",
+    "commit": "851fc8b",
     "tag": "session-4f",
     "lastDate": "2026-07-08",
     "hasRemote": true
@@ -16,9 +16,9 @@
   },
   "counts": {
     "contentFiles": 37,
-    "catches": 17,
-    "learnings": 12,
-    "openQuestions": 12,
+    "catches": 22,
+    "learnings": 15,
+    "openQuestions": 17,
     "disagreements": 6,
     "diagrams": 9,
     "pressureTests": 13,
