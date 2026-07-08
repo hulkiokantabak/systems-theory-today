@@ -142,6 +142,26 @@ Version: 0.4 · Status: Living · Last updated: Session 4f
 
 **Studies status (S4e–4f).** **Study C:** first **pilot** result (`studies/study-C-ablation/outputs/PILOT_RESULT.md`) — a directional ON advantage dominated by a self-administration confound; pre-registration revised (HC1 primary/length-controlled; cross-model requirement). **Study B:** Gate 2 ratified/open; Code built + froze the zero-dependency, self-tested, pre-registered pipeline, but the empirical run is **not executable without external data** (C-017 / L-012) — **no result produced, no data fabricated** (`studies/study-B-optimization/RUN_STATUS.md`). **Study A:** unchanged (gated). Also new: the `skills/study-discipline/SKILL.md` skill (Code-layer; **ratified** S4f, live; installed to the global skills library).
 
+### Snapshot — Session 4f (cross-check + reflection, current)
+
+*Study B's H3 (selection-not-design) claim tested against the documented record by 4 project-blind external LLMs — **read the SPLIT (Facebook unanimous / YouTube mixed), not the "4/4"** (C-021). A 7-round reflection panel then turned the project's discipline on itself. Catches 17→22, learnings 12→15, open questions 12→17.*
+
+| Metric | Value | Δ vs S4e | Notes |
+|---|---|---|---|
+| Files created | 37 | 0 | cross-check + reflection outputs live under `studies/` (Code-layer) or edit existing canonical files |
+| Catches / Learnings | 22 / 15 | +5 / +3 | + C-018…C-022 (duplicate near-count; ledger-no-denominator; panel pseudo-replication; "4/4" over-claim; accretion-without-excretion); + L-013…L-015 |
+| Open questions | 17 | +5 | + Q-013 (the H3 conditional), Q-014 (construct vs classifier), Q-015 (non-Western pool), Q-016 (foreign grader), Q-017 (subtraction operator) |
+| Live disagreements logged | 6 | 0 | D-001…D-006 remain open by design |
+| Diagrams | 9 | 0 | |
+| Pressure-tests defined | 13 | 0 | |
+| Ground rules | 23 | 0 | the reflection's rule/architecture proposals are *surfaced for ratification*, not enacted |
+| Advisory panelists | 22 | 0 | |
+| Theories tested (of 3) | 0 | 0 | B's *H3* has a cross-model documented-case reading (preliminary; not the quantitative O→P test); B's O→P and A/C still untested |
+
+**⚠ Honesty note on the ledger (per catch C-019, from the S4f reflection).** These counts report **births only** — a "catch" has no operational definition, the count can only rise, and there is **no denominator, no retraction count, and no count of decisions actually changed.** Theory B predicts this very metric will be captured (self-correction-as-prestige). The metabolism has **zero retractions** (C-022). Read the ledger as a record of *activity*, not of *rigor* or *knowledge*; the proposed structural fix — a subtraction/retraction operator — is **Q-017**, surfaced for author ratification, not enacted.
+
+**Studies status (S4f).** **Study B:** the O→P quantitative run stays frozen-unrun (no data — C-017); its **selection-not-design (H3)** claim was tested against the public record by 4 project-blind LLMs → `studies/study-B-optimization/outputs/CROSSCHECK_RESULT.md` (Facebook unanimous / YouTube mixed; conditional refinement Q-013; independence caveat L-013). **Study C:** first pilot, unchanged. **Study A:** gated (Q-001, the flagship, still untouched). The `study-discipline` skill is live.
+
 ## 3. What we track and why
 
 **Effort / throughput**

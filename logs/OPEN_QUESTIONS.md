@@ -1,6 +1,6 @@
 # OPEN QUESTIONS & LIVE DISAGREEMENTS
 
-Version: 0.3 · Status: Living · Last updated: Session 4
+Version: 0.3 · Status: Living · Last updated: Session 4f
 
 *A standing record of what the project has **not** settled — every genuine open question and every live disagreement, logged as it surfaces. The author asked for this explicitly, and the reason is sound: in a project built on designed disagreement, the unresolved questions and the standing splits are the most revealing part of the record. They are where the real thinking is, they are what a contributor should attack first, and they are the honesty check against the chair's drift toward premature closure (L-001). Nothing here should be quietly resolved by a later session's tidy-up; a question leaves this log only when it is genuinely answered, and the answer is recorded with its date and its dissent.*
 
@@ -60,6 +60,26 @@ The repo is the shared memory, but Chat's *intended* change and Code's *on-disk*
 ### Q-012 — Can Theory C's reflexive claim be tested without an entangled baseline?
 C's operationalization (`outputs/THEORY_C_OPERATIONALIZED.md`) measures whether the commons *out-catches a lone author* — but in the project's current form the "panel" and the "single author" are the **same underlying model in different prompts**. So the ablation tests the *narrower* claim (does a disagreement-**structure** beat an unstructured process, reasoner held fixed?), not the *grand* one (does distributed **human** plurality beat individual genius?). The narrower result is still worth having; the uncontaminated baseline only arrives when the repo **opens** and real external forks appear (which ties the *testing* of C to the two-surfaces plan, not just its building). What interim baselines are legitimate, and how much can the ablation honestly claim before then?
 *Raised:* S4. *Status:* `open`. *Lives in:* `outputs/THEORY_C_OPERATIONALIZED.md` §4, `docs/CHAT_CODE_WORKFLOW.md` §8.
+
+### Q-013 — Is Theory B's H3 conditional ("selection beats stated intent iff the change threatens the engagement metric") correct?
+The Study-B cross-check (4 project-blind LLMs) read Case A (a broad engagement re-weighting) as outcome-follows-incentive and Case B (a narrow, engagement-neutral de-optimization) as *mixed*, converging on a **conditional**: selection wins where the change conflicts with the core metric, relaxes where it is engagement-neutral. Is that conditional real, or an artifact of two cases on a shared corpus?
+*Raised:* S4f (cross-check). *Status:* `open`. *Lives in:* `studies/study-B-optimization/outputs/CROSSCHECK_RESULT.md`.
+
+### Q-014 — What CONSTRUCT (not target) should be pre-registered for the cross-check, and what number would settle "selection beats intent"?
+The panel split: pre-register the **classifier** for "threatens the metric" before grading (Turchin) vs the objection that a pre-registered target is still a target, so pre-register the **construct** and its validity first (Campbell). Until resolved, H3's "threat to the metric" risks being read off the very outcome it predicts (circularity).
+*Raised:* S4f (reflection). *Status:* `open`. *Lives in:* `skills/study-discipline/SKILL.md`.
+
+### Q-015 — Does the selection-not-design claim survive a non-Western / care / quiet-system case pool?
+All cross-check cases were large Western, corporate, *loud* platforms (D-005 applied to the check). Does H3 hold for WeChat, a mutual-aid or care system, or a case where selection pressure and revenue point **opposite** (the near-control the study lacks)?
+*Raised:* S4f (reflection; D-005). *Status:* `open`. *Lives in:* `studies/study-B-optimization/APPROACH_B2_DOCUMENTED_CASES.md`.
+
+### Q-016 — Would a genuinely foreign, blind grader name any outcome the plurality actually changed?
+The project's central reflexive bet (Theory C) is that designed disagreement out-catches a single sharp mind. Run alone, would a lone adversary catch everything the panel caught? Would a **foreign** (non-LLM, non-Claude) grader find the plurality changed any decision? Until then designed disagreement's construct validity is ~0 (L-013/L-015).
+*Raised:* S4f (reflection). *Status:* `open` (ties to the placebo test + the foreign-grader move). *Lives in:* `logs/REFLECTIONS.md` (S4f).
+
+### Q-017 — Does the metabolism need a subtraction / retraction operator?
+The learning loop has **zero retractions** — it only accumulates (C-022). Should it gain a way to **retire a theory, un-count a catch, strike a governor that never bit, or track decisions-changed** instead of births? The ontological camp objects that operationalizing a governor is how it dies; the rigor camp says "name the number or strike the governor."
+*Raised:* S4f (reflection). *Status:* `open` (contested; a Plan item for ratification). *Lives in:* `logs/REFLECTIONS.md` (S4f), `docs/METRICS.md`, `docs/GROUND_RULES.md`.
 
 ---
 

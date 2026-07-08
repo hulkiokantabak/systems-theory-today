@@ -1,6 +1,6 @@
 # LEARNINGS
 
-Version: 0.4 · Status: Living · Last updated: Session 4e
+Version: 0.4 · Status: Living · Last updated: Session 4f
 
 *Distilled, durable lessons — the signal extracted from the raw feed in `CATCHES.md`. A catch becomes a learning when it names a pattern likely to recur. A learning earns its keep only when it **changes something**: a rule, a procedure, the roster, or the method. Each entry below names the change it caused.*
 
@@ -99,6 +99,25 @@ Each entry: **ID** · the lesson (one line) · the evidence (which catches/round
 - **Evidence:** C-017 (Study B un-runnable without external data); echoes the Study-C pilot's C-run-3 (scale/orchestration mismatch).
 - **Change it caused:** a pre-run **data-feasibility check** folded into the study discipline; `studies/study-B-optimization/RUN_STATUS.md` as the honest terminal artifact when data is unavailable; Study B's pipeline frozen pending data.
 - **Status:** active.
+
+---
+
+## Session 4f (cross-check + reflection panel)
+
+### L-013 — Convergence among voices sharing one substrate is pseudo-replication, not corroboration
+- **Lesson:** agreement among coders/voices that share a **substrate** (four LLMs on one training corpus; thirty-two personas over one model) shows the **shared prior reads one way**, not that independent evidence bases agree — it is n=1, not n=many. Distrust unanimity from a shared substrate; the construct validity of designed disagreement stays ~0 until a **genuinely foreign grader or external fork** arrives.
+- **Evidence:** the Study-B cross-check (4 LLMs, one corpus); the reflection panel (C-020); the same shape as Q-012.
+- **Change it caused:** unanimity from a shared model is labeled as such and **never counted as independent replication**; strengthens the foreign-grader requirement (surfaced for ratification). **Status:** active.
+
+### L-014 — A governor is alive only if it has cost the project a claim it wanted to keep ("standing" ≠ "biting")
+- **Lesson:** a standing disagreement or governor that has never once **stopped a study, retired a theory, or disqualified a case** is decoration, not a guard. The honest liveness measure of the loop is **retractions and decisions-changed**, not catches accumulated. By this test D-003/D-004/D-005 have not yet bitten.
+- **Evidence:** the reflection panel (C-022, the accretion-without-excretion finding).
+- **Change it caused:** the proposed **governor-liveness test** + **subtraction operator** (surfaced for ratification, Q-017), held in explicit tension with the ontological camp (who deny the test — "operationalizing a governor is how it dies"). **Status:** active (contested).
+
+### L-015 — A self-correcting instrument's "I caught myself" is its designed output
+- **Lesson:** when one model generates, grades, and synthesizes, a machine **built to catch itself, reporting that it caught itself, has produced exactly what it was built to produce** — naming the confound (C-015) does not dissolve it; only a **foreign grader** does. This generalizes C-015 from Study C to the whole apparatus (and to the reflection itself), and is why the outsider must **grade**, not merely witness.
+- **Evidence:** C-015 (Study-C pilot); the reflection panel's Rounds 1/2/4.
+- **Change it caused:** the foreign-grading-outsider requirement (surfaced for ratification); reframes the project's "self-correction" as necessary-but-not-sufficient. **Status:** active.
 
 ---
 

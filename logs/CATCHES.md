@@ -1,6 +1,6 @@
 # CATCHES
 
-Version: 0.4 · Status: Living · Last updated: Session 4e
+Version: 0.4 · Status: Living · Last updated: Session 4f
 
 *Every error caught, near-miss, and correction — logged as it happens. A catch is not a failure; an **uncaught** error is. This log is the raw feed; the distilled patterns move to `LEARNINGS.md`, and when a learning changes a rule it is noted in `GROUND_RULES.md` and `METRICS.md`.*
 
@@ -109,7 +109,8 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Session 4:** 1 catch (C-012, below) — the loop caught a flaw in *itself*.
 - **Session 4c (Code layer):** 1 catch (C-013, below) — the stale-count near-miss from the Session-4 work-order header, formally logged during the metrics-hygiene pass; the count-reconciliation check is its standing guard.
 - **Session 4d–4e (Chat + Code):** 4 catches — C-014 (the panel's missing measurement seat), C-015 (Study C's self-administration confound), C-016 (HC2/HC3 partial circularity), and C-017 (Study B is un-runnable in a data-less environment).
-- **Cumulative: 17 catches.** Active standing guards carried forward: C-001, C-002, C-006, C-009, the propagation discipline (C-010 → L-006), the render-validation discipline (C-011 → L-007), the promotion-latency discipline (C-012 → L-009), the count-reconciliation guard (C-013 → `scripts/check-counts.mjs`), the measurement-seat requirement (C-014 → L-011), and the cross-model / data-feasibility requirements for studies (C-015/C-017 → L-010/L-012).
+- **Session 4f (cross-check + reflection):** 5 catches — C-018 (a duplicate LLM verdict nearly counted as independent), C-019 (the ledger has no denominator — a vanity metric), C-020 (panel convergence = pseudo-replication; C-006 at the reflection level), C-021 (the "4/4" over-claim), C-022 (the metabolism accretes without excreting — zero retractions). *The reflection named the irony this very list embodies: it adds five to a count it just called a vanity metric.*
+- **Cumulative: 22 catches.** Active standing guards carried forward: C-001, C-002, C-006, C-009, the propagation discipline (C-010 → L-006), the render-validation discipline (C-011 → L-007), the promotion-latency discipline (C-012 → L-009), the count-reconciliation guard (C-013 → `scripts/check-counts.mjs`), the measurement-seat requirement (C-014 → L-011), the cross-model / data-feasibility requirements for studies (C-015/C-017 → L-010/L-012), and — new — the **pseudo-replication / shared-substrate** and **standing≠biting** guards (C-019/C-020/C-022 → L-013/L-014/L-015). **The birth-only count itself is now flagged (C-019); its fix is Q-017.**
 
 ### C-012 — A ratified learning sat un-promoted for three sessions (loop latency)
 - **Where:** L-001 (draft-dissent-first; label agreement-strength) was distilled in Session 1 and flagged "queued for promotion into the Ground Rules." It stayed queued through Sessions 2 and 3, and was only folded into `GROUND_RULES.md` (as Rule 22) in Session 4.
@@ -153,3 +154,27 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Caught by:** Code, on assessing the run against the environment; surfaced to the author, who confirmed the data constraint.
 - **Corrected:** Code built and **froze the pre-registered analysis pipeline** (the honest, data-independent deliverable — zero-dependency, self-tested on clearly-labeled synthetic fixtures, hashed) and recorded the honest terminal state in `studies/study-B-optimization/RUN_STATUS.md` — **no empirical result produced, no data fabricated.** B stays *instrument-built, world-untested*. Parallels the Study-C pilot's C-run-3 (the "no-Code study" can need Code; the "no-data study" can't run without data). → distilled as **L-012**.
 - **Class:** `process` / methodology.
+
+## Session 4f (cross-check + reflection panel)
+
+### C-018 — A duplicate LLM verdict was nearly counted as independent corroboration (Code-caught)
+- **Where:** the Study-B external cross-check (`studies/study-B-optimization/outputs/CROSSCHECK_VERDICTS.md`). A pasted "Gemini" verdict was **byte-for-byte identical** to the Grok verdict already submitted (same prose, verdicts, and volunteered third case).
+- **What went wrong:** counting a verbatim duplicate as an independent fourth read would have **faked** the cross-check's whole point (independent corroboration) — a Campbell's-Law corruption of the project's own integrity check.
+- **Caught by:** Code, on comparing the submissions; flagged to the author as a paste slip; a genuine, distinct Gemini verdict was then obtained. **Corrected:** duplicate excluded; the tally kept at four genuinely-independent models. **Class:** `process` (cross-check integrity).
+
+### C-019 — The learning ledger has no denominator (a Goodhart-prone vanity metric)
+- **Where:** the reflection panel (S4f), Rounds 3/5/6. "17 catches / 12 learnings / 23 rules" counts only *births*: a "catch" has no operational definition, the count can only rise, there is no base rate and no count of decisions actually changed.
+- **What is wrong:** it measures activity, not knowledge or rigor — and **Theory B itself predicts this metric will be captured** (self-correction-as-prestige → theatrical self-flagellation). Named by Turchin, Meadows, Campbell.
+- **Corrected (partial):** a metrics **honesty-note** added (`docs/METRICS.md`) flagging the births-only limitation; the structural fix (a subtraction/retraction operator) is **surfaced for author ratification** (Q-017), not enacted. **Class:** `methodological` / standing.
+
+### C-020 — Panel convergence read as corroboration is pseudo-replication (C-006 at the reflection level)
+- **Where:** the reflection panel itself. Its near-unanimity was repeatedly flagged as the sharpest C-006 risk: seven personas over one underlying model are **n=1, not seven independent measurements** — the same fault as four LLMs on one corpus (Q-012).
+- **Corrected:** labeled as such wherever it appears; distilled into **L-013**. **Class:** `methodological`.
+
+### C-021 — "4/4" was framed as the cross-check headline; it measures corpus-agreeableness, not truth
+- **Where:** `studies/study-B-optimization/outputs/CROSSCHECK_RESULT.md` (as first written). Leading with "4/4 more-with-I" over-claims: four LLMs on a shared corpus agreeing measures the record's readability, not four independent evidence bases.
+- **Corrected:** the result re-framed so the **SPLIT (Facebook unanimous / YouTube mixed)** — the only outcome that discriminated input from instrument (Campbell) — is the headline, with "4/4" demoted and its Q-012 caveat attached. **Class:** `substantive` (framing).
+
+### C-022 — The metabolism accretes without excreting (zero retractions)
+- **Where:** the reflection panel, Round 4. 22 catches, **zero retractions**; no claim withdrawn, no theory retired, no governor ever struck — the learning loop only *adds*, structurally forbidding the one high-leverage move it most needs (Meadows: inflow, no outflow).
+- **Corrected (partial):** surfaced; the fix (a subtraction operator / retire-a-theory mechanism) is **for author ratification** (Q-017, and a Plan item). **Class:** `methodological` / structural.

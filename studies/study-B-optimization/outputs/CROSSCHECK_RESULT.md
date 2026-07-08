@@ -5,6 +5,10 @@ Approach: `APPROACH_B2_DOCUMENTED_CASES.md` · Raw verdicts: `CROSSCHECK_VERDICT
 
 > **The project's first cross-model-validated empirical reading.** Four project-blind LLMs (DeepSeek, Grok, Gemini, ChatGPT) independently coded two documented platform-algorithm changes for whether the outcome followed the **stated goal (G)** or the **engagement/commercial incentive (I)**. This is the answer to the C-015 self-administration confound — the coders did not know Theory B or this project.
 
+## 0. The headline is the SPLIT, not the "4/4" (corrected per catch C-021, from the S4f reflection)
+
+The informative result is **not** "4/4 agree" — four LLMs on a shared corpus agreeing measures how clearly the *public record* reads, not four independent evidence bases (§3). The result that actually **discriminated the input from the instrument** is the **SPLIT**: unanimous on Facebook (a broad engagement re-weighting → outcome followed the incentive) and *mixed* on YouTube (a narrow, engagement-neutral de-optimization → partly stuck toward the stated goal). **Read the split, not the tally.**
+
 ## 1. The verdicts (4 genuinely-independent, project-blind models)
 
 | Case | DeepSeek | Grok | Gemini | ChatGPT | Consensus |
