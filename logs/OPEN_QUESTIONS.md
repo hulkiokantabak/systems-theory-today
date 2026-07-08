@@ -1,6 +1,6 @@
 # OPEN QUESTIONS & LIVE DISAGREEMENTS
 
-Version: 0.3 · Status: Living · Last updated: Session 4f
+Version: 0.3 · Status: Living · Last updated: Session 4g
 
 *A standing record of what the project has **not** settled — every genuine open question and every live disagreement, logged as it surfaces. The author asked for this explicitly, and the reason is sound: in a project built on designed disagreement, the unresolved questions and the standing splits are the most revealing part of the record. They are where the real thinking is, they are what a contributor should attack first, and they are the honesty check against the chair's drift toward premature closure (L-001). Nothing here should be quietly resolved by a later session's tidy-up; a question leaves this log only when it is genuinely answered, and the answer is recorded with its date and its dissent.*
 
@@ -67,7 +67,7 @@ The Study-B cross-check (4 project-blind LLMs) read Case A (a broad engagement r
 
 ### Q-014 — What CONSTRUCT (not target) should be pre-registered for the cross-check, and what number would settle "selection beats intent"?
 The panel split: pre-register the **classifier** for "threatens the metric" before grading (Turchin) vs the objection that a pre-registered target is still a target, so pre-register the **construct** and its validity first (Campbell). Until resolved, H3's "threat to the metric" risks being read off the very outcome it predicts (circularity).
-*Raised:* S4f (reflection). *Status:* `open`. *Lives in:* `skills/study-discipline/SKILL.md`.
+*Raised:* S4f (reflection). *Status:* **`answered` (S4g)** — resolved (author-ratified) to **pre-register the held-out CONSTRUCT + its validity first** (planning-panel majority + Campbell), Heidegger's refusal preserved; a **numeric kill-threshold** is fixed. Enacted in `studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md` — TTM, four ex-ante indicators, a 0.75 / 0.25 band cut, an anti-circularity two-dossier firewall, out-of-sample confirmation. The construct is **locked but not yet tested** (the confirmatory pool is unsourced — the widening move). *Lives in:* `studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md`, `skills/study-discipline/SKILL.md`.
 
 ### Q-015 — Does the selection-not-design claim survive a non-Western / care / quiet-system case pool?
 All cross-check cases were large Western, corporate, *loud* platforms (D-005 applied to the check). Does H3 hold for WeChat, a mutual-aid or care system, or a case where selection pressure and revenue point **opposite** (the near-control the study lacks)?
