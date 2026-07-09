@@ -1,6 +1,6 @@
 # METRICS
 
-Version: 0.4 · Status: Living · Last updated: Session 4f
+Version: 0.4 · Status: Living · Last updated: Session 4g
 
 *Everything we count, from prompts to outputs. Updated at the end of every session. Metrics are a mirror, not a target — we track them to see the project honestly, not to game them.*
 
@@ -163,6 +163,24 @@ Version: 0.4 · Status: Living · Last updated: Session 4f
 **⚠ And on *independence* (per the S4f reflection; the Move-1 "costless subtraction," ratified S4g).** The deliberative counts — 10 panelists, 22 advisors, dissents preserved — and the word *plurality* describe **one model in many roles**, not independent minds. Four LLMs on a shared corpus, or thirty-two personas over one model, read a **shared prior** one way; that is n=1, not n=many (L-013). So these counts measure the **design's activity**, never its *independence* or *health*, and the project's *plurality* is downgraded to **one standpoint** until a genuinely foreign grader or an opened repository earns the word back (L-015; Q-016). The cross-check "4/4" is likewise read as its true **n=1** — only the Facebook/YouTube **split** discriminates the input from the instrument (C-021).
 
 **Studies status (S4f).** **Study B:** the O→P quantitative run stays frozen-unrun (no data — C-017); its **selection-not-design (H3)** claim was tested against the public record by 4 project-blind LLMs → `studies/study-B-optimization/outputs/CROSSCHECK_RESULT.md` (Facebook unanimous / YouTube mixed; conditional refinement Q-013; independence caveat L-013). **Study C:** first pilot, unchanged. **Study A:** gated (Q-001, the flagship, still untouched). The `study-discipline` skill is live.
+
+### Snapshot — Session 4g (the drain — the metabolism's first outflow, current)
+
+*The ratified spine reaches its subtraction move. Move 1 (costless subtractions) and Move 2 (the held-out construct lock, `studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md`) were executed; this block records **Move 3 — install the drain** (`logs/DECISIONS_CHANGED.md`): a decided subtraction operator with an append-only decisions-changed log (seeded with three **real** Move-1 subtractions, DC-001…003), a graduated sanction ladder, a pre-written Theory-C death-condition, and a first strike **held** — the never-bit audit found no candidate that is both over-claim-typed and genuinely never-bit, so it awaits the author naming one (Q-017 answered). The **placebo** is pre-registered to its go/no-go (`studies/placebo-control/PRE_REGISTRATION.md`, Code-layer). The one canonical-content change is **+1 file** (the drain log); **Ground Rule 24** is proposed (author to ratify). Catches and learnings are held: **no number was minted where no genuinely new catch/learning existed** — the drain's own principle, applied to this very session (L-014 was *updated to record enactment*, not re-issued as a new ID). A **9-lens pre-commit review** then downgraded the drain's own first-draft over-claims (see `logs/DECISIONS_CHANGED.md` §9).*
+
+| Metric | Value | Δ vs S4f | Notes |
+|---|---|---|---|
+| Files created | 38 | +1 | + `logs/DECISIONS_CHANGED.md` (the drain — canonical). The placebo pre-reg lives under `studies/` (Code-layer, excluded) |
+| Catches / Learnings | 22 / 15 | 0 / 0 | **held by design** — the drain's installation minted no new ID; L-014 updated to "enacted S4g," not duplicated |
+| Open questions | 17 | 0 | Q-017 **answered** (S4g; the drain) — answered questions stay logged, so the count holds |
+| Live disagreements logged | 6 | 0 | D-001…D-006 remain open by design; D-003 is barred (by a standing, self-enforced rule) from being the drain's first strike |
+| Diagrams | 9 | 0 | |
+| Pressure-tests defined | 13 | 0 | |
+| Ground rules | 24 | +1 | + **R24** (subtract, don't only accrete; from L-014) — proposed wording, author to ratify (as R22/R23 were) |
+
+*(Deliberately **no** "decisions changed" counter row: the drain's outflow lives only in `logs/DECISIONS_CHANGED.md` as an append-only log, read for its pattern. A counter with a Δ in this table would re-count the outflow as an inflow — the exact C-019 vanity-metric recurrence the pre-commit review caught in an earlier draft. There are three seed subtractions, DC-001…003; the count is not tracked here.)*
+
+**On the drain and this ledger (the structural fix to the S4f honesty note).** The S4f note flagged that these counts are **births-only** (C-019) with **zero retractions** (C-022). Move 3 installs the outflow: `logs/DECISIONS_CHANGED.md` now records what the project **removes** (retract / reverse / retire / downgrade / strike), not only what it makes. The honesty note stands — the fix is *installed*, not *proven*: the drain's log is **seeded** with three prior subtractions (decided in Move 1, before the operator existed), and the operator itself has fired **zero** times — the first strike is held for want of a clean candidate, and no theory has been retired. Independence is still downgraded to one standpoint until a foreign grader arrives (L-013/L-015; Q-016). And the drain does not escape its own maker: it was built by the apparatus it polices (C-006, C-015 reach it too), which is why the placebo's inferential version requires **cross-model** coding (`studies/placebo-control/PRE_REGISTRATION.md` §5).
 
 ## 3. What we track and why
 

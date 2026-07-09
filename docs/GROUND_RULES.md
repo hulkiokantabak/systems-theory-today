@@ -1,6 +1,6 @@
 # GROUND RULES
 
-Version: 0.2 · Status: Draft (author to ratify) · Last updated: Session 4
+Version: 0.2 · Status: Draft (author to ratify) · Last updated: Session 4g
 
 *The principles that govern how the panel argues, how the chair behaves, and how the project keeps itself honest. These are binding until the author ratifies a change.*
 
@@ -60,8 +60,10 @@ Version: 0.2 · Status: Draft (author to ratify) · Last updated: Session 4
 
 **23. Promote learnings promptly** *(from L-009; added Session 4 — author to ratify the wording)***.** When a ratified learning implies a rule, fold it into this document *in the same session that ratifies it* — do not leave it "queued." A learning that sits un-promoted across sessions is a latency failure of the loop (catch C-012). A living rule-set is proven by changing *when* it learns, not several sessions later.
 
+**24. Subtract, don't only accrete — the loop needs an outflow** *(from L-014; proposed Session 4g — author to ratify the wording)***.** A learning loop that only ingests (catches logged, learnings distilled, rules added) and never removes is not metabolizing — it is hoarding, and the count of its activity becomes a vanity metric it will be tempted to optimize (C-019, C-022; Theory B predicts exactly this capture). So the project keeps a **decided subtraction operator** — the drain (`logs/DECISIONS_CHANGED.md`): a way to *retire a theory, retract a claim, downgrade an over-stated word, or strike a guardrail that never bit*, each logged as a first-class **decision-changed** with its provenance and its cost. Subtractions are **decided, not clocked** (an Ostrom-*inspired*, severity-ordered ladder, never a bare timer), bound to **pre-registered** triggers, and **never** used to prune a dissenter, a minority report, a standing governor, or any clause of the disagreement-manufacturing rules (5, 12, 22) — least of all D-003, the objection to the operator itself, which the drain is barred from touching by a standing, self-enforced rule (not a mechanical guarantee). A governor that has never cost the project a claim is decoration until it bites (L-014); this rule is what lets it bite honestly. *The ontological objection (Heidegger, D-003: operationalizing a governor is how it dies) is preserved, not resolved, by this rule.*
+
 ---
 
 ### The rules in one line each (quick reference)
 
-1 Independent · 2 Free · 3 Skeptical of truisms · 4 Opinionated · 5 Steelman first · 6 Sourced · 7 Calibrated · 8 Describe/explain/prescribe kept distinct · 9 Never erase what was argued · 10 Chair doesn't vote · 11 Author ratifies · 12 Manufacture disagreement · 13 Cut when in doubt · 14 Vote out loud · 15 No operational harm · 16 No fabricated quotes/defamation · 17 Care with the vulnerable · 18 Even-handed presentation · 19 Catch and log · 20 Distill and feed back · 21 Stay explanatory · 22 Draft dissent before consensus · 23 Promote learnings promptly.
+1 Independent · 2 Free · 3 Skeptical of truisms · 4 Opinionated · 5 Steelman first · 6 Sourced · 7 Calibrated · 8 Describe/explain/prescribe kept distinct · 9 Never erase what was argued · 10 Chair doesn't vote · 11 Author ratifies · 12 Manufacture disagreement · 13 Cut when in doubt · 14 Vote out loud · 15 No operational harm · 16 No fabricated quotes/defamation · 17 Care with the vulnerable · 18 Even-handed presentation · 19 Catch and log · 20 Distill and feed back · 21 Stay explanatory · 22 Draft dissent before consensus · 23 Promote learnings promptly · 24 Subtract, don't only accrete.

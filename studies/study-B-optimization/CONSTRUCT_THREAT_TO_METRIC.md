@@ -63,7 +63,7 @@ Before the conditional is reported on any widened case:
 
 - **Content validity.** I1–I4 jointly cover the *ex-ante mechanism* by which a change can threaten engagement (what the signal is, how broadly it applies, what the platform itself expected, whether it touches the money). Reviewed against the pre-reg §2 O-construct so TTM does not silently duplicate O.
 - **Discriminant validity (the load-bearing one).** TTM must be **codeable from ex-ante materials alone.** Test: **≥ 2 project-blind coders** score TTM from the ex-ante dossier; require **≥ 0.6 agreement** (ordinal, e.g. weighted κ or exact-band agreement) on the two anchor cases + each widened case. Below the bar → the construct is not held-out in practice (kill condition 3, §3).
-- **Predictive validity (out-of-sample).** The conditional must hold on cases **not** used to build the construct. The two anchors (§6) motivated the construct; they are **in-sample** and do **not** count toward confirmation. Confirmation requires the **widened pool** (Move 6).
+- **Predictive validity (out-of-sample).** The conditional must hold on cases **not** used to build the construct. The two anchors (§6) motivated the construct; they are **in-sample** and do **not** count toward confirmation. Confirmation requires the **widened pool** (Move 5 (widen)).
 - **No post-hoc band editing.** The 0.75 / 0.25 cuts and the 80% / 40-pt thresholds are fixed here, before the widened cases are sourced.
 
 ## 6. Application to the two anchor cases (IN-SAMPLE — motivating, not confirming)
@@ -77,7 +77,7 @@ Coded from the already-sourced record (`APPROACH_B2_DOCUMENTED_CASES.md`, `CROSS
 
 Consistent with the conditional — but **n=2, in-sample, one corpus (L-013).** This table earns the construct the right to be *tested*, nothing more.
 
-## 7. The widened pool this construct will be applied to (slots; sourced in Move 6, "widen before grading")
+## 7. The widened pool this construct will be applied to (slots; sourced in Move 5 (widen), "widen before grading")
 
 Per the ratified widen-then-grade order (Le Guin), the confirmatory pool is built **before** the grader runs. Slots, each requiring the two-dossier firewall (§4) and inclusion by the pre-reg §4.3 rule:
 
@@ -85,7 +85,7 @@ Per the ratified widen-then-grade order (Le Guin), the confirmatory pool is buil
 - **A non-Western case** — e.g. WeChat / Douyin (D-005): does TTM→pressure hold outside the Western ad-funded model?
 - **A quiet / care-system case** — a mutual-aid, mental-health, or public-service platform where the "engagement metric" may not be the core objective at all. If TTM is undefined there, that is itself a scope finding (the construct is parochial to attention-market platforms).
 
-**These slots are named, not filled.** Filling them is Move 6 (real sourcing via the project-blind external route, L-010) — deliberately downstream of this lock so the cases are coded under a construct they could not have shaped.
+**These slots are named, not filled.** Filling them is Move 5 (widen) (real sourcing via the project-blind external route, L-010) — deliberately downstream of this lock so the cases are coded under a construct they could not have shaped.
 
 ## 8. Preserved dissent (travels with any TTM result — anti-C-006)
 
@@ -97,7 +97,7 @@ Per the ratified widen-then-grade order (Le Guin), the confirmatory pool is buil
 ## 9. What this changes (proposed — records the ratified resolution of Q-014)
 
 - **Q-014 is resolved** to *pre-register the held-out construct + its validity first* (majority + Campbell), Heidegger's refusal preserved — enacted by this file (`logs/OPEN_QUESTIONS.md` Q-014 → answered, S4g).
-- H3's conditional (Q-013) now has a **locked, out-of-sample-testable moderator** with a numeric kill-threshold; it is **not yet tested** (the confirmatory pool is unsourced — Move 6).
+- H3's conditional (Q-013) now has a **locked, out-of-sample-testable moderator** with a numeric kill-threshold; it is **not yet tested** (the confirmatory pool is unsourced — Move 5 (widen)).
 - Nothing in the ratified `PRE_REGISTRATION.md` v0.3 is rewritten; this file **governs under** it and fixes the one construct §4.3 left to the coder's judgment.
 
 ---

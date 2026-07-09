@@ -1,0 +1,114 @@
+# THE DRAIN — the subtraction operator (and the decisions-changed log)
+
+Version: 1.1 · Status: **INSTALLED (Session 4g, Code) — the apparatus exists and the log is seeded with three prior subtractions, but the operator itself has fired ZERO times: the first strike is HELD (§5, no clean candidate found — awaits the author naming one), and Theory C's death-condition is armed-not-firing (§4). Reconciled against a 9-lens pre-commit review (see §9).** · Last updated: Session 4g (Code)
+
+Governs under: `outputs/COMPREHENSIVE_PLAN.md` (the ratified reordered sequence — **Move 3, install the DRAIN**, built *before* the placebo so it can serve as the placebo's reading instrument, Fork 2/Meadows) · Answers `logs/OPEN_QUESTIONS.md` Q-017 · Reads out into `studies/placebo-control/PRE_REGISTRATION.md` (Move 4) · Discipline: `skills/study-discipline/SKILL.md`.
+
+> **Why this file exists.** The learning loop had an inflow and no outflow. `logs/CATCHES.md` and `logs/LEARNINGS.md` only *accumulate*; the ledger in `docs/METRICS.md` counts *births only*, with no denominator, no retraction count, and **zero retractions** across four sessions (C-019, C-022, from the S4f reflection, `logs/REFLECTIONS.md`). A metabolism that only ingests is not a metabolism — and Theory B predicts this exact failure: self-correction accreting into prestige, the count becoming the thing optimized. The drain is meant to be the **outflow**: a *decided* operator that can retire a theory, un-count a claim, downgrade a word, or strike an inert guardrail — and **log each subtraction** as a first-class event. Per the ratified fork (S4g, Meadows), the drain is built **first** (Move 3), so the **placebo** (Move 4, `studies/placebo-control/PRE_REGISTRATION.md`) has an instrument to read a real session's outflow against an empty one's. **What is true today:** the apparatus is built and the log is seeded with three subtractions the S4f reflection *already made* (§2) — but the operator has not yet fired a subtraction of its own (§5 held; §4 armed-not-firing). Heidegger's refusal — that a *decided* subtraction operator is enframing wearing the mask of humility, and that operationalizing a governor is how it dies (D-003) — is preserved (§7), not enacted-away.
+
+---
+
+## 1. What the drain is (and is NOT)
+
+**The drain is a *decided* subtraction operator.** Its unit is a **decision changed** — a prior commitment *reversed, retired, downgraded, or struck* — not a catch logged. A catch is an inflow (something noticed); a decision-changed is an outflow (something removed or reversed on the record).
+
+- It **is** deliberate. Every subtraction is *decided by hand* and recorded with its provenance and its cost. The **trigger conditions** are pre-registered (a pre-registered null; a demonstrated over-claim), but the pull is a decision, never an automatic event (Fork 3; Heidegger/Le Guin/Nietzsche/Meadows — the near-consensus *against* a self-triggering counter).
+- It **is NOT a bare idle-clock** (Fork 3, ratified against). Nothing retires because time passed. A thing retires because a pre-registered condition it was bound to came true, and someone with standing pulled the lever on the record.
+- It **is NOT a new scoreboard.** The count of *decisions changed* must not become the next vanity metric — the exact recurrence C-019 warns of. So it is **not carried as a counter with a delta in `docs/METRICS.md`** (that would re-count the outflow as an inflow — the review caught an earlier draft doing exactly this, §9). It lives only here, as an append-only log read for its *pattern*, never a high score.
+- It **sanctions the PROJECT, not a panelist.** Every rung below acts on a *claim, a construct, a theory, or an inert guardrail of the project's own*. It **never** prunes a dissenter, a preserved minority report, a standing governor, or any of the rules that manufacture and preserve disagreement (Ground Rules 5, 12, 22) — and least of all D-003 (§5 constraint (d); §7).
+
+## 2. The decisions-changed log (append-only — a corroborating instrument for the placebo)
+
+This table is **append-only** (the `logs/CATCHES.md` discipline): never edit or delete a row; corrections are new rows that reference the old.
+
+**Type** ∈ {`retract` (un-count a logged claim), `reverse` (flip a prior decision), `retire` (kill a construct/theory on a pre-registered null), `downgrade` (restate a claim at its true, weaker strength), `strike` (remove an inert guardrail)}.
+**Provenance** = what forced the change: `structure` (one position/prior-learning catching another), `author`, `external` (a project-blind or foreign vantage), or `pre-registered-null`. Provenance from `structure` in a **self-administered** apparatus (one model in many roles) is the machine's *designed output*, not independent evidence (L-013/L-015) — flagged as such below, because `structure` is also Theory C's load-bearing validating bucket (`outputs/THEORY_C_OPERATIONALIZED.md` §2) and the drain must not quietly bank C credit it has not earned.
+**Cost** = a value the subtraction cost the project *that it wanted to keep* (L-014's liveness bar); **blank if costless**.
+
+| # | Session | What was held | What changed it | Type | Provenance | Cost |
+|---|---|---|---|---|---|---|
+| DC-001 | S4f→4g | The Study-B cross-check read as **"4/4"** independent confirmations | Four LLMs over one corpus is pseudo-replication → **n=1**; only the Facebook/YouTube *split* discriminates input from instrument (C-021, L-013) | `downgrade` | structure — *self-administered (L-015); not independent* | — (costless: a false headline shed) |
+| DC-002 | S4f→4g | The **ledger sum** read as evidence of *health / rigor / independence* | Births-only, no denominator, zero retractions (C-019, C-022); struck from any *health* claim — the log is kept as **memory only** | `strike` | structure — *self-administered (L-015)* | — (costless: a scoreboard shed) |
+| DC-003 | S4f→4g | The project's **"plurality / 32 voices"** as a claim of independent minds | 10 panelists + 22 advisors are **one model in many roles**; *plurality* downgraded to **one standpoint** until a foreign grader or an opened repo earns the word back (L-015, Q-016) | `downgrade` | structure — *self-administered (L-015)* | — (costless: a flattering self-description shed) |
+
+*These three subtractions were **decided by hand in Move 1** (`outputs/COMPREHENSIVE_PLAN.md`), **before** this operator was installed (Move 3, this session). They are entered here as the log's **seed rows** — evidence the subtraction *types* are real and honestly recordable, **not** evidence the operator has been exercised. The operator's own fired count is **zero**: no strike (§5), no retirement (§4). And note the honest reading of the **Cost** column: all three are **costless** — a project *gains* prestige by visibly shedding a false headline, a scoreboard, and a flattering label (Campbell/Le Guin, §7). The first subtraction that will cost a value the project wanted to keep is Theory C's retirement (§4) — still unfired.*
+
+## 3. The subtraction ladder (Ostrom-inspired, severity-ordered; Fork 3)
+
+Two logics live here, and the review (§9) required them kept visibly distinct rather than dressed as one uniform "graduated" mechanism:
+
+- **Rungs 0–2 are graduated sanctions in Ostrom's *repeated-infraction* sense** — a first over-claim of a kind draws a flag, the *same kind recurring* draws a downgrade, then a strike. This is *Ostrom-inspired*, not Ostrom-satisfied: Ostrom's graduated sanctions are administered by *other* appropriators under mutual monitoring; here the project sanctions itself, with no independent monitor (that monitor does not exist until the repo opens — Ostrom, §7).
+- **Rungs 3–4 are null-bound death-conditions in Turchin's sense** — they fire on a *single pre-registered null*, not on repetition, and are gated on a genuine appropriator (§4).
+
+Every rung is *decided* on the record; none fires on elapsed time (Fork 3).
+
+| Rung | Response | Pre-registered trigger | Logs as |
+|---|---|---|---|
+| **0 — Flag** | The suspected over-claim is *named*; nothing removed | any panelist/reviewer/author names a claim as stronger than its evidence | (a note, no DC row) |
+| **1 — Downgrade** | The claim is *restated at its true strength* | the same *kind* of over-claim recurs after a Rung-0 flag | `downgrade` |
+| **2 — Strike** | An **inert guardrail** is *removed* (§5) | the guardrail is shown *never to have bitten* and its removal *shields* the machine | `strike` |
+| **3 — Retire** | A **construct or theory** is killed | a **pre-registered null** comes true **and a genuine appropriator confirms** (§4 for Theory C; `studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md` §3 for TTM→H3) | `retire` |
+| **4 — End (terminal)** | The **project ends honestly** | the **placebo passes** *and* the pass is confirmed cross-model then by a genuine appropriator (`studies/placebo-control/PRE_REGISTRATION.md`) | `retire` (of the whole) |
+
+**Rung 4 does not discharge the ontological charge.** A placebo pass that ends the project, and a discrimination that vindicates it, are *both moves inside the frame D-003 rejects* (`studies/placebo-control/PRE_REGISTRATION.md` §8). Conceding D-003 — that building the apparatus was itself the error — is an ending this ladder *cannot log*, because the ladder is part of what would be conceded.
+
+## 4. The pre-written Theory-C death-condition (Fork 6 — retire on a null; armed, not firing)
+
+Fork 6, ratified: **Theory C retires on a null** — its death-condition **pre-written now**, bound to a pre-registered null, *not* retired by hand (Turchin), *not* before a genuine appropriator tests it (Ostrom's refusal, §7). This is Rung 3.
+
+**The null (S4g).** Theory C's *epistemic* claim (designed disagreement out-catches a lone reasoner) is nulled on a **cross-model** ablation — one run under the L-010 requirement the self-administered pilot lacked (C-015): a project-blind external model generates and/or codes the arms, HC1-primary, length-controlled (the ablation instrument: `studies/study-C-ablation/PRE_REGISTRATION.md`; falsification conditions: `outputs/THEORY_C_OPERATIONALIZED.md` §5). The null is met when **either** (this is an **OR** — each condition independently indicts C, per `outputs/THEORY_C_OPERATIONALIZED.md` §5 conditions 1 and 2):
+
+1. **Ablation null** — the disagreement-ON arm's *high-severity* catch rate is **no more than a candidate margin above** the disagreement-OFF arm; **or**
+2. **Provenance collapse** — *structure*-provenance catches (one position catching another; a prior learning catching a new error) are **zero of N** high-severity catches, i.e. the plurality caught nothing the lone reasoner didn't (`outputs/THEORY_C_OPERATIONALIZED.md` §5, condition 2).
+
+**Candidate margin (Code-proposed, PENDING AUTHOR RATIFICATION — the number is the author's to set, as the CONSTRUCT sibling's 0.75/0.25 bands were).** A defensible starting number: condition 1 fires when the ON arm's high-severity catch rate is **< 1.2×** the OFF arm's (a relative advantage under 20% is "no better"); condition 2 fires at **0 structure-provenance high-severity catches of N ≥ 10**. *These are proposals, not yet the ratified null; until the author fixes them, the death-condition is **structure pre-written, threshold pending** — not yet a fireable null. It is over-claiming to call it "already bound" (§9, Turchin/Heidegger).*
+
+**Arm, don't fire (the review's material fix, §9 / Ostrom).** A cross-model-LLM null is **necessary but not sufficient**. It **ARMS** the death-condition; Theory C **fires** (retires) only after a **genuine appropriator confirms** it — an opened repo or a non-LLM grader (Fork 5's "true outside vantage"; Q-016). A second LLM draws the same aquifer (L-013): it is n=1, not an independent appropriator, and the drain's own DC-001 downgrades exactly that configuration. So until the repo opens or a foreign grader sits down, **Rung 3 (and Rung 4) stay ARMED-NOT-FIREABLE.** On a confirmed retirement, an entry appends to §2 as `retire`, and C's operationalization is marked overturned (Ground Rule 9: marked, never erased; its dissent survives). The *meaning* half of C (`outputs/THEORY_C_OPERATIONALIZED.md` §7) is **not** touched.
+
+**Preserved at this fork:** Nietzsche (retire C *by hand, now*; do not wait for a tidy null). Ostrom (a no-veto internal grader does **not** meet the bar; this may not fire until the repo opens). Both recorded, both unresolved.
+
+> This binds **only Theory C**. TTM's numeric kill (`studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md` §3) retires **H3's conditional**, not a theory — the drain keeps the two deaths separate.
+
+## 5. The first strike (Fork 4 — a never-bit over-claim guardrail) — HELD (no clean candidate)
+
+Fork 4, ratified: the drain's **first bite** is a **never-bit over-claim guardrail**, struck to **shield the machine** — never a dissenter, a preserved objection, a disagreement-manufacturing rule, or D-003. The point of a *deliberately safe* first strike is to prove the operator works *before* it is asked to cost a value.
+
+**Selection rule (all four required).** A valid first strike: **(a)** is an *over-claim* guardrail (its stated job is to stop the project claiming more than it has shown); **(b)** has **never bitten** — no catch, decision, or output was ever changed by it; **(c)** whose removal **shields the machine** — strips a *performed* rigor the project has pointed to without *exercising*, leaving it more honest, not less protected; **(d)** is **not** a dissent-preserver, a minority report, a standing governor (D-001…D-006, above all D-003), **or any clause of the disagreement-manufacturing / dissent-preserving Ground Rules 5 (steelman), 12 (manufacture disagreement), 22 (draft dissent first)**. *(Constraint (d) was widened here after the review, §9: an earlier draft's leading candidate would have trimmed Ground Rule 12 — the method's own dissent engine — which sits exactly in the gap between (d)'s old letter and Fork 4's intent.)*
+
+**Audit result: no clean candidate — the strike is HELD.** The never-bit audit (§9) found that **no** offered candidate survives all four constraints:
+- **The "devil's-advocate assignment" claim** (Ground Rule 12; a never-populated metric slot in `docs/METRICS.md` §3 — no assignment is on the record; the panels *summon* existing adversaries instead) is genuinely *never-bit*, but it **fails (a)**: it is a *disagreement-manufacturing* guardrail, not an over-claim guardrail, and striking it risks leaving the project *less* protected against premature consensus (the C-006 risk) — failing (c) too. **Rejected.**
+- **An unused external-red-team falsifier** (`outputs/THEORY_C_OPERATIONALIZED.md` §3) **fails (c)** in direction: striking a never-run *falsifier* shields the *theory*, not the machine. **Rejected.**
+- The guardrails that *are* genuine over-claim guardrails (Rules 5, 6, 7, 22) have **bitten** or are load-bearing (Rule 22 → C-007; Rule 6/16 → C-009; Rule 13 → C-008) — so they fail (b).
+
+Per §5's own fallback, **a drain that cannot find an honest thing to cut does not invent one.** The first strike is therefore **HELD, unfired**, and handed to the author: *name a target that is both over-claim-typed and genuinely never-bit, or the strike stays held.* Firing it will append here as `DC-004` (`strike`).
+
+## 6. How the placebo reads the drain (the Fork-2 hand-off — corroborating, not load-bearing)
+
+The placebo (`studies/placebo-control/PRE_REGISTRATION.md`) runs a substantively **empty** session and a **real** one through identical machinery and blind-scores them. The drain supplies **one** of its axes — but only a *corroborating* one, and the review (§9) required this stated plainly:
+
+- The **falsifiers** are **high-severity catch-count** (blind-coded via the `studies/study-C-ablation/` taxonomy) and **convergence** — both emergent, blind-scorable readouts.
+- **Decisions-changed** (this log) is **corroborating only, and cannot independently falsify.** An empty session is *definitionally* subtraction-less (it names no real phenomenon and decides nothing — `studies/placebo-control/PRE_REGISTRATION.md` §4), so **E < R on this axis is guaranteed by the definition of "empty," not by the machinery being non-theatre.** Worse, a decision-changed is *pulled by hand by the arm's generator*, so the axis measures the generator's choice, not the content's effect. It is read as directional calibration, never as the pass/discriminate trigger — and, being `structure`-provenance and self-administered (§2), it carries no inferential weight until a cross-model or foreign pull produces it (L-013/L-015).
+
+Building the drain first (Fork 2) still earns its place: it makes the *pattern* of what a real session can remove legible beside an empty one's. But the claim that it is the placebo's "load-bearing measure" was an over-reach (an earlier draft said exactly that) and is retracted here.
+
+## 7. Preserved dissent (travels with the drain — anti-C-006)
+
+- **Heidegger (D-003).** A *decided* subtraction operator is enframing in humility's mask. To *operationalize* a governor — to give the project a lever labelled "retire" — is precisely how the governor dies: it converts a live, unresolvable question into a managed process. The drain does not answer D-003; it is a fresh instance of the impulse D-003 indicts. Recorded, unanswered, and **barred by a standing, self-enforced rule** (§5 constraint (d)) — a bar the review rightly notes is *self-enforced, not mechanically guaranteed*, and one that has never been tested because no strike has been attempted.
+- **Nietzsche.** The only subtraction that *means* anything costs a value — retiring Theory C *now, by hand*. A drain that makes subtraction *safe* (rungs 0–2; the seed rows all costless) risks domesticating the very act it claims to enable; waiting for a "clean null" may be cowardice wearing pre-registration's coat.
+- **Campbell.** The moment "decisions-changed" is valued, it will be gamed — and not only by *theatrical* subtraction: the sharper, structural incentive is that the project is rewarded for **birthing retractable over-claims precisely so it can later log their retraction** as decisions-changed — an inflow disguised as an outflow. The only real guard is provenance that is *genuinely external*, not `structure` (self-generated). §1 (no counter; memory not target), the blank Cost column, and the self-administration flags are the weaker guards; none is proof against a motivated logger.
+- **Ostrom.** Do not retire what a genuine appropriator has not tested. The internal, no-veto grader (Fork 5) does **not** meet the "genuinely foreign" bar; until the repo opens, the drain may *downgrade* and *strike* honestly (rungs 0–2), but the **retire/end levers (rungs 3–4) stay ARMED-NOT-FIREABLE** (§4). The "Ostrom graduated-sanctions" label is *borrowed*: the mechanism lacks Ostrom's independent monitor.
+
+## 8. What this changes (records the ratified resolution of Q-017)
+
+- **Q-017 is answered** as a *governance* decision (`logs/OPEN_QUESTIONS.md`, S4g): the metabolism gains a subtraction/retraction operator — this file. The *ontological* question (whether operationalizing a governor is how it dies) is **not** answered and cannot be by a ratification vote; it stays live as D-003 (§7).
+- **The ledger gains an intended outflow** — but note honestly that the outflow has **not yet drained the stock**: all three seed rows are downgrade/strike of *rhetorical* over-claims; the `retract` valve (un-counting a births counter) has **never fired**, and catches/learnings are unchanged (`docs/METRICS.md` S4g holds 22/15). The fix is *installed*, not *proven*.
+- **A learning and a rule follow** (the loop working in one session, Ground Rule 23): **L-014** — *updated, not re-minted* (the drain's own principle: do not accrete a learning-ID where no genuinely new lesson exists) — and a proposed **Ground Rule 24** (subtract, don't only accrete), folded into `docs/GROUND_RULES.md` this session, wording for the author to ratify.
+- **The placebo becomes posable.** With the drain as a corroborating instrument (§6), `studies/placebo-control/PRE_REGISTRATION.md` (Move 4) can be brought to its go/no-go.
+
+## 9. Reconciliation note — the pre-commit review (self-administered)
+
+Before commit, a **9-lens designed-disagreement review** (the seven planning-panel lenses + a fabrication/faithfulness auditor + a never-bit-guardrail auditor) read this file and the placebo. It is honest to record that this review was **one model in many roles** — not independent minds (L-013/L-015) — so it is a *self-administered* check, exactly the confound C-015 names; it cannot vindicate the drain, only improve it. It caught, and this version fixes: a phantom "L-016" cross-reference (the drain inventing the very kind of number it forbids); a "proof-of-life / has already run three times" over-claim (the operator has fired zero times); a `Decisions changed | +3` **counter** re-created in METRICS (the C-019 recurrence — removed); a Cost column filled with *anti-costs* (blanked); a number-less, AND/OR-ambiguous Theory-C death-condition (a candidate margin proposed, connective fixed to OR, marked pending); the retire/end levers firing on an LLM-only null (now **armed, not firing**, gated on a genuine appropriator — the review's one *material* fix); the decisions-changed axis mis-billed "load-bearing" (demoted to corroborating; E is definitionally subtraction-less); an over-claimed "structurally barred" (downgraded to a self-enforced rule); the "Ostrom graduated" label (softened to Ostrom-inspired); and stale Move-numbering (drain = Move 3). The four standpoint dissents (§7) travel unaltered. That the drain's *own* opening draft over-claimed in exactly the directions it exists to police is the most on-thesis catch in the record — and the reason the operator's first act must be the author's, not the chair's.
+
+---
+
+*The metabolism's intended first outflow, authored the session after the reflection that found it had none — and honestly downgraded, by its own Rung 1, from the over-claims of its first draft. Three prior subtractions seed the log (§2); the first strike is held for want of an honest target (§5); a theory waits for a null a self-administered apparatus may not be able to read (§4). Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
