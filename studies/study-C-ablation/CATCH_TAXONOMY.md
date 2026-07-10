@@ -1,18 +1,20 @@
 # CATCH TAXONOMY (pre-registered, severity-weighted) — Study C
 
-Version: 0.1 · Status: **DRAFT — freeze before coding** · Last updated: Session 4
+Version: 0.2 · Status: **RECONCILED to the ratified weighting (S4g) — freeze (hash) before coding** · Last updated: Session 4g
 
 *Metric gaming is C's obvious risk: catch-rate inflates if trivial catches are logged
 (`THEORY_C_OPERATIONALIZED.md` §9). The guard is this **pre-registered, severity-weighted**
 taxonomy, with high-severity catches reported **separately** from the weighted total.*
 
+> **Reconciliation note (S4g — catch C-024).** This draft originally weighted severities **1/2/3**, while the **ratified** `PRE_REGISTRATION.md` §4 — and the pilot that actually ran (`outputs/PILOT_RESULT.md`) — weight them **1/3/9**. The ratified instrument governs; the weights below are corrected to **1/3/9** (the draft's 1/2/3 is recorded here, not erased — Ground Rule 9). Caught by Code while assembling the S4g placebo cross-model kit, *before* the conflicting instrument shipped to external coders.
+
 ## Severity weights
 
 | Severity | Weight | Meaning |
 |---|---|---|
-| **S3 — high** | 3 | Would have changed a conclusion, shipped a false claim, or invalidated an output if uncaught (e.g. an invented citation, a wrong causal direction, a falsification condition that can't actually be checked). |
-| **S2 — medium** | 2 | Materially weakens rigor but not the headline (e.g. an unstated assumption, a missing control, a strawmanned opponent). |
-| **S1 — low** | 1 | Local slip (e.g. a stale cross-reference, a count mismatch, a typo in a claim). |
+| **S3 — high / critical** | 9 | Would have changed a conclusion, shipped a false claim, or invalidated an output if uncaught (e.g. an invented citation, a wrong causal direction, a falsification condition that can't actually be checked; a resolved-away objection that was decisive). |
+| **S2 — medium / substantive** | 3 | Materially weakens rigor but not the headline (e.g. an unstated assumption, a missing control, a strawmanned opponent, an unlabeled agreement-strength). |
+| **S1 — low / minor** | 1 | Local slip (e.g. a stale cross-reference, a count mismatch, a typo in a claim). |
 
 **Report both:** the severity-weighted catch rate **and** the raw count of S3 catches, per arm,
 per unit of work. A method that only inflates S1 catches has not demonstrated anything.
