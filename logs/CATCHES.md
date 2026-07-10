@@ -1,6 +1,6 @@
 # CATCHES
 
-Version: 0.4 · Status: Living · Last updated: Session 4f
+Version: 0.5 · Status: Living · Last updated: Session 4g
 
 *Every error caught, near-miss, and correction — logged as it happens. A catch is not a failure; an **uncaught** error is. This log is the raw feed; the distilled patterns move to `LEARNINGS.md`, and when a learning changes a rule it is noted in `GROUND_RULES.md` and `METRICS.md`.*
 
@@ -178,3 +178,12 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 ### C-022 — The metabolism accretes without excreting (zero retractions)
 - **Where:** the reflection panel, Round 4. 22 catches, **zero retractions**; no claim withdrawn, no theory retired, no governor ever struck — the learning loop only *adds*, structurally forbidding the one high-leverage move it most needs (Meadows: inflow, no outflow).
 - **Corrected (partial):** surfaced; the fix (a subtraction operator / retire-a-theory mechanism) is **for author ratification** (Q-017, and a Plan item). **Class:** `methodological` / structural.
+
+## Session 4g (the drain; panel deliberation under author delegation)
+
+### C-023 — Author-delegation removed the project's one non-self-administered check (panel-flagged, S4g)
+- **Where:** the author delegated the three S4g ratification gates to the expert panel ("I defer to the expert panel… go and consult together and decide and implement"). The panel (7 lenses + an appropriator-guard sentinel) deliberated and **unanimously flagged the delegation itself** as the session's defining risk.
+- **What is wrong:** the author was the project's **only non-self-administered check** (the S4f reflection's finding that the ratifier is part of the error-catching apparatus). Delegating ratification to the panel — *one model in many roles* — closes the loop into full self-reference, whose attractor is self-congratulation (C-006/C-015 at their maximum). "The panel decided" **cannot** stand in for the genuine-foreign-appropriator bar the architecture reserves for the ending-levers (Fork 5); a self-grading body producing four *comfortable* decisions is what capture looks like from the inside (Campbell: "costlessness is the tell").
+- **Caught by:** every panel lens + the appropriator-guard; named before any decision was implemented.
+- **Corrected (in-bounds):** the delegation is booked as a **cost, not a credit** (independence downgrades again — L-015); every decision this session is stamped **`panel-delegated`** (a self-administered sub-type of `structure`), marked **provisional-pending-author** and reversible (GR 9/11); the two irreversible ending-levers (Rung 3 retire Theory C; Rung 4 end the project) stay **armed-not-fireable**, barred to the panel; and the delegated authority is spent **building** a foreign vantage (the Move-5 near-control design; the cross-model placebo path; the repo-open clock), never firing a lever. The panel *contracted* its remit precisely where licensed to expand it — the on-thesis refutation of Theory B about itself. Reinforces **L-015**.
+- **Class:** `methodological` / standing.

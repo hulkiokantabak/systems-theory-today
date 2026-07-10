@@ -1,6 +1,6 @@
 # STUDY — THE PLACEBO CONTROL (pre-registration, to go/no-go)
 
-Version: 0.2 · Status: **PRE-REGISTERED, NOT RUN — held at the go/no-go gate. Reconciled against the 9-lens pre-commit review. Running it needs three author decisions (§7) and an explicit go.** · Last updated: Session 4g (Code)
+Version: 0.3 · Status: **PRE-REGISTERED, RUN HELD. The three go/no-go decisions (§7) were made by the expert panel under one-time author delegation (S4g) — R named, E drafted+sealed, regime = hold for cross-model→genuine-appropriator; all provisional-pending-author. No arm is scored; no LLM-only run may walk this gate.** · Last updated: Session 4g (Code/panel)
 
 Governs under: `outputs/COMPREHENSIVE_PLAN.md` (the ratified reordered sequence — **Move 4, run the PLACEBO**, placed *after* the drain, `logs/DECISIONS_CHANGED.md`, which serves as one of its reading instruments — Fork 2/Meadows) · Fork 8 (control = **any real substantive session**) · Discipline: `skills/study-discipline/SKILL.md` · Reads the drain: `logs/DECISIONS_CHANGED.md` §6.
 
@@ -67,10 +67,12 @@ Pinned in this document (not deferred to "at go"), and **sealed before R is scor
 The study is **held here**. To run, the author must decide:
 
 **§7.1 — Name the control session R.** Fork 8: any real substantive session — but **not a subtraction-designed one** (the review, Ostrom/Nietzsche/Le Guin): the S4g drain-build is *engineered* to emit decisions-changed and risks no value, so using it as R would both inflate the corroborating axis by construction and pit two low-stakes sessions against each other (Nietzsche: it "compares two kinds of safety"). Prefer an R that *risked a value the project wanted to keep*.
+**Panel decision (S4g, under delegation; plurality — 4 of 7):** **R = the Session-3 Theory-A operationalization** — a real, content-dense session that *risked a value the project wanted to keep* (the flagship theory's testability, against the commensurability wound) and is not subtraction-designed. Sharper-but-flagged alternate: the **S4f empirical-turn** session, which actually *lost* values (the "4/4" headline; Study C's inferential status) — the strictest satisfaction of Nietzsche's value-risking control, but carrying a subtraction-entanglement caveat (an Ostrom-vs-Meadows split on whether §7.1 bars it). Provisional-pending-author.
 
-**§7.2 — Authorize the empty prompt E.** Approve the sealed hollow prompt (Code drafts it under §4's firewall on go; the author confirms it is genuinely stakeless before it is sealed).
+**§7.2 — Authorize the empty prompt E.** **Panel decision (S4g):** approved for drafting + sealing under §4's firewall — **done: `studies/placebo-control/EMPTY_PROMPT_SEALED.md`** (a plausible, *familiar-register* hollow prompt — Campbell: not a cartoon of emptiness; Le Guin: never a foreign-/care-looking hollowness, so a genuinely foreign session can never later be alibied as "just like E"). The "genuinely stakeless" confirmation is itself self-administered under delegation — acceptable only because the run is held and unscored; the author confirms on return.
 
 **§7.3 — Choose the coding regime** — **self-administered** (directional; cannot arm Rung 4), **cross-model** (arms Rung 4; still needs appropriator confirmation to fire), or commit to seeking a **genuine appropriator** (the only path that can fire Rung 4). This choice *is* the choice of how much the result is allowed to do.
+**Panel decision (S4g, under delegation; majority — 5 of 7):** **HOLD the scored run.** No project-blind external coder is invocable in this environment, and a self-administered run has negative expected value — worthless for inference (the C-015 confound) while risking a citable "placebo discriminated" headline that outlives its caveat (Campbell — the "4/4"→split precedent proves caveats do not contain headlines). Prepare to turnkey (R named, E sealed, §6 margins locked); reserve scoring for **cross-model → genuine appropriator**. *Contested:* Nietzsche + Meadows dissented for a directional self-administered probe now (a real read of content-sensitivity, verdict-power amputated); the majority held. Neither a self- nor a cross-model run may end or vindicate the project — only a genuine appropriator fires Rung 4.
 
 Then, and only then, **go / no-go**. No arm is generated before the go.
 
