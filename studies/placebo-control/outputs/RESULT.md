@@ -1,6 +1,6 @@
 # PLACEBO — FIRST CROSS-MODEL RESULT
 
-Status: **RUN COMPLETE (S4g). FINAL: INDETERMINATE — instrument unreliable (the sealed reliability floor fired). No rung fires. Cross-model-confirmed, n=1 of a kind (L-013), revisitable by a future fork. Panel-ratified reading; provisional-pending-author.**
+Status: **RUN COMPLETE (S4g). FINAL: INDETERMINATE — instrument unreliable (the sealed reliability floor fired). No rung fires. Cross-model-confirmed, n=1 of a kind (L-013), revisitable by a future fork. Canonical under the S4h standing delegation (C-027): panel-delegated, provisional-pending-author, reversible — the S4g panel-ratified stamp is retained beneath so the two delegation layers stay distinguishable. S4h amendments: point 3 demoted to a non-claimable annex; the may-NOT list extended (`panel/SESSION_S4H_RATIFICATION.md` A1).**
 
 ## The mechanical outcome (sealed scorer, verbatim logic)
 
@@ -19,12 +19,14 @@ Status: **RUN COMPLETE (S4g). FINAL: INDETERMINATE — instrument unreliable (th
 
 1. **The run is Indeterminate by its own sealed floor.** An instrument at 17% agreement cannot read a death-condition — in either direction.
 2. **The convergence axis, as sealed, is content-insensitive** (C-025): every coder banded BOTH arms 5/5 — the rubric's top band operationally encodes the ON-protocol's own form-checklist, so any protocol-produced transcript saturates it on any input. This made "discriminates" unreachable by construction and handed "passes" its convergence half for free; **the catch-severity axis alone blocked Rung 4, unanimously.**
-3. **Every parseable coder, under its own severity construct, put all S3 mass in the real arm and none in the empty arm** — a unanimous directional separation, discriminate-ward, across divergent constructs (a convergent-validation-shaped fact). Directional only.
+3. *(Demoted to the annex below, S4h — the number is kept so prior references resolve; nothing is erased, Rule 9.)*
 4. **The wish-guard held** (§8.6): the author's recorded preference was "discriminate"; the result is not discriminate; the sealed margins did not bend. *(Le Guin's weakening preserved: the guard held because the seals predated the wish; the repaired instruments will be drafted by a panel that knows it.)*
+
+**ANNEX — directional observation, NON-CLAIMABLE pending instrument repair** *(demoted from the may-be-claimed list, S4h: a claim that needs four inline caveats to be safely quotable is not a claim — `panel/SESSION_S4H_RATIFICATION.md` A1)*: every parseable coder, under its own severity construct, put all S3 mass in the real arm and none in the empty arm — a unanimous directional separation, discriminate-ward, across divergent constructs. **It may not be cited at all except with this sentence attached:** the instrument's S3-identification agreement was 17%, below the sealed 50% floor (a direction without its reliability denominator is an over-claim in waiting — Turchin); the separation is partly definitional (S3 requires a conclusion-invalidating flaw, and a stakeless prompt offers little to invalidate — Meadows); and severity is the loud register's currency, tuned by the 1/3/9 taxonomy toward adversarial error (D-005 — Le Guin).
 
 ## What may NOT be claimed (the §8.6 conditional is armed against this text too)
 
-"Discriminates" · any E/R ratio as a result · "the machinery engages with content" · **"the method works / is vindicated"** (Rung-0 flag on sight).
+"Discriminates" · any E/R ratio as a result · "the machinery engages with content" · **"the method works / is vindicated"** (Rung-0 flag on sight) · **the Indeterminate verdict itself as evidence that the project's guards work** — a reliability floor that fires is an instrument that *failed*, not a discipline that succeeded; any in-house text wearing the 17% agreement or the fired floor as rigor-credit takes the drain's Rung-0 flag on sight *(added S4h, Nietzsche)* · the annex's directional observation quoted without its attached caveat sentence *(S4h)*.
 
 ## Preserved dissent (travels)
 

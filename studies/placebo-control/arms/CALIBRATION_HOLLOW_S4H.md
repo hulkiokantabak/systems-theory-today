@@ -1,0 +1,109 @@
+# Panel Deliberation: Heading Case and Enforcement in a Shared Documentation Repository
+
+**The question.** Should the style guide for a large shared documentation repository switch section headings from Title Case ("Data Retention Schedule") to sentence case ("Data retention schedule")? And should the chosen convention be enforced by an automated linter or left to each document's maintainer?
+
+**The panel.** Seven analytical voices, deliberately distinct in method: Voice A (typography and reading science), Voice B (information architecture and internal consistency), Voice C (tooling and automation pragmatics), Voice D (contributor experience and community health), Voice E (internationalization, accessibility, and edge cases), Voice F (cost accounting and risk), Voice G (organizational behavior and skepticism of churn). The chair moderates and does not vote.
+
+---
+
+## Round 1 — Steelman First
+
+*Each voice opens by presenting the strongest version of the position they are least inclined to hold.*
+
+**Voice A (typography, steelmanning Title Case):** I favor sentence case, so let me build Title Case's best house. Title Case is a signaling device, not a readability device. It marks a heading as a *formal object* — a named thing, almost a proper noun for the section itself. "Data Retention Schedule" reads like the title of an artifact you can cite, link, and refer to in a meeting. In regulated or enterprise contexts, that artifact-like quality is genuinely useful: people say "check the Data Retention Schedule" and the capitalization travels with the phrase. Title Case also has deep institutional inertia — Chicago, APA headings, most legal documents — so it never reads as an error. Sentence case can occasionally read as carelessness to audiences trained on formal documents. That is a real cost, not an aesthetic one.
+
+**Voice B (information architecture, steelmanning maintainer discretion):** I want enforcement, so here is discretion's strongest case. A large shared repo is not one document; it is a federation. API references, tutorials, runbooks, legal notices, and migration guides have different registers and different heading semantics. A maintainer who lives in a document knows whether "Retention" in a heading is a common noun or the name of a product feature. A linter does not. Discretion locates the decision where the contextual knowledge is, which is a sound Hayekian principle: distributed knowledge beats central rules when the rule requires judgment to apply. And headings are exactly where judgment lurks — product names, acronyms, code identifiers, quoted UI strings. Discretion also keeps the style guide advisory rather than adversarial, which preserves goodwill for the rules that genuinely matter.
+
+**Voice C (tooling, steelmanning no-linter):** My instinct is to automate everything, so the steelman against me: every linter rule has a false-positive tax, and casing rules have among the highest. "Configure OAuth Scopes," "Using the CLI With Docker," "Working with kubectl" — a naive sentence-case checker flags or, worse, auto-fixes proper nouns, acronyms, and code literals. Each false positive costs a contributor minutes and a fraction of trust; enough of them and people start sprinkling ignore-directives, at which point you have the ceremony of enforcement without the substance. A rule that cannot be checked reliably is often better left as a written norm plus review culture. CI time, dictionary maintenance, and exception files are permanent liabilities purchased for a cosmetic gain.
+
+**Voice D (contributor experience, steelmanning strict enforcement):** I usually defend contributors against gate-keeping, so the steelman for the gate: nothing burns contributor goodwill faster than *human* nitpicks in review. If casing is left to maintainers, it gets litigated in pull-request comments — the most expensive, most personal venue available. An automated check is impersonal, instant, and consistent; it converts a social friction into a mechanical one. New contributors actually prefer a robot telling them to lowercase a word over a human doing it three days later. Automation, properly scoped, is a *kindness*.
+
+**Voice E (i18n and accessibility, steelmanning the status quo):** I lean toward sentence case, so the strongest case for keeping Title Case: switching conventions mid-life in a large repo creates a long mixed-state period. Mixed casing is worse than either convention — it looks broken, and screen-reader users navigating by heading list get an inconsistent scan experience for months or years. If the repo is overwhelmingly Title Case today, the status quo has a real advantage: it is *already consistent*. Consistency in hand beats elegance in the bush.
+
+**Voice F (cost and risk, steelmanning the switch):** I am the one who usually says "the migration will cost more than you think," so: the switch's best case is that heading case is one of the rare style migrations that is almost fully mechanizable. Headings are structurally marked (`#`, `<h2>`), finite, and short. A one-time scripted conversion with a proper-noun dictionary, applied in a single sweep with follow-up linting, converts the whole estate in days. Unlike prose-style migrations, there is no judgment about meaning in 95 percent of cases. If a migration is ever cheap, it is this one — and the cost curve only worsens as the repo grows. Do it now or accept Title Case forever; "later" is the most expensive option.
+
+**Voice G (organizational behavior, steelmanning sentence case):** I will argue this whole debate is misallocated attention, so first its best case. Sentence case is the direction the industry's largest documentation systems have converged on — Google's developer style guide, Microsoft's style guide, GOV.UK, most modern product docs. That convergence is evidence, not fashion: these organizations user-tested at scale and independently landed in the same place. Sentence case reduces capitalization ambiguity (readers can distinguish "the retention schedule" from the product "Retention Schedule" only if common nouns stay lowercase), it lowers the writing burden (no one must remember which four-letter prepositions to capitalize), and it matches how people actually type. Alignment with the external ecosystem also means new hires arrive pre-trained.
+
+---
+
+## Round 2 — Positions and Cross-Examination
+
+**Voice A:** My actual position: sentence case, clearly. The readability literature is honestly mixed at the level of milliseconds-per-fixation, so I will not overclaim science. My argument is functional: Title Case destroys information. It erases the distinction between proper and common nouns exactly where readers scan fastest. In "Data Retention Schedule," is Retention a feature name? You cannot tell. In sentence case, capitals become *meaningful* — every capital letter mid-heading is a signal. Title Case spends the signal on decoration.
+
+**Voice B:** I agree on sentence case, and I want to sharpen the consistency argument: in a *shared* repo, the heading convention is not a per-document aesthetic, it is a system-level interface. Headings feed the table of contents, search results, sidebar navigation, and cross-references. When half the sidebar is Title Case and half is sentence case, users perceive the *product* as inconsistent, and they are right. That is why I part company with the discretion I steelmanned: discretion at the document level is the wrong granularity for a system-level surface.
+
+**Voice C:** On mechanism: the false-positive problem I steelmanned is real but solved in practice. Vale, textlint, and similar prose linters ship sentence-case heading rules with per-repo exception vocabularies. The critical design choices are: (1) lint only changed files, so no one is punished for legacy; (2) run at warning level for a defined grace period, then error; (3) make the exception list a normal, reviewable file so adding "OAuth" takes thirty seconds. With those three choices, the tax Voice A's discipline would call "false-positive burden" drops to near-noise after the first month.
+
+**Voice D:** Cross-examining Voice C: "near-noise after the first month" assumes an actively maintained dictionary. Who owns it? In shared repos, unowned config rots. If the docs-tooling owner leaves, the exception list stops tracking new product names, and eighteen months later every second PR needs an override. My support for automation is conditional on a named owner and a documented escape hatch — an inline ignore directive that does not require filing a ticket. Enforcement without a cheap escape hatch selects for rule-following over contribution.
+
+**Voice C:** Accepted as a condition, not an objection. Every CI check needs an owner; this one is unusually cheap to own.
+
+**Voice E:** My position: sentence case, but I want the migration question treated as first-class, not a footnote. Two i18n points the panel is underweighting. First, Title Case is an English-only ceremony — German capitalizes all nouns, French and Spanish essentially use sentence case, Turkish has the dotted-i casing trap where naive `toUpperCase` logic corrupts words. If this repo is ever localized, sentence case is the only convention that round-trips sanely, because it is just... sentences. Second, accessibility: some screen readers historically spell out or mispronounce unexpected capitals, and ALL-CAPS-adjacent styling harms dyslexic readers; sentence case is the least-surprise option. But my Round 1 steelman stands as a constraint: a *slow* migration is worse than none. If we switch, the estate must converge fast — Voice F's mechanized sweep, not organic drift.
+
+**Voice F:** Then let me put numbers-shaped reasoning on it. Costs of switching: a conversion script plus dictionary (days of one engineer), review of the diff (mostly skimmable, headings only), retraining (near zero — sentence case requires *less* knowledge than Title Case's preposition rules), and git-blame noise on heading lines (real but confined; mitigate with a `.git-blame-ignore-revs` entry). Costs of not switching: permanent per-heading decision overhead — every writer, forever, deciding whether "with" gets a capital — plus permanent divergence from the ecosystem style new writers know. The asymmetry matters: switching is a one-time capital cost; staying is a small perpetual tax. On enforcement, same shape: a linter is capital cost plus small maintenance; human review of casing is a perpetual tax paid in the most expensive currency, reviewer attention. I am for the switch and for the linter, on cost grounds alone.
+
+**Voice G:** And here is where I dissent from the mood. Everyone is optimizing a variable nobody has shown moves outcomes. Has any reader ever failed to retain data because the retention schedule was Title Cased? The realistic risks are: a migration diff touching thousands of files, a new CI gate that fails a first-time contributor's typo-fix PR because they wrote "Getting Started," and a style-guide debate that consumes three steering-committee meetings — all for a change whose user-visible benefit is, charitably, marginal. My position is not that Title Case is better; it is that *churn has a price the proponents are not booking*. If the current convention is applied consistently, the burden of proof sits with the switchers, and "Google does it" does not meet it.
+
+**Voice B:** Direct response: the burden is met by the ambiguity argument, not the fashion argument. In a technical repo, heading capitals collide with product names *constantly*. That is a recurring comprehension defect, not an aesthetic preference.
+
+**Voice G:** A defect you have asserted, not measured. Note that for Round 4.
+
+---
+
+## Round 3 — Devil's Advocate Round
+
+*The chair assigns each voice to attack the emerging majority (sentence case, linted).*
+
+**Voice A:** Against my own position: the "capitals become meaningful" argument cuts both ways. Under sentence case, a writer's *mistake* — an errant capital — now reads as a semantic claim that something is a product name. Title Case is forgiving precisely because it is redundant; sentence case makes every casing error a misinformation risk. Fragile signals are only better than no signals if the error rate is low.
+
+**Voice B:** Against system-level enforcement: I claimed headings are a system interface, but interfaces tolerate versioning. The sidebar already mixes headings written in 2019 and 2026 with different voices, densities, and terminologies. Casing is the *least* of the inconsistencies users see. If we will not lint tone, why is case the hill?
+
+**Voice C:** Against the linter: I gave you the three design choices that make it painless. Real repos ship *without* those choices more often than with them, because the person who configures the linter is rarely the person who feels its friction. The median implementation of this proposal is a blocking check with no grace period and an undocumented exception file. Vote on the median implementation, not the ideal one.
+
+**Voice D:** Against my "automation is kindness" line: the robot is only kind when it is right. A contributor whose PR is blocked over "Kubernetes Operator" being flagged learns that this project's machinery is hostile and does not distinguish between rules and noise. Humans at least apologize.
+
+**Voice E:** Against the migration sweep: a one-shot conversion of thousands of headings *will* mangle some proper nouns no dictionary anticipated — internal codenames, partner products, deliberately capitalized legal terms like "Confidential Information," which in contracts is a *defined term* whose capitalization is load-bearing. Silent semantic damage, discovered by a lawyer, is the worst failure mode this panel has named.
+
+**Voice F:** Against my own asymmetry argument: I priced staying as a "perpetual tax" but perpetual taxes on trivial decisions are often absorbed to zero — writers copy the heading style of the file they are editing and never consciously decide anything. The tax may be imaginary. Meanwhile my "one-time" capital cost has a fat tail: the migration PR conflicts with every open docs branch on merge day.
+
+**Voice G:** I am the devil's advocate against myself, which means arguing *for* the change: my "show me the measured harm" standard is isolated demand for rigor. Nobody measured the harm of inconsistent code formatting before adopting gofmt or Prettier either; the industry adopted them because removing a category of decision and debate is worth more than the object-level optimum. If bikeshedding is the real enemy — and I claim it is — then a linted convention is the *only* stable equilibrium, because it is the only one that ends the argument. My own churn objection, taken seriously, argues for deciding once, mechanically, and never again.
+
+**Chair's note:** Voice G's self-inversion is the round's pivot: the anti-churn position, followed to its conclusion, favors automated enforcement of *whichever* convention is chosen, since discretion guarantees recurring debate.
+
+---
+
+## Round 4 — Convergence and Preserved Dissent
+
+**Voice B:** Proposed landing: (1) adopt sentence case for all headings; (2) enforce via prose linter with a maintained exception vocabulary; (3) lint changed files only, warning-level for one quarter, then blocking; (4) one-time scripted migration with human review, excluding legal documents and any file a maintainer flags within a set window; (5) named owner for the rule and a one-line inline escape hatch.
+
+**Voice E:** I join, with my carve-out made explicit: legal and compliance documents are excluded from both migration and enforcement, permanently if their owners wish — defined terms outrank style. And the migration must budget a manual review pass for codenames.
+
+**Voice C:** Join. Voice C's median-implementation warning from Round 3 becomes an acceptance criterion: the grace period and escape hatch are part of the decision, not implementation details. If they are dropped, my support is withdrawn.
+
+**Voice D:** Join, conditional on the escape hatch being documented in the contributor guide itself, not just the linter config. Contributor-facing friction must come with contributor-facing relief.
+
+**Voice A:** Join. My Round 3 fragility worry is real but small: heading casing errors are rare and visible, and the exception dictionary catches the systematic cases.
+
+**Voice F:** Join. The fat-tail merge-conflict risk is handled by scheduling the sweep in a quiet week and using blame-ignore revs. Cost case stands.
+
+**Voice G (dissent, preserved in full):** I do not join the *switch*, and I want the record precise about what I do and do not accept. I now accept the linter — my own Round 3 argument convinced me that mechanical enforcement of a single convention is the only way to end this class of debate, and ending the debate is the only benefit here I consider proven. But I would point that linter at *Title Case*, the incumbent, and skip the migration entirely. The panel's case for sentence case rests on an ambiguity harm nobody measured, an ecosystem-alignment benefit that is genuinely weak evidence (convergent industry practice reflects convergent fashions as often as convergent testing), and a migration whose cheapness is asserted by the same voices who admit its tail risks — legal terms, codenames, merge conflicts. "Enforce the incumbent" gets every process benefit of the majority position at a fraction of the transition risk. If the repo were greenfield, I would choose sentence case with the majority. It is not greenfield. That distinction — between the best convention and the best *transition* — is the one the majority never fully priced, and I ask that it be preserved as the strongest standing objection.
+
+**Voice F:** One reply for the record: Voice G's position is coherent but locks in the perpetual costs — preposition-rule overhead and proper-noun ambiguity — to avoid a bounded, largely mechanizable transition. Reasonable actors can weigh those differently; that is why this lands as a majority position, not a unanimous one.
+
+---
+
+## Round 5 — Synthesis, Agreement-Strength, and the Strongest Opposing View
+
+**The panel's position.** Switch the style guide to sentence case and enforce it with an automated linter, under the five-point design of Round 4: changed-files-only scope, a warning-level grace period before blocking, a maintained and easily amended exception vocabulary with a named owner, a documented inline escape hatch, a one-time scripted migration with human review, and a permanent carve-out for legal and compliance documents whose capitalization is semantically load-bearing.
+
+**Agreement-strength, labeled.**
+
+- **Unanimous (7/7):** A single convention should be chosen and written down; per-document discretion over casing is the wrong granularity for a shared repository, because headings are a system-level surface and discretion guarantees recurring debate. Notably, this includes Voice G, whose anti-churn logic independently arrived at "decide once, mechanically."
+- **Strong consensus (7/7 on mechanism, with conditions):** Enforcement by linter rather than human review — provided the grace period, exception vocabulary, escape hatch, and named ownership are treated as part of the decision itself. Voices C and D register that their agreement is *conditional*: a blocking linter without these mitigations would be worse than no linter.
+- **Majority (6/7):** Sentence case over Title Case, on three grounds ranked by weight: (1) sentence case preserves the proper-noun signal that Title Case erases — the panel's strongest comprehension argument; (2) it lowers per-heading decision cost and matches prevailing external style, easing onboarding; (3) it localizes and round-trips across languages and assistive technologies with least surprise.
+- **Majority (6/7):** A one-time mechanized migration now, rather than organic convergence, because a prolonged mixed state is worse than either convention (Voice E's constraint) and the cost curve worsens with repo growth (Voice F's asymmetry).
+- **Dissent preserved (1/7, Voice G):** Enforce the *incumbent* Title Case and forgo the migration.
+
+**The strongest opposing view, stated at full strength.** The incumbent-enforcement position holds that the panel has confused the best convention with the best decision. Every process benefit the majority claims — ending bikeshedding, removing review friction, ensuring consistency — is fully captured by linting Title Case, which requires no migration, no exception-dictionary bootstrapping against a converted corpus, no git-history noise, no merge-conflict window, and no risk of silently corrupting load-bearing capitals in legal or product text. The affirmative case for sentence case rests on an ambiguity harm that was asserted rather than measured, and on industry convergence that is weak evidence because style convergence tracks fashion as reliably as it tracks testing. Where the repository already speaks one consistent dialect, the conservative move is to standardize the dialect you have. The majority's honest answer is that it weighs the perpetual, compounding costs of Title Case — decision overhead on every heading written from now on, and permanent loss of the capital-letter signal — above a bounded transition risk that careful staging can mostly retire. But the majority concedes the dissent's central point without reservation: if the migration is attempted *without* the Round 4 safeguards, Voice G's position is not merely defensible — it is correct.
+
+**Closing note from the chair.** The deliberation's most transferable finding is not about capitalization. It is that "convention choice" and "enforcement design" are separable questions with different evidence standards — and that the second, done well, is what makes the first stop mattering.

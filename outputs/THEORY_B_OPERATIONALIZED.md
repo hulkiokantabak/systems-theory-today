@@ -2,6 +2,8 @@
 
 Version: 1.0 · Status: Ratified baseline (author, Session 4) · still living · Last updated: Session 4
 
+> **Rung-labels pending (B4, S4h) — no rung status may be cited from this document.** The adapted evidence ladder (`docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md` §9) governs all claim-bearing documents; this document's claims are not yet rung-labeled. Labeling is deferred to the author-present session (due by that session's close, else an automatic C-012-class latency catch; repo-open backstop). Until then this banner is the document's only rung statement.
+
 *The second Phase-1 work product: turning Theory B (the Optimization Ecology / Autopoietic Capture, `CANDIDATE_THEORIES.md`) from a mechanism-story into a **stated, falsifiable claim** — and, unlike Theory A, one that can be tested largely with data that already exists. B's central advantage over A was always tractability: **engagement-optimization is already measured**, by the companies doing it and by researchers studying them. That makes B the natural place to run the project's **first empirical study**, even though A is the flagship theory. This document specifies the measurable variable, the two discriminating tests that give B its integrity (selection-not-design; and B-vs-A), the first study, and the conditions that would prove it wrong. The honest posture: B's greatest danger is sliding into a conspiracy theory, so its operationalization lives or dies on a test that distinguishes **selected-to-capture** from **designed-to-capture**.*
 
 ---

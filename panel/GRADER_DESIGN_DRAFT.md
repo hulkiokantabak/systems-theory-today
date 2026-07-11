@@ -1,26 +1,30 @@
-# MOVE 6 — THE HELD-OUT INTERNAL GRADER (design DRAFT — not sealed, not seated)
+# MOVE 6 — THE HELD-OUT INTERNAL GRADER (design v0.2 — SEAT-READY; nothing seated)
 
-Version: 0.1 · Status: **DRAFT (Session 4g big loop; panel-decided under the standing delegation — Le Guin: draft-not-seal; the author ratifies before it is seated).** Implements Fork 5 as ratified: **held-out internal, no veto, placement upstream / appropriator-first (Ostrom).**
+Version: 0.2 · Status: **SEAT-READY (S4h, `panel-delegated (S4h standing delegation)`, provisional-pending-author — `panel/SESSION_S4H_RATIFICATION.md` G). Design final; NOTHING SEATED. Seating stays gated on the widen-grade verdicts returning — a gate re-labeled honestly (S4h) as SEQUENCING DISCIPLINE under the ratified widen-before-grade order: the TTM verdicts do not widen the grader's register; the register repair lives in the absent-standpoint field (§2.2), not in the gate.** Implements Fork 5 as ratified: **held-out internal, no veto, placement upstream / appropriator-first (Ostrom).**
 
-## What the grader is
+**On the seating record's face (S4h):** the grader's severity output is denominated in the 1/3/9 currency that **C-026 showed does not travel across model families (17% agreement)**. Until the E2 severity anchoring passes its sealed 50% floor, every grader severity is **advisory-internal only** and feeds no S3-denominated instrument (placebo margins, drain §4 nulls, any death-condition) — the grader inherits C-026's unreliability like everything else denominated in S3 (Turchin).
+
+## 1. What the grader is
 
 A standing **upstream monitor**: a context-isolated reviewing instance that reads a session's *work-order, design, or pre-registration* **before execution** — the appropriator-first placement: it grades what the project is *about to do*, where correction is cheap, rather than the outputs after, where correction is prestige-costly and rarely happens (C-022).
 
 - **Held-out:** the grader instance is given only the artifact under review + the ground rules + the frozen instruments it needs — never the session's running context, never the chair's synthesis-in-progress, never this design's rationale.
 - **No veto (ratified):** its output is a graded advisory — a structured objection list with severities — that the chair must *answer on the record* (accept / rebut / escalate to the author), never silently absorb.
-- **What it can never do:** vindicate. A no-veto internal grader "does not meet the 'genuinely foreign' bar, so Move 1's plurality downgrade stands" regardless of anything the grader says (the ratified Fork-5 note, verbatim).
+- **What it can never do: vindicate.** A no-veto internal grader "does not meet the 'genuinely foreign' bar, so Move 1's plurality downgrade stands" regardless of anything the grader says (the ratified Fork-5 note, verbatim).
 
-## Protocol (draft)
+## 2. Protocol (v0.2 — the S4h riders reconciled and written in)
 
-1. **Trigger:** any new pre-registration, work-order, construct lock, or rung-2+ drain action — *before* execution/firing.
-2. **Instrument:** the grader returns the standard catch schema (severity 1/3/9, category, the objection's strongest form per Rule 5) + one mandatory field the panel lacks: *"what would the author's absent eye most object to here?"* (the delegated-authority guard from C-023).
+1. **Triggers:** any new pre-registration, work-order, construct lock, or rung-2+ drain action — *before* execution/firing; **plus (S4h):** any repair, amendment, or re-issue of a sealed instrument (rubric, taxonomy, kit — Ostrom; the E1/E2 repair kits shipping *before* seating is booked as a recorded cost of the ratified widen-before-grade order, not an exemption); any reader-facing surface (README, site text, result headlines) once D-007 stands (Le Guin); and **any enactment made under a standing author delegation** — the seated grader's **first queue is the S4h-enacted corpus itself** (the `docs/EPISODE_UNIT.md` criteria, the causal-doc §8–9 additions, the 17b and R24 texts, the drain §5.1 postings): the session that ran without the external check is the first thing the restored check reads (the sentinel).
+2. **Instrument:** the standard catch schema (severity 1/3/9 — advisory-internal until anchored, header note; category; the objection's strongest form per Rule 5) + **two mandatory fields**: *"what would the author's absent eye most object to here?"* (the C-023 guard — answered substantively, in the author's register, per item; blank, boilerplate, or "n/a" is itself a codable catch — Campbell + the sentinel) and *"what register or standpoint is this artifact structurally unable to see?"* (the **absent-standpoint field** — D-005 made procedural; the grader is forced, every grading, to name what its house-register instrument does not register — Le Guin).
 3. **The chair's answer** is appended to the artifact under review (accept/rebut/escalate, per item), so the grader's advice is auditable against what the chair did with it.
-4. **Isolation discipline:** fresh context per grading; the grader never sees sealed arms, dossier pairs together, or any margin it might later grade against.
+4. **The disposition log (the S4h reconciliation — Turchin's ledger, Nietzsche's ratchet, and Campbell's prohibition satisfied by one structure):** every grading's per-item dispositions append to a **single append-only per-item disposition log** — auditable per-artifact, read **only for its pattern** (the drain's own §1 discipline: a log read for pattern, never a high score). The **never-bit audit** (a grader whose objections are never accepted across gradings is codable as never-bit decoration, L-014) and the **anti-absorption ratchet** (if the chair rebuts the same objection-class three times across artifacts without once escalating, the third rebuttal **auto-escalates to the author on the record**) both operate off the log's per-class entries. **No counter, rate, or aggregate is ever computed, published, or cited in any health, rigor, or momentum context** — an "objections handled" number is C-019's recurrence wearing the grader's badge; the first such statistic takes Campbell's pre-written Rung-0 flag.
+5. **Isolation discipline:** fresh context per grading; the grader never sees sealed arms, dossier pairs together, or any margin it might later grade against.
 
-## Preserved dissent (travels)
+## 3. Preserved dissent (travels)
 
 - **Ostrom (designer's own dissent):** "a no-veto internal monitor is advice, not accountability" — this grader is the best reachable *upstream* monitor, not an Ostrom-satisfied one; the appropriator community that would make monitoring real arrives only with the opened repo (Move 7).
-- **Le Guin:** the grader's register is the house register; it will grade foreign-shaped work as deficient unless its instrument is widened first — seat it *after* the widening, per the ratified widen-before-grade order.
-- **Heidegger (D-003):** more machinery answering a charge against machinery. Recorded, unanswered.
+- **Le Guin:** the grader's register is the house register; it will grade foreign-shaped work as deficient unless forced, every grading, to name its own blindness — the absent-standpoint field is that forcing, and the seating gate is not a register repair and is not billed as one.
+- **Nietzsche:** a no-veto grader whose every objection the chair may rebut indefinitely is an ornament with a schema; the ratchet is the guaranteed path past the chair's absorption.
+- **Heidegger (D-003, AWR):** "A grader that watches everything but the watching. When it is seated, note that the project now supervises its intentions with the same hand that forms them." Recorded, unanswered.
 
-*Draft for the author's ratification; not seated, nothing graded yet. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
+*Seat-ready for the author's confirmation; not seated, nothing graded yet. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*

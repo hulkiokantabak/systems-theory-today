@@ -2,6 +2,8 @@
 
 Version: 1.0 · Status: Ratified baseline (author, Session 4) · still living · Last updated: Session 4
 
+> **Rung-labels pending (B4, S4h) — no rung status may be cited from this document.** The adapted evidence ladder (`docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md` §9) governs all claim-bearing documents; this document's claims are not yet rung-labeled. Labeling is deferred to the author-present session (due by that session's close, else an automatic C-012-class latency catch; repo-open backstop). Until then this banner is the document's only rung statement.
+
 *The first Phase-1 work product: turning Theory A (the Adaptation Gap, `CANDIDATE_THEORIES.md`) from an evocative frame into a **stated, falsifiable, pre-registerable claim** — the flagship task (`OPEN_QUESTIONS.md` Q-001) and the project's single greatest intellectual liability. Theory A has the best integrative reach and the weakest testability; this document attacks the weakness head-on. It does not claim the theory is **true** — it claims to make the theory **checkable**, which is the precondition for finding out. The honest posture throughout: a gap you cannot measure is a story, not a science (Turchin's standing objection), and this document is the attempt to earn the second word.*
 
 ---

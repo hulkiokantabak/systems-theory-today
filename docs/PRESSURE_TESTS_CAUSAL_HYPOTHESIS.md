@@ -1,6 +1,6 @@
 # THE PRESSURE-TEST CAUSAL HYPOTHESIS — drawing the arrows
 
-Version: 1.0 · Status: **RATIFIED (author, Session 4e) as the working — still contested — causal hypothesis; NOT a settled taxonomy; signs and delays are claims to test, not facts.** · Last updated: Session 4e
+Version: 1.1 · Status: **The v1.0 body below retains its RATIFIED (author, Session 4e) status unmodified. Sections 8–9 are bounded S4h additions — the lag-type decomposition and the adapted evidence ladder with edge labels — stamped inline `panel-delegated (S4h standing delegation)`, provisional-pending-author, so a reader always sees which parts carry the author's ratification and which carry only the panel's.** · Last updated: Session 4h
 Source: `docs/GOALS.md`, `panel/SESSION_2_PRESSURE_TESTS.md`, `docs/DIAGRAMS.md` §4 (the thirteen tests). Companion to `outputs/THEORY_A_OPERATIONALIZED.md` §9 (Theory-A loop) and the operationalizations of A/B/C.
 
 > The project has always said the **arrows between the layers are the research program** — that "everything is connected" only becomes criticizable once you commit to *which* thing drives *which*, with *what sign* and *what delay*. This document does that: it proposes a specific **signed causal hypothesis** over the thirteen pressure-tests. It is deliberately falsifiable and deliberately contestable. Drawing it is what separates this project from the polycrisis literature, which names the entanglement but never commits the graph.
@@ -85,4 +85,41 @@ These objections are **not resolved**. They are the reason the graph is versione
 
 ---
 
-*Ratified working hypothesis (author, S4e); contestation preserved. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
+## 8. Lag-type decomposition on the Y-layer edges *(S4h addition — `panel-delegated (S4h standing delegation)`, provisional-pending-author; from the S4g learning panel, adoption 2)*
+
+Every edge into or out of the Y-layer may carry a **lag-type annotation**: *what kind of failure-to-adapt the edge asserts*. This is the decomposition that makes the **A-vs-D3 crux** codable at the episode level — "the system cannot adapt" (Theory A) versus "capacity exists, an interest blocks it" (the wealth pump) are currently indistinguishable in the graph.
+
+**Coding semantics (resolved on the record, S4h):** **multi-label with a named PRIMARY type** — real episodes will be multi-typed (obstruction operates *through* political channels and manifests *as* coordination failure), so mutual exclusivity would guarantee uncodability; the primary type is selected by the tie-break rule: *the type whose removal would most have changed the outcome, coded from the episode record's own evidence* (Campbell's tie-break repurposed as primary-selection). All five types enter **label-only — not yet codable** until an inter-coder trial on real episode records clears a pre-registered agreement floor; there exist zero coded episodes today (`docs/EPISODE_UNIT.md` gates all coding), so **no present-tense codability claim is made — the crux *becomes* codable only when the episode base exists.** In-house codings of any real episode are directional-only; evidential weight requires the project-blind cross-model standard (Campbell).
+
+| Lag type | One-line codable indicator (what a coder looks for in an episode record) |
+|---|---|
+| **epistemic** | the acting institutions demonstrably lacked accurate, shared knowledge of the destabilization (contemporaneous records show misdiagnosis or contested facts) |
+| **capacity** | knowledge present, but the material/administrative/fiscal means to respond were absent or exhausted (budget, staff, enforcement reach) |
+| **coordination** | knowledge and capacity present in the parts, but no mechanism bound the parts to act together (documented inter-body deadlock, free-riding, veto chains) |
+| **political** | a response was available and coordinable but lost a documented contest for authority or legitimacy (votes, purges, succession fights) |
+| **obstruction** | **the discriminator against capacity (mandatory):** documentary evidence that capacity EXISTED **and** an identifiable interest blocked its deployment (the wealth-pump signature) — absent that two-part evidence, code capacity, never obstruction |
+| **unregistered** | the lag does not fit the five types — free-text description **mandatory** (Le Guin, S4h: the five were derived from loud, institutional, largely Western cases; this bin exists so coders never manufacture a clean bin where the instrument merely fails to see) |
+
+*Preserved: Nietzsche — "the system cannot adapt" and "an interest blocks it" must never again be the same sentence in this project. Ostrom — obstruction coded by feel becomes a mirror; the ex-ante discriminator is binding. Heidegger (AWR) — "five lag-types on the arrows of a map whose arrows I refuse; my objection is to the cartography, not the legend."*
+
+## 9. The evidence ladder (adapted) and the edge labels *(S4h addition — same stamp; from the S4g learning panel, adoption 4)*
+
+**The ladder (canonical, governing every claim-bearing document):** each claim carries a **rung label** — `fact` (a dated, sourced particular) · `mechanism` (a named causal pathway with at least one documented instance) · `cross-case` (a pattern across cases — **valid only with stated N and provenance; a cross-case label without them is void on sight**) · `theory` (a proposed integration whose warrant is coherence, not yet cases) · `normative` (a value-commitment — **a different KIND of claim, not a lesser degree**: placing it at the ladder's far end must never teach a reader that a value-claim is a fact that failed — Le Guin, binding gloss) — **plus an orthogonal test-status tag**: `untested` · `pre-registered` · `run:survived` · `run:falsified`. **Silent rung-merge** — presenting a claim at a higher rung than its evidence, or merging rungs in one sentence — is a **codable catch category** from this session. *(Theory-doc labeling is deferred to the author-present session under three binding conditions: every theory doc carries a pending-banner and no rung status may be cited from it until labeled; the labeling is due by the next substantive session's close, else an automatic C-012-class latency catch, with the repo-open backstop; and the first labeling pass is audited against flattery — a pass in which every edge lands mechanism-or-better is itself examined as a rung-merge. Recorded per Meadows: the deferral was chosen under the standing delegation with the cheap surface labeled first; this line exists so the deferral can never later be read as pure prudence.)*
+
+**The §1 edges, labeled (first pass, S4h — deliberately bottom-heavy; that is what an honest first pass of an untested graph looks like):**
+
+| Edge | Rung | Test-status | Note |
+|---|---|---|---|
+| D4→D1, D4→D2 | theory | untested | amplifier claims; no project-coded instance |
+| D1→Y1, D1→Y2, D1→Y3 | theory | untested | Theory A's distributed gap — Q-001's design exists, unrun |
+| D2→S2 | mechanism | untested | the attention economy as optimization's direct product — documented instances exist (Study-B anchors), not project-run |
+| D2→Y1 | mechanism | untested | selection-environment-rewards-unreality; the B pipeline is frozen-unrun |
+| D3→Y3, D3→S3 | cross-case | untested *(by this project)* | external corpus: Turchin's structural-demographic studies (N ≈ dozens of polity-periods across Seshat/CrisisDB-based work) — stated provenance, not project-verified |
+| Y1→S3, Y1→S4 · Y2→Y4 · Y3→S1, Y3→S3, Y3→S4 · S2→Y1, S2→S3 · S3→Y3 | theory | untested | proposed pathways; the episode base (`docs/EPISODE_UNIT.md`) is the instrument that could raise them |
+| M-edges (all dashed) | theory | untested | and contested by design (Q-002) |
+
+*No edge in this graph is `run:survived`. One first-pass count, honest: 2 mechanism, 2 cross-case (external provenance), the rest theory/untested. The flattery guard passes by inspection.*
+
+---
+
+*Ratified working hypothesis (author, S4e); §8–9 panel-delegated (S4h), provisional-pending-author; contestation preserved. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*

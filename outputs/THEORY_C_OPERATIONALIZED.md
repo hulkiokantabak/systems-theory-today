@@ -2,6 +2,8 @@
 
 Version: 1.0 · Status: Ratified baseline (author, Session 4) · still living · Last updated: Session 4
 
+> **Rung-labels pending (B4, S4h) — no rung status may be cited from this document.** The adapted evidence ladder (`docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md` §9) governs all claim-bearing documents; this document's claims are not yet rung-labeled. Labeling is deferred to the author-present session (due by that session's close, else an automatic C-012-class latency catch; repo-open backstop). Until then this banner is the document's only rung statement.
+
 *The third Phase-1 work product — and the strangest, because Theory C (Distributed Coherence / the Commons of Sense-Making, `CANDIDATE_THEORIES.md`) is not a claim about the world but a claim about **the form a theory must take**. You cannot operationalize it the way you operationalize A or B — there is no external index like "the gap" or "optimization intensity" to build. Operationalizing C means **turning the project's falsifiability discipline on the project itself**: measuring whether a designed-disagreement, dissent-preserving, catches/learnings commons actually **out-thinks a lone author** on the same questions (Goal S5). This is the most honest thing the project can do — point its own standard at its own method — and the most dangerous, because C is the theory with the strongest incentive to be judged true. It must therefore be held to a **higher** evidentiary bar, and this document foregrounds the reason it might fail: the **baseline problem** (Q-012). The meaning half of C — whether sense-making together *restores a shared why* — is left explicitly **outside** measurement, because it must be.*
 
 ---
