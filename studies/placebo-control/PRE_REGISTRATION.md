@@ -87,6 +87,10 @@ Then, and only then, **go / no-go**. No arm is generated before the go.
 
 **§8.5 — Ostrom / Turchin (carried past the recalibration).** A self-administered placebo (§5) shares the Study-C pilot's fatal confound; treat its output as a *reason to escalate to a cross-model run*. And even a cross-model result is **n=1 of a kind** (L-013): the author's recalibration makes it the operative firing vantage, but it is *cross-model-confirmed, not genuinely-foreign*, so a project ended on it is ended honestly only if that caveat — and the future-fork revisitability — travel with the decision.
 
+## 8.6 — Provenance note: the author's recorded outcome-preference (S4g; panel-ruled guard)
+
+After the arms, margins, arm key, and aggregation rule were **sealed and hash-frozen** (`studies/FROZEN_HASHES_S4G.md`), the author wrote: *"Let's have the placebo to discriminate."* The panel ruled (unanimous; Campbell's ruling adopted): this is an **outcome-preference to record, not an instruction to tilt** — the seal-timeline is the exculpatory fact (nothing sealed remained for the wish to bend), and the sentence's parsimonious reading is the instrument's *function*. Guards, pre-registered: (1) this note travels with any result headline, beside the L-013 caveat; (2) scoring is mechanical (`src/score_placebo_verdicts.mjs`, sealed pre-verdict); (3) the wish must never reach an external coder (verbatim-paste rule in the runbook); (4) **the pre-registered conditional:** if any future in-house text characterizes a "discriminates" outcome as *"the method works / is vindicated"* — rather than *"this falsifier failed to fire; the generator confound remains"* — **that** text takes the drain's Rung-0 flag immediately. Le Guin's sharper dissent is preserved: the wish, spoken by the one who ratifies, is never weightless, and a log line is the floor of the response, not its ceiling.
+
 ## 9. What this changes
 
 - Nothing yet — it is **not run**. It records the placebo's *design and margins* at the go/no-go gate, so the author's decision (§7) is made against a fixed protocol.

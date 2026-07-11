@@ -1,6 +1,6 @@
 # COMPREHENSIVE PLAN
 
-Version: 0.4 · Status: Draft (author to ratify) · Last updated: Session 4f (updated Plan appended from the S4f planning panel — see the final section)
+Version: 0.5 · Status: Draft (author to ratify) · Last updated: Session 4g (the eight forks ratified + reordered; execution stamps + the firing-vantage recalibration appended from the S4g autonomous loops — see the final sections)
 
 *The second deliverable from the founding session. Where `INITIAL_EVALUATION.md` says what the panel currently thinks, this says **what we build next and in what order** — the path from three prose theories to explicit models, runnable simulations, a public forkable commons, and a website. Edited and sequenced by the chair; the author ratifies scope and priority. Phases mirror the path-to-code in `ARCHITECTURE.md`.*
 
@@ -139,3 +139,15 @@ The **"4/4"** as evidence (→ n=1; keep the split) · the **ledger-as-scoreboar
 `Move 1 costless subtractions ✓ → lock the held-out CONSTRUCT → install the DRAIN (as the placebo's instrument) → run the PLACEBO → widen Study-B → seat the held-out internal GRADER → Q-001 / open the repo (held on a clock)`
 
 **Still preserved and unresolved:** Heidegger's dissent (the apparatus is itself enframing; D-003); the standing governors D-001 / D-004 / D-005 / D-006; and C-006 over this record. Ratifying *how* to run the phase did **not** resolve *whether* the fragility is methodological or ontological — that split stays open, by design.
+
+### Executed & recalibrated (Session 4g autonomous loops — appended, nothing above erased)
+
+**Execution stamps on the ratified sequence.** Move 1 ✓ (DC-001…003) · Move 2 ✓ (TTM construct locked, `studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md`) · Move 3 ✓ **installed-not-proven** (the drain, `logs/DECISIONS_CHANGED.md`; one live entry DC-004; first strike **HELD** bound to a null on a clock; no value-costing subtraction yet) · Move 4 ✓ **ARMED** (pre-reg v0.5; arms generated blind-clean; kits + runbook in the author's Downloads; hashes `studies/FROZEN_HASHES_S4G.md`; **nothing scored in-house**) · **Move 4½ — seal the scoring** (inserted by the S4g panel): deterministic scorer scripts written, fixture-tested on both decisive branches (DISCRIMINATES/PASSES; powered/under-powered), sealed **before any verdict exists** (`studies/placebo-control/src/`, `studies/study-C-ablation/src/`) · Move 5 **in progress:** near-control pool now holds documented divergences in **both directions** — YT2012 (selection beat revenue) + YT2017 Adpocalypse (revenue beat selection — the falsification-capable case) as frozen dossier pairs, the Shorts gap as an evidence map, the CAC-2022 provisions as the first fetched non-Western primary, the care-systems debt logged (`.../near-control/`); nothing TTM-coded (widen-before-grade) · Move 6 **redefined = design, then seat:** the held-out internal grader is **drafted** (`panel/GRADER_DESIGN_DRAFT.md` — upstream/appropriator-first, no veto; *cannot* lift the plurality downgrade) · Move 7 **weight raised:** with the non-LLM appropriator deferred to a future forker, the opened repo is the **only remaining road to a genuinely-foreign vantage** — checklist + a **named default-open date (2026-10-01)** drafted (`docs/REPO_OPEN_CHECKLIST.md`), opening itself author-only, with the hard sequencing rule: **verdicts collected (or seals escrowed) before the door opens**.
+
+**The firing-vantage recalibration (author, supersedes the Fork-5/6 gate wording above):** cross-model (project-blind other LLMs, author-mediated) **fires** the retire/end levers; the non-LLM genuine appropriator is dropped as a current gate and transferred to the future-forker slot. Every firing logs *cross-model-confirmed, not genuinely-foreign, n=1 of a kind (L-013), revisitable by a future fork* (Ostrom/Campbell/Turchin dissent travels).
+
+**The verdict gate is a plan element:** verdicts return **only by the author's hand** (the author-mediated paste is part of the design); Code's whole role at scoring is running the sealed deterministic scorer.
+
+**Provenance (Q1 guard):** after all seals, the author recorded an outcome-preference ("let's have the placebo discriminate") — ruled a wish-to-record, not an instruction (`studies/placebo-control/PRE_REGISTRATION.md` §8.6); the pre-registered conditional stands: any in-house "discriminates = vindicated" text takes a Rung-0 flag.
+
+**Success-criteria note:** the phase's "≥3 discriminating numbers" now map to the three pending instruments (placebo · N=20 ablation · near-control TTM) — with the caveat that all three return through the **same external-model set**, so the evidence base shares one aquifer batch (L-013 rides on all three).
