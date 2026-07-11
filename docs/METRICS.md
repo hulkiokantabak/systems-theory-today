@@ -171,7 +171,7 @@ Version: 0.4 · Status: Living · Last updated: Session 4g
 | Metric | Value | Δ vs S4f | Notes |
 |---|---|---|---|
 | Files created | 40 | +3 | + `logs/DECISIONS_CHANGED.md` (the drain — canonical); + `docs/REPO_OPEN_CHECKLIST.md` (Move 7's clock, named default date); + `panel/GRADER_DESIGN_DRAFT.md` (Move 6, draft). The placebo/ablation instruments, arms, kits, scorers, and dossiers live under `studies/` (Code-layer, excluded) |
-| Catches / Learnings | 24 / 15 | +2 / 0 | + **C-023** (author-delegation removed the project's one external check; panel-flagged) + **C-024** (the draft catch-taxonomy weighted severities 1/2/3 against the ratified 1/3/9 — a near-miss caught while assembling the placebo kit, *before* the wrong instrument shipped to external coders); the drain's installation itself minted no ID (L-014 updated, not duplicated) |
+| Catches / Learnings | 26 / 15 | +4 / 0 | + **C-023** (delegation removed the external check) + **C-024** (taxonomy weight conflict, near-miss) + **C-025** (the convergence rubric cannot see hollowness — the placebo's external coders exposed it; the loop's first genuinely external-provenance catch) + **C-026** (severity does not travel across model families — 17% agreement; the sealed reliability floor fired). The drain minted no ID for its own installation (L-014 updated, not duplicated) |
 | Open questions | 17 | 0 | Q-017 **answered** (S4g; the drain) — answered questions stay logged, so the count holds |
 | Live disagreements logged | 6 | 0 | D-001…D-006 remain open by design; D-003 is barred (by a standing, self-enforced rule) from being the drain's first strike |
 | Diagrams | 9 | 0 | |

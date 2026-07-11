@@ -194,3 +194,17 @@ C-003, C-005, and C-006 are the **same catch three times**: the chair's synthesi
 - **Caught by:** Code, while assembling the placebo kit — a prior instrument (the ratified pre-reg) catching a stale draft (`STRUCT-LEARN`-shaped provenance, though self-administered).
 - **Corrected:** `studies/study-C-ablation/CATCH_TAXONOMY.md` reconciled to **1/3/9** (v0.2), the draft's original weighting recorded in a reconciliation note (Ground Rule 9: marked, not erased); the kit ships the ratified instrument, hashed.
 - **Class:** `near-miss` (caught before it reached the external coders).
+
+### C-025 — The convergence rubric cannot see hollowness (exposed by the placebo's external coders; S4g)
+- **Where:** the placebo run. Every external coder banded **both** arms convergence 5/5 — the hollow formatting question converged as "load-bearingly" as the real Q-001 deliberation.
+- **What is wrong:** the rubric's top band operationally encodes the ON-protocol's own form-checklist (opposition named, dissent preserved, strength labeled), so any protocol-produced transcript saturates it on any input — it **cannot distinguish trivial-but-tidy from consequential-and-tidy. AND the observation is equally consistent with the machinery producing closure-shape independent of content** (the C-006 suspicion); this run **underdetermines** which reading is true. A content-sensitive convergence measure is the pre-registered discriminator between the two. Severity: **S3 against the instrument** — it invalidated one of the placebo's two falsifier axes (made "discriminates" unreachable by construction).
+- **Caught by:** the cross-model coders' unanimous 5/5 on the hollow arm — **the loop's first genuinely external-provenance catch.**
+- **Corrected (partial):** the rubric **downgraded** on the drain (DC-005, Cost non-blank); repair (a consequence-anchored measure) is prerequisite to any placebo re-run. Le Guin's dissent travels: a "consequence"-anchored rubric in the house register will band down the quiet and the caring (D-005).
+- **Class:** `methodological` / instrument (standing until repaired).
+
+### C-026 — Severity does not travel across model families (17% agreement; S4g)
+- **Where:** the placebo scoring's sealed reliability floor: mean pairwise S3-identification agreement **17%** (< the 50% floor) — "critical" is a construct coders *bring*, not one they *find*. Grok banded every ablation catch S2 (a construct that never reaches S3); GPT-5 assigned 44 S3s.
+- **What is wrong:** every downstream instrument denominated in S3 counts — the placebo margins, the drain's §4 death-condition, the future grader — inherits this unreliability until severity is **anchored** (worked exemplars per band, cross-family agreement re-tested). Sub-findings: **(a)** the coder-identity anomaly (a "DeepSeek"-run verdict self-identifying as *Claude 3.5 Sonnet*) is a **chain-of-custody gap** in the author-mediated route — the pre-committed sensitivity exclusion handled it (nothing flipped); future kits make self-ID mandatory with mismatch = exclusion. **(b)** the Gemini paste-flattening (tables stripped in transport) — the pre-committed MALFORMED rule was correctly applied; future kits use a paste-robust one-record-per-line format.
+- **Caught by:** the sealed reliability floor firing mechanically (Turchin's floor, doing exactly its job).
+- **Corrected (partial):** severity-anchoring repair queued as prerequisite to any re-run; both kit-transport fixes pre-registered for the next kit generation.
+- **Class:** `methodological` / instrument.
