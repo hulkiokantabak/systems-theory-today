@@ -1,0 +1,22 @@
+# ROUND-2 KITS (blue · green) — SEALED COMPANION (repo-only; NEVER enters any coder-facing kit)
+
+Status: **SEALED (S4h round 2, 2026-07-13) — fixed before any kit leaves the machine.** Kit archive names are content-neutral (*coding-kit-blue.zip*, *coding-kit-green.zip*) per the C-030 fix; the filename is now a named leak class on the kit-audit checklist. All stamps: `panel-delegated (S4h standing delegation)`, provisional-pending-author.
+
+## BLUE — the ablation re-coding under the validated anchored severity guide
+
+- **Material:** the frozen N=20 ablation responses (`study-C-ablation/arms/`, hashes unchanged from `FROZEN_HASHES_S4G.md`), shipped as RESPONSE_01…20 in the **same sealed order** (seed 18610; arm key in `placebo-control/SEALED_COMPANION.md`). Coders are fresh instances; the blind holds as in S4g.
+- **Instruments:** the validated `SEVERITY_GUIDE.md` (byte-identical to the validation kit's — hash below) + `PROVENANCE_CODES.md` (the taxonomy's provenance field, project-neutralized).
+- **Scorer:** `study-C-ablation/src/score_blue_verdicts.mjs` — **written and fixture-tested on all decisive branches BEFORE dispatch** (powered/no-null; powered/null-candidate; under-powered→Indeterminate; the reliability-floor gate); hash below; any post-verdict edit is a protocol violation.
+- **Sealed reading rules:** the §4 margins as re-affirmed (condition 1: ON < 1.2× OFF on S3-rate AND ≥20 pooled S3 **within one coder** AND seeded permutation ≥19-in-20; condition 2: 0 struct-provenance S3 of N≥20; OR); the **corridor rule** (every result also read against the preserved 1.5×, with the required sentence); **family-first** (no cross-coder pooling, power within-coder only); **cross-coder reliability floor** 50% on S3-identification (below → Indeterminate—instrument unreliable, nothing else read); under-powered = "no result," never "C survives"; **broken-series** (this run's numbers are post-anchoring; never pooled/trended with the S4g codings); the scorer reports — **firing any rung stays a decided act under the sealed gates**, and a met null condition here is one cross-model coding, logged *cross-model-confirmed, n=1 of a kind (L-013), revisitable*. Run validity: ≥3 parseable coders, ≥2 families; E3 transport in full (open-ended self-ID head+foot; manifest pre-dispatch; mismatch/absence = headline-exclusion + sensitivity line; MALFORMED never hand-repaired; RECOGNIZE probe with dual-report disposition **explicitly sealed for this kit**: recognition = headline-exclusion + sensitivity line).
+
+## GREEN — the outcome pass (the TTM pool's second dossier)
+
+- **Material:** outcome briefs A–E (same sealed case letters as the ex-ante kit; derived from the frozen outcome dossiers, leak-stripped; the two-dossier firewall holds — no ex-ante scores, no bands, no indicator language in the kit).
+- **Join rule (mechanical, post-return):** Code joins outcome verdicts to the ex-ante bands by case letter. **Pre-noted now, before any verdict exists:** with the ex-ante bands as returned (B/D/E HIGH; A/C INDETERMINATE; **zero LOW-band cases**), the construct lock §3 confirmatory comparison (≥3 adjudicable cases per band, HIGH vs LOW pressure-follow rates) **cannot run on this pool — the LOW side is unpopulated**. No confirmatory claim about the H3 conditional is derivable from this round, whatever the green verdicts say; what the round CAN yield is per-case evidence-grade readings, above all: **(i)** case E (near-control, HIGH, pressures divergent) — whether the outcome followed engagement-selection *against* short-term revenue; **(ii)** case C (falsification-capable, band-INDETERMINATE) — its outcome reading is recorded but stays outside band arithmetic per the middle-band rule; **(iii)** kill-condition-1 exposure — any HIGH case blind-read as having followed the stated goal against pressure is refuting evidence and must be headlined as such. KNOWLEDGE lines flagged and dual-reported as in the TTM round; RECOGNIZE = headline-exclusion + sensitivity (sealed here for this kit).
+- Run validity: ≥3 parseable coders, ≥2 families; fresh chats (no coder instance that saw the ex-ante kit); E3 transport in full.
+
+## Dispatch discipline (both kits)
+
+Fresh chat per kit per model; ≥4 families dispatched; verbatim paste or zip-attach (the archives now carry neutral names); the author's manifest line written before each paste; verdicts saved as `VERDICT_<model>_blue.md` / `VERDICT_<model>_green.md`.
+
+*Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
