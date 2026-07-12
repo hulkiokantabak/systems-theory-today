@@ -193,7 +193,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 | Metric | Value | Δ vs S4g | Notes |
 |---|---|---|---|
 | Files created | 43 | +2 | + `panel/SESSION_S4H_RATIFICATION.md` (the session record); + `docs/EPISODE_UNIT.md` (the repair-episode unit, DRAFT criteria, zero coded episodes). Repair instruments, dossiers, kits live under `studies/` (Code-layer, excluded) |
-| Catches / Learnings | 30 / 15 | +4 / 0 | + **C-027** (the standing delegation booked as a cost) + **C-028** (the "Ratified" header near-miss — D-007's first bite, caught pre-enactment) + **C-029** (the drain's §5 stale DC-004 pointer, CONS) + **C-030** (the kit-zip filename leak, caught by the recognition probe — courier return). No new learning minted — each is an instance of standing lessons (C-023's, D-007's, C-013's classes) |
+| Catches / Learnings | 31 / 15 | +5 / 0 | + **C-027** (the standing delegation booked as a cost) + **C-028** (the "Ratified" header near-miss — D-007's first bite, caught pre-enactment) + **C-029** (the drain's §5 stale DC-004 pointer, CONS) + **C-030** (the kit-zip filename leak, caught by the recognition probe — courier return) + **C-031** (the null's permutation clause direction-incoherent — exposed by round 2's first null-side powered ratio). No new learning minted — each is an instance of standing lessons (C-023's, D-007's, C-013's classes) |
 | Open questions | 17 | 0 | Q-001 admission ratified-as-split (hypothesis-grade fact-of-majority; reversion contingency armed); Q-001 itself stays `open` — the bar is a tested claim |
 | Live disagreements logged | 7 | +1 | + **D-007** (authority theater, reader-facing) — standing governor, armed by C-025, first bite C-028 |
 | Diagrams | 9 | 0 | |
