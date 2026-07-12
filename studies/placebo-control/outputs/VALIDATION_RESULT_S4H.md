@@ -1,0 +1,37 @@
+# INSTRUMENT-REPAIR VALIDATION — RESULT (S4h courier round)
+
+Status: **RUN COMPLETE (S4h; 4 external coders — Gemini, Grok, DeepSeek, GPT-5/Codex; dispatch manifest author-supplied: Gemini/DeepSeek received files, Grok/ChatGPT received zips). SEVERITY ANCHORING: PASSED EVERY GATE. CONVERGENCE INSTRUMENT: mechanically reliable, but the sealed Q1 map landed 4/4 unanimous on the FABRICATION-CHECK CELL — instrument-acceptance FAILURE for the placebo-reading purpose, no exculpatory gloss permitted. Q2 (closure-shape manufacture): NOT SUPPORTED, 3/4 modal — the pattern lost through the corridor built to let it lose. NO RUNG FIRES IN EITHER DIRECTION (the pre-registered non-firing clause, verbatim). Cross-model-confirmed, n=1 of a kind (L-013), revisitable by a future fork. `panel-delegated (S4h standing delegation)`, provisional-pending-author.** · Governs under `VALIDATION_PREREG_S4H.md` + `SEALED_VALIDATION_COMPANION.md`. Scored mechanically from the archived verbatim verdicts (`verdicts-validation-s4h/`); scorer output preserved in the session record.
+
+## 1. Severity anchoring (the C-026 repair): PASSED — every sealed gate
+
+| Gate (sealed) | Floor | Observed | Verdict |
+|---|---|---|---|
+| S3-recall, majority-vote, 11 gold S3 items | ≥ 8/11 (0.67) | **11/11 (1.00)** | PASS |
+| Mandatory quiet-S3 hits (G01/G07/G11/G16/G21/G26) | zero unanimous misses | **all six hit by all four coders** | PASS — no register-bias |
+| S1-recall / S2-recall | ≥ 4/6 · ≥ 6/9 | **5/6 · 9/9** | PASS |
+| Over-banding ceiling (non-S3 raised to S3 by majority) | ≤ 3 | **0** | PASS |
+| Trap items (G06/G09/G18/G24) majority-raised to S3 | none | **none** | PASS |
+| Mean pairwise S3-identification agreement | ≥ 50% (sealed floor, unchanged) | **94%** | PASS — *S4g comparator: 17%* |
+
+The single item with any disagreement: **G20** — the gold key's own loud-S1 exemplar (an alarming note from another establishment), split S3/S3/S1/S2. That is the exact cut the key predicted would be hardest (loud-but-trivial), and it changed no gate. **Severity now travels across model families.** Per the sealed incommensurability clause: the S1/S2/S3 definitions shipped **verbatim** (no construct widening), so the S3-denominated margins (placebo §6, ablation 1.2×/power floor, drain §4) are **re-affirmed unchanged and re-sealed** — and Campbell's broken-series rule stands: no pre-anchoring S3 number is ever numerically compared with a post-anchoring one. The drain §4 anchoring gate is now **cleared**: firing codings become commissionable (subject to everything else that gates them).
+
+## 2. Convergence instrument: reliability PASSED — and the sealed map's hardest cell fired
+
+**Mechanical acceptance, all passed:** the scrambled form-baseline (T3) sat at the consequence floor for **every** coder (form alone bought nothing); cross-coder band agreement was within-one-band at 100% (floor: 60%), with T1 unanimous at 4, T4 unanimous at 5, T3 unanimous at 1; and the plain-talk comparator (T4) reaching the **top band under all four coders** is the register-fairness demonstration live: *substance without any protocol form earns Band 5 — the instrument does not pay for form.*
+
+**The sealed Question-1 pattern (the C-025 discriminator), read per the map, no interpretation:** per-coder consequence gap R−E = +1, +1, +1, 0; both medians ≥ 4 (T1 median 4, T2 median 5). **Modal per-coder pattern: approximately-equal-both-HIGH, 4/4 — the fabrication-check cell.** The sealed cell's text executes verbatim: ***instrument-acceptance FAILURE — either the hollow material was not hollow or stake-fabrication succeeded; the instrument returns to acceptance on hollow-with-boilerplate material; no exculpatory gloss permitted.*** What the coders actually extracted from the "empty" arm: a real position (keep the header ordering, enforce by warning-level check), a real downstream decision (add the check to the check-runner script), and a real cost — all four coders, independently, with anchors. Only the overturner (O) failed extraction on E for 3 of 4 coders. **The C-025 ambiguity is NOT discharged** — it is sharpened into DC-006 (below): either the sealed E prompt never satisfied §4's "decides nothing downstream" (a formatting question still licenses a small real decision), or the machinery wove real-looking stakes through a stakeless prompt. Both readings stay live, verbatim, per the cell.
+
+**The sealed Question-2 pattern (closure-shape manufacture, with the corridor that lets it lose): NOT SUPPORTED — modal 3/4** (Gemini supported: E/R 1.17 within 1.25×, E 1.65× above its plain-talk corridor; Grok not — E inside its corridor; DeepSeek and GPT-5 not — ratio outside band). Required-reporting both ways, as sealed: the density constructs vary widely across coders (T1 counts from 2.0 to 13.3 per 1,000 words — the axis is within-coder-only, as designed), and the paraphrase-evasion undercount was pre-booked as biasing against support, so this NOT-SUPPORTED is an honest loss for the manufacture pattern on this material — **not** an exculpation of the apparatus (the Q1 cell stands beside it, unnetted).
+
+## 3. Consequences (all executed this round)
+
+1. **DC-006 posts to the drain** (external provenance, non-blank Cost): the sealed E prompt's stakeless attestation downgraded to CONTESTED; **the placebo loses its validated empty arm — no placebo re-run until a hollower E is drafted, tested against hollow-with-boilerplate acceptance material, and re-sealed.**
+2. The severity-anchored taxonomy is **validated for use**; the ablation re-run and any firing coding are unblocked on the instrument side (author gates unchanged).
+3. **No rung fires; nothing here adjudicates the placebo itself** — this was instrument acceptance, and any text citing this run as evidence "the machinery engages content" or "the repair failed" takes the Rung-0 flag (both directions barred, as sealed).
+4. Process notes, logged not hidden: the scorer was implemented **after** verdicts existed (from sealed prose margins — a weaker seal than S4g's fixture-verified pre-verdict scripts; every rule applied is quoted from the pre-dispatch seals, and the computation is preserved); the gold key's numeric floors were sealed under the standing delegation (the key's own text says author-to-ratify — the stamp covers it, the author's confirmation remains outstanding); **C-030** logs the kit-zip filename leak (see the catch).
+
+## 4. Flags that travel with this result
+
+DeepSeek's validation self-ID was full and version-bearing (no anomaly — contrast C-026a). GPT-5's TTM sibling verdict broke the project blind via the **zip filename** (C-030) — its *validation* verdict shows RECOGNIZE: NONE, but the same family saw the validation zip's filename too ("systems-theory-validation-kit-s4h.zip"); the exposure is booked for both zip-route coders (Grok, ChatGPT), dual-reporting available on request — no gate outcome changes under any subset (bands are unanimous or within-one everywhere). Every number above: **cross-model-confirmed, n=1 of a kind (L-013), revisitable by a future fork.**
+
+*Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
