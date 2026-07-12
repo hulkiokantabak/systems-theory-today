@@ -204,6 +204,20 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **⚠ The S4h honesty notes (all binding).** **(1)** Per Campbell (item H): the count of S4h ratifications may never be cited as evidence of health, rigor, or momentum — a ratification count under standing self-delegation is a births-only indicator whose absent external check is a booked cost (C-027); item H itself is a compliance record, not a decision, and is excluded from any such count. **(2) The session's headline includes what it did not do (mandatory, at equal prominence):** the drain's zero-strike clock posted its first pre-registered NULL — *the operator has never yet initiated a costly subtraction of its own; this is recorded evidence against Theory C's "the machine subtracts" sub-claim* — decomposed (part of the zero is design-bound) and unnetted against DC-005's liveness entry (`logs/DECISIONS_CHANGED.md` §5.1). **(3)** The repo clock (2026-10-01) is untouched — booked as a named trade, not restraint-credit; the advance-or-hold question is queued for the author's first contact.
 
+### Snapshot — Session 4i (a second standing delegation; opened at booking, extended at wrap; current)
+
+*The author opened S4i with a second standing delegation — a "very long loop run to complete all you can autonomously" plus a commissioned five-user website playtest program — **booked at receipt as C-032**, before any decision was taken under it (the C-023/C-027 discipline, third application). Every S4h stamp remains provisional-pending-author throughout; nothing this session implies their confirmation. This snapshot opens at booking and is extended at wrap.*
+
+| Metric | Value | Δ vs S4h | Notes |
+|---|---|---|---|
+| Files created | 43 | 0 | (updated at wrap if the session record or other canonical files land) |
+| Catches / Learnings | 32 / 15 | +1 / 0 | + **C-032** (the second standing delegation, stacked on unconfirmed stamps — booked as a cost at receipt) |
+| Open questions | 17 | 0 | |
+| Live disagreements logged | 7 | 0 | |
+| Diagrams | 9 | 0 | |
+| Pressure-tests defined | 13 | 0 | |
+| Ground rules | 24 | 0 | |
+
 ## 3. What we track and why
 
 **Effort / throughput**
