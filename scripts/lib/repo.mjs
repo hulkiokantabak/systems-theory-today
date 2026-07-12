@@ -16,6 +16,13 @@ export const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', 
 export const CODE_LAYER_DIRS = new Set([
   '.git', 'node_modules', '_site', '.cache',
   'scripts', 'site', 'studies', '.github', 'dashboard', 'skills',
+  // playtests/: the S4i author-commissioned site-playtest program (persona files,
+  // cycle reports, expert sessions, the content queue). Excluded from the content
+  // baseline like studies/. Named cost (Campbell, S4i item 7): a directory the
+  // checker cannot see is a directory where drift is invisible — nothing canonical
+  // may ever live here, and per-cycle path scope is enforced separately by
+  // scripts/check-playtest-paths.mjs.
+  'playtests',
 ]);
 
 // Code-layer artifacts that live *inside* a canonical directory (added by Code

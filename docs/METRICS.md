@@ -210,13 +210,15 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 | Metric | Value | Δ vs S4h | Notes |
 |---|---|---|---|
-| Files created | 43 | 0 | (updated at wrap if the session record or other canonical files land) |
-| Catches / Learnings | 32 / 15 | +1 / 0 | + **C-032** (the second standing delegation, stacked on unconfirmed stamps — booked as a cost at receipt) |
+| Files created | 47 | +4 | + `panel/SESSION_S4I_RATIFICATION.md` (the session record) + `panel/B4_EVIDENCE_COLLATION_S4I.md` (judgment-free — zero proposed rungs) + `panel/GRADER_DESIGN_CANDIDATE_V03_S4I.md` (candidate amendments beside the unmodified v0.2) + `panel/GRADER_SHADOW_LOG_S4I.md` (the shadow run's append-only log — void-or-confirmed wholesale at the author's seating decision). The case-D hand-off, C-031 candidate, detection-repair requirements, and playtest program live under `studies/` and `playtests/` (Code-layer, excluded) |
+| Catches / Learnings | 34 / 15 | +3 / 0 | + **C-032** (the second standing delegation, booked as a cost at receipt) + **C-033** (one clock, two enacted letters — the theory-doc banners vs the causal doc; adversary-caught, verified on-disk) + **C-034** (the rung-label clock expired unmet — the automatic latency catch, booked BARE under the harsher letter). **Candidate L-016 NOT minted** (the S4i panel refused the mint — a second delegation may not override a first delegated session's restraint) |
 | Open questions | 17 | 0 | |
 | Live disagreements logged | 7 | 0 | |
 | Diagrams | 9 | 0 | |
 | Pressure-tests defined | 13 | 0 | |
 | Ground rules | 24 | 0 | |
+
+**The S4i panel and its enactments (headline).** An 8-lens + 4-adversary panel processed the delegable docket; the adversaries **flipped three dispositions** (grader seating → **shadow-run, seat held**; the strike-audit's "CONFIRMED unsatisfiable" → **hypothesis-grade "untestable-as-posed"** — the filter's never-bit predicate is undecidable as posed; the case-D single-direction candidate → a **two-reading hand-off**) and found C-033 on disk. Enacted: the case-D adjudication hand-off (case D stays an OPEN ADJUDICATION ITEM; two readings for the author); the C-031 re-seal candidate (two-tier equivalence form with the power arithmetic on its face); the detection-repair requirements sealed (`studies/study-C-ablation/DETECTION_REPAIR_REQUIREMENTS_S4I.md` — the E1/E2 form at the detection layer); the rung-label HOLD (evidence collation only; C-033/C-034 booked; banners corrected); the drain's third audit posted at instrument-failure strength with the audit continuing under protest; the §5.1 Entry-3 channel decomposition (the open, unused self-initiated-subtraction channel is the null's honest content); the playtest-program governance (render-invariant honesty markers; the pseudo-user bar; five cycles then stop). Everything `panel-delegated (S4i standing delegation)`, provisional-pending-author, reversible — stacked on an S4h storey that is itself unconfirmed.
 
 ## 3. What we track and why
 
