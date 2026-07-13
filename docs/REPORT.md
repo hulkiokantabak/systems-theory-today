@@ -123,7 +123,7 @@ The **arrows between the layers are the research program** — which driver driv
 
 ## VIII. Coda — what would make it real
 
-The project's most useful self-description is also its most modest: it is, so far, an unusually disciplined and honest **design for finding out**, and it has not yet found anything out. Four things would change that, in order of leverage:
+The project's most useful self-description is also its most modest: it is, so far, a **design for finding out** — with an explicit honesty discipline whose reliability only an outside reader can judge (the self-grade is not the project's to award) — and it has not yet found anything out. Four things would change that, in order of leverage:
 
 1. **Run Study B.** The single act that turns design into evidence. Everything else waits behind it.
 2. **Run Study C's ablation** and **compute the catch-provenance metric** — even if it embarrasses the chair. The honesty is the product.

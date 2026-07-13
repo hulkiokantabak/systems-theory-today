@@ -1,0 +1,87 @@
+---
+permalink: /
+layout: base.njk
+title: A Systems Theory for Today
+eleventyExcludeFromCollections: true
+---
+<style>
+/* Homepage-only styling (the S4k warm MLV front door). Uses the site's own tokens so
+   both day and night themes inherit correctly; CSP allows 'unsafe-inline' for styles. */
+.prose .stage-line{font-family:var(--mono);font-size:13px;line-height:1.6;color:var(--ink-soft);background:var(--hair-2);border:1px solid var(--hair);border-radius:9px;padding:12px 16px;margin:0 0 1.6em}
+.prose h1.home-h1{font-size:clamp(30px,6vw,52px);margin:.1em 0 .5em}
+.prose blockquote.home-wager{border-left-width:3px;font-size:clamp(17px,2.3vw,20px);color:var(--ink)}
+.prose .caveat{border:1px solid var(--amber);border-radius:9px;padding:14px 18px;color:var(--ink-soft);background:rgba(240,178,74,.05);margin:1.4em 0}
+.prose ol.home-questions li{margin:.5em 0;color:var(--ink-soft)}
+.prose ol.home-questions li::marker{color:var(--amber)}
+.prose dl.home-theories{margin:1em 0 1.4em}
+.prose dl.home-theories dt{font-family:var(--serif);font-weight:600;font-size:1.12em;color:var(--ink);margin:1em 0 .15em}
+.prose dl.home-theories dd{margin:0;color:var(--ink-soft);line-height:1.5}
+.prose dl.home-theories dt .dim{font-family:var(--mono);font-size:.62em;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);font-weight:400}
+.prose h2.home-failures-h{color:var(--ink)}
+.prose ul.home-failures li{margin:.4em 0;color:var(--ink-soft)}
+.home-doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:1.2em 0 1.4em;padding:0}
+.prose .home-doors p{margin:0}
+.prose a.door{display:block;border:1px solid var(--hair);border-radius:11px;padding:15px 17px;color:var(--ink);line-height:1.4;transition:border-color .12s,background .12s}
+.prose a.door:hover{border-color:var(--amber);background:var(--hair-2)}
+.prose a.door .dim{font-family:var(--sans);font-size:14px;color:var(--ink-faint)}
+.prose .home-care-door{border-left:2px solid var(--cyan);padding-left:1.1em;color:var(--ink-soft);margin:1.4em 0}
+.prose .home-foot{font-family:var(--sans);font-size:14.5px;line-height:1.6;margin-top:2em;padding-top:1.2em;border-top:1px solid var(--hair-2)}
+</style>
+<p class="stage-line"><strong>What this is:</strong> a research program — three untested seed hypotheses, one borrowed falsifiable chain, and <em>no data yet</em>. Not a finished theory. An honest attempt, with its failures kept in the light.</p>
+
+<h1 class="home-h1">A systems theory for today</h1>
+
+<p class="lede">Someone you know wanted a child and is not having one. Someone you know cannot put the phone down at two in the morning. Someone you know holds a family, a ward, a neighbourhood together with their hands, and is counted in none of the numbers below. This project is about the world those people are living in — and about a suspicion that the reasons are connected.</p>
+
+<p>For most of history, people who wanted to understand everything at once could try to write it down in one book. Since roughly a century ago — since Heidegger, the last to seriously attempt it — no single mind has managed a <em>total</em> account of nature, history, society, and meaning together. The world got too fast, too specialised, too entangled. This project starts from a hunch and tests it by trying:</p>
+
+<blockquote class="home-wager">Maybe the reason no one can hold the whole any more is that the whole was never meant to be held by <em>one</em> mind — and the way through is a different method: many perspectives, in structured disagreement, argued out in the open and revised without end.</blockquote>
+
+<p class="caveat"><strong>The honest catch, up front:</strong> that "many perspectives" is, for now, <em>one</em> AI model prompted into many roles — a panel, its critics, its graders, all drawn from one well. So the plurality is <em>asserted, not demonstrated</em>, and by the author's decision this build will not get the outside eyes that could earn it. What you're reading is a rigorous scaffold with its own honesty turned against it — not a result. The counterargument to the "since Heidegger" story lives, in full, on <a href="{{ '/history/' | url }}">the history page</a>: the ambition didn't die, it migrated.</p>
+
+<h2>The question, in seven plain ones</h2>
+<p>A theory of "today" is worth something only if it can shed light on the things people actually feel. So these are the pressure-tests:</p>
+<ol class="home-questions">
+  <li>Why are people not having the children they say they want?</li>
+  <li>Why has the dopamine hit — the scroll, the feed — become so central?</li>
+  <li>Why does "post-truth" feel too small a word for the flood of propaganda?</li>
+  <li>Why is all of this happening <em>now</em>?</li>
+  <li>Why are we wrecking the climate we depend on?</li>
+  <li>Why can we no longer coordinate, or even talk across the divide?</li>
+  <li>Why are strongmen and grievance rising across so many countries at once?</li>
+</ol>
+<p>Under all seven: what happened to a <em>shared</em> sense of why any of it matters? Since, the panel widened these to fourteen tests in four coupled layers — plus, at the author's last pass, a fourteenth that turns the question on the project itself: <strong>does this account systematically under-weight the register of care — the reproductive, the domestic, the relational — the register in which a life is actually lived?</strong> (The full set: <a href="{{ '/docs/goals/' | url }}">Goals</a>.)</p>
+
+<h2>Three attempts at an answer (and a fourth in waiting)</h2>
+<p>The project seeds its own candidate theories — offered as things to break, not to believe. Each in two plain paragraphs on <a href="{{ '/outputs/candidate_theories/' | url }}">the theories page</a>; in short:</p>
+<dl class="home-theories">
+  <dt>A — The Adaptation Gap</dt>
+  <dd>Our machines and systems now change faster than our institutions, habits, and cultures can adapt. Most of the symptoms are downstream of that widening gap. The most integrative story; the hardest to pin to a test.</dd>
+  <dt>B — The Optimization Ecology</dt>
+  <dd>Markets, feeds, and technical systems that optimise relentlessly capture human drives — attention, outrage, desire — as fuel, and drift toward running on their own logic rather than any human end. Not by a plan; by selection. The cheapest of the three to test against the record.</dd>
+  <dt>C — Distributed Coherence</dt>
+  <dd>If no one mind can hold the whole, then the honest form of understanding is a <em>commons</em> — many vantages, governed to stay honest and revisable, not a single author's book. This project is meant to <em>be</em> an instance of it. Its own strongest evidence — and its deepest conflict of interest.</dd>
+  <dt>D — Differentiation <span class="dim">(in waiting)</span></dt>
+  <dd>Luhmann's rival, recorded but not built: maybe there was never one shared coherence to lose — modern society split into separate spheres that can't speak for the whole, and the "loss of meaning" is just how that feels from the inside. A door left open for a future contributor.</dd>
+</dl>
+
+<h2 class="home-failures-h">What has been tested — and failed</h2>
+<p>This is the part most projects bury. It is the most credible thing here, so it goes above the fold. The project built measuring instruments and, where it could, ran them. The honest scoreboard:</p>
+<ul class="home-failures">
+  <li><strong>Nothing has been tested against the world.</strong> The one study that could run needs outside data that will not come; the others are designs, not results.</li>
+  <li>An <strong>ablation</strong> meant to show the method beats a lone author returned a result <em>compatible with no effect</em> (1.15×, p=0.24) — and the instrument measuring it hasn't cleared its own reliability floor.</li>
+  <li>A <strong>placebo</strong> test found its "empty" control wasn't empty; a <strong>convergence</strong> instrument was found to reward form over substance and was pulled.</li>
+  <li>One severity instrument <em>passed</em> its cross-checks. One out of four. That's the true tally, and it is stated plainly on the <a href="{{ '/diagrams/' | url }}">self-audit page</a>.</li>
+</ul>
+<p>A project rewarded for catching its own errors can start manufacturing catchable errors to catch. The only thing that tells honesty from performance is a change in what actually gets done — so the record also keeps what <em>didn't</em> change, at equal size.</p>
+
+<h2>Where to go from here</h2>
+<div class="home-doors">
+  <p><a class="door" href="{{ '/summary/' | url }}"><strong>Read the plain-language summary →</strong><br><span class="dim">The whole thing in two pages, including what has not been shown.</span></a></p>
+  <p><a class="door" href="{{ '/logs/open_questions/' | url }}"><strong>See the open questions →</strong><br><span class="dim">The unsettled arguments and live disagreements — the most honest page, and where a contributor would start.</span></a></p>
+  <p><a class="door" href="{{ '/outputs/candidate_theories/' | url }}"><strong>Read the three theories →</strong><br><span class="dim">The candidate answers, in full, offered to be broken.</span></a></p>
+  <p><a class="door" href="{{ '/diagrams/' | url }}"><strong>Check the self-audit →</strong><br><span class="dim">Every count the project makes about itself — and the failed instruments, flat.</span></a></p>
+</div>
+<p class="home-care-door"><strong>And if you hold people together for a living</strong> — if you nurse, teach, parent, care, organise — the project has a question it owes you and has under-served for three cycles, now written down as its fourteenth test. Start at the <a href="{{ '/logs/open_questions/' | url }}">open questions</a>; the register of care is the one it most needs a real outside voice to correct.</p>
+
+<p class="home-foot dim">New to the shorthand? The <a href="{{ '/decoder/' | url }}">codes are decoded here</a>, and <a href="{{ '/standing/' | url }}">what the author has actually confirmed</a> is listed separately from what's still provisional. The working repository (the maintainer's <a href="{{ '/readme/' | url }}">README</a> and machinery) opens to real contributors on the clock in the <a href="{{ '/docs/repo_open_checklist/' | url }}">repo-open checklist</a> — there is no live "fork now" yet, and this page won't pretend there is.</p>

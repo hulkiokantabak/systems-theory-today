@@ -119,6 +119,18 @@ Each entry: **ID** · the lesson (one line) · the evidence (which catches/round
 - **Evidence:** C-015 (Study-C pilot); the reflection panel's Rounds 1/2/4.
 - **Change it caused:** the foreign-grading-outsider requirement (surfaced for ratification); reframes the project's "self-correction" as necessary-but-not-sufficient. **Status:** active.
 
+## Session 4k (the author's ratifying contact + the closing loop)
+
+### L-016 — Anchoring a judgment's *scale* is not anchoring its *detection*; each layer of an instrument needs its own validation
+- **Lesson:** an instrument can pass one reliability layer and fail another silently. The severity guide was repaired until cross-family band **agreement hit 94%** — but the same rounds showed catch-**detection/unitization** at **~1%** (74 vs 20 vs 20 catch events on the same material): coders who *agree how severe a catch is* still *disagree wildly on what counts as a catch and where it starts*. So every ablation ratio denominated in "catches" is denominated in an unreliable unit, and is uninterpretable in either direction until the detection layer is separately anchored (a pre-registered catch-event definition). **Anchoring scale ≠ anchoring detection.**
+- **Evidence:** the S4h severity repair (94% agreement, PASSED) vs the S4i blue read (1% pairwise catch-identification, INDETERMINATE at a new layer); candidate surfaced S4i, held (a delegation may not override a prior delegation's restraint), **minted S4k at the author's ratifying contact.**
+- **Change it caused:** the bite-event definition (`studies/study-C-ablation/BITE_EVENT_DEFINITION_S4K.md`, decision 11) that makes the detection/strike layer decidable; and the rule that a multi-layer instrument is only as reliable as its *weakest validated layer*, cited on every ablation read. **Status:** active.
+
+### L-017 — When no foreign vantage will come, the honest terminal act is to concede, not to keep the claims "armed and waiting"
+- **Lesson:** a self-administered apparatus can hold falsifiers "armed but unfired" indefinitely, which *looks* like rigor but is actually a way to never be wrong. If, by the project's own honest reckoning, the outside vantage that could fire them will not arrive in this build, the disciplined move is to **concede the external-dependent claims as conclusively-untested-in-setup** — not falsified, not confirmed, *closed* — and let the author's judgment be the named terminal ratifier. **Completion is a decision, not a discovery.** The most honest thing a one-aquifer apparatus can do at the end is state precisely what it could not test, retire the sub-claims its own nulls falsified, and stop building — rather than manufacture one more instrument to defer the admission.
+- **Evidence:** the four-reading zero-strike null retired as DC-007; the two death-conditions made coherent (C-031 re-seal, bite-event) yet conceded unfireable-here; the S4k concession (decision 3) and the Rule-25 moratorium (decision 2).
+- **Change it caused:** the S4k concession as a standing frame; DC-007; the reversible moratorium (Rule 25); this whole closing loop's discipline of *fix-and-concede* over *build-and-defer*. **Status:** active. *(Standing tension, preserved — Campbell: "the author judged it complete" is still one self-reported indicator, and the closing document is the apparatus's most persuasive surface.)*
+
 ---
 
 ## How learnings feed forward

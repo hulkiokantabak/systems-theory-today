@@ -1,6 +1,6 @@
 # METRICS
 
-Version: 0.6 · Status: Living · Last updated: Session 4j
+Version: 0.7 · Status: Living · Last updated: Session 4k
 
 *Everything we count, from prompts to outputs. Updated at the end of every session. Metrics are a mirror, not a target — we track them to see the project honestly, not to game them.*
 
@@ -222,7 +222,7 @@ Version: 0.6 · Status: Living · Last updated: Session 4j
 
 **The S4i panel and its enactments (headline).** An 8-lens + 4-adversary panel processed the delegable docket; the adversaries **flipped three dispositions** (grader seating → **shadow-run, seat held**; the strike-audit's "CONFIRMED unsatisfiable" → **hypothesis-grade "untestable-as-posed"** — the filter's never-bit predicate is undecidable as posed; the case-D single-direction candidate → a **two-reading hand-off**) and found C-033 on disk. Enacted: the case-D adjudication hand-off (case D stays an OPEN ADJUDICATION ITEM; two readings for the author); the C-031 re-seal candidate (two-tier equivalence form with the power arithmetic on its face); the detection-repair requirements sealed (`studies/study-C-ablation/DETECTION_REPAIR_REQUIREMENTS_S4I.md` — the E1/E2 form at the detection layer); the rung-label HOLD (evidence collation only; C-033/C-034 booked; banners corrected); the drain's third audit posted at instrument-failure strength with the audit continuing under protest; the §5.1 Entry-3 channel decomposition (the open, unused self-initiated-subtraction channel is the null's honest content); the playtest-program governance (render-invariant honesty markers; the pseudo-user bar; five cycles then stop). Everything `panel-delegated (S4i standing delegation)`, provisional-pending-author, reversible — stacked on an S4h storey that is itself unconfirmed.
 
-### Snapshot — Session 4j (a third standing delegation: the state-of-project forum; opened at booking, extended at wrap; current)
+### Snapshot — Session 4j (a third standing delegation: the state-of-project forum; opened at booking, extended at wrap; superseded)
 
 *The author opened S4j with a THIRD standing delegation — an exhaustive expert forum on the state of the project, three deliverable documents (a systems-theory report; a wrongs analysis; an improvement plan) as six PDFs, then implementation, a Plan/Method update, a full ripple, and a proposed-actions presentation — **booked at receipt as C-035**, before any forum work. C-035 is the first live trigger of the SG-10 stacking guard (`panel/GRADER_SHADOW_LOG_S4I.md`): a third delegation stacked on the two unconfirmed storeys (all of S4h and S4i). The guard FIRED and was OVERRIDDEN on the record (Rule 11; the author present and directing) — the override is now visible, the guard's stated purpose. Every S4j output is `forum-delegated (S4j standing delegation)`, provisional-pending-author, reversible; no rung fires; the three-storey provisional tower is surfaced again at the close.*
 
@@ -235,6 +235,22 @@ Version: 0.6 · Status: Living · Last updated: Session 4j
 | Diagrams | 9 | 0 | |
 | Pressure-tests defined | 13 | 0 | |
 | Ground rules | 24 | 0 | |
+
+### Snapshot — Session 4k (the author's ratifying contact — the build closed; current)
+
+*Not a fourth delegation: the author returned to **rule**. He answered twelve load-bearing decisions (multiple-choice, Code's recommendation shown), authorized a named residue, and directed "complete the build by resolving the outstanding issues… apply and do a major closing loop." The three-storey provisional tower (S4h + S4i + S4j) is resolved — what he ruled on is canonical (Rule 11), the residue applied, the rest carried honestly. Full record: `panel/SESSION_S4K_RATIFICATION.md`. **No rung moved in the world; the drain fired once, by the author's hand, retiring the very sub-claim that it fires of its own motion; the honest verdict is a closed research program, not a demonstrated theory.***
+
+| Metric | Value | Δ vs S4j | Notes |
+|---|---|---|---|
+| Files created | 49 | +1 | + `panel/SESSION_S4K_RATIFICATION.md` (the author's ratification record). The bite-event definition, the C-031 re-seal adoption, and the case-D ruling live under `studies/` (Code-layer, excluded); the warm MLV homepage lives under `site/` (Code-layer, excluded) |
+| Catches / Learnings | 36 / 17 | +1 / +2 | + **C-036** (the Downloads deliverables wiped a second time; the in-repo siblings survived — a prior fix shown load-bearing); + **L-016** (anchoring a judgment's *scale* is not anchoring its *detection* — minted at last, at the author's contact) + **L-017** (when no foreign vantage will come, the honest terminal act is to concede, not keep claims armed-and-waiting) |
+| Open questions | 17 | 0 | Q-016 (the foreign grader) is **answered by concession** — it will not come in this build; answered questions stay logged, so the count holds |
+| Live disagreements logged | 7 | 0 | differentiation is recorded as **Theory D in waiting** (the strong form of D-002), not booked as a new disagreement |
+| Diagrams | 9 | 0 | |
+| Pressure-tests defined | **14** | **+1** | + **R** — register/care fairness, a cross-cutting reflexive test promoted from the D-005 dissent at the author's ratification (`docs/GOALS.md`; the check regex extended to count it) |
+| Ground rules | **25** | **+1** | + **Rule 25** — the moratorium on net-additive machinery (**reversible**, unlike R24's entrenched clauses); R22/R23/R24 + Rule 17b, provisional across three delegated sessions, are **ratified** by the S4k contact |
+
+**⚠ The S4k honesty note (binding, at equal prominence — the H discipline).** This session's ratification count is not health-evidence: "the author judged it complete" is one self-reported indicator, and a closing document is the apparatus's most persuasive surface (Campbell, preserved). **What closing the build did NOT do:** no object-level rung moved; nothing was tested against the world (by C-017, nothing can be in this setup); the drain's one fire (DC-007) was author-initiated, so the self-initiated "of its own motion" channel stands at **zero across four readings** — DC-007 retires the sub-claim that it would ever be nonzero; the two death-conditions are now coherently defined but, by the author's concession, **unfireable here**; and **the first genuinely foreign reader never arrived and, by ruling, will not in this build.** The plurality is set down, not earned back. The honest terminal state: a research program with strong hygiene, closed by its author — not a systems theory demonstrated.
 
 ## 3. What we track and why
 
@@ -260,7 +276,7 @@ Version: 0.6 · Status: Living · Last updated: Session 4j
 
 ## 4. Pressure-test coverage tracker (expanded, Session 2)
 
-*The thirteen tests in four layers (`GOALS.md`, `panel/SESSION_2_PRESSURE_TESTS.md`). "First-pass account" = a systems-level explanation exists in the record; the harder bar (Goal S2) is a genuinely **falsifiable** claim. From Session 2 there is a second coverage question — whether the **cross-layer arrows** are drawn (`DIAGRAMS.md` §4) — tracked in the notes.*
+*The fourteen tests — thirteen in four layers plus the cross-cutting reflexive R (`GOALS.md`, `panel/SESSION_2_PRESSURE_TESTS.md`). "First-pass account" = a systems-level explanation exists in the record; the harder bar (Goal S2) is a genuinely **falsifiable** claim. From Session 2 there is a second coverage question — whether the **cross-layer arrows** are drawn (`DIAGRAMS.md` §4) — tracked in the notes.*
 
 | ID | Test | Layer | First-pass? | In which theory | Falsifiable claim yet? |
 |---|---|---|---|---|---|
@@ -277,8 +293,9 @@ Version: 0.6 · Status: Living · Last updated: Session 4j
 | S2 | Attention economy | Symptom | Yes | B (primary) | Partial (measurable) |
 | S3 | Populism | Symptom | Yes | A + B; Turchin | **Yes** (structural-demographic prediction) |
 | S4 | Anomie / loneliness | Symptom | Partial (named S2) | C; Han | Not yet |
+| R | Register / care fairness | **Reflexive (cross-cutting)** | Named (S4k) | D-005; Le Guin | **Drafted** — falsified if a corpus register-audit finds care/relational conditions at parity; confirms register-blindness if under-represented (untested in-setup, one-aquifer, per the S4k concession) |
 
-*Coverage: 13 tests; ~11 have a first-pass account (D4 and S4 newly named, accounts partial); ~3 carry a clearly falsifiable claim (D3, Y3, S3) with several partial. **Raising the falsifiable count — starting with D1 (Q-001) — is the main Phase-1 task.** The new Session-2 standard (drawing the cross-layer arrows as testable feedback) is met in draft by the §4 concept map and awaits signed causal-loop diagrams.*
+*Coverage: 14 tests (13 in four layers + 1 cross-cutting reflexive, R, added S4k); ~11 have a first-pass account (D4 and S4 newly named, accounts partial; R is named-and-drafted, not first-pass-accounted); ~3 carry a clearly falsifiable claim (D3, Y3, S3) with several partial, and R adds a *drafted* falsification condition (untested). **Raising the falsifiable count — starting with D1 (Q-001) — is the main Phase-1 task.** The new Session-2 standard (drawing the cross-layer arrows as testable feedback) is met in draft by the §4 concept map and awaits signed causal-loop diagrams.*
 
 ## 5. Snapshot discipline
 

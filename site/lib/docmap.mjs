@@ -97,7 +97,12 @@ function firstH1(relPath) {
 }
 
 export function docUrl(relPath) {
-  if (relPath === 'README.md') return '/';
+  // S4k (decision 6 — the reading site is the artifact): the front door `/` is the
+  // hand-authored warm homepage (`site/index.njk`), not the canon README. The README
+  // is demoted to a maintainer page at /readme/ (still rendered, still link-resolvable
+  // from cross-references and the homepage; just no longer the front door — the S4j
+  // "front door is a changelog" finding, fixed).
+  if (relPath === 'README.md') return '/readme/';
   const noext = relPath.replace(/\.(md|html)$/i, '');
   return '/' + noext.split('/').map((s) => s.toLowerCase()).join('/') + '/';
 }

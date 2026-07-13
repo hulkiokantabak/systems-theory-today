@@ -7,7 +7,7 @@ export default {
   cards: [
     { n: '4', label: 'working sessions', src: 'docs/METRICS.md' },
     { n: '~47k', label: 'words of content', src: 'docs/METRICS.md' },
-    { n: '13', label: 'pressure-tests, in 4 layers', src: 'docs/GOALS.md' },
+    { n: '14', label: 'pressure-tests (13 in 4 layers + 1 cross-cutting)', src: 'docs/GOALS.md' },
     { n: '3', label: 'candidate theories — all operationalized', src: 'outputs/CANDIDATE_THEORIES.md' },
     { n: '10 + 22', label: 'core panel + advisory bench', src: 'panel/PANEL_ROSTER.md' },
     { n: '7', label: 'standing disagreements preserved', src: 'logs/OPEN_QUESTIONS.md' },
@@ -35,6 +35,7 @@ export default {
     { id: 'S2', name: 'Attention economy', layer: 'Symptoms', firstPass: 'Yes', home: 'B', falsifiable: 'partial' },
     { id: 'S3', name: 'Populism', layer: 'Symptoms', firstPass: 'Yes', home: 'A + B · Turchin', falsifiable: 'yes' },
     { id: 'S4', name: 'Anomie / loneliness', layer: 'Symptoms', firstPass: 'Partial', home: 'C · Han', falsifiable: 'no' },
+    { id: 'R', name: 'Register / care fairness', layer: 'Reflexive', firstPass: 'Named (S4k)', home: 'D-005 · Le Guin', falsifiable: 'drafted' },
   ],
 
   // per-session trajectory (docs/METRICS.md snapshots)

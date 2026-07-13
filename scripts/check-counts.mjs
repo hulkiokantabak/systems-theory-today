@@ -64,7 +64,10 @@ const reality = {
   openQ: (oq.match(/^### Q-0\d{2}/gm) || []).length,
   disagreements: (oq.match(/^### D-0\d{2}/gm) || []).length,
   diagrams: (diagramsMd.match(/^```mermaid/gm) || []).length,
-  pressureTests: uniqueMatches(goals, /\*\*(M|D[1-4]|Y[1-4]|S[1-4])\b/g).size,
+  // M + D1-4 + Y1-4 + S1-4 = 13 layered tests; + R (the S4k cross-cutting register/care
+  // test) = 14. Bounded to 1-4 so the Goal success-criteria S5 is never miscounted; R\b
+  // matches only the bare "**R " token, never "**Register"/"**Read" (no word boundary).
+  pressureTests: uniqueMatches(goals, /\*\*(M|D[1-4]|Y[1-4]|S[1-4]|R)\b/g).size,
   groundRules: Math.max(0, ...[...groundRules.matchAll(/\*\*(\d+)\.\s/g)].map((m) => +m[1])),
 };
 const vizFigures = (vizHtml.match(/\bn:\s*"(\d{2})"/g) || []).length;

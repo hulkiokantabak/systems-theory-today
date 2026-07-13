@@ -7,18 +7,18 @@ import facts from './facts.js';
 
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
-// ── 1. The claim funnel: 13 → ~11 → 3 → 0 ─────────────────────────────
+// ── 1. The claim funnel: 14 → ~11 → 3 → 0 ─────────────────────────────
 function funnel() {
   const tiers = [
-    { label: '13 pressure-tests defined', n: 13, cls: 'ink', hollow: false },
+    { label: '14 pressure-tests defined', n: 14, cls: 'ink', hollow: false },
     { label: '~11 with a first-pass account', n: 11, cls: 'ink', hollow: false },
     { label: '3 with a falsifiable claim', n: 3, cls: 'amber', hollow: false },
     { label: '0 tested against data', n: 0, cls: 'ink', hollow: true },
   ];
   const W = 660, x0 = 6, barX = 30, barMax = 380, rowH = 52, top = 14, H = top + tiers.length * rowH + 6;
-  let s = `<svg class="fchart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Claim funnel: 13 pressure-tests defined, about 11 with a first-pass account, 3 with a falsifiable claim, 0 tested against data.">`;
+  let s = `<svg class="fchart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Claim funnel: 14 pressure-tests defined, about 11 with a first-pass account, 3 with a falsifiable claim, 0 tested against data.">`;
   tiers.forEach((t, i) => {
-    const y = top + i * rowH, w = Math.max(t.n / 13 * barMax, t.n === 0 ? 3 : 0);
+    const y = top + i * rowH, w = Math.max(t.n / 14 * barMax, t.n === 0 ? 3 : 0);
     if (t.hollow) {
       s += `<rect x="${barX}" y="${y}" width="${Math.max(w, 26)}" height="30" rx="4" class="fill-none s-soft" stroke-dasharray="4 4"/>`;
     } else {

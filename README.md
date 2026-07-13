@@ -3,10 +3,10 @@
 *A living, open, collaboratively-built attempt to construct a systems theory adequate to the world of the 2020s — by new methods, because the old ones no longer reach.*
 
 Founder / author: **Hulki Okan Tabak — with Claude**
-Status: **v0.4 — Foundation (S1); field surveyed, pressure-tests expanded, shuttle designed (S2); Phase 1 — living-document concept + Theory A operationalized (S3); Theories B & C operationalized, pivot to Code prepared (S4)**
+Status: **a research program — three untested seed hypotheses, one borrowed falsifiable chain, and no data yet.** *(Honest stage, named at the author's S4k ratifying contact — decision 1. The evocative title stays; this line sits above it so nothing over-claims. Build history: Foundation S1; field surveyed + pressure-tests expanded + shuttle designed S2; living-document + Theory A operationalized S3; Theories B & C operationalized S4; the empirical turn, its instruments, and three delegated sessions S4d–4j; **the author closed the build at S4k** — `panel/SESSION_S4K_RATIFICATION.md`.)*
 License: docs under **CC BY-SA 4.0**, any code under **MIT** (see `LICENSE.md`)
 
-**Read it online → [hulkiokantabak.github.io/systems-theory-today](https://hulkiokantabak.github.io/systems-theory-today/)** · the public reading surface. *(Publishes when the repo is pushed and GitHub Pages is enabled; the contribution repository stays private until the skeleton is stable — `docs/THE_LIVING_DOCUMENT.md` §7.)*
+**Read it online → [hulkiokantabak.github.io/systems-theory-today](https://hulkiokantabak.github.io/systems-theory-today/)** · **the reading site is the project's artifact** (S4k decision 6); *this README is the maintainer's front page behind it.* *(The site publishes when the repo is pushed and Pages is enabled; the contribution repository opens on the clock in `docs/REPO_OPEN_CHECKLIST.md`.)*
 
 ---
 
