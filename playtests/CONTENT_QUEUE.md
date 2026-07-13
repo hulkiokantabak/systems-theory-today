@@ -38,4 +38,11 @@ Status: author-commissioned, panel-executed (S4i standing delegation). Per `PROG
 | 29 | 4 / Ruth | "There is no door marked 'if you hold people together for a living, start here.' The door exists; it's unmarked." | An authored invitation (CONTENT — the author's voice) |
 | 30 | 4 / Ruth | EXIT, addressed to the author: "Tell the author: the invisible load-bearing wall reads your website on her night off, and she can find your taxonomy in three minutes. She cannot find a single person in it." | Delivered verbatim |
 
-*(entries append below as cycles run)*
+| 31 | 5 / Viktor | "Since Heidegger, no single thinker has produced a total explanatory system" (home lede) — "the project's OWN History page carries the rebuttal ('the most direct rebuttal… is a sociologist [Luhmann]'; Wilber; Big History) two clicks deep, no caveat at the front door." | README front-door claim (CANON) |
+| 32 | 5 / Viktor | "'pre-registered' licenses belief in a third-party-inspectable registry; the registrations are self-hosted in a private repo, every studies/ URL 404s publicly until 2026-10-01: 'pre-SPECIFIED, self-hosted, on the honor system.'" | The registry question — for the author WITH the repo-open decision (clock 2026-10-01) |
+| 33 | 5 / Viktor | "It renders every doc" (home) "while reading-order item 17 (COOPERATION_LOG) is unlinked and unrendered." | README claim vs docmap scope (CANON) |
+| 34 | 5 / Viktor | "They are hiding their best honesty in the basement": the self-audit page "says '0 tested against data' (good) but misses that instruments HAVE been tested and several FAILED: C-025, C-026 17% floor failure, DC-006, the pre-registered NULL against Theory C's sub-claim." | Surfacing negative results on the self-audit page (AUTHORED CONTENT — the rare finding asking the site to show MORE failures) |
+| 35 | 5 / Viktor | "unusually disciplined design" (Project report) — "self-graded adjective, antidote in the same sentence." | docs/REPORT.md register (CANON) |
+| 36 | 5 / Viktor | "Chain 3 dead-ends: every empirical claim's terminal receipt (studies/) is 404 until repo-open. 'A confession you cannot audit is still, functionally, a claim.'" + "'4 project-blind external LLMs' — they demoted their own headline (C-021) but no public receipt exists." | Receipts architecture (for the author, ties to the repo-open clock) |
+
+*(THE PROGRAM IS CLOSED: five cycles complete. Extension is the author's act alone.)*

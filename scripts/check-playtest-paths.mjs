@@ -33,6 +33,12 @@ const paths = [...new Set([...out.split(/\r?\n/), ...untracked.split(/\r?\n/)])]
 const PRESENTATION = [
   /^site\/_includes\//, /^site\/assets\//, /^site\/manifest\.webmanifest$/,
   /^\.eleventyignore$/, // site build config (no words; cycle 2 uses it to keep playtests/ off the public site)
+  // v1.3 (cycle 5, boundary extension LOGGED and author-visible per the
+  // research-integrity condition): the Eleventy build config is rendering
+  // machinery, zero words — admitted so the (c)->© canon-glyph-corruption fix
+  // (md.disable('replacements')) does not route around the program. Boundary
+  // extensions are how programs creep; this one is named, dated, and single-file.
+  /^eleventy\.config\.js$/,
 ];
 // SITE-COPY: site-native words and meaning-adjacent wiring — editable ONLY with
 // manifest-before-deploy + D-007 check + author-visible queue entry.

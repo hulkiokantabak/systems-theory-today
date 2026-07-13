@@ -41,6 +41,12 @@ export default function (eleventyConfig) {
 
   // Markdown: HTML allowed (tables, <br/> in mermaid source), quiet typography.
   const md = markdownIt({ html: true, linkify: false, typographer: true });
+  // Typographer keeps ONLY smart quotes. The core 'replacements' rule is disabled:
+  // its case-insensitive (c)/(r)/(tm) -> ©/®/™ swap corrupts canon enumerators,
+  // theory labels, and ratification rulings ("REJECTED on (c)" -> "REJECTED on ©").
+  // Cycle-5 survey: no rendered prose uses its other outputs (--, ..., +-) — every
+  // match sits inside code spans/fences, where the rule never applies anyway.
+  md.disable('replacements');
   eleventyConfig.setLibrary('md', md);
 
   // Turn the docs' cross-references into working links:
