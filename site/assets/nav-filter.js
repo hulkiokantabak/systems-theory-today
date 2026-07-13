@@ -28,12 +28,21 @@
   // text. This affordance stays labeled "Filter contents…" — it finds pages,
   // not passages, and only knows curated vocabulary; it is not search.
   var KEYWORDS = {
-    '/topics/': 'coherence vacuum acceleration adaptation gap optimization wealth pump inequality machine intelligence epistemic breakdown post-truth propaganda coordination failure institutional decay ecological overshoot climate fertility collapse births attention economy dopamine populism authoritarianism anomie loneliness M D1 D2 D3 D4 Y1 Y2 Y3 Y4 S1 S2 S3 S4',
+    '/topics/': 'coherence vacuum acceleration adaptation gap optimization wealth pump inequality machine intelligence epistemic breakdown post-truth propaganda coordination failure institutional decay ecological overshoot climate fertility collapse births attention economy dopamine populism authoritarianism anomie loneliness care mutual aid M D1 D2 D3 D4 Y1 Y2 Y3 Y4 S1 S2 S3 S4',
     '/docs/pressure_tests_causal_hypothesis/': 'institutional decay wealth pump populism Y3 signed graph arrows',
     '/outputs/theory_a_operationalized/': 'adaptation gap',
     '/outputs/theory_b_operationalized/': 'optimization ecology',
     '/outputs/theory_c_operationalized/': 'distributed coherence commons of sense-making',
-    '/docs/glossary/': 'definitions vocabulary terms'
+    '/docs/glossary/': 'definitions vocabulary terms',
+    // Cycle 4 (D4-02): the care-register reader's own vocabulary. Every word
+    // verified to occur on its target page (the traceability gate); typing
+    // "care" delivers the reader to pages that CONFESS care as a blind spot —
+    // that is the honest content of this mapping, never "the site covers care."
+    '/docs/episode_unit/': 'care mutual aid maintenance repair',
+    '/panel/session_2_pressure_tests/': 'care work loneliness anomie meaning',
+    '/panel/seven_round_discussion/': 'grief',
+    '/docs/goals/': 'loneliness anomie meaning',
+    '/logs/open_questions/': 'meaning'
   };
   var KEY_PATHS = Object.keys(KEYWORDS);
   var keyOf = function (li) {

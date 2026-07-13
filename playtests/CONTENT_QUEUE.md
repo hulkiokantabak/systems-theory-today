@@ -28,4 +28,14 @@ Status: author-commissioned, panel-executed (S4i standing delegation). Per `PROG
 | 20 | 3 / Kenji | In text extraction the §1 signed graph degrades to "a bare column of '+' symbols followed by node names" | viz/ canon (reader-mode/screen-reader contexts) |
 | 21 | 3 / Kenji | "the frontier the site advertises to newcomers is written in the deepest house dialect." | Translating the frontier (CANON) |
 
+| 22 | 4 / Ruth | "This site has a heart, but it keeps it in the dissents." · "The site's compassion is real and always in the minority report." (warmth ledger: 8 warm, all dissents/admissions; 6 cold, all house voice) | The house voice vs the dissents' register (CANON style — the author's) |
+| 23 | 4 / Ruth | "For loneliness specifically the trail dead-ends everywhere in the same one-liner ('the felt face of M'). Han is named as its champion; Han never speaks about it anywhere I could reach. The site discusses WHERE TO FILE loneliness, never loneliness." (chair-verified) | S4/loneliness treatment + Han's reachable voice (CANON commission) |
+| 24 | 4 / Ruth | "/topics/ is structurally a code table — the plain names are a column in the taxonomy, not a path around it." · "She cannot find a single person in it." | The taxonomy's person-less register (CANON) |
+| 25 | 4 / Ruth | "Care appears on this site the way an unvisited patient appears in a staffing report: as a named deficiency." · "It is still a debt, not a payment." · "The people who hold things together are, on this site, an uncut fork." | Bears on the docs/EPISODE_UNIT.md §3 fork — a reader's testimony, never a vote (author's) |
+| 26 | 4 / Ruth | S1: "somebody's daughter described as a market outcome." | outputs/CANDIDATE_THEORIES.md register (CANON) |
+| 27 | 4 / Ruth | "committees repairing committees" — praised as nurse-true: "an episode that never reaches recover is data, not a non-case"; the repair-for-whom field | The repair grammar's register (CANON) |
+| 28 | 4 / Ruth | "A project about the loss of shared meaning in which no one dies, no one grieves a person, and love belongs to a Greek cosmology." (verification notes travel: grief 1x; 'dying' 2x of documents; whole-word 'love' 0x — her 'love once (Aristotle)' did not verify) | Canon content (author's) |
+| 29 | 4 / Ruth | "There is no door marked 'if you hold people together for a living, start here.' The door exists; it's unmarked." | An authored invitation (CONTENT — the author's voice) |
+| 30 | 4 / Ruth | EXIT, addressed to the author: "Tell the author: the invisible load-bearing wall reads your website on her night off, and she can find your taxonomy in three minutes. She cannot find a single person in it." | Delivered verbatim |
+
 *(entries append below as cycles run)*
