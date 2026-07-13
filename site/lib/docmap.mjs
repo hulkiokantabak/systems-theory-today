@@ -54,11 +54,34 @@ const GROUP_OF = (relPath) => {
 };
 const GROUP_ORDER = ['Start here', 'Reference', 'Deliberation', 'Output', 'Learning', 'Root'];
 
+// Curated nav-label overrides — LABELS ONLY, never the canon H1s. Used where no
+// mechanical rule can disambiguate: docs/REPORT.md's pre-dash head is the site
+// title itself, so its spine label would be indistinguishable from the site.
+const LABEL_OVERRIDES = new Map([
+  ['docs/REPORT.md', 'Project report'],
+]);
+// A pre-dash fragment that is only a sequence token ("MOVE 6", "SESSION 2")
+// names nothing; the descriptive segment after the em-dash must come along.
+const SEQUENCE_TOKEN = /^(move|part|session|appendix)\s*\d+[a-z]?$/i;
+
 function firstH1(relPath) {
+  if (LABEL_OVERRIDES.has(relPath)) return LABEL_OVERRIDES.get(relPath);
   try {
     const text = readFileSync(resolve(REPO_ROOT, relPath), 'utf8');
     const m = text.match(/^#\s+(.+?)\s*$/m);
-    if (m) return m[1].replace(/\s*[—-].*$/, '').trim() || m[1].trim();
+    if (m) {
+      const full = m[1].trim();
+      // Strip subtitles only at a SPACED EM-DASH. The old pattern ([—-]) also cut
+      // at plain hyphens, shearing compound words into mislabeled spines
+      // ("THE REPAIR-EPISODE UNIT" → "The repair").
+      const head = full.replace(/\s+—\s.*$/, '').trim();
+      const rest = (full.match(/\s+—\s(.+)$/) || [])[1];
+      if (rest && SEQUENCE_TOKEN.test(head)) {
+        const restClean = rest.replace(/\s*\(.*$/, '').trim();
+        if (restClean) return head + ' — ' + restClean;
+      }
+      return head || full;
+    }
   } catch { /* fall through */ }
   return basename(relPath).replace(/\.md$/, '').replace(/_/g, ' ');
 }

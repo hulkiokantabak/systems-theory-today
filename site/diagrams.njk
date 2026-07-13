@@ -83,10 +83,10 @@ fullwidth: true
   <figure class="fig" id="fig-{{ f.n }}">
     <div class="fig-head">
       <span class="fig-num">Fig. {{ f.n }}</span>
-      <h2>{{ f.title }}</h2>
+      <h2 id="fig-{{ f.n }}-title">{{ f.title }}</h2>
     </div>
-    <p class="fig-assert">{{ f.asserts | safe }}</p>
-    <div class="fig-canvas">
+    <p class="fig-assert" id="fig-{{ f.n }}-assert">{{ f.asserts | safe }}</p>
+    <div class="fig-canvas" tabindex="0" role="region" aria-label="Figure {{ f.n }}: {{ f.title }} — scrollable diagram">
       {% if f.svg %}
       <div class="fig-art" data-fig="{{ f.n }}" data-kind="svg">{{ f.svg | safe }}</div>
       {% else %}
@@ -94,8 +94,8 @@ fullwidth: true
       {% endif %}
     </div>
     <div class="fig-tools">
-      <button type="button" class="fig-btn" data-dl="svg" data-fig="{{ f.n }}">↓ SVG</button>
-      <button type="button" class="fig-btn" data-dl="png" data-fig="{{ f.n }}">↓ PNG</button>
+      <button type="button" class="fig-btn" data-dl="svg" data-fig="{{ f.n }}" aria-label="Download figure {{ f.n }} ({{ f.title }}) as SVG">↓ SVG</button>
+      <button type="button" class="fig-btn" data-dl="png" data-fig="{{ f.n }}" aria-label="Download figure {{ f.n }} ({{ f.title }}) as PNG">↓ PNG</button>
     </div>
   </figure>
 {% endfor %}

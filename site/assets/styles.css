@@ -9,7 +9,7 @@
   --panel:#111327;
   --ink:#e9e7f2;
   --ink-soft:#a3a1c0;
-  --ink-faint:#6f6d90;
+  --ink-faint:#8a88ab; /* ≥4.5:1 on --field, --field-2 and --panel (AA, small text) */
   --amber:#f0b24a;
   --cyan:#49c7d8;
   --hair:rgba(255,255,255,.10);
@@ -58,10 +58,11 @@ a:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:
 
 /* ── sidebar ── */
 .sidebar{position:sticky;top:16px;font-size:15px}
-.sidebar > summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);padding:12px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-.sidebar > summary::-webkit-details-marker{display:none}
-.sidebar > summary::after{content:" +";color:var(--amber)}
-.sidebar[open] > summary::after{content:" –"}
+.sidebar summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);padding:12px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary::after{content:" +";color:var(--amber)}
+.sidebar summary:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
+.sidebar-drawer[open] > summary::after{content:" –"}
 .nav-group{margin:0 0 18px}
 .nav-label{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 8px}
 .sidebar ul{list-style:none;margin:0;padding:0}
@@ -69,7 +70,12 @@ a:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:
 .sidebar li a{display:block;color:var(--ink-soft);border:0;padding:3px 10px;border-left:2px solid transparent;line-height:1.35;font-size:14.5px;font-family:var(--sans)}
 .sidebar li a:hover{color:var(--ink);background:var(--hair-2)}
 .sidebar li a[aria-current="page"]{color:var(--amber);border-left-color:var(--amber)}
-@media (min-width:901px){.sidebar > summary{display:none}.nav-inner{display:block!important}}
+/* Desktop: no drawer — the list is always visible. The drawer is served open and
+   JS keeps it open at this width; these rules are the no-JS / odd-state belt.
+   (The old display:block!important alone stopped working once closed-details
+   hiding moved to ::details-content{content-visibility:hidden}.) */
+@media (min-width:901px){.sidebar summary{display:none}.nav-inner{display:block!important}}
+@media (min-width:901px){.sidebar-drawer::details-content{content-visibility:visible!important;display:block!important}}
 
 /* ── content ── */
 .content{min-width:0}
@@ -127,6 +133,7 @@ a:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:
 .fig-assert .contest{color:var(--cyan)}
 .fig-assert code{font-family:var(--mono);font-size:.85em;background:var(--hair-2);border-radius:4px;padding:.05em .35em;color:var(--ink-soft)}
 .fig-canvas{margin:14px clamp(12px,2.5vw,20px) 0;padding:clamp(14px,3vw,30px);background:var(--field);border:1px solid var(--hair-2);border-radius:12px;overflow:auto;max-height:80vh}
+.fig-canvas:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 .fig-canvas::-webkit-scrollbar{height:10px;width:10px}
 .fig-canvas::-webkit-scrollbar-thumb{background:var(--hair);border-radius:6px}
 .fig-canvas::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.2)}
@@ -162,14 +169,14 @@ body.fullwidth .sidebar{display:none}
 /* ── light (pastel) theme — day/night ── */
 html[data-theme="light"]{
   --field:#f6f3ec; --field-2:#efe9dc; --panel:#efe9dc;
-  --ink:#26233a; --ink-soft:#57536e; --ink-faint:#8b8799;
-  --amber:#a45e0d; --cyan:#12707f;
+  --ink:#26233a; --ink-soft:#57536e; --ink-faint:#6b6779; /* ≥4.5:1 on --field and --panel (AA, small text) */
+  --amber:#985409; --cyan:#12707f; /* amber 5.25:1 on --field, 4.81:1 on --panel — margin, not a 0.03 squeak */
   --hair:rgba(30,26,45,.14); --hair-2:rgba(30,26,45,.065);
 }
 html[data-theme="light"] body{
   background:radial-gradient(1200px 720px at 50% -10%, #fbf8f2 0%, var(--field) 60%) fixed, var(--field);
 }
-html[data-theme="light"] a{text-decoration-color:rgba(164,94,13,.45)}
+html[data-theme="light"] a{text-decoration-color:rgba(152,84,9,.45)}
 /* the diagrams render dark — keep their canvases dark in light mode so they stay legible */
 html[data-theme="light"] .fig-canvas{background:#0c0d18 !important}
 html[data-theme="light"] .figure{background:#0c0d18 !important;border-color:rgba(0,0,0,.14)}
@@ -297,7 +304,10 @@ html[data-theme="light"] .badge,html[data-theme="light"] .fig-btn,html[data-them
 }
 
 
-/* ── playtest cycle 1 additions (D5, D6, D8, D14, D15) ── */
+/* ── reader-navigation & companion-surface additions ── */
+
+/* visually hidden, still announced (status lines for assistive tech) */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 .companion-note{font-family:var(--mono);font-size:12.5px;line-height:1.7;color:var(--ink-faint);border:1px solid var(--hair);border-radius:8px;padding:10px 14px;margin:0 0 20px;max-width:var(--measure)}
 .map-frame{width:100%;height:min(80vh,900px);border:1px solid var(--hair);border-radius:14px;background:#0c0d18}
 .nav-filter input{width:100%;font-family:var(--mono);font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--hair);border-radius:7px;padding:7px 10px}

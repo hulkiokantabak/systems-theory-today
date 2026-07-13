@@ -58,7 +58,12 @@
   </header>
 
   <div class="wrap layout">
-    <details class="sidebar" aria-label="Contents">
+    <!-- The drawer is SERVED OPEN: browsers that hide closed-details content via
+         ::details-content{content-visibility:hidden} would otherwise leave the
+         desktop sidebar (summary display:none) permanently invisible. JS closes
+         it at narrow widths; without JS it degrades to an open, working list. -->
+    <nav class="sidebar" aria-label="Contents">
+    <details class="sidebar-drawer" open>
       <summary>Contents</summary>
       <div class="nav-inner">
         <p class="nav-filter" hidden><input id="navfilter" type="search" placeholder="Filter contents…" aria-label="Filter the contents list"></p>
@@ -86,9 +91,10 @@
         {% endfor %}
       </div>
     </details>
+    </nav>
 
     <main id="main" class="content{% if wide %} wide{% endif %}">
-      {% if page.url != '/' %}<p class="crumb"><a href="{{ '/' | url }}">Home</a> <span>›</span> {{ title }}</p>{% endif %}
+      {% if page.url != '/' %}<nav class="crumb" aria-label="Breadcrumb"><a href="{{ '/' | url }}">Home</a> <span>›</span> {{ title }}</nav>{% endif %}
       {% if page.url != '/' and not notools %}<div class="pagetools" aria-label="Page tools">
         <button type="button" class="pt-btn pt-pdf">↓ Save as PDF</button>
         <button type="button" class="pt-btn pt-share">↗ Share</button>

@@ -40,6 +40,17 @@
           fig.className = 'figure';
           fig.innerHTML = res.svg;
           pre.replaceWith(fig);
+          // Text alternative: name the rendered SVG after the nearest preceding
+          // heading (Mermaid's default exposes no accessible name).
+          var svgEl = fig.querySelector('svg');
+          if (svgEl) {
+            var label = 'Diagram, rendered from the Mermaid source in this document';
+            var prev = fig.previousElementSibling;
+            while (prev && !/^H[1-4]$/.test(prev.tagName)) prev = prev.previousElementSibling;
+            if (prev && prev.textContent) label = 'Diagram: ' + prev.textContent.trim();
+            svgEl.setAttribute('role', 'img');
+            svgEl.setAttribute('aria-label', label);
+          }
         } catch (e) { console.error('mermaid render failed', e); }
       }
     })();

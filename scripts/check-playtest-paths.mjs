@@ -32,6 +32,7 @@ const paths = [...new Set([...out.split(/\r?\n/), ...untracked.split(/\r?\n/)])]
 // PRESENTATION: layout, styling, client JS, static assets — no words, no content data.
 const PRESENTATION = [
   /^site\/_includes\//, /^site\/assets\//, /^site\/manifest\.webmanifest$/,
+  /^\.eleventyignore$/, // site build config (no words; cycle 2 uses it to keep playtests/ off the public site)
 ];
 // SITE-COPY: site-native words and meaning-adjacent wiring — editable ONLY with
 // manifest-before-deploy + D-007 check + author-visible queue entry.

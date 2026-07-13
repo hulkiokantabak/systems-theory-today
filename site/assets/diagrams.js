@@ -16,6 +16,21 @@
     }
   });
 
+  // Text alternative for a rendered diagram: expose it as role="img" named by the
+  // figure's visible h2 + one-sentence assertion (Mermaid's default is a bare
+  // graphics-document with no accessible name at all).
+  function labelSvg(host) {
+    var svg = host.querySelector('svg');
+    var fig = host.closest('.fig');
+    if (!svg || !fig) return;
+    var t = fig.querySelector('.fig-head h2');
+    var a = fig.querySelector('.fig-assert');
+    var ids = [t && t.id, a && a.id].filter(Boolean).join(' ');
+    svg.setAttribute('role', 'img');
+    if (ids) svg.setAttribute('aria-labelledby', ids);
+    else svg.setAttribute('aria-label', 'Diagram');
+  }
+
   function wireTools() {
     document.querySelectorAll('.fig-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -101,6 +116,7 @@
         try {
           var res = await mermaid.render('figmmd-' + host.getAttribute('data-fig'), code);
           host.innerHTML = res.svg;
+          labelSvg(host);
         } catch (e) { console.error('figure render failed', host.getAttribute('data-fig'), e); fallback(host); }
       }
       wireTools();

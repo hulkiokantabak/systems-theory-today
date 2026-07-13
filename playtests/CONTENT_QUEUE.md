@@ -15,4 +15,8 @@ Status: author-commissioned, panel-executed (S4i standing delegation). Per `PROG
 | 9 | 1 / Deniz | "ALL-CAPS filename titles ('CANDIDATE THEORIES', 'REFLECTIONS') clash with sentence-case curated pages." | The documents' own H1 casing (CANON; site furniture sentence-cased in cycle 1 D13) |
 | 10 | 1 / Deniz | "Theories page has the best readable passage buried under apparatus." | outputs/CANDIDATE_THEORIES.md structure (CANON) |
 
+| 11 | 2 / Margaret | "docs/metrics/ carries several snapshots simultaneously marked current: 'Snapshot — Session 2 (current)', 'Snapshot — Session 3 (current)', 'Snapshot — Session 4 (current)'. Only one thing can be current." | docs/METRICS.md heading hygiene (CANON) |
+| 12 | 2 / Margaret | "Nothing on the page says what S4h IS in plain words." (on /panel/session_s4h_ratification/) | Stranger-context for session records (CANON) |
+| 13 | 2 / Margaret | "8 Mermaid SVGs expose … no text alternative for the diagram content" — hand-written long descriptions per figure would be genuinely better (a11y engineer) | New authored figure descriptions (CONTENT, author's) |
+
 *(entries append below as cycles run)*
