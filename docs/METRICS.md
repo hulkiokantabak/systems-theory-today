@@ -222,6 +222,20 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **The S4i panel and its enactments (headline).** An 8-lens + 4-adversary panel processed the delegable docket; the adversaries **flipped three dispositions** (grader seating → **shadow-run, seat held**; the strike-audit's "CONFIRMED unsatisfiable" → **hypothesis-grade "untestable-as-posed"** — the filter's never-bit predicate is undecidable as posed; the case-D single-direction candidate → a **two-reading hand-off**) and found C-033 on disk. Enacted: the case-D adjudication hand-off (case D stays an OPEN ADJUDICATION ITEM; two readings for the author); the C-031 re-seal candidate (two-tier equivalence form with the power arithmetic on its face); the detection-repair requirements sealed (`studies/study-C-ablation/DETECTION_REPAIR_REQUIREMENTS_S4I.md` — the E1/E2 form at the detection layer); the rung-label HOLD (evidence collation only; C-033/C-034 booked; banners corrected); the drain's third audit posted at instrument-failure strength with the audit continuing under protest; the §5.1 Entry-3 channel decomposition (the open, unused self-initiated-subtraction channel is the null's honest content); the playtest-program governance (render-invariant honesty markers; the pseudo-user bar; five cycles then stop). Everything `panel-delegated (S4i standing delegation)`, provisional-pending-author, reversible — stacked on an S4h storey that is itself unconfirmed.
 
+### Snapshot — Session 4j (a third standing delegation: the state-of-project forum; opened at booking, extended at wrap)
+
+*The author opened S4j with a THIRD standing delegation — an exhaustive expert forum on the state of the project, three deliverable documents (a systems-theory report; a wrongs analysis; an improvement plan) as six PDFs, then implementation, a Plan/Method update, a full ripple, and a proposed-actions presentation — **booked at receipt as C-035**, before any forum work. C-035 is the first live trigger of the SG-10 stacking guard (`panel/GRADER_SHADOW_LOG_S4I.md`): a third delegation stacked on the two unconfirmed storeys (all of S4h and S4i). The guard FIRED and was OVERRIDDEN on the record (Rule 11; the author present and directing) — the override is now visible, the guard's stated purpose. Every S4j output is `forum-delegated (S4j standing delegation)`, provisional-pending-author, reversible; no rung fires; the three-storey provisional tower is surfaced again at the close.*
+
+| Metric | Value | Δ vs S4i | Notes |
+|---|---|---|---|
+| Files created | 47 | 0 | (updated at wrap when the forum record and any new canonical docs land; forum deliverables are PDFs to Downloads + Code-layer forum records) |
+| Catches / Learnings | 35 / 15 | +1 / 0 | + **C-035** (the third standing delegation — the SG-10 stacking guard's first trigger; booked at receipt, guard fired and overridden on the record) |
+| Open questions | 17 | 0 | |
+| Live disagreements logged | 7 | 0 | |
+| Diagrams | 9 | 0 | |
+| Pressure-tests defined | 13 | 0 | |
+| Ground rules | 24 | 0 | |
+
 ## 3. What we track and why
 
 **Effort / throughput**
