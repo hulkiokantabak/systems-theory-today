@@ -17,6 +17,21 @@ fullwidth: true
   <div class="statcard grey"><span class="stat-l"><b>Effort so far:</b> 4 author prompts → ~47k words → 34 files → 3 falsifiable claims. <em>Volume is not rigor.</em></span></div>
 </div>
 
+<h2 class="ff-reg">What our own blind measures found</h2>
+<p class="ff-dek">Some of the project's instruments have been run past project-blind external coders. Here is what those blind runs returned — including where they failed, and where they cost the project a claim. Reported flatly, as results, not as a badge. Every figure is drawn from the record (`logs/CATCHES.md`, `logs/DECISIONS_CHANGED.md`, the S4h/S4i study outputs); all of it is provisional-pending-author.</p>
+<div class="cov-wrap">
+<table class="cov">
+  <thead><tr><th>Instrument</th><th>What it was meant to measure</th><th>What the blind run returned</th></tr></thead>
+  <tbody>
+    <tr><td>Severity anchoring</td><td>whether a flaw is minor / substantive / conclusion-changing, agreed across coders</td><td><span class="cov-f cov-yes">Passed</span> — 94% cross-family agreement on a 26-item gold set (S4h)</td></tr>
+    <tr><td>Catch detection / unitization</td><td>whether coders even flag the same passages as flaws on live material</td><td><span class="cov-f cov-no">Failed</span> — ~1% agreement, far below the 50% floor (S4i; candidate learning L-016, not yet ratified)</td></tr>
+    <tr><td>The convergence rubric</td><td>whether a real deliberation reads differently from a hollow one</td><td><span class="cov-f cov-no">Invalid</span> — it banded a stakeless "empty" session as full; a placebo falsifier lost (C-025 / DC-006)</td></tr>
+    <tr><td>The Theory-C ablation</td><td>whether designed disagreement out-catches a lone reasoner</td><td><span class="cov-f cov-partial">No valid result</span> — two powered reads point opposite ways (1.45× / 1.15×), both uninterpretable: one is a broken-series pre-anchoring datum, the other sits on a run whose detection failed</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="ff-prov">Two honesty notes travel with every count on this page. <strong>Reliability:</strong> the catch counts above are severity-anchored (94%) but not yet detection-anchored (~1%, candidate L-016) — so a "catch" is a reliably-graded flaw whose boundary two coders rarely agree on. <strong>One source:</strong> every "external" run here is a second large language model, which draws the same underlying aquifer (L-013) — cross-model-confirmed is not foreign-confirmed. A genuinely foreign vantage arrives only when the repo opens.</p>
+
 <figure class="ff-fig">
   <figcaption class="ff-cap"><b>From 13 tests to what is actually tested.</b> Source: <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. “Falsifiable” = a claim stated so it could be tested — not that it has been. 0 of the 3 are confirmed; the data work is future (Q-001).</figcaption>
   <div class="ff-svg">{{ charts.funnel | safe }}</div>
@@ -47,7 +62,7 @@ fullwidth: true
 </figure>
 
 <figure class="ff-fig">
-  <figcaption class="ff-cap"><b>Three theories — the vote spread, not the score.</b> Source: <a href="{{ '/outputs/candidate_theories/' | url }}">CANDIDATE_THEORIES</a>, Round-7 ratings. The median alone is a lie of omission; the <em>width</em> is the designed disagreement. Self-assessment by reconstructed personas — not external validation.</figcaption>
+  <figcaption class="ff-cap"><b>Three theories — the vote spread, not the score.</b> Source: <a href="{{ '/outputs/candidate_theories/' | url }}">CANDIDATE_THEORIES</a>, Round-7 ratings. The median alone is a lie of omission; the <em>width</em> is the designed disagreement. These are not measurements: they are one model in many roles rating itself, with no inter-rater reliability (L-015) — read the numbers as a signed intuition, never as a score.</figcaption>
   <div class="ff-svg">{{ charts.dumbbell | safe }}</div>
 </figure>
 
@@ -63,7 +78,7 @@ fullwidth: true
 <figure class="ff-fig">
   <figcaption class="ff-cap"><b>The learning loop — caught, distilled, promoted.</b> Source: <a href="{{ '/logs/catches/' | url }}">CATCHES</a>, <a href="{{ '/logs/learnings/' | url }}">LEARNINGS</a>, METRICS §2. The pipeline, not the raw count, is the real metric — and a caught error is not a prevented one.</figcaption>
   <div class="ledger">
-    <div class="ledger-stage"><span class="ledger-n">34</span><span class="ledger-l">catches logged</span><span class="ledger-sub">3 of the first 6 were the chair catching its own bias; C-012 the loop catching itself; C-014–C-017 the empirical turn; C-018–C-022 the cross-check + reflection; C-023–C-034 the delegated sessions and courier rounds — including C-019: that this very number is a births-only vanity metric (no denominator; the drain now logs subtractions separately)</span></div>
+    <div class="ledger-stage"><span class="ledger-n">35</span><span class="ledger-l">catches logged</span><span class="ledger-sub">3 of the first 6 were the chair catching its own bias; C-012 the loop catching itself; C-014–C-017 the empirical turn; C-018–C-022 the cross-check + reflection; C-023–C-035 the delegated sessions, courier rounds, and the state-of-project forum — including C-019: that this very number is a births-only vanity metric (no denominator; the drain logs subtractions separately, and has fired none of its own motion in two readings)</span></div>
     <span class="ledger-arrow" aria-hidden="true">→</span>
     <div class="ledger-stage"><span class="ledger-n">15</span><span class="ledger-l">learnings distilled</span><span class="ledger-sub">a learning that never changes a rule is just an observation</span></div>
     <span class="ledger-arrow" aria-hidden="true">→</span>

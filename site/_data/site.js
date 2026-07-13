@@ -10,6 +10,6 @@ export default {
   author: 'Hulki Okan Tabak — with Claude',
   authorUrl: 'https://hulkiokantabak.github.io/hulkiokantabak.com/',
   license: 'Docs CC BY-SA 4.0 · Code MIT',
-  status: 'v0.4 · public reading surface · Session 4',
-  repoNote: 'This is the public reading surface. The contribution repository stays private until the skeleton is stable, then opens for forking (THE_LIVING_DOCUMENT.md §7).',
+  status: 'v0.4 · public reading surface · Session 4j',
+  repoNote: 'This is the public reading surface. The contribution repository — with the studies, the raw verdicts, and the pre-registrations — stays private until the repo opens (default 2026-10-01; THE_LIVING_DOCUMENT.md §7). Study receipts are sealed until then, not lost.',
 };

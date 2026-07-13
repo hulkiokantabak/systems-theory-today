@@ -78,6 +78,8 @@
             <li><a href="{{ '/history/' | url }}"{% if page.url == '/history/' %} aria-current="page"{% endif %} title="The history of systems that tried to explain everything">The history</a></li>
             <li><a href="{{ '/panel/' | url }}"{% if page.url == '/panel/' %} aria-current="page"{% endif %}>The panel</a></li>
             <li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %} title="The project's self-reported counts and its nine figures — not data about the world.">Self-audit &amp; figures</a></li>
+            <li><a href="{{ '/standing/' | url }}"{% if page.url == '/standing/' %} aria-current="page"{% endif %} title="What the author has confirmed, and what is still provisional.">What is confirmed</a></li>
+            <li><a href="{{ '/decoder/' | url }}"{% if page.url == '/decoder/' %} aria-current="page"{% endif %} title="The session codes and ID prefixes, decoded.">The codes, decoded</a></li>
             <li><a href="{{ '/colophon/' | url }}"{% if page.url == '/colophon/' %} aria-current="page"{% endif %}>About this site</a></li>
           </ul>
         </div>
@@ -113,7 +115,7 @@
   <footer class="site-foot">
     <div class="wrap">
       <p><a href="{{ site.authorUrl }}">{{ site.author }}</a> · {{ site.license }}</p>
-      <p class="dim"><a href="{{ '/about/' | url }}">About</a> · <a href="{{ '/history/' | url }}">The history</a> · <a href="{{ '/topics/' | url }}">Topics</a> · <a href="{{ '/diagrams/' | url }}">Self-audit &amp; figures</a> · <a href="{{ '/colophon/' | url }}">About this site</a> · <a href="{{ site.authorUrl }}">hulkiokantabak.com</a></p>
+      <p class="dim"><a href="{{ '/about/' | url }}">About</a> · <a href="{{ '/history/' | url }}">The history</a> · <a href="{{ '/topics/' | url }}">Topics</a> · <a href="{{ '/diagrams/' | url }}">Self-audit &amp; figures</a> · <a href="{{ '/standing/' | url }}">What is confirmed</a> · <a href="{{ '/decoder/' | url }}">The codes</a> · <a href="{{ '/colophon/' | url }}">About this site</a> · <a href="{{ site.authorUrl }}">hulkiokantabak.com</a></p>
       <p class="dim">{{ site.repoNote }}</p>
       <p class="dim">{{ site.status }} · source of truth: the repository · figures render from Mermaid + one hand-authored SVG</p>
       <p class="dim">Analytics: privacy-respecting <a href="https://www.goatcounter.com/">GoatCounter</a> — cookieless, no cookies, no personal data (details in the <a href="{{ '/colophon/' | url }}">colophon</a>).</p>

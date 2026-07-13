@@ -1,6 +1,6 @@
 # METRICS
 
-Version: 0.5 · Status: Living · Last updated: Session 4h
+Version: 0.6 · Status: Living · Last updated: Session 4j
 
 *Everything we count, from prompts to outputs. Updated at the end of every session. Metrics are a mirror, not a target — we track them to see the project honestly, not to game them.*
 
@@ -43,7 +43,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 | Web sources consulted | ~5 searches / ~28 results | Metamodernism, cliodynamics, polycrisis |
 | Approx. words of content | ~19,000 | All documents |
 
-### Snapshot — Session 2 (current)
+### Snapshot — Session 2 (superseded)
 
 | Metric | Value | Δ vs S1 | Notes |
 |---|---|---|---|
@@ -72,7 +72,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 | Web sources consulted (cumulative) | ~7 searches / ~46 results | +2 | + Turchin 2025 (*Great Holocene Transformation*), metacrisis/meaning-crisis |
 | Approx. words of content (cumulative) | ~32,000 | +~13,000 | All documents |
 
-### Snapshot — Session 3 (current)
+### Snapshot — Session 3 (superseded)
 
 | Metric | Value | Δ vs S2 | Notes |
 |---|---|---|---|
@@ -89,7 +89,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 | Pressure-tests defined | 13 | 0 | |
 | Approx. words of content (cumulative) | ~37,000 | +~5,000 | All documents |
 
-### Snapshot — Session 4 (current)
+### Snapshot — Session 4 (superseded)
 
 | Metric | Value | Δ vs S3 | Notes |
 |---|---|---|---|
@@ -106,7 +106,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 | Diagrams | 9 | 0 | |
 | Approx. words of content (cumulative) | ~47,000 | +~5,000 | All documents (+ reflection, cooperation log) |
 
-### Snapshot — Session 4b–c (Code layer, current)
+### Snapshot — Session 4b–c (Code layer, superseded)
 
 *A Code-layer maintenance snapshot. The canonical content baseline is **unchanged (34)**; the site, scripts, studies, dashboard, digests, and R3 are Code-layer infrastructure, excluded from the baseline and tracked separately (see `scripts/lib/repo.mjs`). The only canonical-count change is **catches 12 → 13** — C-013, the stale-count near-miss from the S4 work-order header, logged in the S4c metrics-hygiene pass. This block restates the reconciliation-relevant counts at their current values so the standing check reads the latest snapshot.*
 
@@ -124,7 +124,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **Session 4 — Code layer (added outside the canonical baseline).** So METRICS reflects the whole repo, not just the canonical content, the Code sessions added: the Eleventy **reading site** (`site/`), the four standing-check **scripts** + ripple helper (`scripts/`), the three **gated study scaffolds** (`studies/`), the generated **control-room dashboard** (`dashboard/`), the CI **workflow** (`.github/`), and the shuttle artifacts **R3** + the session **digests** (`logs/handoffs/`, Code-layer). GoatCounter analytics, a PWA home-screen icon + manifest, and a day/night theme were added to the public site. None of these count in the 34-file canonical baseline.
 
-### Snapshot — Session 4d–4e (current)
+### Snapshot — Session 4d–4e (superseded)
 
 *The empirical turn. Chat finalized + ratified Studies B and C, drew the ratified (still contested) pressure-test causal hypothesis, amended the roster with a measurement seat (Campbell + Pearl), and **ran the first study** — the Study-C ablation pilot (directional-only; a self-administration confound). Code applied the change set and **built + froze Study B's pre-registered pipeline** — but Study B's empirical run is **not executable** (no external data, which will not come — C-017), so **B has no result** and none was fabricated. Catches 13→17, learnings 9→12, advisors 20→22, +3 canonical docs. This block restates the reconciliation-relevant counts at current values.*
 
@@ -142,7 +142,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **Studies status (S4e–4f).** **Study C:** first **pilot** result (`studies/study-C-ablation/outputs/PILOT_RESULT.md`) — a directional ON advantage dominated by a self-administration confound; pre-registration revised (HC1 primary/length-controlled; cross-model requirement). **Study B:** Gate 2 ratified/open; Code built + froze the zero-dependency, self-tested, pre-registered pipeline, but the empirical run is **not executable without external data** (C-017 / L-012) — **no result produced, no data fabricated** (`studies/study-B-optimization/RUN_STATUS.md`). **Study A:** unchanged (gated). Also new: the `skills/study-discipline/SKILL.md` skill (Code-layer; **ratified** S4f, live; installed to the global skills library).
 
-### Snapshot — Session 4f (cross-check + reflection, current)
+### Snapshot — Session 4f (cross-check + reflection, superseded)
 
 *Study B's H3 (selection-not-design) claim tested against the documented record by 4 project-blind external LLMs — **read the SPLIT (Facebook unanimous / YouTube mixed), not the "4/4"** (C-021). A 7-round reflection panel then turned the project's discipline on itself. Catches 17→22, learnings 12→15, open questions 12→17.*
 
@@ -164,7 +164,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **Studies status (S4f).** **Study B:** the O→P quantitative run stays frozen-unrun (no data — C-017); its **selection-not-design (H3)** claim was tested against the public record by 4 project-blind LLMs → `studies/study-B-optimization/outputs/CROSSCHECK_RESULT.md` (Facebook unanimous / YouTube mixed; conditional refinement Q-013; independence caveat L-013). **Study C:** first pilot, unchanged. **Study A:** gated (Q-001, the flagship, still untouched). The `study-discipline` skill is live.
 
-### Snapshot — Session 4g (the drain — the metabolism's first outflow, current)
+### Snapshot — Session 4g (the drain — the metabolism's first outflow, superseded)
 
 *The ratified spine reaches its subtraction move. Move 1 (costless subtractions) and Move 2 (the held-out construct lock, `studies/study-B-optimization/CONSTRUCT_THREAT_TO_METRIC.md`) were executed; this block records **Move 3 — install the drain** (`logs/DECISIONS_CHANGED.md`): a decided subtraction operator with an append-only decisions-changed log (seeded with three **real** Move-1 subtractions, DC-001…003), a graduated sanction ladder, a pre-written Theory-C death-condition, and a first strike **held** — the never-bit audit found no candidate that is both over-claim-typed and genuinely never-bit, so it awaits the author naming one (Q-017 answered). The **placebo** is pre-registered to its go/no-go (`studies/placebo-control/PRE_REGISTRATION.md`, Code-layer). The one canonical-content change is **+1 file** (the drain log); **Ground Rule 24** is proposed (author to ratify). Catches and learnings are held: **no number was minted where no genuinely new catch/learning existed** — the drain's own principle, applied to this very session (L-014 was *updated to record enactment*, not re-issued as a new ID). A **9-lens pre-commit review** then downgraded the drain's own first-draft over-claims (see `logs/DECISIONS_CHANGED.md` §9).*
 
@@ -186,7 +186,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **On the author's recalibration of the firing vantage (S4g).** The author re-engaged and directed: the non-LLM / opened-repo "genuine appropriator" is **not reachable now** — **drop it as a current gate** (a future *forker* may supply it, "not here, not now"); **cross-model (project-blind other LLMs) is the operative firing vantage now.** So the drain's Rung 3–4 and the placebo's Rung 4 now **fire on a confirmed cross-model coding**, not on an unreachable non-LLM grader — unblocking the placebo (now **run-ready at cross-model** via the author-mediated route the Study-B cross-check used) and the Theory-C null. The panel's dissent (Ostrom/Campbell/Turchin — cross-model is still one aquifer, L-013) is **preserved**: every cross-model firing is logged *cross-model-confirmed, not genuinely-foreign*, and revisitable by a future fork. The trade is honest — an unreachable bar (which was ossifying the project) for the best reachable one, with a recorded cost.
 
-### Snapshot — Session 4h (the standing delegation; the full docket ratified-and-enacted; the clock's first null; the repaired instruments; current)
+### Snapshot — Session 4h (the standing delegation; the full docket ratified-and-enacted; the clock's first null; the repaired instruments; superseded)
 
 *The author opened S4h with a **standing delegation** ("fully delegated until you finalize all that has to be done") — booked at receipt as **C-027**, before any decision was taken under it. An 8-lens + 6-adversary ratification panel (real parallel subagents; the adversaries flipped two dispositions) processed the whole queue: the results readings + the Q-001 admission (ratified-as-split), the six learning-panel adoptions (all six enacted-as-amended: the episode unit `docs/EPISODE_UNIT.md` with DRAFT criteria; lag-types + the adapted evidence ladder in `docs/PRESSURE_TESTS_CAUSAL_HYPOTHESIS.md` v1.1; **D-007** installed; **Rule 17b** inserted; the episode-base candidates named-not-coded), the rule wordings (header: "In force — … author's ratification OUTSTANDING," the plurality's "Ratified" wording rejected → **C-028**, D-007's first bite), the drain rulings (first strike still held — second empty audit; **the §5 zero-strike clock posted its pre-registered NULL against Theory C's "the machine subtracts" sub-claim**, beside DC-005's unnetted liveness entry — `logs/DECISIONS_CHANGED.md` §5.1; margins confirmed with the anchoring gate), the E-cluster repair requirements (sealed), the TTM kit scope, and the grader (seat-ready v0.2). Everything stamped `panel-delegated (S4h standing delegation)`, provisional-pending-author. Full record: `panel/SESSION_S4H_RATIFICATION.md`.*
 
@@ -204,7 +204,7 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **⚠ The S4h honesty notes (all binding).** **(1)** Per Campbell (item H): the count of S4h ratifications may never be cited as evidence of health, rigor, or momentum — a ratification count under standing self-delegation is a births-only indicator whose absent external check is a booked cost (C-027); item H itself is a compliance record, not a decision, and is excluded from any such count. **(2) The session's headline includes what it did not do (mandatory, at equal prominence):** the drain's zero-strike clock posted its first pre-registered NULL — *the operator has never yet initiated a costly subtraction of its own; this is recorded evidence against Theory C's "the machine subtracts" sub-claim* — decomposed (part of the zero is design-bound) and unnetted against DC-005's liveness entry (`logs/DECISIONS_CHANGED.md` §5.1). **(3)** The repo clock (2026-10-01) is untouched — booked as a named trade, not restraint-credit; the advance-or-hold question is queued for the author's first contact.
 
-### Snapshot — Session 4i (a second standing delegation; opened at booking, extended at wrap; current)
+### Snapshot — Session 4i (a second standing delegation; opened at booking, extended at wrap; superseded)
 
 *The author opened S4i with a second standing delegation — a "very long loop run to complete all you can autonomously" plus a commissioned five-user website playtest program — **booked at receipt as C-032**, before any decision was taken under it (the C-023/C-027 discipline, third application). Every S4h stamp remains provisional-pending-author throughout; nothing this session implies their confirmation. This snapshot opens at booking and is extended at wrap.*
 
@@ -222,13 +222,13 @@ Version: 0.5 · Status: Living · Last updated: Session 4h
 
 **The S4i panel and its enactments (headline).** An 8-lens + 4-adversary panel processed the delegable docket; the adversaries **flipped three dispositions** (grader seating → **shadow-run, seat held**; the strike-audit's "CONFIRMED unsatisfiable" → **hypothesis-grade "untestable-as-posed"** — the filter's never-bit predicate is undecidable as posed; the case-D single-direction candidate → a **two-reading hand-off**) and found C-033 on disk. Enacted: the case-D adjudication hand-off (case D stays an OPEN ADJUDICATION ITEM; two readings for the author); the C-031 re-seal candidate (two-tier equivalence form with the power arithmetic on its face); the detection-repair requirements sealed (`studies/study-C-ablation/DETECTION_REPAIR_REQUIREMENTS_S4I.md` — the E1/E2 form at the detection layer); the rung-label HOLD (evidence collation only; C-033/C-034 booked; banners corrected); the drain's third audit posted at instrument-failure strength with the audit continuing under protest; the §5.1 Entry-3 channel decomposition (the open, unused self-initiated-subtraction channel is the null's honest content); the playtest-program governance (render-invariant honesty markers; the pseudo-user bar; five cycles then stop). Everything `panel-delegated (S4i standing delegation)`, provisional-pending-author, reversible — stacked on an S4h storey that is itself unconfirmed.
 
-### Snapshot — Session 4j (a third standing delegation: the state-of-project forum; opened at booking, extended at wrap)
+### Snapshot — Session 4j (a third standing delegation: the state-of-project forum; opened at booking, extended at wrap; current)
 
 *The author opened S4j with a THIRD standing delegation — an exhaustive expert forum on the state of the project, three deliverable documents (a systems-theory report; a wrongs analysis; an improvement plan) as six PDFs, then implementation, a Plan/Method update, a full ripple, and a proposed-actions presentation — **booked at receipt as C-035**, before any forum work. C-035 is the first live trigger of the SG-10 stacking guard (`panel/GRADER_SHADOW_LOG_S4I.md`): a third delegation stacked on the two unconfirmed storeys (all of S4h and S4i). The guard FIRED and was OVERRIDDEN on the record (Rule 11; the author present and directing) — the override is now visible, the guard's stated purpose. Every S4j output is `forum-delegated (S4j standing delegation)`, provisional-pending-author, reversible; no rung fires; the three-storey provisional tower is surfaced again at the close.*
 
 | Metric | Value | Δ vs S4i | Notes |
 |---|---|---|---|
-| Files created | 47 | 0 | (updated at wrap when the forum record and any new canonical docs land; forum deliverables are PDFs to Downloads + Code-layer forum records) |
+| Files created | 48 | +1 | + `panel/SESSION_S4J_FORUM.md` (the forum record). The three forum deliverables are six PDFs in the author's Downloads (report + narration each), not repo files; the forum's raw briefs/drafts/critiques live in the session transcript |
 | Catches / Learnings | 35 / 15 | +1 / 0 | + **C-035** (the third standing delegation — the SG-10 stacking guard's first trigger; booked at receipt, guard fired and overridden on the record) |
 | Open questions | 17 | 0 | |
 | Live disagreements logged | 7 | 0 | |
