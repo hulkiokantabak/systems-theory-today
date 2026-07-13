@@ -10,6 +10,6 @@ export default {
   author: 'Hulki Okan Tabak — with Claude',
   authorUrl: 'https://hulkiokantabak.github.io/hulkiokantabak.com/',
   license: 'Docs CC BY-SA 4.0 · Code MIT',
-  status: 'v0.4 · public reading surface · Session 4j',
-  repoNote: 'This is the public reading surface. The contribution repository — with the studies, the raw verdicts, and the pre-registrations — stays private until the repo opens (default 2026-10-01; THE_LIVING_DOCUMENT.md §7). Study receipts are sealed until then, not lost.',
+  status: 'public reading surface (the artifact) · Session 4k · build closed',
+  repoNote: 'This reading site is the artifact. Behind it, the contribution repository — the maintainer\'s workshop, with the studies, the raw verdicts, and the pre-registrations — stays private until the repo opens (default 2026-10-01; THE_LIVING_DOCUMENT.md §7). Study receipts are sealed until then, not lost.',
 };

@@ -1,6 +1,6 @@
 # OPEN QUESTIONS & LIVE DISAGREEMENTS
 
-Version: 0.4 · Status: Living · Last updated: Session 4h (D-007 installed; Q-001 admission panel-confirmed-as-split — both `panel-delegated (S4h standing delegation)`, provisional-pending-author)
+Version: 0.4 · Status: Living · Last updated: Session 4k (external-vantage concession: Q-012 closed-for-this-build and Q-016 answered-by-concession under the S4k ruling; D-007's C-028 first-bite removed — bite count now 0, the governor legibly dormant. Earlier, S4h: D-007 installed and Q-001's admission confirmed as a split, `panel-delegated`, provisional-pending-author.)
 
 *A standing record of what the project has **not** settled — every genuine open question and every live disagreement, logged as it surfaces. The author asked for this explicitly, and the reason is sound: in a project built on designed disagreement, the unresolved questions and the standing splits are the most revealing part of the record. They are where the real thinking is, they are what a contributor should attack first, and they are the honesty check against the chair's drift toward premature closure (L-001). Nothing here should be quietly resolved by a later session's tidy-up; a question leaves this log only when it is genuinely answered, and the answer is recorded with its date and its dissent.*
 

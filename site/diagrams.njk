@@ -11,10 +11,10 @@ fullwidth: true
 <h2 class="ff-reg">The Facts — counts measured</h2>
 
 <div class="statstrip">
-  <div class="statcard hero"><span class="stat-n">3<span class="stat-d">/13</span></span><span class="stat-l">pressure-tests carry a <b>falsifiable</b> claim</span></div>
+  <div class="statcard hero"><span class="stat-n">3<span class="stat-d">/14</span></span><span class="stat-l">pressure-tests carry a <b>falsifiable</b> claim</span></div>
   <div class="statcard hero"><span class="stat-n">0</span><span class="stat-l">of those <b>tested</b> against data yet</span></div>
   <div class="statcard hero"><span class="stat-n">0</span><span class="stat-l">external forks · contributors · citations — the commons has not formed</span></div>
-  <div class="statcard grey"><span class="stat-l"><b>Effort so far:</b> 4 author prompts → ~47k words → 34 files → 3 falsifiable claims. <em>Volume is not rigor.</em></span></div>
+  <div class="statcard grey"><span class="stat-l"><b>Effort so far:</b> ~47k words → 49 files → 3 falsifiable claims. <em>Volume is not rigor.</em></span></div>
 </div>
 
 <h2 class="ff-reg">What our own blind measures found</h2>
@@ -24,26 +24,26 @@ fullwidth: true
   <thead><tr><th>Instrument</th><th>What it was meant to measure</th><th>What the blind run returned</th></tr></thead>
   <tbody>
     <tr><td>Severity anchoring</td><td>whether a flaw is minor / substantive / conclusion-changing, agreed across coders</td><td><span class="cov-f cov-yes">Passed</span> — 94% cross-family agreement on a 26-item gold set (S4h)</td></tr>
-    <tr><td>Catch detection / unitization</td><td>whether coders even flag the same passages as flaws on live material</td><td><span class="cov-f cov-no">Failed</span> — ~1% agreement, far below the 50% floor (S4i; candidate learning L-016, not yet ratified)</td></tr>
+    <tr><td>Catch detection / unitization</td><td>whether coders even flag the same passages as flaws on live material</td><td><span class="cov-f cov-no">Failed</span> — ~1% agreement, far below the 50% floor (S4i; learning L-016, ratified S4k)</td></tr>
     <tr><td>The convergence rubric</td><td>whether a real deliberation reads differently from a hollow one</td><td><span class="cov-f cov-no">Invalid</span> — it banded a stakeless "empty" session as full; a placebo falsifier lost (C-025 / DC-006)</td></tr>
     <tr><td>The Theory-C ablation</td><td>whether designed disagreement out-catches a lone reasoner</td><td><span class="cov-f cov-partial">No valid result</span> — two powered reads point opposite ways (1.45× / 1.15×), both uninterpretable: one is a broken-series pre-anchoring datum, the other sits on a run whose detection failed</td></tr>
   </tbody>
 </table>
 </div>
-<p class="ff-prov">Two honesty notes travel with every count on this page. <strong>Reliability:</strong> the catch counts above are severity-anchored (94%) but not yet detection-anchored (~1%, candidate L-016) — so a "catch" is a reliably-graded flaw whose boundary two coders rarely agree on. <strong>One source:</strong> every "external" run here is a second large language model, which draws the same underlying aquifer (L-013) — cross-model-confirmed is not foreign-confirmed. A genuinely foreign vantage arrives only when the repo opens.</p>
+<p class="ff-prov">Two honesty notes travel with every count on this page. <strong>Reliability:</strong> the catch counts above are severity-anchored (94%) but not yet detection-anchored (~1%, candidate L-016) — so a "catch" is a reliably-graded flaw whose boundary two coders rarely agree on. <strong>One source:</strong> every "external" run here is a second large language model, which draws the same underlying aquifer (L-013) — cross-model-confirmed is not foreign-confirmed. At S4k the author closed this build: no genuinely foreign vantage — no outside reader, grader, or forker — enters it; the author is the terminal ratifier, so every external-dependent claim stays conclusively untested in this closed setup.</p>
 
 <figure class="ff-fig">
-  <figcaption class="ff-cap"><b>From 13 tests to what is actually tested.</b> Source: <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. “Falsifiable” = a claim stated so it could be tested — not that it has been. 0 of the 3 are confirmed; the data work is future (Q-001).</figcaption>
+  <figcaption class="ff-cap"><b>From 14 tests to what is actually tested.</b> Source: <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. “Falsifiable” = a claim stated so it could be tested — not that it has been. 0 of the 3 are confirmed; the data work is future (Q-001).</figcaption>
   <div class="ff-svg">{{ charts.funnel | safe }}</div>
 </figure>
 
 <figure class="ff-fig">
-  <figcaption class="ff-cap"><b>Pressure-test coverage — the thirteen, by layer.</b> Verbatim from <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. Status is shown by word&nbsp;+&nbsp;glyph, not colour alone. “~11” keeps its tilde; D1 is Theory&nbsp;A’s flagship — design-drafted but untested.</figcaption>
+  <figcaption class="ff-cap"><b>Pressure-test coverage — the fourteen, by layer (thirteen across four layers, plus the reflexive R named at S4k).</b> Verbatim from <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>. Status is shown by word&nbsp;+&nbsp;glyph, not colour alone. “~11” keeps its tilde; D1 is Theory&nbsp;A’s flagship — design-drafted but untested.</figcaption>
   <div class="cov-wrap">
   <table class="cov">
     <thead><tr><th>ID</th><th>Test</th><th>First-pass</th><th>Home theory</th><th>Falsifiable claim yet?</th></tr></thead>
     <tbody>
-    {% for layer in ['Master','Drivers','Dynamics','Symptoms'] %}
+    {% for layer in ['Master','Drivers','Dynamics','Symptoms','Reflexive'] %}
       <tr class="cov-band"><th colspan="5">{{ layer }}</th></tr>
       {% for c in facts.coverage %}{% if c.layer == layer %}
       <tr>
@@ -55,7 +55,7 @@ fullwidth: true
       </tr>
       {% endif %}{% endfor %}
     {% endfor %}
-      <tr class="cov-foot"><td colspan="5"><b>13 defined</b> · ~11 first-pass · <b class="cov-hero">3 falsifiable</b> · <b>0 tested</b></td></tr>
+      <tr class="cov-foot"><td colspan="5"><b>14 defined</b> · ~11 first-pass · <b class="cov-hero">3 falsifiable</b> · <b>0 tested</b></td></tr>
     </tbody>
   </table>
   </div>
@@ -78,15 +78,15 @@ fullwidth: true
 <figure class="ff-fig">
   <figcaption class="ff-cap"><b>The learning loop — caught, distilled, promoted.</b> Source: <a href="{{ '/logs/catches/' | url }}">CATCHES</a>, <a href="{{ '/logs/learnings/' | url }}">LEARNINGS</a>, METRICS §2. The pipeline, not the raw count, is the real metric — and a caught error is not a prevented one.</figcaption>
   <div class="ledger">
-    <div class="ledger-stage"><span class="ledger-n">35</span><span class="ledger-l">catches logged</span><span class="ledger-sub">3 of the first 6 were the chair catching its own bias; C-012 the loop catching itself; C-014–C-017 the empirical turn; C-018–C-022 the cross-check + reflection; C-023–C-035 the delegated sessions, courier rounds, and the state-of-project forum — including C-019: that this very number is a births-only vanity metric (no denominator; the drain logs subtractions separately, and has fired none of its own motion in two readings)</span></div>
+    <div class="ledger-stage"><span class="ledger-n">36</span><span class="ledger-l">catches logged</span><span class="ledger-sub">3 of the first 6 were the chair catching its own bias; C-012 the loop catching itself; C-014–C-017 the empirical turn; C-018–C-022 the cross-check + reflection; C-023–C-036 the delegated sessions, courier rounds, the state-of-project forum, and the author's ratifying contact — including C-019: that this very number is a births-only vanity metric (no denominator; the drain logs subtractions separately — it fired once, DC-007, by the author's hand, retiring Theory C's "the machine subtracts of its own motion" sub-claim, so across four readings the self-initiated channel still stands at zero)</span></div>
     <span class="ledger-arrow" aria-hidden="true">→</span>
-    <div class="ledger-stage"><span class="ledger-n">15</span><span class="ledger-l">learnings distilled</span><span class="ledger-sub">a learning that never changes a rule is just an observation</span></div>
+    <div class="ledger-stage"><span class="ledger-n">17</span><span class="ledger-l">learnings distilled</span><span class="ledger-sub">a learning that never changes a rule is just an observation</span></div>
     <span class="ledger-arrow" aria-hidden="true">→</span>
-    <div class="ledger-stage"><span class="ledger-n">24</span><span class="ledger-l">ground rules (max)</span><span class="ledger-sub cyan">the newest wordings (R22–R24, 17b) are panel-confirmed only — the author’s ratification is outstanding</span></div>
+    <div class="ledger-stage"><span class="ledger-n">25</span><span class="ledger-l">ground rules (max)</span><span class="ledger-sub cyan">R22–R24 and Rule 17b, provisional across three delegated sessions, are now author-ratified (S4k); the newest, Rule 25 — a reversible moratorium on net-additive machinery — was ratified in the same act</span></div>
   </div>
 </figure>
 
-<p class="ff-prov">Denominators, not achievements: 4 sessions · 10 core + 22 advisory panelists · 5 fault-line axes · 23 ground rules · ~7 searches / ~46 results. Ratification is <b>internal</b> — the author’s own, and reconstructed-persona ratings; external validation is exactly zero. Any number can be checked against <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>, the <a href="{{ '/logs/open_questions/' | url }}">open questions</a>, and the Round-7 votes in <a href="{{ '/outputs/candidate_theories/' | url }}">the theories</a>.</p>
+<p class="ff-prov">Denominators, not achievements: 4 sessions · 10 core + 22 advisory panelists · 5 fault-line axes · 25 ground rules · ~7 searches / ~46 results. Ratification is <b>internal</b> — the author’s own, and reconstructed-persona ratings; external validation is exactly zero. Any number can be checked against <a href="{{ '/docs/metrics/' | url }}">METRICS §4</a>, the <a href="{{ '/logs/open_questions/' | url }}">open questions</a>, and the Round-7 votes in <a href="{{ '/outputs/candidate_theories/' | url }}">the theories</a>.</p>
 <p class="ff-prov">The record in full: <a href="{{ '/logs/catches/' | url }}">Catches — the error log</a> · <a href="{{ '/logs/learnings/' | url }}">Learnings</a> · <a href="{{ '/logs/reflections/' | url }}">Reflections</a>.</p>
 
 <hr class="ff-divider">

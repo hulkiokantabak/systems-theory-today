@@ -1,7 +1,7 @@
 // facts.js — the project's own content-level facts, from the repo's real records
 // (docs/METRICS.md, GOALS.md, outputs/CANDIDATE_THEORIES.md, panel/PANEL_ROSTER.md).
 // Every number here traces to a source file; the Facts & Figures page links each to it.
-// Version: 1.1 · Last updated: Session 4i (session maintenance from docs/METRICS.md — the DIGEST_S4c ripple precedent; NOT a playtest implementation: facts data is program-CANON and the playtest program is closed)
+// Version: 1.2 · Last updated: Session 4k (count refresh from the ratified S4k METRICS §2 snapshot: catches 36, learnings 17, ground rules 25; R's home field corrected to cross-cutting. The S1–S4 trajectory is left as the intentional four-content-session series.)
 export default {
   // headline stat-cards
   cards: [
@@ -35,7 +35,7 @@ export default {
     { id: 'S2', name: 'Attention economy', layer: 'Symptoms', firstPass: 'Yes', home: 'B', falsifiable: 'partial' },
     { id: 'S3', name: 'Populism', layer: 'Symptoms', firstPass: 'Yes', home: 'A + B · Turchin', falsifiable: 'yes' },
     { id: 'S4', name: 'Anomie / loneliness', layer: 'Symptoms', firstPass: 'Partial', home: 'C · Han', falsifiable: 'no' },
-    { id: 'R', name: 'Register / care fairness', layer: 'Reflexive', firstPass: 'Named (S4k)', home: 'D-005 · Le Guin', falsifiable: 'drafted' },
+    { id: 'R', name: 'Register / care fairness', layer: 'Reflexive', firstPass: 'Named (S4k)', home: 'Cross-cutting — audits the list', falsifiable: 'drafted' },
   ],
 
   // per-session trajectory (docs/METRICS.md snapshots)
@@ -50,10 +50,10 @@ export default {
 
   // the learning loop counters (logs/)
   loop: [
-    { n: 22, label: 'catches logged (births only — see METRICS honesty-note)', src: 'logs/CATCHES.md' },
-    { n: 15, label: 'learnings distilled', src: 'logs/LEARNINGS.md' },
+    { n: 36, label: 'catches logged (births only — see METRICS honesty-note)', src: 'logs/CATCHES.md' },
+    { n: 17, label: 'learnings distilled', src: 'logs/LEARNINGS.md' },
     { n: 17, label: 'open questions', src: 'logs/OPEN_QUESTIONS.md' },
-    { n: 23, label: 'ground rules', src: 'docs/GROUND_RULES.md' },
+    { n: 25, label: 'ground rules', src: 'docs/GROUND_RULES.md' },
     { n: 9, label: 'diagrams authored', src: 'docs/DIAGRAMS.md' },
   ],
 };
