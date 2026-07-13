@@ -1,7 +1,7 @@
 ---
 name: study-discipline
-version: v1.0
-status: RATIFIED (author, Session 4f) — live; companion to systems-theory-panel
+version: v1.1
+status: RATIFIED v1.0 (author, Session 4f) — live; §10 appended S4i (panel-delegated, provisional-pending-author); companion to systems-theory-panel
 description: >
   How the "A Systems Theory for Today" project runs FALSIFIABLE STUDIES — the discipline for taking a
   theory's claim from operationalized-on-paper to actually tested. Distinct from systems-theory-panel
@@ -65,6 +65,21 @@ Whenever a study or a causal claim is on the table, summon the measurement/causa
 
 Report the pre-registered falsifiers as results; attach the **preserved dissent** to any write-up; state the scope limits (vantage bias, construct caveats) up front, not buried; and **log the catches the *run itself* surfaces about the study** — running a study is also a test of the study's design, and those catches are often the real yield.
 
+## 10. The courier-round lessons (S4g–S4i — `panel-delegated (S4i standing delegation)`, provisional-pending-author; §§0–9 are the ratified core and are untouched)
+
+The three cross-model courier rounds (placebo/ablation S4g; validation/TTM + blue/green S4h; detection S4i) taught what running external coders actually costs:
+
+1. **Requirements before design, design before kit, kit before run.** Seal the repair/instrument REQUIREMENTS (with an adversarial break pass) before any design exists; the E1/E2/detection repairs all passed this way.
+2. **The scorer is written and fixture-tested BEFORE dispatch** — on all decisive branches, including a constructed true null. A scorer implemented after verdicts exist is a weaker seal (logged as such in the S4h validation round). Include an ACHIEVABILITY fixture at realistic live scale: a clause that fires only at N the instrument never attains is decoration.
+3. **Instruments are LAYERED; validate the lowest layer first.** Severity banding passed at 94% while catch-DETECTION sat at 1% — a floor passed at one layer says nothing about the layer beneath (candidate L-016, unminted). Every layer gets its own unit definition, gold set, and floor; enumeration is scored separately from banding and never pooled with it.
+4. **Transport is a channel with its own failure modes (E3):** one-record-per-line paste-robust formats; open-ended self-ID at head AND foot verified against a pre-dispatch manifest; mismatch/absence = headline-exclusion + dual-report; MALFORMED never hand-repaired; fresh chat per kit per model (the cross-kit contamination lesson); **content-neutral archive FILENAMES** — the leak audit covers every byte on the kit, not just in it (C-030); a post-coding recognition probe with its disposition sealed pre-dispatch.
+5. **Gold sets:** seeded events (planted, ground-truth-by-construction) are the primary acceptance statistic — but only their LOCATION is construction-true; their event-COUNT is the seeder's judgment and gets a blind-application check. Include zero-event clean material (a detector must be able to say "nothing here"), boundary pairs at every cut, and quiet/omission-shaped items as MANDATORY HITS (passing agreement while unanimously missing the quiet items is register-bias, a FAIL). No exemplar derives from any prior coder's verdicts; no bound is tuned to a named coder's profile.
+6. **Statistics discipline:** never compute count-similarity as agreement (identical totals over disjoint events is disagreement in a matching costume); granularity is gold-referenced per coder, never pairwise between coders; per-coder raw counts stay visible; floors are justified against the task's own chance baseline, never imported from a different task's precedent.
+7. **Broken series and incommensurability:** a repaired instrument starts a NEW series — no pre/post numeric comparison, ever; when a unit definition changes, every margin denominated in that unit is re-derived and re-sealed (by the author) before any run reads it. Preserve what unanchored eyes saw — the anchored eyes will never see it again.
+8. **Family-first + the corridor:** power within one coder's construct (constructs below the reliability floor cannot share a numerator); every margin-adjacent result reports against both the ratified and the preserved dissent lines. Under-powered or below-floor = Indeterminate — never "the theory survives."
+9. **The direction of a test must match the direction of its claim** (C-031): a null is affirmed by BOUNDING the noise envelope inside the margin, never by failing to beat noise. Check every sealed clause against the case its drafters did not run.
+10. **Delegations are costs, booked at receipt, before use** (C-023 → C-027 → C-032) — and a second standing delegation stacked on unconfirmed stamps books its own catch; no later enactment cites an earlier delegated stamp as settled authority. A held-out shadow review (the grader run pre-seating, binding nothing) buys the content of a check without performing its authority.
+
 ---
 
-*Ratified skill (author, S4f); live. Companion to `systems-theory-panel`. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
+*Ratified core (author, S4f) + §10 provisional (S4i). Companion to `systems-theory-panel`. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*

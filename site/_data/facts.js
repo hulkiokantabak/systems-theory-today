@@ -1,7 +1,7 @@
 // facts.js — the project's own content-level facts, from the repo's real records
 // (docs/METRICS.md, GOALS.md, outputs/CANDIDATE_THEORIES.md, panel/PANEL_ROSTER.md).
 // Every number here traces to a source file; the Facts & Figures page links each to it.
-// Version: 1.0 · Last updated: Session 4f
+// Version: 1.1 · Last updated: Session 4i (session maintenance from docs/METRICS.md — the DIGEST_S4c ripple precedent; NOT a playtest implementation: facts data is program-CANON and the playtest program is closed)
 export default {
   // headline stat-cards
   cards: [
@@ -10,7 +10,7 @@ export default {
     { n: '13', label: 'pressure-tests, in 4 layers', src: 'docs/GOALS.md' },
     { n: '3', label: 'candidate theories — all operationalized', src: 'outputs/CANDIDATE_THEORIES.md' },
     { n: '10 + 22', label: 'core panel + advisory bench', src: 'panel/PANEL_ROSTER.md' },
-    { n: '6', label: 'standing disagreements preserved', src: 'logs/OPEN_QUESTIONS.md' },
+    { n: '7', label: 'standing disagreements preserved', src: 'logs/OPEN_QUESTIONS.md' },
   ],
 
   // Round-7 theory strength ratings (median /10, with the highest and lowest voter)
