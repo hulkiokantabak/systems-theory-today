@@ -1,4 +1,4 @@
-# THE REPAIR-EPISODE UNIT — the pre-registered case-coding unit (DRAFT criteria; nothing coded)
+# THE REPAIR-EPISODE UNIT — the case-coding unit (DRAFT criteria; nothing coded; the freeze is the author's)
 
 Version: 0.1 · Status: **DRAFT — `panel-delegated (S4h standing delegation)`, provisional-pending-author. The boundary criteria below are DRAFT until the author confirms them on return: the freeze event is the author's confirmation, never a panel act under the standing delegation, and no "pre-registered / frozen" claim is made before that act (`panel/SESSION_S4H_RATIFICATION.md` B1). This document carries ZERO coded episodes and ZERO empirical claims — definitions, criteria, and an uncoded candidates list only; any sentence in it asserting a historical claim is out of scope and takes a Rung-0 flag (the S4h zero-claims clause).** · Last updated: Session 4h (Code)
 
@@ -50,7 +50,7 @@ Any coding before all four gates clear is void-plus-catch (§2.6). *(Per item H 
 
 ## 5. The historical episode base — candidates (names only; nothing coded; episode base first, canon expansion second)
 
-**The anchoring caveat (Turchin, verbatim, binding):** *these candidates were named before the boundary criteria existed and were known to the criteria's drafters; that anchoring is disclosed, not cured.* **The no-priority rule:** the coded episode base is drawn by applying the frozen criteria to the declared case-universe; the named candidates receive **no sampling priority** and confirm nothing by having been named first. Each entry is name + period + one why-a-candidate sentence + one why-it-might-FAIL-inclusion sentence (Ostrom's adversarial line) — no episode narrative, no empirical claim.
+**The anchoring caveat (Turchin, verbatim, binding):** *these candidates were named before the boundary criteria existed and were known to the criteria's drafters; that anchoring is disclosed, not cured.* *(And per the S4i shadow-grade pass: the why/why-fail sentences below are the drafting hand's unverified impressions, signed as such — not findings; nothing in this table has been checked against any source.)* **The no-priority rule:** the coded episode base is drawn by applying the frozen criteria to the declared case-universe; the named candidates receive **no sampling priority** and confirm nothing by having been named first. Each entry is name + period + one why-a-candidate sentence + one why-it-might-FAIL-inclusion sentence (Ostrom's adversarial line) — no episode narrative, no empirical claim.
 
 | Candidate | Period | Why a candidate | Why it might fail inclusion |
 |---|---|---|---|
@@ -73,4 +73,4 @@ Any coding before all four gates clear is void-plus-catch (§2.6). *(Per item H 
 
 ---
 
-*A sampling unit, its criteria drafted-not-frozen, its candidates named-not-coded, its blindness named on its face — built the session after the project's first externally-coded results, under a delegation booked as a cost. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
+*A sampling unit, its criteria drafted-not-frozen, its candidates named-not-coded, its blindness named on its face — built the session after the project's first externally-coded results, under a delegation booked as a cost. Panelist names in this document denote the project's simulated panel personas (Ground Rule 16), not statements by the persons. Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*

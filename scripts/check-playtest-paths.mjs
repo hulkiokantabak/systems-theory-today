@@ -10,7 +10,15 @@
 // implementations. SITE-COPY paths are listed so the cycle record can carry
 // their manifest + D-007 check. Default-deny: unknown paths code as CONTENT.
 //
-// Version: 1.0 · Status: Living · Last updated: Session 4i
+// v1.1 (S4i, shadow-grade SG-09 OBJ-1/OBJ-2): the v1.0 whitelist was LOOSER than
+// the governance it enforced — site/_data/facts.js (content-level facts: theory
+// medians, falsifiability codings) and site/lib/docmap.mjs (which canonical docs
+// render at all) passed as PRESENTATION. Fixed: content-bearing data files are
+// CANON (byte-for-byte untouchable under the program); nav labels, the docmap,
+// site metadata, and every prose-bearing template are SITE-COPY (manifest +
+// codable D-007 check + author-visible queue entry required).
+//
+// Version: 1.1 · Status: Living · Last updated: Session 4i
 
 import { execSync } from 'node:child_process';
 
@@ -18,14 +26,26 @@ const ref = process.argv[2] || 'HEAD';
 const out = execSync(`git diff --name-only ${ref}`, { encoding: 'utf8' });
 const paths = out.split(/\r?\n/).filter(Boolean);
 
+// PRESENTATION: layout, styling, client JS, static assets — no words, no content data.
 const PRESENTATION = [
-  /^site\/_includes\//, /^site\/assets\//, /^site\/_data\//, /^site\/lib\//,
-  /^site\/diagrams\.njk$/, /^site\/history\.njk$/, /^site\/summary\.njk$/,
-  /^site\/manifest\.webmanifest$/,
+  /^site\/_includes\//, /^site\/assets\//, /^site\/manifest\.webmanifest$/,
 ];
-const SITE_COPY = [/^site\/about\.njk$/, /^site\/colophon\.njk$/];
+// SITE-COPY: site-native words and meaning-adjacent wiring — editable ONLY with
+// manifest-before-deploy + D-007 check + author-visible queue entry.
+const SITE_COPY = [
+  /^site\/about\.njk$/, /^site\/colophon\.njk$/, /^site\/diagrams\.njk$/,
+  /^site\/history\.njk$/, /^site\/summary\.njk$/,
+  /^site\/_data\/nav\.js$/, /^site\/_data\/site\.js$/, /^site\/_data\/eleventyComputed\.js$/,
+  /^site\/lib\/docmap\.mjs$/,
+];
 const PROGRAM = [/^playtests\//];
-const CANON = [/^docs\//, /^outputs\//, /^logs\//, /^panel\//, /^README\.md$/, /^ARCHITECTURE\.md$/, /^SKILL\.md$/, /^CONTRIBUTING\.md$/, /^LICENSE\.md$/, /^viz\//];
+// CANON: canonical documents AND content-bearing site data (facts/charts/figures
+// derive claim-level content) — byte-for-byte untouchable under the program.
+const CANON = [
+  /^docs\//, /^outputs\//, /^logs\//, /^panel\//, /^viz\//, /^studies\//,
+  /^README\.md$/, /^ARCHITECTURE\.md$/, /^SKILL\.md$/, /^CONTRIBUTING\.md$/, /^LICENSE\.md$/,
+  /^site\/_data\/facts\.js$/, /^site\/_data\/charts\.js$/, /^site\/_data\/figures\.js$/,
+];
 
 const cls = (p) => {
   const posix = p.split('\\').join('/');
@@ -42,7 +62,7 @@ if (!paths.length) console.log('  (no diffed paths)');
 for (const p of paths) {
   const c = cls(p);
   if (c === 'CANON' || c === 'UNCLASSIFIED') voided = true;
-  console.log(`  ${c.padEnd(13)} ${p}${c === 'SITE-COPY' ? '   <- requires manifest + D-007 check' : ''}${c === 'CANON' || c === 'UNCLASSIFIED' ? '   <- VOIDS the cycle (governance §1)' : ''}`);
+  console.log(`  ${c.padEnd(13)} ${p}${c === 'SITE-COPY' ? '   <- requires manifest + D-007 check + queue entry' : ''}${c === 'CANON' || c === 'UNCLASSIFIED' ? '   <- VOIDS the cycle (governance §1)' : ''}`);
 }
 console.log(voided
   ? '\n  ✗ VOID — the diff touches CANON or unclassifiable paths; the cycle\'s implementations are void per governance §1.\n'

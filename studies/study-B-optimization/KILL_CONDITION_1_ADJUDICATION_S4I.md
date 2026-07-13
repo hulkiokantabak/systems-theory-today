@@ -2,9 +2,13 @@
 
 Status: **CANDIDATE HAND-OFF (S4i) — `panel-delegated (S4i standing delegation)`, provisional-pending-author. NOTHING HERE ADJUDICATES CASE D. This document was drafted by hands that knew case D's outcome (the anchoring is disclosed, not cured — the B6 form), under the second consecutive standing delegation (C-032). The panel's lean is noted below WITH the note that it is the theory-sparing direction, drafted outcome-aware. The author's re-seal, forward only, is the only act that gives kill condition 1 an operative meaning on coercion.** · From: `panel/SESSION_S4I_RATIFICATION.md` §1 item 1 · Governs under: `CONSTRUCT_THREAT_TO_METRIC.md` §3 (the sealed text) · Trigger: `outputs/GREEN_RESULT_S4H.md` §2.3 (case D).
 
-## 0. Interim disposition (binding until the author rules — the green result's own terminal words, nothing more)
+## 0. Interim disposition (binding until the author rules — the green result's terminal STATE, restated; the final clause is new S4i text)
 
-> **Case D (Douyin 2021) is an OPEN ADJUDICATION ITEM under kill condition 1 as sealed — neither a kill, a near-kill, kill-immune, nor outside any universe; its ex-ante HIGH band (blind, unanimous) and 3/3 regulatory outcome verdict stand unaltered; the thin evidence grade travels with every citation; no in-house text may pre-apply either candidate definition below to it.**
+> **Case D (Douyin 2021) is an OPEN ADJUDICATION ITEM under kill condition 1 as sealed — neither a kill, a near-kill, kill-immune, nor outside any universe; its ex-ante HIGH band (blind, unanimous) and 3/3 regulatory outcome verdict stand unaltered; the thin evidence grade travels with every citation.** *New S4i constraint (panel-delegated, provisional-pending-author — not the green result's words):* **no in-house text may pre-apply either candidate definition below to it.**
+
+*(Provenance corrected per the S4i shadow-grade pass: an earlier wording called this blockquote "the green result's own terminal words, nothing more" — false for the final clause, which references readings that did not exist at S4h. The green result's own terminal words are at `outputs/GREEN_RESULT_S4H.md` §2.3: "handed to the author/panel as an open adjudication item; neither a kill nor a dismissal is declared in-house.")*
+
+**The panel's lean, with its vote shape (added per the shadow-grade pass — Rule 22):** six of eight lenses leaned toward Reading A; Heidegger held for the bare letter; Campbell refused both directions; the summoned adversary demanded and obtained the two-reading form. The lean is a plurality product of outcome-aware hands and is NOT part of either reading's text.
 
 ## 1. The question the sealed letter cannot answer
 
@@ -12,7 +16,7 @@ Kill condition 1 (sealed, S4g): *"A clean TTM-high → intent case — a change 
 
 ## 2. READING A — coerced-excluded (the minimal form; the panel's lean, which is also the theory-sparing direction, drafted outcome-aware)
 
-> *A case is CLEAN for kill condition 1 only if the change was adopted and sustained by the platform's own decision — absent a binding external mandate (statute, regulation, court order, or credible threat of state sanction) compelling its adoption, extension, or retention. Coerced cases form a third pre-registered outcome class (EXTERNAL-MANDATE), outside BOTH the kill and the confirmatory arithmetic; each exclusion posts to a standing scope ledger, and the conditional may not be cited without its narrowed scope (voluntary platform-initiated changes) once the ledger is non-empty.*
+> *A case is CLEAN for kill condition 1 only if the change was adopted and sustained by the platform's own decision — absent a binding external mandate (statute, regulation, court order, or credible threat of state sanction) compelling its adoption, extension, or retention. Coerced cases form a third outcome class (EXTERNAL-MANDATE) — registered forward from its first member, created post-outcome around case D, origin disclosed (the word "pre-registered" corrected S4i per the shadow-grade pass: a class created after and because of its first member holds no pre-registration credential with respect to that member), outside BOTH the kill and the confirmatory arithmetic; each exclusion posts to a standing scope ledger, and the conditional may not be cited without its narrowed scope (voluntary platform-initiated changes) once the ledger is non-empty.*
 
 - **Substance:** the pre-registered conditional (Q-013) frames a two-force contest — internal selection pressure vs the platform's stated intent. A binding state mandate is a third, exogenous force that bypasses the selection mechanism; a de-optimization that sticks because the state compels it says nothing about whether intent can beat selection, because intent was never the operative force (Turchin/Meadows).
 - **The SYMMETRY CLAUSE (non-severable):** cases excluded under this reading are equally excluded from the confirmatory pool and the ≥80% pressure-follow arithmetic — the coercion filter cuts both directions or it is void.
@@ -25,6 +29,7 @@ Kill condition 1 (sealed, S4g): *"A clean TTM-high → intent case — a change 
 
 - **Substance:** the sealed letter does not contain the word "voluntary" (Heidegger); this project's own precedent (D2, C-028) resolves ambiguity in a sealed falsifier **against** the machine, and the exclusion reading arrived the day the kill first threatened to fire. Under B, H3's conditional dies at its sealed strength and that death is a result, not a failure (the pre-reg §5 discipline).
 - **What B costs:** Meadows's caveat travels — a kill fired on a coerced case measures the reach of regulators, not the weakness of selection; a different finding wearing the kill's name.
+- **B's binding rider (added S4i per the shadow-grade pass, machining B to parity with A):** if B seals, the kill may not be cited without its coercion caveat on its face — *fired on a state-coerced case; measures regulatory reach as much as selection's weakness* — exactly as A's scope payment binds the conditional's citations. Equal care means equal riders.
 
 ## 4. What was struck, and what is retained regardless of the ruling
 

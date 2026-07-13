@@ -6,9 +6,9 @@ Status: **author-commissioned, panel-executed (S4i standing delegation) — the 
 
 ## 1. The boundary (three file classes, mechanically checked)
 
-- **PRESENTATION** — `site/_includes/`, `site/assets/`, `site/_data/nav.js`, presentational blocks of `site/*.njk`, `site/lib/docmap.mjs` (nav grouping/titles only): **editable** under the program.
-- **CANON** — anything rendered from `docs/`, `outputs/`, `logs/`, `panel/` via the docmap: **byte-for-byte untouchable.**
-- **SITE-COPY** — site-native prose (`site/about.njk`, `site/colophon.njk`, ledes, nav labels, blurbs): editable **only** with a logged before/after diff manifest written pre-deploy + a codable D-007 check + an author-visible queue entry in the cycle record.
+- **PRESENTATION** — `site/_includes/`, `site/assets/`, `site/manifest.webmanifest` (layout, styling, client JS, static assets — no words, no content data): **editable** under the program.
+- **CANON** — anything rendered from `docs/`, `outputs/`, `logs/`, `panel/` via the docmap, **plus the content-bearing site data files** (`site/_data/facts.js`, `charts.js`, `figures.js` — theory medians, falsifiability codings, headline figures): **byte-for-byte untouchable.**
+- **SITE-COPY** — site-native words and meaning-adjacent wiring (`site/about.njk`, `site/colophon.njk`, the page templates with prose, `site/_data/nav.js` — nav labels live here, `site/_data/site.js`, `site/_data/eleventyComputed.js`, `site/lib/docmap.mjs` — which documents render at all): editable **only** with a logged before/after diff manifest written pre-deploy + a codable D-007 check + an author-visible queue entry in the cycle record. *(v1.1 correction per shadow grading SG-09: the v1.0 spec listed nav.js under PRESENTATION while listing "nav labels" under SITE-COPY, and the v1.0 checker passed facts.js and docmap.mjs as presentation — the checker was looser than the governance in exactly the direction Campbell's prediction named. Fixed before cycle 1; logged in the shadow log.)*
 - **Default-deny:** any diff not mechanically classifiable codes as CONTENT and queues for the author. Per-cycle enforcement: `node scripts/check-playtest-paths.mjs` — a diff outside the editable set **voids that cycle's implementations**.
 
 ## 2. Render-invariance of the honesty markers (pre-committed before the first report existed)
@@ -20,7 +20,7 @@ No template, CSS, or nav change may hide, collapse-by-default, truncate, reorder
 - The five personas are **one model in five roles**. Every report and every citation carries inline: *self-administered (L-015) — directional UX evidence, never external validation.*
 - **"N/5 users" and any sample-statistic form over the personas is barred AS A FORM.** Convergence across roles reports as one datum (L-013) and may never be an implementation's stated warrant — only the content of a report's reasons counts.
 - Personas are **pre-registered in `PERSONAS.md`, written and committed before cycle 1, never edited or re-rolled mid-program** (replacement = coder-shopping, the C-018 class). Composition mandate (Le Guin, register-diverse by design): a no-systems-vocabulary reader · a quiet/care-register reader · an assistive-technology/low-vision profile · a non-native-English reader · a hostile skeptic.
-- **Each persona carries ≥1 measure the site is EXPECTED TO FAIL for that user** (Nietzsche). A cycle in which all five report net satisfaction is audited as persona-capture before any implementation proceeds.
+- **Each persona carries ≥1 measure the site is EXPECTED TO FAIL for that user** (Nietzsche). **Per-cycle trigger (v1.1, per shadow grading SG-09 — the all-five form could never fire before cycle 5):** any cycle in which the persona's EXPECTED-FAIL measure unexpectedly PASSES, or which reports net satisfaction with no substantive finding, is audited as persona-capture **in that cycle, before its implementations proceed**; the program-level audit (all five cycles satisfied = prima facie capture) additionally runs at close.
 - Every report closes with a mandatory **"What this playtest cannot see"** line.
 
 ## 4. D-007, unconditionally
