@@ -1,0 +1,33 @@
+---
+title: Topics
+permalink: /topics/
+---
+<h1>Topics — where each pressure-test lives</h1>
+<p class="lede">A wayfinding index only. The thirteen pressure-tests by their plain names, with links to where each is defined, debated, drawn, and measured. Nothing is claimed on this page that is not already on the pages it points to.</p>
+<p>Throughout the record the thirteen carry short codes — <strong>M</strong> for the master condition, <strong>D1–D4</strong> the drivers, <strong>Y1–Y4</strong> the dynamics, <strong>S1–S4</strong> the symptoms.</p>
+<p class="companion-note">Every topic below is: defined in <a href="{{ '/docs/goals/' | url }}">Goals</a> · debated in <a href="{{ '/panel/session_2_pressure_tests/' | url }}">Session 2</a> · its arrows drawn in <a href="{{ '/docs/pressure_tests_causal_hypothesis/' | url }}">the causal hypothesis</a> · its status measured on <a href="{{ '/diagrams/' | url }}">Self-audit &amp; figures</a>.</p>
+{% set fq = {
+  'M': 'Why is what is happening today happening at all? — the loss of shared ideology, belief, and coherent understanding',
+  'Y1': 'Why is “post-truth” insufficient to describe the level of propaganda?',
+  'Y2': 'Why can we no longer coordinate and communicate?',
+  'Y4': 'Why are we destroying the climate?',
+  'S1': 'Why are people not giving birth?',
+  'S2': 'Why has the dopamine rush become so central?',
+  'S3': 'Why are populism and authoritarianism rising?'
+} %}
+<div class="cov-wrap">
+<table class="cov">
+  <thead><tr><th>Topic (plain name)</th><th>Code</th><th>Layer</th><th>The founding question, where one exists</th><th>Home theory</th></tr></thead>
+  <tbody>
+  {% for c in facts.coverage %}
+    <tr>
+      <td>{{ c.name }}</td>
+      <td class="cov-id">{{ c.id }}</td>
+      <td>{{ c.layer }}</td>
+      <td>{% if fq[c.id] %}“{{ fq[c.id] }}”{% endif %}</td>
+      <td class="cov-home">{{ c.home }} — {% if 'A' in c.home %}<a href="{{ '/outputs/theory_a_operationalized/' | url }}">Theory A</a> {% endif %}{% if 'B' in c.home %}<a href="{{ '/outputs/theory_b_operationalized/' | url }}">Theory B</a> {% endif %}{% if 'C' in c.home %}<a href="{{ '/outputs/theory_c_operationalized/' | url }}">Theory C</a> {% endif %}· <a href="{{ '/outputs/candidate_theories/' | url }}">all three</a>{% if c.contested %} · <a href="{{ '/logs/open_questions/' | url }}">base or summit open (Q-002)</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>

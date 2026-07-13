@@ -19,4 +19,13 @@ Status: author-commissioned, panel-executed (S4i standing delegation). Per `PROG
 | 12 | 2 / Margaret | "Nothing on the page says what S4h IS in plain words." (on /panel/session_s4h_ratification/) | Stranger-context for session records (CANON) |
 | 13 | 2 / Margaret | "8 Mermaid SVGs expose … no text alternative for the diagram content" — hand-written long descriptions per figure would be genuinely better (a11y engineer) | New authored figure descriptions (CONTENT, author's) |
 
+| 14 | 3 / Kenji | "The Glossary page defines only the three philosophical terms. I verified: the words catch, governor, shuttle, rung, pressure-test, work-order, ratify, dissent, chair appear nowhere on the Glossary page — yet every one is load-bearing somewhere on the reading surface. 'Rung-0 flag,' 'provisional-pending-author,' 'S4h standing delegation' are used with no reachable definition at all." (chair-verified: 0 occurrences each; the page defines other terms, none of these nine) | docs/GLOSSARY.md additions (CANON) |
+| 15 | 3 / Kenji | Session codes ("S4g," "B4," "Move 6") "never decoded anywhere reachable." "Move 7 of what game? Numbered from an internal sequence I never saw." | A reachable session-code decoder (CANON/authored) |
+| 16 | 3 / Kenji | The 15-entry re-read ledger + 27-entry idiom trap list, preserved verbatim in the cycle-3 transcript — diagnosis: "an em-dash aside or a delayed clause splitting what my working memory was holding — not vocabulary." EXPECTED-FAIL: FAILED (3 of 8 About-opening sentences). | The canon prose style (the author's voice — his call alone) |
+| 17 | 3 / Kenji | About "mostly a re-read of Home." | README/About overlap (CANON) |
+| 18 | 3 / Kenji | "My topic is distributed across at least five documents, and only the house-code 'Y3' connects them." — a collected synthesis page per pressure-test | New authored per-topic pages (CONTENT; /topics/ supplies wayfinding only) |
+| 19 | 3 / Kenji | Governance stamps on public pages: "the stamp defeats its own goal for anyone outside." | The stamps' public register (honesty markers — pre-classified CONTENT per governance §2) |
+| 20 | 3 / Kenji | In text extraction the §1 signed graph degrades to "a bare column of '+' symbols followed by node names" | viz/ canon (reader-mode/screen-reader contexts) |
+| 21 | 3 / Kenji | "the frontier the site advertises to newcomers is written in the deepest house dialect." | Translating the frontier (CANON) |
+
 *(entries append below as cycles run)*

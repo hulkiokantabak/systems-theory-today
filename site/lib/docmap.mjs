@@ -59,6 +59,16 @@ const GROUP_ORDER = ['Start here', 'Reference', 'Deliberation', 'Output', 'Learn
 // title itself, so its spine label would be indistinguishable from the site.
 const LABEL_OVERRIDES = new Map([
   ['docs/REPORT.md', 'Project report'],
+  // Cycle 3 (D3-05): six spines whose derived labels were locked doors from
+  // outside the house vocabulary. Each replacement drops an undecoded internal
+  // sequence token or adds a gloss the canon doc itself asserts. Bounded set —
+  // this map must not grow into a parallel title system.
+  ['panel/B4_EVIDENCE_COLLATION_S4I.md', 'Evidence collation (session 4i)'],
+  ['panel/GRADER_DESIGN_DRAFT.md', 'The held-out internal grader (design draft)'],
+  ['docs/REPO_OPEN_CHECKLIST.md', 'The repo-open checklist and clock'],
+  ['logs/CATCHES.md', 'Catches — the error log'],
+  ['docs/EPISODE_UNIT.md', 'The repair-episode unit (case-coding draft)'],
+  ['panel/LEARNING_FROM_PARALLEL_S4G.md', 'Learning from the parallel edition (session 4g)'],
 ]);
 // A pre-dash fragment that is only a sequence token ("MOVE 6", "SESSION 2")
 // names nothing; the descriptive segment after the em-dash must come along.
