@@ -24,7 +24,10 @@ import { execSync } from 'node:child_process';
 
 const ref = process.argv[2] || 'HEAD';
 const out = execSync(`git diff --name-only ${ref}`, { encoding: 'utf8' });
-const paths = out.split(/\r?\n/).filter(Boolean);
+// v1.2 (cycle 1): untracked files are part of a cycle's diff too — `git diff`
+// alone missed brand-new pages/scripts, so the scope check saw only edits.
+const untracked = execSync('git ls-files --others --exclude-standard', { encoding: 'utf8' });
+const paths = [...new Set([...out.split(/\r?\n/), ...untracked.split(/\r?\n/)])].filter(Boolean);
 
 // PRESENTATION: layout, styling, client JS, static assets — no words, no content data.
 const PRESENTATION = [
@@ -33,12 +36,13 @@ const PRESENTATION = [
 // SITE-COPY: site-native words and meaning-adjacent wiring — editable ONLY with
 // manifest-before-deploy + D-007 check + author-visible queue entry.
 const SITE_COPY = [
-  /^site\/about\.njk$/, /^site\/colophon\.njk$/, /^site\/diagrams\.njk$/,
-  /^site\/history\.njk$/, /^site\/summary\.njk$/,
+  // ANY site-root template carries site-native words -> SITE-COPY (manifest +
+  // D-007 + queue entry). Enumerating specific pages (v1.1) missed new pages.
+  /^site\/[A-Za-z0-9_-]+\.njk$/,
   /^site\/_data\/nav\.js$/, /^site\/_data\/site\.js$/, /^site\/_data\/eleventyComputed\.js$/,
   /^site\/lib\/docmap\.mjs$/,
 ];
-const PROGRAM = [/^playtests\//];
+const PROGRAM = [/^playtests\//, /^scripts\/check-playtest-paths\.mjs$/];
 // CANON: canonical documents AND content-bearing site data (facts/charts/figures
 // derive claim-level content) — byte-for-byte untouchable under the program.
 const CANON = [

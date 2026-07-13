@@ -1,0 +1,10 @@
+---
+title: The panel
+permalink: /panel/
+---
+<h1>The panel</h1>
+<p class="lede">The deliberative body — who sits at the table, and the record of what they argued.</p>
+{% for grp in nav %}{% if grp.group == 'Deliberation' %}<ul>
+{% for it in grp.items %}  <li><a href="{{ it.url | url }}">{{ it.title }}</a></li>
+{% endfor %}</ul>{% endif %}{% endfor %}
+<p>How the panel is meant to work — designed disagreement, a chair who synthesizes without voting, an author who ratifies — is described on the <a href="{{ '/about/' | url }}">About</a> page.</p>

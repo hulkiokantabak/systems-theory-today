@@ -48,9 +48,10 @@
         <a href="{{ '/summary/' | url }}">Summary</a>
         <a href="{{ '/about/' | url }}">About</a>
         <a href="{{ '/history/' | url }}">History</a>
+        <a href="{{ '/panel/' | url }}">The panel</a>
         <a href="{{ '/outputs/candidate_theories/' | url }}">The theories</a>
         <a href="{{ '/diagrams/' | url }}">Facts &amp; figures</a>
-        <a href="{{ '/logs/open_questions/' | url }}">Frontier</a>
+        <a href="{{ '/logs/open_questions/' | url }}">Open questions</a>
         <a href="{{ '/colophon/' | url }}">Colophon</a>
       </nav>
     </div>
@@ -60,6 +61,7 @@
     <details class="sidebar" aria-label="Contents">
       <summary>Contents</summary>
       <div class="nav-inner">
+        <p class="nav-filter" hidden><input id="navfilter" type="search" placeholder="Filter contents…" aria-label="Filter the contents list"></p>
         <div class="nav-group">
           <p class="nav-label">This site</p>
           <ul>
@@ -67,6 +69,7 @@
             <li><a href="{{ '/summary/' | url }}"{% if page.url == '/summary/' %} aria-current="page"{% endif %}>Summary</a></li>
             <li><a href="{{ '/about/' | url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
             <li><a href="{{ '/history/' | url }}"{% if page.url == '/history/' %} aria-current="page"{% endif %}>The history</a></li>
+            <li><a href="{{ '/panel/' | url }}"{% if page.url == '/panel/' %} aria-current="page"{% endif %}>The panel</a></li>
             <li><a href="{{ '/diagrams/' | url }}"{% if page.url == '/diagrams/' %} aria-current="page"{% endif %}>Facts &amp; figures</a></li>
             <li><a href="{{ '/colophon/' | url }}"{% if page.url == '/colophon/' %} aria-current="page"{% endif %}>Colophon</a></li>
           </ul>
@@ -90,6 +93,8 @@
         <button type="button" class="pt-btn pt-pdf">↓ Save as PDF</button>
         <button type="button" class="pt-btn pt-share">↗ Share</button>
       </div>{% endif %}
+      {% if page.url == '/docs/diagrams/' %}<p class="companion-note">Reading note: this is the canonical diagram log — the figures as editable text, the source of record. The same figures, presented with the project's self-reported counts, are on <a href="{{ '/diagrams/' | url }}">Facts &amp; figures</a>.</p>{% endif %}
+      {% if page.url == '/' %}<p class="startnote">New here? Start with the <a href="{{ '/summary/' | url }}">Summary</a> — the project in plain language, including what has <em>not</em> yet been shown.</p>{% endif %}
       <article class="prose">
         {{ content | safe }}
       </article>
@@ -99,7 +104,7 @@
   <footer class="site-foot">
     <div class="wrap">
       <p><a href="{{ site.authorUrl }}">{{ site.author }}</a> · {{ site.license }}</p>
-      <p class="dim"><a href="{{ '/about/' | url }}">About</a> · <a href="{{ '/history/' | url }}">The history</a> · <a href="{{ '/diagrams/' | url }}">The figures</a> · <a href="{{ '/colophon/' | url }}">Colophon</a> · <a href="{{ site.authorUrl }}">hulkiokantabak.com</a></p>
+      <p class="dim"><a href="{{ '/about/' | url }}">About</a> · <a href="{{ '/history/' | url }}">The history</a> · <a href="{{ '/diagrams/' | url }}">Facts &amp; figures</a> · <a href="{{ '/colophon/' | url }}">Colophon</a> · <a href="{{ site.authorUrl }}">hulkiokantabak.com</a></p>
       <p class="dim">{{ site.repoNote }}</p>
       <p class="dim">{{ site.status }} · source of truth: the repository · figures render from Mermaid + one hand-authored SVG</p>
       <p class="dim">Analytics: privacy-respecting <a href="https://www.goatcounter.com/">GoatCounter</a> — cookieless, no cookies, no personal data (details in the <a href="{{ '/colophon/' | url }}">colophon</a>).</p>
@@ -113,6 +118,11 @@
 
   <!-- Per-page Save-as-PDF (print) + Share (Web Share API / copy). External for the strict CSP. -->
   <script src="{{ '/assets/pagetools.js' | url }}" defer></script>
+
+  <!-- Contents filter (progressive enhancement) + document-metadata typographic tightening
+       (render-invariant: text and position unchanged). External for the strict CSP. -->
+  <script src="{{ '/assets/nav-filter.js' | url }}" defer></script>
+  <script src="{{ '/assets/docmeta.js' | url }}" defer></script>
 
   <!-- Privacy-respecting, cookieless page-view analytics — the author's shared GoatCounter
        dashboard, the same endpoint used across the companion sites. SRI-pinned. -->

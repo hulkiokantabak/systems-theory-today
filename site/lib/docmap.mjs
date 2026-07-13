@@ -107,20 +107,39 @@ export const BY_BASE = (() => {
   return m;
 })();
 // The viz artifacts are passthrough-copied verbatim; link mentions point at them.
+// The interactive map's mentions land on the framed /map/ page (playtest cycle 1,
+// D6: the bare artifact has no way home; the frame adds one and links the original).
 for (const [rel, url] of [
   ['viz/diagrams.html', '/viz/diagrams.html'],
-  ['viz/systems-theory-map.html', '/viz/systems-theory-map.html'],
+  ['viz/systems-theory-map.html', '/map/'],
 ]) {
   BY_REL.set(rel, url);
   const b = basename(rel);
   if (!BY_BASE.has(b)) BY_BASE.set(b, url);
+}
+// README's reading table names the three operationalized theories as one
+// brace-token; route that exact mention to the site's index of the three
+// (playtest cycle 1, D2 — the row was dead text though all three pages exist).
+BY_REL.set('outputs/THEORY_{A,B,C}_OPERATIONALIZED.md', '/outputs/theories-operationalized/');
+
+// Nav/crumb/tab display casing: docs titled in ALL CAPS are shown sentence-cased
+// in site furniture; the on-page H1 keeps the document's own casing (cycle 1, D13).
+export function displayTitle(s) {
+  const letters = s.replace(/[^A-Za-z]/g, '');
+  const uppers = s.replace(/[^A-Z]/g, '');
+  if (!letters.length || uppers.length / letters.length < 0.8) return s; // already mixed-case
+  let t = s.charAt(0) + s.slice(1).toLowerCase();
+  t = t.replace(/\b[a-z]\b/g, (c) => c.toUpperCase()); // A, B, C
+  t = t.replace(/\b([a-z])(\d)/g, (m, c, d) => c.toUpperCase() + d); // B4, S4i, R3
+  t = t.replace(/\bs(\d[a-z]?)\b/g, (m, d) => 'S' + d); // session tokens S4h/S4i
+  return t;
 }
 
 export function navGroups() {
   const groups = new Map(GROUP_ORDER.map((g) => [g, []]));
   for (const d of DOC_SET) {
     if (d.relPath === 'README.md') continue; // home is linked separately
-    (groups.get(d.group) || groups.get('Root')).push({ title: d.title, url: d.url });
+    (groups.get(d.group) || groups.get('Root')).push({ title: displayTitle(d.title), url: d.url });
   }
   return GROUP_ORDER
     .map((g) => ({ group: g, items: groups.get(g) || [] }))

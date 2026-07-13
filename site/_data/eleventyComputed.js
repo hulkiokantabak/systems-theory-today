@@ -6,7 +6,7 @@
 // Version: 1.0 · Status: Living · Last updated: Session 4
 
 import { readFileSync } from 'node:fs';
-import { docUrl } from '../lib/docmap.mjs';
+import { docUrl, displayTitle } from '../lib/docmap.mjs';
 
 const relOf = (inputPath) => inputPath.replace(/^\.[\\/]/, '').split('\\').join('/');
 
@@ -27,7 +27,7 @@ export default {
     if (!ip.endsWith('.md')) return data.title;
     try {
       const m = readFileSync(ip, 'utf8').match(/^#\s+(.+)$/m);
-      if (m) return m[1].trim();
+      if (m) return displayTitle(m[1].trim());
     } catch { /* fall through */ }
     return relOf(ip);
   },

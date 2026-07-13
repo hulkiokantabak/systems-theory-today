@@ -18,7 +18,7 @@
   --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --maxw:1160px;
-  --measure:40em;
+  --measure:36em;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -34,8 +34,9 @@ body{
 }
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
 
-a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(240,178,74,.32)}
-a:hover{border-bottom-color:var(--amber)}
+a{color:var(--amber);text-decoration:underline;text-decoration-color:rgba(240,178,74,.45);text-decoration-thickness:1px;text-underline-offset:.18em;border-bottom:0}
+a:hover{text-decoration-color:var(--amber)}
+.topnav a,.sidebar li a,.crumb a,.brand,.skip,.prose a.xref,.fig-foot a{text-decoration:none}
 a:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
 
 .skip{position:absolute;left:-9999px;top:0;background:var(--amber);color:#111;padding:8px 14px;border:0;font-family:var(--mono);font-size:13px}
@@ -168,7 +169,7 @@ html[data-theme="light"]{
 html[data-theme="light"] body{
   background:radial-gradient(1200px 720px at 50% -10%, #fbf8f2 0%, var(--field) 60%) fixed, var(--field);
 }
-html[data-theme="light"] a{border-bottom-color:rgba(164,94,13,.35)}
+html[data-theme="light"] a{text-decoration-color:rgba(164,94,13,.45)}
 /* the diagrams render dark — keep their canvases dark in light mode so they stay legible */
 html[data-theme="light"] .fig-canvas{background:#0c0d18 !important}
 html[data-theme="light"] .figure{background:#0c0d18 !important;border-color:rgba(0,0,0,.14)}
@@ -294,3 +295,14 @@ html[data-theme="light"] .badge,html[data-theme="light"] .fig-btn,html[data-them
   .statcard,.ff-fig,.ledger-stage,.spark-card{border-color:#ccc !important;background:#fff !important}
   .stat-n,.ledger-n,.cov-yes,.cov-hero{color:#b06a12 !important}
 }
+
+
+/* ── playtest cycle 1 additions (D5, D6, D8, D14, D15) ── */
+.companion-note{font-family:var(--mono);font-size:12.5px;line-height:1.7;color:var(--ink-faint);border:1px solid var(--hair);border-radius:8px;padding:10px 14px;margin:0 0 20px;max-width:var(--measure)}
+.map-frame{width:100%;height:min(80vh,900px);border:1px solid var(--hair);border-radius:14px;background:#0c0d18}
+.nav-filter input{width:100%;font-family:var(--mono);font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--hair);border-radius:7px;padding:7px 10px}
+.nav-filter input:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.startnote{font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--ink-soft);border:1px solid var(--hair);border-left:2px solid var(--amber);border-radius:8px;padding:10px 14px;margin:0 0 22px;max-width:var(--measure)}
+.startnote a{color:var(--amber)}
+.prose p.docmeta{font-family:var(--mono);font-size:13px;line-height:1.75;color:var(--ink-soft);border-left:2px solid rgba(240,178,74,.55);padding-left:14px;margin:0 0 1.6em}
+.prose p.docmeta strong{color:var(--ink)}
