@@ -52,4 +52,30 @@ Deep author's-calls flagged as live fault lines (not deferrals): the person-vs-c
 - **The sentinel:** the record is now complex enough to miscount its own nulls (entry 52's "third reading" corrected in 53) exactly when accuracy is the only asset the tower has.
 - **Campbell:** writing two thousand meticulous words on why nothing was subtracted has near-zero cost and positive prestige return — the honesty itself is now the gamed indicator; "look how honest we are" is the costless move.
 
+## 7. THE S4K UPDATE — the reports' status after the build closed
+
+*A lean overlay, not a re-forum. Session 4k closed the build; this section updates the three S4j forum reports to the closed state without regenerating them (the six S4j PDFs are preserved unaltered as the dated record — Rule 9). Produced by designed disagreement — one expert (Campbell, measurement / the honesty-paradox watchdog) + one advisor (Meadows, leverage) — chair-synthesized; the chair did not vote. The full overlay is `Forum-Update_S4k.pdf` / `.md` in the author's Downloads.*
+
+**7.1 The lead (binding).** This update is itself an instance of **Wrong 6, the honesty paradox** — a polished "here is what closing addressed," produced by the apparatus it audits: near-zero cost, positive prestige, the costless move. Read it as the indicator, never as the validity.
+
+**7.2 The eight wrongs, statused (split by the leverage the fix actually reached).** The three **root** wrongs did not move; only the outer governance/delivery tier was acted on — and a delivery fix is not a substantive advance:
+- **Wrong 1 reflexivity trap (Tier 0) — CONFIRMED, NOW TERMINAL:** the concession (decision 3) does not cure the one-aquifer confound, it *entombs* it (foreign vantage refused, not merely absent); the plurality is set down, not earned back.
+- **Wrong 2 empirical void (Tier 1) — CONFIRMED, NOW TERMINAL:** still 0/3 tested; C-017 + decision 3 make it a designed-in terminus.
+- **Wrong 6 honesty paradox (Tier 1) — CONFIRMED, NOW TERMINAL:** the failed instruments were labeled, but the flattery-audit ran on the same aquifer; structurally load-bearing.
+- **Wrong 3 unfireable falsifiers (Tier 2) — map ADDRESSED · territory CONCEDED:** C-031 re-seal + bite-event + D3 re-balance repaired the instruments (map); firing them is conceded off (a repaired instrument in a shuttered lab).
+- **Wrong 4 accretion (Tier 2) — FLOW-CAPPED, STOCK-UNDRAINED:** Rule 25 caps the inflow (reversible); the stock is undrained; the drain fired once, author-hand (DC-007).
+- **Wrong 7 register blindness (Tier 2) — PARTIALLY ADDRESSED, do not over-credit:** paid in voice + booked as test R, but R is self-administered and untestable here; and R (a lev-4 addition) was ratified in the same act as Rule 25 (which freezes lev-4 additions) — the moratorium's first edge case.
+- **Wrong 5 delegation spiral (Tier 3) — RESOLVED:** a lev-5 pathology got a lev-5 fix (the author's Rule-11 return-to-rule); a knot untied at its own level, not a root removed, and it consumed the one external ratifier into a single self-report.
+- **Wrong 8 front-door-is-a-changelog (Tier 3) — ADDRESSED, delivery-only (lev-12):** the site is the artifact, the MLV shipped; the lowest-leverage act — a better door on an unchanged empty house.
+
+**7.3 The roadmap — largely executed, every item map-side.** Name-the-stage **DONE** · moratorium **DONE** (reversible) · fire-the-drain **DONE-BUT-HOLLOW** (author-initiated; self-initiated channel zero across four readings; DC-007 retired the very claim that the machine subtracts of its own motion) · surface-failures **DONE-BUT-HOLLOW** (self-audited for flattery by one aquifer) · front-door+MLV **DONE** (delivery) · open-onto-forkers **CONCEDED, not done** (the one territory move — refused). Author's-calls: person-vs-coldness **both booked** (recorded, not adjudicated) · chair-role **OPEN** · differentiation **RECORDED** (Theory D in waiting) · Heidegger **OPEN** · artifact **DONE**.
+
+**7.4 The report** needs only light currency: the 14th test R (drafted, untested), Theory D in waiting, the closed state + concession — the headline *"nothing has been tested against the world"* is unchanged and still true.
+
+**7.5 The net verdict.** **No object-level rung moved** (Rule 25's own text, the S4k headline, and DC-007's four-reading null all say it). Two things genuinely moved, both map-side, the bigger the higher-leverage: (1) the delegation spiral ended by the author's hand (lev-5); (2) the project's self-paradigm corrected to true — naming the stage honestly + the concession (lev-2, the highest the project can reach). But leverage earns its rank by cascading downstream, and here the cascade terminated at the paragraph — the concession severed the linkage to the world in the same act. So the highest-leverage move available to this project turned out to be its own self-conception. That is not a triumph; it is the diagnosis.
+
+> **The one line:** S4k moved the map and set down the territory — its honest self-naming and its concession are genuine paradigm-level moves, the highest leverage the project can reach, but spent entirely on how the project sees itself and, by the same concession, cut off from any path to the world. The biggest thing that moved was the project's picture of itself; the object level it was built to touch stayed, by ruling, at zero.
+
+*Preserved dissent: **Campbell** — the whole overlay is Wrong 6 in operation, the honesty is the gamed indicator; **Meadows** — correcting the map to true is real leverage, but exercised only on the apparatus, displayed toward the world; **Heidegger/Le Guin** (from the close) travel unchanged.*
+
 *Author: Hulki Okan Tabak — with Claude · License: CC BY-SA 4.0.*
