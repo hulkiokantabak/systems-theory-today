@@ -1,6 +1,6 @@
 # MOVE 7 — THE REPO-OPEN CHECKLIST AND CLOCK (draft for the author)
 
-Version: 0.1 · Status: **DRAFT (Session 4g big loop). Opening the repository is the author's act alone — this file only makes the ratified "held on a clock" real, because a clock with no date is ossification wearing a clock's face (Ostrom, S4g). The author sets or moves the date; the checklist is what must be true before the door opens.**
+Version: 0.2 · Status: **FULFILLED — the door opened at Session 4k, ahead of the 2026-10-01 default.** The author decided to share the closed build with whoever might carry it (the founding wager enacted), and the checklist was cleared before the flip: a full **privacy/safety/security audit passed** (do-no-harm, privacy, security posture, copyright — no blockers; the author's privacy pass done — a private side-project name genericized, the home AV/VPN detail generalized); **item 1 resolved by DE-SEALING** the placebo/ablation material with a transparency note (`studies/README.md`) rather than escrowing it — full transparency over a spent blind; licensing, honesty surfaces, and the `logs/OPEN_QUESTIONS.md` front door all in place. The checklist below is preserved as the record of what had to be true. *(Opening the repository was the author's own act — the visibility flip performed by the author, not by the executor.)*
 
 ## The clock (named default, per the ratified Fork 7: "opens by default if the window is missed")
 

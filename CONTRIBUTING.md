@@ -4,6 +4,8 @@ Version: 0.2 · Status: Draft (author to ratify) · Last updated: Session 2
 
 *This is a **living commons**, not a finished book. It exists to be forked, strengthened, broken, and argued with. Theory C — the claim that a systems theory for today must be held plurally rather than authored alone — is only true if people actually contribute. So: welcome. Here is how.*
 
+> **As of Session 4k the repository is public — this is live, not aspirational.** The author closed his build (a research program with strong hygiene and no data yet — the site's self-audit page has the honest scoreboard) and opened the repo to hand the attempt onward, knowing a community may not come. If you fork it, you are the genuinely-foreign vantage the closed build conceded it could not supply itself. Begin at `logs/OPEN_QUESTIONS.md`.
+
 ## First principles
 
 1. **Disagreement is the product, not the problem.** The most valuable contribution is often a sharp, well-argued objection — not a polite extension. If you think the whole project is misconceived, the best possible thing you can do is say so, precisely, in a way we have to answer.

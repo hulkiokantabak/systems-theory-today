@@ -24,7 +24,7 @@ The first pressure is about *capability*; the second is about *capacity*. The se
 
 The mistake that produced the compaction was making Chat carry the whole project in its head. It shouldn't. A well-run research group does not hold the entire archive in one person's working memory — the archive sits on shelves, and each meeting pulls down only the folders it needs. The repository is those shelves. Chat should hold only the *slice* a given deliberation requires; Code should be the one that reads and writes the *whole* shelf, because Code reads files from disk on demand and never needs the whole project resident in a context window at once.
 
-This is not new machinery. It is the **two-Claude workflow already in use on the Vera novel** — Chat as advisor and prompt-shaper, Code as executor-in-repo, with HANDOFF documents passed between them — applied to this project. The four-document learning loop (`CATCHES` / `LEARNINGS` / metrics / handoff) is the same discipline. What follows just makes it explicit for *A Systems Theory for Today*.
+This is not new machinery. It is a **two-Claude workflow already in use on a companion writing project** — Chat as advisor and prompt-shaper, Code as executor-in-repo, with HANDOFF documents passed between them — applied to this project. The four-document learning loop (`CATCHES` / `LEARNINGS` / metrics / handoff) is the same discipline. What follows just makes it explicit for *A Systems Theory for Today*.
 
 ---
 
@@ -83,7 +83,7 @@ The registers — a session loads **R0 + R1 + R3 always**, adds **R2** for its t
 
 So a session **simultaneously** holds the map (R0), the frontier (R1), its working documents at full resolution (R2), and the gist of everything else (R3) — four registers at once, at different resolutions — reaching for deep text (R4) only on demand. That is how the document stays whole *in view* without any worker holding it whole *in context*. The thin/thick question dissolves: the answer is **both, at different resolutions, at the same time.**
 
-*(This generalizes to **L-008**: when a design choice looks binary, first ask whether a tiered structure can hold both registers at once, chosen per use — optionality over a forced single choice. It also sharpens the Vera HANDOFF practice: not one briefing but a layered one — pointer, frontier, working set, and a maintained gist.)*
+*(This generalizes to **L-008**: when a design choice looks binary, first ask whether a tiered structure can hold both registers at once, chosen per use — optionality over a forced single choice. It also sharpens that companion project's HANDOFF practice: not one briefing but a layered one — pointer, frontier, working set, and a maintained gist.)*
 
 ---
 

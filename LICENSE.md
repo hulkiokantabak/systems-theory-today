@@ -46,3 +46,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## On the panelists
 
 The panel members are **reconstructions of real thinkers' published positions**, framed as intellectual positions rather than the actual persons. Nothing in this project is endorsed by any named thinker, living or dead, or their estates. Where a living figure's real-world view is discussed, it is cited to its source; invented attributions are prohibited (see `CONTRIBUTING.md` and Ground Rule 16). The license covers this project's own text and code, not the underlying works of the thinkers it reconstructs, which remain under their own rights.
+
+## On third-party components
+
+The dual license above covers this project's own first-party content. The reading site is built and served with third-party components under their own permissive/open licenses, credited in the site's colophon: **Eleventy** (MIT), **Mermaid** (MIT), **markdown-it** (MIT), the **GoatCounter** analytics script, and the **Newsreader** and **IBM Plex Mono** fonts (SIL Open Font License). These remain under their respective licenses, not this project's.

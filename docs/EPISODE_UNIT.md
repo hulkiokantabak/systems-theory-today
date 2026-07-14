@@ -37,7 +37,7 @@ The destabilize-first grammar requires a **destabilization event to open an epis
 - **Option (i) — a maintenance-episode variant:** a second opener — a documented *near-miss* or *sustained-load* evidence (the flood that did not breach because the levee was maintained; the epidemic curve that stayed flat) — with its own clock semantics defined before first use (time-to-sense from the near-miss's documentation, not from a destabilization that never occurred). This is a real second unit-type, not a smaller episode.
 - **Option (ii) — the exclusion recorded as widening debt,** dated, in this document, compounding beside the case pool's existing debt (D-005).
 
-Until the author cuts this fork, **no maintenance-shaped candidate is coded and the blindness stands named.** *An episode grammar that opens on destabilization will code the world's loud repairs and call the coverage complete; the care that prevents the episode from existing is the invisible load-bearing wall (Le Guin, verbatim).*
+Until the author cuts this fork, **no maintenance-shaped candidate is coded and the blindness stands named.** *An episode grammar that opens on destabilization will code the world's loud repairs and call the coverage complete; the care that prevents the episode from existing is the invisible load-bearing wall (Le Guin, as preserved in-session).*
 
 ## 4. Sequencing gates (all must clear before any episode is coded)
 
@@ -50,7 +50,7 @@ Any coding before all four gates clear is void-plus-catch (§2.6). *(Per item H 
 
 ## 5. The historical episode base — candidates (names only; nothing coded; episode base first, canon expansion second)
 
-**The anchoring caveat (Turchin, verbatim, binding):** *these candidates were named before the boundary criteria existed and were known to the criteria's drafters; that anchoring is disclosed, not cured.* *(And per the S4i shadow-grade pass: the why/why-fail sentences below are the drafting hand's unverified impressions, signed as such — not findings; nothing in this table has been checked against any source.)* **The no-priority rule:** the coded episode base is drawn by applying the frozen criteria to the declared case-universe; the named candidates receive **no sampling priority** and confirm nothing by having been named first. Each entry is name + period + one why-a-candidate sentence + one why-it-might-FAIL-inclusion sentence (Ostrom's adversarial line) — no episode narrative, no empirical claim.
+**The anchoring caveat (Turchin, as preserved in-session, binding):** *these candidates were named before the boundary criteria existed and were known to the criteria's drafters; that anchoring is disclosed, not cured.* *(And per the S4i shadow-grade pass: the why/why-fail sentences below are the drafting hand's unverified impressions, signed as such — not findings; nothing in this table has been checked against any source.)* **The no-priority rule:** the coded episode base is drawn by applying the frozen criteria to the declared case-universe; the named candidates receive **no sampling priority** and confirm nothing by having been named first. Each entry is name + period + one why-a-candidate sentence + one why-it-might-FAIL-inclusion sentence (Ostrom's adversarial line) — no episode narrative, no empirical claim.
 
 | Candidate | Period | Why a candidate | Why it might fail inclusion |
 |---|---|---|---|
@@ -65,7 +65,7 @@ Any coding before all four gates clear is void-plus-catch (§2.6). *(Per item H 
 
 ## 6. Preserved dissent (travels with the unit)
 
-- **Heidegger (rejects the unit entirely, verbatim):** "To code repair is to have decided that healing is a process with a clock. What recovers without a legitimating act — quietly, slowly, outside the six stages — will be coded as nothing having happened." And on the candidates: "Rome's third century was a world, not a data point. To shelve it as a 'candidate natural experiment' is to have already lost what it could teach."
+- **Heidegger (rejects the unit entirely — the panel's reconstruction of his position, preserved from the deliberation; not a published quotation, per Ground Rule 16):** "To code repair is to have decided that healing is a process with a clock. What recovers without a legitimating act — quietly, slowly, outside the six stages — will be coded as nothing having happened." And on the candidates: "Rome's third century was a world, not a data point. To shelve it as a 'candidate natural experiment' is to have already lost what it could teach."
 - **Turchin (his yes is conditional, standing):** episode coding without pre-registered inclusion and boundary criteria, applied to a declared case-universe, is selection on the dependent variable with a schema attached; if coding ever begins before the freeze, every episode so coded is anecdote, and that will be said in every reading that cites them.
 - **Le Guin (standing):** four empires reforming is not a sample of repair; it is a sample of what archives keep. The episode base is born owing the same debt as the case pool — dated above, so the interest is legible.
 - **Nietzsche (standing):** "repair" unsigned is the victor's word for what happened; the repair-for-whom field is what keeps the coder honest, and the omissions list is as load-bearing as the candidates list.

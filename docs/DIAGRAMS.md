@@ -242,7 +242,7 @@ flowchart LR
     Dig ==> SP
 ```
 
-**What it asserts:** **Chat is the mind, the repo is the memory, Code is the hands.** Neither side holds the whole project in one context — Chat loads only a *slice*, Code reads the full repo from disk — the direct fix for the context-window limit that forced Session 2's compaction. Propagation and consistency-sweeps become Code's deterministic job (the C-010 / L-006 fix), so a structural change can no longer leave stale records. Authority is unchanged: the panel proposes, the chair never votes, the author ratifies, Code executes only ratified work-orders. This is the author's existing Vera two-Claude workflow applied here. Full plan: `docs/CHAT_CODE_WORKFLOW.md`; open watch-items Q-010 (slice granularity) and Q-011 (divergence reconciliation).
+**What it asserts:** **Chat is the mind, the repo is the memory, Code is the hands.** Neither side holds the whole project in one context — Chat loads only a *slice*, Code reads the full repo from disk — the direct fix for the context-window limit that forced Session 2's compaction. Propagation and consistency-sweeps become Code's deterministic job (the C-010 / L-006 fix), so a structural change can no longer leave stale records. Authority is unchanged: the panel proposes, the chair never votes, the author ratifies, Code executes only ratified work-orders. This is the author's existing two-Claude writing workflow applied here. Full plan: `docs/CHAT_CODE_WORKFLOW.md`; open watch-items Q-010 (slice granularity) and Q-011 (divergence reconciliation).
 
 ---
 
