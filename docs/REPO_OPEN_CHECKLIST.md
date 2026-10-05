@@ -2,6 +2,8 @@
 
 Version: 0.2 · Status: **FULFILLED — the door opened at Session 4k, ahead of the 2026-10-01 default.** The author decided to share the closed build with whoever might carry it (the founding wager enacted), and the checklist was cleared before the flip: a full **privacy/safety/security audit passed** (do-no-harm, privacy, security posture, copyright — no blockers; the author's privacy pass done — a private side-project name genericized, the home AV/VPN detail generalized); **item 1 resolved by DE-SEALING** the placebo/ablation material with a transparency note (`studies/README.md`) rather than escrowing it — full transparency over a spent blind; licensing, honesty surfaces, and the `logs/OPEN_QUESTIONS.md` front door all in place. The checklist below is preserved as the record of what had to be true. *(Opening the repository was the author's own act — the visibility flip performed by the author, not by the executor.)*
 
+*Dated note (5 October 2026): the visibility flip itself happened later than the record above implies. The repository stayed private until the author had it made public on **5 October 2026 at 09:17 UTC**. A pre-publication check of all 59 commits that day found no secrets, local paths or personal data beyond the author's own name and commit address.*
+
 ## The clock (named default, per the ratified Fork 7: "opens by default if the window is missed")
 
 - **Default-open date: 2026-10-01** (one quarter from this draft). The author may move it earlier or later *on the record*; a date moved silently or repeatedly without a logged reason is the ossification signal this clock exists to expose.
