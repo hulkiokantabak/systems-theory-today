@@ -10,6 +10,7 @@
     "serve": "eleventy --serve",
     "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('_site',{recursive:true,force:true}))\"",
     "check": "node scripts/run-checks.mjs",
+    "audit:gate": "node tools/audit-gate.mjs",
     "dashboard": "node scripts/build-dashboard.mjs",
     "ripple": "node scripts/ripple.mjs"
   },

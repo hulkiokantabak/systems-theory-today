@@ -37,7 +37,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Audit installed dependencies
-        run: npm audit --audit-level=high
+        run: npm run audit:gate
       - name: Run standing checks (references, counts, diagrams)
         run: npm run check
       - name: Build with Eleventy
